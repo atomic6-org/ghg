@@ -1,0 +1,13 @@
+---
+name: Work Item
+about: A sized backlog item ready to be implemented
+title: 'Imperative voice, please'
+labels: enhancement
+assignees: ''
+
+---
+Add...
+Fix...
+Update...
+Remove...
+
