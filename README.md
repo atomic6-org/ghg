@@ -6,5 +6,6 @@ Install it from PyPI:
 
 `pip install atomic6-ghg`
 
-##Sponsorship
-Funding for hosting expenses and salaries of core contributors are provided by General Electric Company.
+## Sponsorship
+Atomic6 GHG is made possible by funding from the General Electric Company and the generous support of developers like 
+you!

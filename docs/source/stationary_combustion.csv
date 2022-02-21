@@ -1,0 +1,12 @@
+Source,Input Units,Internal Unit
+Anthracite Coal,"Short Ton, MMBtu",Short Ton
+Bituminous Coal,"Short Ton, MMBtu",Short Ton
+Sub-bituminous Coal,"Short Ton, MMBtu",Short Ton
+Lignite Coal,"Short Ton, MMBtu",Short Ton
+Natural Gas,"scf, MMBtu, Therm",scf
+Distillate Fuel Oil No. 2,"Gallons, MMBtu",Gallons
+Residual Fuel Oil No. 6,"Gallons, MMBtu",Gallons
+Kerosene,"Gallons, MMBtu",Gallons
+Liquefied Petroleum Gases (LPG),"Gallons, MMBtu",Gallons
+Wood and Wood Residuals,"Short Ton, MMBtu",Short Ton
+Landfill Gas,"scf, MMBtu, Therm",scf
