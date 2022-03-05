@@ -13,7 +13,7 @@ dblocal/docker/
 .Python
 build/
 develop-eggs/
-# dist/
+dist/
 downloads/
 eggs/
 .eggs/
