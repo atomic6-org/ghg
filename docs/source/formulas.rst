@@ -1,5 +1,3 @@
-.. include:: glossary.rst
-
 Formulas
 ========
 
