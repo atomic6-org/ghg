@@ -19,6 +19,7 @@ Usage
 
     calculated_data = StationaryCombustion.to_dict(input_data)
     calculated_data['totalCo2EquivalentEmissions']
+    calculated_data['totalBiomassEquivalentEmissions']
 
 **Parameters:**
     * **input_data** - (dict) input data that follows the JSON schema
