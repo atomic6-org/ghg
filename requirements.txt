@@ -3,3 +3,4 @@ pylint
 jsonschema
 twine
 bumpversion
+Sphinx
