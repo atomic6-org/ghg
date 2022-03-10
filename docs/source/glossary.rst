@@ -5,6 +5,23 @@ Glossary
 These emissions are direct GHG emissions that happen from sources owned or controlled by an organization including fuel
 combustion in boilers, furnaces, vehicles.
 
+    **Boilers** burn biological plant material – predominantly wood – in order to generate heat or both heat &
+    electricity for combined units.
+
+    **Simple-cycle combustion turbines** propel hot gas through a turbine in order to generate electricity.
+
+    **Combined-cycle combustion turbines** uses both a gas and a steam turbine together to produce up to 50% more
+    electricity from the same fuel than a traditional simple-cycle plant.
+
+    **Engines** covert energy from fuel to some mechanical energy.
+
+    **Incinerators** burn waste to boil water that may power steam generators that generate electric energy and heat.
+
+    **Process heaters** generate energy using either fuel-based, electricity-based, heat transfer media (steam, hot
+    water, thermal fluid), or hybrid technologies to provide the hear energy required for various manufacturing
+    operations.
+
+
 **Scope 2 Emissions** are electricity indirect GHG emissions that include emissions from consumption of purchased
 electricity, heat, cooling or steam. These emissions are a result of a company's activities but often occur outside a
 company's physical facility.
