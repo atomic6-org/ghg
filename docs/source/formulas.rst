@@ -9,7 +9,7 @@ manipulating the data into the schema format.
 Stationary Combustion
 ---------------------
 Stationary Combustion is a `Scope 1 Emission <glossary.html>`_ that includes, but is not limited to,
-`boilers <glossary.html>`_ , `simple and combined-cycle combustion turbines <glossary.html>`_,
+`boilers <glossary.html>`_, `simple and combined-cycle combustion turbines <glossary.html>`_,
 `engines <glossary.html>`_, `incinerators <glossary.html>`_, and `process heaters <glossary.html>`_. Stationary fuel
 combustion sources are devices that combust solid, liquid, or gaseous fuel, generally for the purposes of producing
 energy, generating steam, providing useful heat or energy for industrial, commercial or institutional use, or reducing
@@ -22,6 +22,7 @@ Usage
     from atomic6-ghg.formulas.stationary_combustion import StationaryCombustion
 
     calculated_data = StationaryCombustion.to_dict(input_data)
+
     calculated_data['totalCo2EquivalentEmissions']
     calculated_data['totalBiomassEquivalentEmissions']
 
