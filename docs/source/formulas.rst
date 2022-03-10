@@ -1,15 +1,39 @@
 Formulas
 ========
 
-Each of the 13 sheets in the EPA's SGEC workbook have a corresponding python script associated with them in atom6 that
+Each of the 13 sheets in the EPA's SGEC workbook have a corresponding python script associated with them in atomic6 that
 performs the calculations for the library, which are referred to as formulas in our documentation, and are located
-under atom6-ghg/atom6ghg/formulas. Each formula is implemented as a python class with methods for calculating and
+under ghg/atomic6-ghg/formulas. Each formula is implemented as a python class with methods for calculating and
 manipulating the data into the schema format.
 
 Stationary Combustion
 ---------------------
+Stationary Combustion is a `Scope 1 Emission <glossary.html>`_ that includes, but is not limited to,
+`boilers <glossary.html>`_, `simple and combined-cycle combustion turbines <glossary.html>`_,
+`engines <glossary.html>`_, `incinerators <glossary.html>`_, and `process heaters <glossary.html>`_. Stationary fuel
+combustion sources are devices that combust solid, liquid, or gaseous fuel, generally for the purposes of producing
+energy, generating steam, providing useful heat or energy for industrial, commercial or institutional use, or reducing
+the volume of waste by removing combustible matter.
+
+Usage
+**********
+.. code-block:: python
+
+    from atomic6-ghg.formulas.stationary_combustion import StationaryCombustion
+
+    calculated_data = StationaryCombustion.to_dict(input_data)
+
+    calculated_data['totalCo2EquivalentEmissions']
+    calculated_data['totalBiomassEquivalentEmissions']
+
+**Parameters:**
+    * **input_data** - (dict) input data that follows the JSON schema
+
+
+EPA Equation Analysis
+**************************************************
 Stationary combustion allows for inputs of combusted quantities for the following sources with units, which are
-converted into an internal atom6 unit:
+converted into an internal atomic6 unit:
 
 .. csv-table::
    :file: ./stationary_combustion.csv
@@ -22,7 +46,7 @@ The fundamental calculation for each source are their :math:`\text{CO}_2`, :math
 
    Emissions_{GHG,\, fuel} = Fuel\; Consumption_{fuel} \cdot Emission\; Factor_{GHG,\, fuel}
 
-This is Equation 2.1 from [IPCC2006V2CH2]_. Note, in atom6, the :math:`Fuel\; Consumption_{fuel}` is actually composed
+This is Equation 2.1 from [IPCC2006V2CH2]_. Note, in atomic6, the :math:`Fuel\; Consumption_{fuel}` is actually composed
 of two terms:
 
 .. math::
@@ -30,7 +54,7 @@ of two terms:
    Fuel\; Consumption_{fuel} = User\; Input\; Fuel\; Consumption_{fuel,\, fuel\: units} \cdot Unit\; Conversion\; Factor_{fuel\: units}
 
 where :math:`Unit\; Conversion\; Factor_{fuel\; units}` converts the :math:`fuel\; units` into the standardized
-internal atom6 unit for :math:`Fuel\; Consumption_{fuel}`, which varies depending on the stationary combustion source
+internal atomic6 unit for :math:`Fuel\; Consumption_{fuel}`, which varies depending on the stationary combustion source
 (see above table). This is necessary, since :math:`Emission\; Factor_{GHG,\; fuel}` is only available in limited sets
 of units, but we want to allow for a wide range of input units for :math:`fuel\; units` to minimize unit conversion
 being done by the user from the system they use for record keeping.
@@ -44,10 +68,10 @@ For stationary combustion, the :math:`Total \text{CO}_2\; Equivalent\; Emissions
 
 
 where :math:`Total\; \text{CO}_2\; Equivalent\; Emissions_{GHG, fuel}` is the sum of all :math:`GHG` emissions by
-either source (fossil fuel or non fossil fuel), :math:`Emissions_{GHG,\, fuel}` are emissions of any :math:`GHG`
-(fossil fuel :math:`\text{CO}_2`, :math:`\text{CH}_4`, and :math:`\text{N}_2\text{O}`),
+each source (fossil fuel or non fossil fuel), :math:`Emissions_{GHG,\, fuel}` are emissions of any :math:`GHG`
+(fossil fuel or non fossil fuel :math:`\text{CO}_2`, :math:`\text{CH}_4`, and :math:`\text{N}_2\text{O}`),
 and :math:`EF_{GHG}` is the emission factor for that :math:`GHG` to convert it into :math:`\text{CO}_2\;`.
-Note that in Atom6, those emissions with units of grams are converted into kilograms, then the final value of this
+Note that in atomic6, those emissions with units of grams are converted into kilograms, then the final value of this
 calculation is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
 .. math::
@@ -58,8 +82,7 @@ These equations are outlined in Equation 2.2 from [IPCC2006V2CH2]_.
 
 where :math:`Total\; Biomass\; \text{CO}_2\; Equivalent\; Emissions_{fuel}` is the sum of
 :math:`Non\; Fossil\; Fuel\; \text{CO}_2\; Emissions_{fuel, n}`, which only accounts for the GHG :math:`\text{CO}_2`.
-Note that in Atom6, those emissions with units of grams are converted into kilograms, then the final value of this
-calculation is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
+Note that in atomic6, all units for total calculations are converted :math:`metric \; tons`.
 
 .. [IPCC2006V2CH2] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2, Energy, Chapter 2, Stationary Combustion, pp. 11
 
@@ -131,7 +154,7 @@ where :math:`Total\; \text{CO}_2\; Equivalent\; Emissions_{GHG, fuel}` is the su
 either vehicle type (on road or non road), :math:`Emissions_{GHG,\, fuel}` are emissions of any :math:`GHG`
 (:math:`\text{CO}_2`, :math:`\text{CH}_4`, and :math:`\text{N}_2\text{O}`),
 and :math:`EF_{GHG}` is the emission factor for that :math:`GHG` to convert it into :math:`\text{CO}_2\;`.
-Note that in Atom6, those emissions with units of grams are converted into kilograms, then the final value of this
+Note that in atomic6, those emissions with units of grams are converted into kilograms, then the final value of this
 calculation is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
 .. math::
@@ -144,7 +167,7 @@ where :math:`biofuel` is either ethanol or biodisel, :math:`Fuel\; Usage_{biofue
 :math:`biofuel` used during the reporting period, :math:`EF_{biofuel}` is the emission factor for that :math:`biofuel`,
 and :math:`Percent_{biofuel}` is the percent of that :math:`biofuel` that is mixed with petroleum fuel (disel or
 gasoline).
-Note that in Atom6, the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6, the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 
@@ -256,7 +279,7 @@ end of the reporting period, :math:`P - S` is the transferred amount or the gas 
 during the reporting period, and  sum of the
 full charges of all the new equipment that is sold in the country in a given year,
 :math:`C_{B} - C_{E}` is the capacity change or the capacity of all units at the beginning of the reporting period
-minus the capacity of all units at the end of the reporting period. Note that in Atom6, the input to this calculation
+minus the capacity of all units at the end of the reporting period. Note that in atomic6, the input to this calculation
 already accounts for intermediary calculations.
 
 For refrigeration and ac, the :math:`\text{CO}_2\; Equivalent\; Emissions_{method}` in metric tons is calculated.
@@ -271,7 +294,7 @@ This equation is derived from [IPCC2006V3CH7]_.
 
 where :math:`Emissions_{method}` are the total :math:`\text{CO}_2\; Emissions` for that :math:`method`
 (material balance, simplified material balance, or screening method).
-Note that in Atom6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
+Note that in atomic6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
 are multiplied by :math:`kilogram\; per\; pound` to convert the values from :math:`lbs` to :math:`kilograms`
 and the final value is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
@@ -407,7 +430,7 @@ This equation is derived from [EPA2015FugitiveEmissions]_.
 
 where :math:`Emissions_{method}` are the total :math:`\text{CO}_2\; Emissions` for that :math:`method`
 (material balance, simplified material balance, or screening method).
-Note that in Atom6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
+Note that in atomic6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
 are multiplied by :math:`kilogram\; per\; pound` to convert the values from :math:`lbs` to :math:`kilograms`
 and the final value is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
@@ -441,7 +464,7 @@ The formula is:
 This equation is derived from [EPA2016DirectEmissionsfromStationaryCombustionSources]_.
 
 where :math:`gas` is the purchased gas.
-Note that in Atom6 the final value of this calculation is multiplied by :math:`kilogram\; per\; pound` to convert this
+Note that in atomic6 the final value of this calculation is multiplied by :math:`kilogram\; per\; pound` to convert this
 value from :math:`lbs` to :math:`kilograms` then divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
@@ -494,7 +517,7 @@ where :math:`Total\; Carbon\; Content\;` is the sum of all the carbon contents f
 :math:`Oxidation\; Factor` is the percentage of carbon that is actually oxidized when combustion occurs,
 :math:`Atomic\; Weight\; of\; Carbon` is the natural atomic weight of carbon gas, and :math:`Molar\; Concentration` is
 the gas total number of moles per unit volume.
-Note that in Atom6 the final value of this calculation is multiplied by :math:`kilogram\; per\; pound` to convert this
+Note that in atomic6 the final value of this calculation is multiplied by :math:`kilogram\; per\; pound` to convert this
 value from :math:`lbs` to :math:`kilograms` then divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
 .. [EPA2016DirectEmissionsfromStationaryCombustionSources] EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11
@@ -549,7 +572,7 @@ where :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}` are the sums
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`method` (either
 :math:`location\; based` or :math:`market\; based`), and :math:`GWP_{GHG}` is the global warming potential of that
 :math:`GHG`.
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 .. [EPA2020IndirectEmissionsfromPurchasedElectricity] EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3
@@ -601,7 +624,7 @@ where :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}` are the sums
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`method` (either
 :math:`location\; based` or :math:`market\; based`), and :math:`GWP_{GHG}` is the global warming potential of that
 :math:`GHG`.
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 
@@ -663,7 +686,7 @@ where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either personal vehicle, public transportation, or air travel), and :math:`GWP_{GHG}` is the
 global warming potential of that :math:`GHG`.
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 Commuting
@@ -717,7 +740,7 @@ where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either personal vehicle or public transport), and :math:`GWP_{GHG}` is the
 global warming potential of that :math:`GHG`.
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 Product Transport
@@ -770,7 +793,7 @@ This equation is derived from Equation 5 from [EPA2008OptionalEmissionsfromCommu
 where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions for that
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either vehicle miles or ton miles), and :math:`GWP_{GHG}` is the global warming potential of that :math:`GHG`.
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 
@@ -799,7 +822,7 @@ This equation is derived from Equation 3.2 from [IPCC2006V5CH3]_.
 
 where :math:`ma` is the waste material, :math:`me` is the disposal method, :math:`EF_{ma, me}` is the emission factor
 is the emission factor for that :math:`ma` and :math:`me`, and :math:`Weight` is the weight, mass, or amount of the
-:math:`ma` that has been disposed via :math:`me` during that reporting period. Note that in Atom6, the calculations
+:math:`ma` that has been disposed via :math:`me` during that reporting period. Note that in atomic6, the calculations
 are done directly to :math:`\text{CO}_2` by using the IPCC's AR4 GWP values as a conversion factor, while in the
 reference material the calculations are done directly to :math:`\text{CH}_4`, the input units are converted to a
 standard unit of short tons, and the short tons are converted into kilograms.
@@ -817,7 +840,7 @@ This equation is derived from [IPCC2006V5CH3]_.
 where :math:`Total\; Emissions_{disposal\; method}` is the sum of all the :math:`\text{CO}_2\;` emissions for that
 :math:`disposal\; method` (recycled, landfilled, combusted, composted, anaerobically digested (dry digestate with
 curing), or anaerobically digested (wet digestate with curing)).
-Note that in Atom6 the final value of this calculation is divided by :math:`1000` to convert this value into
+Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
 
