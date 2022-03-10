@@ -8,7 +8,7 @@ manipulating the data into the schema format.
 
 Stationary Combustion
 ---------------------
-Stationary Combustion is a Scope 1 Emission (`See glossary <glossary.html>`_) that includes, but is not limited to,
+Stationary Combustion is a (`Scope 1 Emission <glossary.html>`_) that includes, but is not limited to,
 boilers, simple and combined-cycle combustion turbines, engines, incinerators, and process heaters. Stationary fuel
 combustion sources are devices that combust solid, liquid, or gaseous fuel, generally for the purposes of producing
 energy, generating steam, providing useful heat or energy for industrial, commercial or institutional use, or reducing
