@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Atom6 Greenhouse Gas Emissions Library'
+project = 'Atomic6-GHG'
 copyright = '2022, General Electric Company'
 author = 'General Electric Company'
 
@@ -44,6 +44,11 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+
+html_theme_options = {
+    'logo': 'atomic6-logo.png',
+    'fixed_sidebar': 'true'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
