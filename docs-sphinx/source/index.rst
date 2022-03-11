@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Atom6 Greenhouse Gas Emmissions Library's documentation!
+Atomic6-GHG
 ===================================================================
 
 .. toctree::
@@ -18,6 +18,7 @@ Welcome to Atom6 Greenhouse Gas Emmissions Library's documentation!
    certification
    preliminaries
    tools
+   glossary
 
 
 
