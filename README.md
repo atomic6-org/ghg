@@ -7,7 +7,7 @@ Install it from PyPI:
 `pip install atomic6-ghg`
 
 ## Docs
-[Read the Docs](docs/build/html/index.html)
+[Read the Docs](docs/home/build/html/index.html)
 
 ## Sponsorship
 Atomic6 GHG is made possible by funding from the General Electric Company and the generous support of developers like 
