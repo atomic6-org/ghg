@@ -1,3 +1,4 @@
+.. _sgec-certification:
 
 Certification
 -------------

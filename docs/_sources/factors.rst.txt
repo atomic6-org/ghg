@@ -1,3 +1,5 @@
+.. _sgec-factors:
+
 Factors
 -------
 

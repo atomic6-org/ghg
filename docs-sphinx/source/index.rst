@@ -1,23 +1,43 @@
-.. Atom6 Greenhouse Gas Emmissions Library documentation master file, created by
-   sphinx-quickstart on Wed Jan 26 11:40:28 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. toctree::
+   :hidden:
+
+   formulas
+   factors
+   schemas
+   certification
+
 
 Atomic6-GHG
 ===================================================================
+Welcome to Atomic6-GHG's documentation.
+Atomic6-GHG is a convenient source of carbon math for greenhouse gas calculations in Python based software.
+Initial versions of the package are specific to US-based operations.
+The API is modeled on and certified against the United States Environmental Protection Agency's (USEPA) simplified greenhouse gas emissions
+calculator (SGEC).
+The API supports direct and indirect calculations for the following scope 1, 2, and 3
+emissions and offsets:
 
-.. toctree::
-   :maxdepth: 2
+* Scope 1
+    * :ref:`stationary-combustion-api`
+    * :ref:`mobile-sources-api`
+    * :ref:`refrigeration-and-ac-api`
+    * :ref:`fire-suppression-api`
+    * :ref:`purchased-gases-api`
+    * :ref:`waste-gases-api`
+* Scope 2
+    * :ref:`electricity-api`
+    * :ref:`steam-api`
+* Scope 3
+    * :ref:`business-travel-api`
+    * :ref:`commuting-api`
+    * :ref:`product-transport-api`
+    * :ref:`waste-api`
+* :ref:`offsets-api`
 
-   introduction
-   formulas
-   preliminaries
-   glossary
+Additional SGEC Info
+--------------------
+* :ref:`sgec-factors`
+* :ref:`sgec-schemas`
+* :ref:`sgec-certification`
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
+We recommend using the latest version of Python. Atomic6-ghg supports Python 3.9 and newer.

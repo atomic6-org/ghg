@@ -1,6 +1,7 @@
 SGEC Workbook API
 ========================
 
+.. _stationary-combustion-api:
 
 Stationary Combustion
 ---------------------
@@ -81,6 +82,8 @@ where :math:`Total\; Biomass\; \text{CO}_2\; Equivalent\; Emissions_{fuel}` is t
 Note that in atomic6, all units for total calculations are converted :math:`metric \; tons`.
 
 .. [IPCC2006V2CH2] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2, Energy, Chapter 2, Stationary Combustion, pp. 11
+
+.. _mobile-sources-api:
 
 Mobile Sources
 --------------
@@ -169,6 +172,8 @@ Note that in atomic6, the final value of this calculation is divided by :math:`1
 
 .. [IPCC2006V2CH3] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 3: Mobile Combustion, pp. 12-13
 
+.. _refrigeration-and-ac-api:
+
 Refrigeration and AC
 --------------------
 Refrigeration and AC calculates emissions for refrigerant gas use. There are three different carbon accounting methods
@@ -184,7 +189,8 @@ The EPA's SGEC workbook employs three methods for calculating emissions in Refri
 simplified material balance, and the screening method.
 
 Material Balance
-~~~~~~~~~~~~~~~~
+****************
+
 The Material Balance Method tracks emissions of refrigerants from equipment through a mass balance analysis. Releases
 of refrigerants can be calculated based on the inventory (in storage, not in operating equipment), purchases and sales
 of refrigerants, as well as changes in total refrigerant capacity of equipment during the emissions reporting period.
@@ -214,7 +220,7 @@ volume for a given refrigerant during the reporting period.
 
 
 Simplified Material Balance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+***************************
 The Simplified Material Balance Method is a simplified version of the Material Balance Method. With this simplified
 method, there are fewer flows of refrigerants to consider. This method is appropriate for entities that do not maintain
 and track a stock of refrigerants, and have not retrofitted equipment to use a different refrigerant during the
@@ -245,7 +251,7 @@ recovered from retiring equipment.
 
 
 Screening Method
-~~~~~~~~~~~~~~~~
+****************
 
 In addition to the refrigerant gases, the Screening Method requires an equipment type to be entered to the refrigerant
 used with the equipment, and must be one of the following:
@@ -297,6 +303,7 @@ and the final value is divided by :math:`1000` to convert this value into :math:
 
 .. [IPCC2006V3CH7] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, IPPU, Chapter 7, Emissions of Fluorinated Substitutes for Ozone Depleting Substances, pp. 48
 
+.. _fire-suppression-api:
 
 Fire Suppression
 ----------------
@@ -308,7 +315,7 @@ The EPA's SGEC workbook employs three methods for calculating emissions in Fire 
 simplified material balance, and screening method.
 
 Material Balance
-~~~~~~~~~~~~~~~~
+****************
 The fundamental calculation for each fire suppressant gas type input for the Material Balance Method are their
 :math:`\text{CO}_2\; Equivalent\; Emissions` emissions associated with the :math:`Inventory\; Change`,
 :math:`Transferred\; Amount`, and :math:`Capacity\; Change` and based on :math:`GWP_{gas}`.
@@ -340,7 +347,7 @@ the total equipment volume for a given fire suppressant during the reporting per
 This is derived from Equation 5 from [EPA2015FugitiveEmissions]_.
 
 Simplified Material Balance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+***************************
 The Simplified Material Balance Method is a simplified version of the Material Balance Method. With this simplified
 method, there are fewer flows of fire suppressants to consider. This method is appropriate for entities that do not
 maintain and track a stock of fire suppressants, and have not retrofitted equipment to use a different fire suppressant
@@ -376,7 +383,7 @@ capacity or the total fire suppressant capacity of retiring equipment, and :math
 recovered or the fire suppressant recovered from retiring equipment.
 
 Screening Method
-~~~~~~~~~~~~~~~~
+****************
 
 In addition to the fire suppressants, the Screening Method requires an equipment type to be entered to the fire
 suppressant used with the equipment, and must be one of the following:
@@ -430,6 +437,8 @@ Note that in atomic6 the :math:`Emissions_{material\; balance}` and :math:`Emiss
 are multiplied by :math:`kilogram\; per\; pound` to convert the values from :math:`lbs` to :math:`kilograms`
 and the final value is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
 
+.. _purchased-gases-api:
+
 Purchased Gases
 ---------------
 Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams. These complex gas streams include:
@@ -467,6 +476,7 @@ value from :math:`lbs` to :math:`kilograms` then divided by :math:`1000` to conv
 
 .. [EPA2016DirectEmissionsfromStationaryCombustionSources] EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11
 
+.. _waste-gases-api:
 
 Waste Gases
 -----------
@@ -518,6 +528,7 @@ value from :math:`lbs` to :math:`kilograms` then divided by :math:`1000` to conv
 
 .. [EPA2016DirectEmissionsfromStationaryCombustionSources] EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11
 
+.. _electricity-api:
 
 Electricity
 -----------
@@ -573,6 +584,8 @@ Note that in atomic6 the final value of this calculation is divided by :math:`10
 
 .. [EPA2020IndirectEmissionsfromPurchasedElectricity] EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3
 
+.. _steam-api:
+
 Steam
 ------
 Steam allows for inputs of purchased steam quantities for the following fuel types with units of MMBtu:
@@ -623,6 +636,7 @@ where :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}` are the sums
 Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
+.. _business-travel-api:
 
 Business Travel
 ---------------
@@ -685,6 +699,8 @@ global warming potential of that :math:`GHG`.
 Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
 
+.. _commuting-api:
+
 Commuting
 ---------
 Commuting calculates emissions from transportation of employees to and from work. There are two different tables and
@@ -738,6 +754,8 @@ where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions
 global warming potential of that :math:`GHG`.
 Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
+
+.. _product-transport-api:
 
 Product Transport
 -----------------
@@ -795,6 +813,7 @@ Note that in atomic6 the final value of this calculation is divided by :math:`10
 
 .. [EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport] EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 10
 
+.. _waste-api:
 
 Waste
 -----
@@ -842,7 +861,7 @@ Note that in atomic6 the final value of this calculation is divided by :math:`10
 
 .. [IPCC2006V5CH3] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5, IPPU, Chapter 3, Solid Waste Disposal, pp. 9
 
-
+.. _offsets-api:
 
 Offsets
 -------

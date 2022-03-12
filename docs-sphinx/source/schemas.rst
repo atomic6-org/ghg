@@ -1,3 +1,5 @@
+.. _sgec-schemas:
+
 Schemas
 -------
 

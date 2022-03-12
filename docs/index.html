@@ -15,7 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="introduction.html" />
+    <link rel="next" title="SGEC Workbook API" href="formulas.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -43,17 +43,17 @@
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="formulas.html">SGEC Workbook API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">Things to do next:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factors.html">Factors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schemas.html">Schemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="certification.html">Certification</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="introduction.html" title="next chapter">Introduction</a></li>
+      <li>Next: <a href="formulas.html" title="next chapter">SGEC Workbook API</a></li>
   </ul></li>
 </ul>
 </div>
@@ -83,46 +83,59 @@
 
           <div class="body" role="main">
             
-  <section id="atomic6-ghg">
-<h1>Atomic6-GHG<a class="headerlink" href="#atomic6-ghg" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formulas.html">SGEC Workbook API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#stationary-combustion">Stationary Combustion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#mobile-sources">Mobile Sources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#refrigeration-and-ac">Refrigeration and AC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#fire-suppression">Fire Suppression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#purchased-gases">Purchased Gases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#waste-gases">Waste Gases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#electricity">Electricity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#steam">Steam</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#business-travel">Business Travel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#commuting">Commuting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#product-transport">Product Transport</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#waste">Waste</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#offsets">Offsets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#factors">Factors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#schemas">Schemas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulas.html#certification">Certification</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">Things to do next:</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="preliminaries.html#other-applications">Other Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preliminaries.html#refactoring">Refactoring</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preliminaries.html#doc">Doc</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
-</ul>
+  <div class="toctree-wrapper compound">
 </div>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<section id="atomic6-ghg">
+<h1>Atomic6-GHG<a class="headerlink" href="#atomic6-ghg" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to Atomic6-GHG’s documentation.
+Atomic6-GHG is a convenient source of carbon math for greenhouse gas calculations in Python based software.
+Initial versions of the package are specific to US-based operations.
+The API is modeled on and certified against the United States Environmental Protection Agency’s (USEPA) simplified greenhouse gas emissions
+calculator (SGEC).
+The API supports direct and indirect calculations for the following scope 1, 2, and 3
+emissions and offsets:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<li><dl class="simple">
+<dt>Scope 1</dt><dd><ul>
+<li><p><a class="reference internal" href="formulas.html#stationary-combustion-api"><span class="std std-ref">Stationary Combustion</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#mobile-sources-api"><span class="std std-ref">Mobile Sources</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#refrigeration-and-ac-api"><span class="std std-ref">Refrigeration and AC</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#fire-suppression-api"><span class="std std-ref">Fire Suppression</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#purchased-gases-api"><span class="std std-ref">Purchased Gases</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#waste-gases-api"><span class="std std-ref">Waste Gases</span></a></p></li>
 </ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Scope 2</dt><dd><ul>
+<li><p><a class="reference internal" href="formulas.html#electricity-api"><span class="std std-ref">Electricity</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#steam-api"><span class="std std-ref">Steam</span></a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Scope 3</dt><dd><ul>
+<li><p><a class="reference internal" href="formulas.html#business-travel-api"><span class="std std-ref">Business Travel</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#commuting-api"><span class="std std-ref">Commuting</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#product-transport-api"><span class="std std-ref">Product Transport</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#waste-api"><span class="std std-ref">Waste</span></a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference internal" href="formulas.html#offsets-api"><span class="std std-ref">Offsets</span></a></p></li>
+</ul>
+<section id="additional-sgec-info">
+<h2>Additional SGEC Info<a class="headerlink" href="#additional-sgec-info" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="formulas.html#sgec-factors"><span class="std std-ref">Factors</span></a></p></li>
+<li><p><a class="reference internal" href="schemas.html#sgec-schemas"><span class="std std-ref">Schemas</span></a></p></li>
+<li><p><a class="reference internal" href="formulas.html#sgec-certification"><span class="std std-ref">Certification</span></a></p></li>
+</ul>
+<p>We recommend using the latest version of Python. Atomic6-ghg supports Python 3.9 and newer.</p>
+</section>
 </section>
 
 
