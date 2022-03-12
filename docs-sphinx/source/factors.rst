@@ -1,12 +1,13 @@
 Factors
-=======
+-------
 
 All physical constants and green house gas factors used in this library are pulled directly from the EPA's SGEC workbook,
 specifically the sheets Unit Conversions, Heat Content and Emissions Factors, as well as some miscellaneous values
 embedded in formulas and tables on other sheets.
 
 Implementation
----------------
+**************
+
 
 In atom6, factors are python classes that wrap dictionaries saved in json files that are scraped from the EPA's SGEC
 workbook. The Emission Factors sheet has many tables of factors, and there is a near one-to-one correspondence of each
@@ -63,7 +64,8 @@ The factors are located in atom6-ghg/atom6ghg/factors and the scraped json files
 atom6-ghg/atom6ghg/factors/source_data.
 
 Factors Data
-------------
+************
+
 
 Unit Conversion Factors
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -395,7 +397,8 @@ All of the waste emission factors were scraped from the Waste Emission Factors t
 the EPA's SGEC workbook.
 
 Use in Formulas
----------------
+***************
+
 Here is the relationship between factors and what formulas they are used in:
 
 ===============================================  ===================================================================================================================================================================

@@ -1,5 +1,5 @@
 Schemas
-=======
+-------
 
 Each of the 13 workbook sheets has an associated schema in the atom6 library. The schema for a page is a json document
 which defines the structure of the data that the library receives as well as the structure of the data that the

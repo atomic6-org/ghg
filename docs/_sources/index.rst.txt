@@ -8,16 +8,10 @@ Atomic6-GHG
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    introduction
-   library-structure
-   schemas
-   factors
    formulas
-   certification
    preliminaries
-   tools
    glossary
 
 

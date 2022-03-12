@@ -1,6 +1,6 @@
 
 Certification
-=============
+-------------
 
 To certify all calculations, values were entered directly into the EPA's SGEC workbook covering
 as wide an input space as possible. These input values together with the aggregated totals and emissions values
@@ -19,7 +19,7 @@ e.g., the test certifying the stationary combustion page is named ``test_station
 .. _certification-note:
 
 Note
-----
+****
 
 In the Source Level Fire Suppression Gas CO2 Equivalent Emissions - Screening Method table on the Fire Suppression page
 in the the EPA's SGEC workbook, there iss an inconsistency in the way that CO2 Equivalent Emissions (kg) is calculated.

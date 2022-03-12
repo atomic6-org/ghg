@@ -1,10 +1,6 @@
-Formulas
-========
+SGEC Workbook API
+========================
 
-Each of the 13 sheets in the EPA's SGEC workbook have a corresponding python script associated with them in atomic6 that
-performs the calculations for the library, which are referred to as formulas in our documentation, and are located
-under ghg/atomic6-ghg/formulas. Each formula is implemented as a python class with methods for calculating and
-manipulating the data into the schema format.
 
 Stationary Combustion
 ---------------------
@@ -862,3 +858,7 @@ The formulas is:
 
 where :math:`Purchased\; Offset_{n}` is the amount of offsets that have been purchased during the reporting period for
 one entry in the offsets table.
+
+.. include:: factors.rst
+.. include:: schemas.rst
+.. include:: certification.rst

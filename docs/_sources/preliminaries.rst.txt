@@ -107,10 +107,3 @@ Doc
   * Should we unify notation for equations throughout the documentation? Notation for equations varies between the IPCC
     and the EPA as well as internally for each. Or should we source formulas with the exact same notation as what is in
     the reference document?
-
-OSS Prep
---------
-  * GE licensing friction
-  * Move to public Github, PyPi, readthedocs.io
-
-
