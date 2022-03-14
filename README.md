@@ -4,7 +4,7 @@ for calculating estimates of CO2 equivalent greenhouse gas emissions.
 
 Install it from PyPI:
 
-`pip install atomic6-ghg`
+`pip install atomic6ghg`
 
 ## Docs
 [Read the Docs](https://ge-atomic6.github.io/ghg/)
