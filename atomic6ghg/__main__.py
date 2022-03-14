@@ -1,4 +1,4 @@
-""""Console API for atomic6-ghg"""
+""""Console API for atomic6ghg"""
 # __main__.py
 
 

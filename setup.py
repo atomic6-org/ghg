@@ -1,11 +1,11 @@
-"""atomic6-ghg package configuration"""
+"""atomic6ghg package configuration"""
 import pathlib
 from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
-setup(name="atomic6-ghg",
+setup(name="atomic6ghg",
       version="0.1.0",
       description="Library of constants, conversion factors and functions for greenhouse gas calculations",
       long_description=README,
@@ -19,16 +19,11 @@ setup(name="atomic6-ghg",
           "Programming Language :: Python :: 3",
           "Programming Language :: Python :: 3.10",
       ],
-      packages=["atomic6-ghg", "atomic6-ghg.factors", "atomic6-ghg.formulas", "atomic6-ghg.schemas"],
+      packages=["atomic6ghg", "atomic6ghg.factors", "atomic6ghg.formulas", "atomic6ghg.schemas"],
       package_data={
-          'atomic6-ghg': ['schemas/*.json',
-                          'factors/source_data/*.json',
-                          'formulas/*.json'],
+          'atomic6ghg': ['schemas/*.json',
+                         'factors/source_data/*.json',
+                         'formulas/*.json'],
       },
-      install_requires=[],
-      # entry_points={
-      #     "console_scripts": [
-      #         "atomic6-ghg=atomic6-ghg.__main__:main",
-      #     ]
-      # },
+      install_requires=[]
       )
