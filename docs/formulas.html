@@ -65,7 +65,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#purchased-gases">Purchased Gases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#waste-gases">Waste Gases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#waste-gases">Waste Gases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#electricity">Electricity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#steam">Steam</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#business-travel">Business Travel</a></li>
@@ -153,7 +157,7 @@ energy, generating steam, providing useful heat or energy for industrial, commer
 the volume of waste by removing combustible matter.</p>
 <section id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6</span><span class="o">-</span><span class="n">ghg</span><span class="o">.</span><span class="n">formulas</span><span class="o">.</span><span class="n">stationary_combustion</span> <span class="kn">import</span> <span class="nn">StationaryCombustion</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas.stationary_combustion</span> <span class="kn">import</span> <span class="n">StationaryCombustion</span>
 
 <span class="n">calculated_data</span> <span class="o">=</span> <span class="n">StationaryCombustion</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
 
@@ -261,7 +265,7 @@ calculation is divided by <span class="math notranslate nohighlight">\(1000\)</s
 <span class="math notranslate nohighlight">\(Non\; Fossil\; Fuel\; \text{CO}_2\; Emissions_{fuel, n}\)</span>, which only accounts for the GHG <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>.
 Note that in atomic6, all units for total calculations are converted <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="ipcc2006v2ch2"><span class="brackets">IPCC2006V2CH2</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id25">3</a>,<a href="#id26">4</a>)</span></dt>
+<dt class="label" id="ipcc2006v2ch2"><span class="brackets">IPCC2006V2CH2</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id28">3</a>,<a href="#id29">4</a>)</span></dt>
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2, Energy, Chapter 2, Stationary Combustion, pp. 11</p>
 </dd>
 </dl>
@@ -977,14 +981,14 @@ and the final value is divided by <span class="math notranslate nohighlight">\(1
 <p>The fundamental calculations for each purchased gas Component are their</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{gas} = GWP_{gas} * Purchased Amount_{gas}\]</div>
-<p>These equations are derived from Equation 4 from <a class="reference internal" href="#id22" id="id18"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>These equations are derived from Equation 4 from <a class="reference internal" href="#id25" id="id18"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{gas}\)</span> is the total CO2 equivalent in merit unit pounds, <span class="math notranslate nohighlight">\(GWP_{gas}\)</span>
 is the global warming potential for that gas.</p>
 <p>For purchased gases, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{gas}\)</span> in metric tons is calculated.
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{gas} = \sum_{n=1}^{\infty} \text{CO}_2\; Equivalent\; Emissions_{gas}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#id22" id="id19"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>This equation is derived from <a class="reference internal" href="#id25" id="id19"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(gas\)</span> is the purchased gas.
 Note that in atomic6 the final value of this calculation is multiplied by <span class="math notranslate nohighlight">\(kilogram\; per\; pound\)</span> to convert this
 value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span class="math notranslate nohighlight">\(kilograms\)</span> then divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
@@ -997,6 +1001,91 @@ value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span cl
 </section>
 <section id="waste-gases">
 <span id="waste-gases-api"></span><h2>Waste Gases<a class="headerlink" href="#waste-gases" title="Permalink to this headline">¶</a></h2>
+<p>Waste Gases are a <a class="reference external" href="glossary.html">Scope 1 Emission</a> that account for <a class="reference external" href="glossary.html">waste gas streams</a> that are
+combusted with a <a class="reference external" href="glossary.html">flare</a> or <a class="reference external" href="glossary.html">thermal oxidizer</a>. These combustion’s result in
+<span class="math notranslate nohighlight">\(text{CO}_2\)</span> emissions that should be included in GHG inventories.</p>
+<section id="id21">
+<h3>Usage<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-atomic6ghg.formulas.waste_gases"></span><dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.waste_gases.</span></span><span class="sig-name descname"><span class="pre">WasteGases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emission from combustion of waste gases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.calculate_carbon_content">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_carbon_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">total_moles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molecular_weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percent_carbon</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.calculate_carbon_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates carbon content for given component</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.calculate_total_moles">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_total_moles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molar_fraction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gas_total_number_of_moles_per_unit_volume</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.calculate_total_moles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates total moles for given component</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.default_gas_total_number_of_moles_per_unit_volume">
+<span class="sig-name descname"><span class="pre">default_gas_total_number_of_moles_per_unit_volume</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.00255</span></em><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.default_gas_total_number_of_moles_per_unit_volume" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.default_oxidation_factor">
+<span class="sig-name descname"><span class="pre">default_oxidation_factor</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100.0</span></em><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.default_oxidation_factor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates co2 equivalent for all components</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.make_emission_factor_for_gas_waste_stream">
+<span class="sig-name descname"><span class="pre">make_emission_factor_for_gas_waste_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.make_emission_factor_for_gas_waste_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emission for each inputs in factor for gases waste stream table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.make_total_all_components">
+<span class="sig-name descname"><span class="pre">make_total_all_components</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.make_total_all_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for waste gases</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste_gases.WasteGases.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste_gases.WasteGases.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas.waste_gases</span> <span class="kn">import</span> <span class="n">WasteGases</span>
+
+<span class="n">calculated_data</span> <span class="o">=</span> <span class="n">WasteGases</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+
+<span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt><strong>Parameters:</strong></dt><dd><ul class="simple">
+<li><p><strong>input_data</strong> - (dict) input data that follows the JSON schema</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="id22">
+<h3>EPA Equation Analysis<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>Waste Gases calculates the carbon content (or emission factor) for some complex waste gas streams. These complex waste gas streams include:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1034,19 +1123,19 @@ value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span cl
 <td><p><span class="math notranslate nohighlight">\(\text{C}_3{H}_8\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p>n-Butane</p></td>
-<td><p><span class="math notranslate nohighlight">\(\text{C}_4{H}_10\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\text{C}_4{H}_{10}\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Benzene</p></td>
 <td><p><span class="math notranslate nohighlight">\(\text{C}_6{H}_6\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p>Hexane</p></td>
-<td><p><span class="math notranslate nohighlight">\(\text{C}_6{H}_14\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\text{C}_6{H}_{14}\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Toluene</p></td>
 <td><p><span class="math notranslate nohighlight">\(\text{C}_7{H}_8\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p>Octane</p></td>
-<td><p><span class="math notranslate nohighlight">\(\text{C}_8{H}_18\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\text{C}_8{H}_{18}\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ethanol</p></td>
 <td><p><span class="math notranslate nohighlight">\(\text{C}_2{H}_5{OH}\)</span></p></td>
@@ -1067,29 +1156,29 @@ value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span cl
 The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Total\; Moles_{a} = Molar\; Fraction_{a} \cdot Oxidation\; Factor\]</div>
-<p>where <span class="math notranslate nohighlight">\(Total\; Moles_{a}\)</span> is the Molar concentration of gas <span class="math notranslate nohighlight">\(a\)</span>, the <span class="math notranslate nohighlight">\(Molar\; Fraction_{a}\)</span> is the molar fraction
-of gas <span class="math notranslate nohighlight">\(a\)</span>, and <span class="math notranslate nohighlight">\(Oxidation\; Factor\)</span> is the percentage of carbon that is actually oxidized when combustion occurs.</p>
+<p>where <span class="math notranslate nohighlight">\(Total\; Moles_{a}\)</span> is the Molar concentration of gas <span class="math notranslate nohighlight">\(a\)</span>, the <span class="math notranslate nohighlight">\(Molar\; Fraction_{a}\)</span> is the
+molar fraction of gas <span class="math notranslate nohighlight">\(a\)</span>, and <span class="math notranslate nohighlight">\(Oxidation\; Factor\)</span> is the percentage of carbon that is actually oxidized
+when combustion occurs.</p>
 <div class="math notranslate nohighlight">
-\[Carbon\; Content_{a} = Total\; Moles{a} \cdot Molecular\; Weight_{a} \cdot Percent\; Carbon_{a}\]</div>
-<p>These equations are derived from Equation 4 from <a class="reference internal" href="#id22" id="id20"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+\[Carbon\; Content_{a} = Total\; Moles_{a} \cdot Molecular\; Weight_{a} \cdot Percent\; Carbon_{a}\]</div>
+<p>These equations are derived from Equation 4 from <a class="reference internal" href="#id25" id="id23"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Carbon\; Content_{a}\)</span> is the amount of carbon produced from gas <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(Total\; Moles_{a}\)</span> is the Molar concentration of gas <span class="math notranslate nohighlight">\(a\)</span>,
 <span class="math notranslate nohighlight">\(Molecular\; Weight_{a}\)</span> is the molecular weight of gas component <span class="math notranslate nohighlight">\(a\)</span>, and <span class="math notranslate nohighlight">\(Percent\; Carbon_{a}\)</span> is the carbon
 fraction of gas <span class="math notranslate nohighlight">\(a\)</span></p>
 <p>For waste gases, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> in metric tons is calculated. The formula is:</p>
 <div class="math notranslate nohighlight">
-\[\text{CO}_2\; Equivalent\; Emissions_ = Total\; Carbon\; Content\; for\; All\; Components_ \cdot Oxidation\; Factor \cdot Atomic\; Weight\; of\; Carbon \cdot Molar\; Concentration\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="#id22" id="id21"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
-<p>where <span class="math notranslate nohighlight">\(Total\; Carbon\; Content\;\)</span> is the sum of all the carbon contents for all gas components,
+\[\text{CO}_2\; Equivalent\; Emissions = Total\; Carbon\; Content\; for\; All\; Components \cdot Oxidation\; Factor \cdot Atomic\; Weight\; of\; Carbon \cdot Molar\; Concentration\]</div>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#id25" id="id24"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Total\; Carbon\; Content\)</span> is the sum of all the carbon contents for all gas components,
 <span class="math notranslate nohighlight">\(Oxidation\; Factor\)</span> is the percentage of carbon that is actually oxidized when combustion occurs,
 <span class="math notranslate nohighlight">\(Atomic\; Weight\; of\; Carbon\)</span> is the natural atomic weight of carbon gas, and <span class="math notranslate nohighlight">\(Molar\; Concentration\)</span> is
-the gas total number of moles per unit volume.
-Note that in atomic6 the final value of this calculation is multiplied by <span class="math notranslate nohighlight">\(kilogram\; per\; pound\)</span> to convert this
-value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span class="math notranslate nohighlight">\(kilograms\)</span> then divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+the gas total number of moles per unit volume.</p>
 <dl class="citation">
-<dt class="label" id="id22"><span class="brackets">EPA2016DirectEmissionsfromStationaryCombustionSources</span></dt>
+<dt class="label" id="id25"><span class="brackets">EPA2016DirectEmissionsfromStationaryCombustionSources</span></dt>
 <dd><p>EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11</p>
 </dd>
 </dl>
+</section>
 </section>
 <section id="electricity">
 <span id="electricity-api"></span><h2>Electricity<a class="headerlink" href="#electricity" title="Permalink to this headline">¶</a></h2>
@@ -1169,7 +1258,7 @@ The formulas are:</p>
 \[Market\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Market\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
 <div class="math notranslate nohighlight">
 \[Location\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Location\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
-<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id23"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id26"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Electricity\; Purchased_{electricity}\)</span> is converted into watts, the default
 <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is the emission factor for that
 eGrid Subregion and fuel type if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is
@@ -1180,7 +1269,7 @@ the <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; F
 Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id24"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
+<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id27"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span> are the sums of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(method\)</span> (either
 <span class="math notranslate nohighlight">\(location\; based\)</span> or <span class="math notranslate nohighlight">\(market\; based\)</span>), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that
@@ -1188,7 +1277,7 @@ Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
 Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
 <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="epa2020indirectemissionsfrompurchasedelectricity"><span class="brackets">EPA2020IndirectEmissionsfromPurchasedElectricity</span><span class="fn-backref">(<a href="#id23">1</a>,<a href="#id24">2</a>)</span></dt>
+<dt class="label" id="epa2020indirectemissionsfrompurchasedelectricity"><span class="brackets">EPA2020IndirectEmissionsfromPurchasedElectricity</span><span class="fn-backref">(<a href="#id26">1</a>,<a href="#id27">2</a>)</span></dt>
 <dd><p>EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3</p>
 </dd>
 </dl>
@@ -1240,7 +1329,7 @@ The formulas are:</p>
 \[Location\; Based\; Emissions_{GHG,\, fuel} = \frac{Steam\; Purchased_{fuel} \cdot Location\; Based\; Emission\; Factor_{GHG,\, fuel}}{Boiler\; Efficiency}\]</div>
 <div class="math notranslate nohighlight">
 \[Market\; Based\; Emissions_{GHG,\, fuel} = \frac{Steam\; Purchased_{fuel} \cdot Market\; Based\; Emission\; Factor_{GHG,\, fuel}}{Boiler\; Efficiency}\]</div>
-<p>This equation is derived from Equation 2.1 from <a class="reference internal" href="#ipcc2006v2ch2" id="id25"><span>[IPCC2006V2CH2]</span></a> (see Stationary Combustion), with accounting for <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span>.</p>
+<p>This equation is derived from Equation 2.1 from <a class="reference internal" href="#ipcc2006v2ch2" id="id28"><span>[IPCC2006V2CH2]</span></a> (see Stationary Combustion), with accounting for <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span>.</p>
 <p>where the default <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span> value is 80% if no <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span> value is input by the user,
 the default <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{GHG,\, fuel}\)</span> value is the emission factor for that fuel
 type if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{GHG,\, fuel}\)</span> value is input by the user,
@@ -1251,7 +1340,7 @@ value is input by the user.</p>
 Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#ipcc2006v2ch2" id="id26"><span>[IPCC2006V2CH2]</span></a>.</p>
+<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#ipcc2006v2ch2" id="id29"><span>[IPCC2006V2CH2]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span> are the sums of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(method\)</span> (either
 <span class="math notranslate nohighlight">\(location\; based\)</span> or <span class="math notranslate nohighlight">\(market\; based\)</span>), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that
@@ -1331,7 +1420,7 @@ public transport, and flight length business travel are their <span class="math 
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Travel\; Emissions_{travel\ mode, \, T} = Travel_{travel\, mode} \cdot EF_{T}\]</div>
-<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id27"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id30"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Travel\; Emissions_{travel\ mode, \, T}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
 or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Travel_{travel\, mode}\)</span> is the travel distance in miles for a
 specific travel mode, which can be vehicle miles traveled, passenger miles traveled or flight length for personal vehicle
@@ -1342,7 +1431,7 @@ or air travel.</p>
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id28"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id31"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either personal vehicle, public transportation, or air travel), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the
@@ -1403,7 +1492,7 @@ with the vehicle type and based on the vehicle miles traveled.</p>
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Travel\; Emissions_{travel\, mode, T} = Travel_{travel\, mode} \cdot EF_{T}\]</div>
-<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id29"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id32"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Travel\; Emissions_{travel\, mode, T}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
 or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Travel_{travel\, mode}\)</span> is the travel distance in miles for a
 specific travel mode, which is either vehicle miles traveled or passenger miles traveled for personal vehicle
@@ -1413,7 +1502,7 @@ or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emis
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id30"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id33"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either personal vehicle or public transport), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the
@@ -1470,7 +1559,7 @@ with the vehicle type and based on the vehicle miles or ton miles traveled, resp
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Emissions_{units,\; gas,\; vehicle\; type} = Vehicle\; Miles\; Traveled_{unit} \cdot EF_{gas,\; vehicle\; type}\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id31"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id34"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Emissions_{unit, gas, vehicle\; type}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
 or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Vehicle\; Miles\; Traveled_{units}\)</span> is the travel distance in
 <span class="math notranslate nohighlight">\(units\)</span> (vehicle miles or ton miles), and <span class="math notranslate nohighlight">\(EF_{gas, vehicle\; type}\)</span> is the product transport
@@ -1480,14 +1569,14 @@ which is based on the <span class="math notranslate nohighlight">\(vehicle\; typ
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id32"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id35"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either vehicle miles or ton miles), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
 <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport"><span class="brackets">EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport</span><span class="fn-backref">(<a href="#id27">1</a>,<a href="#id28">2</a>,<a href="#id29">3</a>,<a href="#id30">4</a>,<a href="#id31">5</a>,<a href="#id32">6</a>)</span></dt>
+<dt class="label" id="epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport"><span class="brackets">EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport</span><span class="fn-backref">(<a href="#id30">1</a>,<a href="#id31">2</a>,<a href="#id32">3</a>,<a href="#id33">4</a>,<a href="#id34">5</a>,<a href="#id35">6</a>)</span></dt>
 <dd><p>EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 10</p>
 </dd>
 </dl>
@@ -1755,7 +1844,7 @@ disposal of waste materials based on the <span class="math notranslate nohighlig
 <p>The formula for <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{ma, me} = EF_{ma, me} \cdot Weight\]</div>
-<p>This equation is derived from Equation 3.2 from <a class="reference internal" href="#ipcc2006v5ch3" id="id33"><span>[IPCC2006V5CH3]</span></a>.</p>
+<p>This equation is derived from Equation 3.2 from <a class="reference internal" href="#ipcc2006v5ch3" id="id36"><span>[IPCC2006V5CH3]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(ma\)</span> is the waste material, <span class="math notranslate nohighlight">\(me\)</span> is the disposal method, <span class="math notranslate nohighlight">\(EF_{ma, me}\)</span> is the emission factor
 is the emission factor for that <span class="math notranslate nohighlight">\(ma\)</span> and <span class="math notranslate nohighlight">\(me\)</span>, and <span class="math notranslate nohighlight">\(Weight\)</span> is the weight, mass, or amount of the
 <span class="math notranslate nohighlight">\(ma\)</span> that has been disposed via <span class="math notranslate nohighlight">\(me\)</span> during that reporting period. Note that in atomic6, the calculations
@@ -1766,14 +1855,14 @@ standard unit of short tons, and the short tons are converted into kilograms.</p
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{disposal\; method} = \sum_{n=1}^{\infty} Total\; Emissions_{disposal\; method}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#ipcc2006v5ch3" id="id34"><span>[IPCC2006V5CH3]</span></a>.</p>
+<p>This equation is derived from <a class="reference internal" href="#ipcc2006v5ch3" id="id37"><span>[IPCC2006V5CH3]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{disposal\; method}\)</span> is the sum of all the <span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span> emissions for that
 <span class="math notranslate nohighlight">\(disposal\; method\)</span> (recycled, landfilled, combusted, composted, anaerobically digested (dry digestate with
 curing), or anaerobically digested (wet digestate with curing)).
 Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
 <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="ipcc2006v5ch3"><span class="brackets">IPCC2006V5CH3</span><span class="fn-backref">(<a href="#id33">1</a>,<a href="#id34">2</a>)</span></dt>
+<dt class="label" id="ipcc2006v5ch3"><span class="brackets">IPCC2006V5CH3</span><span class="fn-backref">(<a href="#id36">1</a>,<a href="#id37">2</a>)</span></dt>
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5, IPPU, Chapter 3, Solid Waste Disposal, pp. 9</p>
 </dd>
 </dl>
@@ -2004,9 +2093,9 @@ in the example below.</p>
 </div>
 <p>All of the refrigeration and AC equipment emission factors were manually acquired from equations in the Formula
 Selection for Type of Equipment table on the Refrigeration and AC sheet in the EPA’s SGEC workbook. All of these
-factors are originally sourced from <a class="reference internal" href="#ipcc2019v3ch7" id="id35"><span>[IPCC2019V3CH7]</span></a>.</p>
+factors are originally sourced from <a class="reference internal" href="#ipcc2019v3ch7" id="id38"><span>[IPCC2019V3CH7]</span></a>.</p>
 <dl class="citation">
-<dt class="label" id="ipcc2019v3ch7"><span class="brackets"><a class="fn-backref" href="#id35">IPCC2019V3CH7</a></span></dt>
+<dt class="label" id="ipcc2019v3ch7"><span class="brackets"><a class="fn-backref" href="#id38">IPCC2019V3CH7</a></span></dt>
 <dd><p>IPCC, 2019: 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories,
 Volume 3: Industrial Processes and Product Use, Chapter 7: Emissions of Fluorinated Substitutes for Ozone Depleting
 Substances, pp. 32, TABLE 7.9 (UPDATED) DEFAULT ESTIMATES FOR CHARGE, LIFETIME AND EMISSION FACTORS FOR

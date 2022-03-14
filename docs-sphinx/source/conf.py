@@ -10,10 +10,14 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+print(sys.path.insert(0, os.path.abspath('../..')))
+# sys.path.insert(0, os.path.abspath('../atomic6ghg/formulas/waste_gases.py'))
+# print(sys.path.insert(0, os.path.abspath('atomic6ghg/formulas')))
+# sys.path.insert(0, os.path.abspath('D:/atomic6ghg/formulas/waste_gases'))
+# print(os.path.abspath('../../atomic6ghg/formulas'))
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +31,8 @@ author = 'General Electric Company'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.githubpages']
+extensions = ['sphinx.ext.githubpages',
+              'sphinx.ext.autodoc']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -54,3 +59,5 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+autoclass_content = 'both'
