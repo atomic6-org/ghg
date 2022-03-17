@@ -1,0 +1,167 @@
+{
+  "version": "waste-gases.1.0.0",
+  "wasteStreamGasCombusted": 5000,
+  "gasTotalNumberOfMolesPerUnitVolume": 0.1,
+  "emissionFactorForGasWasteStream": [
+    {
+      "component": "Carbon Monoxide",
+      "chemicalFormula": "co",
+      "molarFraction": 20.0,
+      "totalMoles": 0.020000000000000004,
+      "molecularWeight": 28.010399999999997,
+      "percentCarbon": 0.42880501528003884,
+      "carbonContent": 0.24022000000000002
+    },
+    {
+      "component": "Carbon Dioxide",
+      "chemicalFormula": "co2",
+      "molarFraction": 27.0,
+      "totalMoles": 0.027000000000000003,
+      "molecularWeight": 44.0098,
+      "percentCarbon": 0.27291648678248936,
+      "carbonContent": 0.32429700000000006
+    },
+    {
+      "component": "Methane",
+      "chemicalFormula": "ch4",
+      "molarFraction": 10.0,
+      "totalMoles": 0.010000000000000002,
+      "molecularWeight": 16.0426,
+      "percentCarbon": 0.7486941019535486,
+      "carbonContent": 0.12011000000000001
+    },
+    {
+      "component": "Acetylene",
+      "chemicalFormula": "c2h2",
+      "molarFraction": 5.0,
+      "totalMoles": 0.005000000000000001,
+      "molecularWeight": 26.037799999999997,
+      "percentCarbon": 0.9225817849434285,
+      "carbonContent": 0.12011000000000001
+    },
+    {
+      "component": "Ethylene",
+      "chemicalFormula": "c2h4",
+      "molarFraction": 5.0,
+      "totalMoles": 0.005000000000000001,
+      "molecularWeight": 28.0536,
+      "percentCarbon": 0.8562893888841361,
+      "carbonContent": 0.12011000000000002
+    },
+    {
+      "component": "Ethane",
+      "chemicalFormula": "c2h6",
+      "molarFraction": 6.0,
+      "totalMoles": 0.006,
+      "molecularWeight": 30.069399999999998,
+      "percentCarbon": 0.7988852454654898,
+      "carbonContent": 0.14413199999999998
+    },
+    {
+      "component": "Propylene",
+      "chemicalFormula": "c3h6",
+      "molarFraction": 7.000000000000001,
+      "totalMoles": 0.007000000000000001,
+      "molecularWeight": 42.0804,
+      "percentCarbon": 0.8562893888841362,
+      "carbonContent": 0.25223100000000004
+    },
+    {
+      "component": "Propane",
+      "chemicalFormula": "c3h8",
+      "molarFraction": 7.000000000000001,
+      "totalMoles": 0.007000000000000001,
+      "molecularWeight": 44.0962,
+      "percentCarbon": 0.8171452415400873,
+      "carbonContent": 0.252231
+    },
+    {
+      "component": "n-Butane",
+      "chemicalFormula": "c4h10",
+      "molarFraction": 3.0,
+      "totalMoles": 0.003,
+      "molecularWeight": 58.123,
+      "percentCarbon": 0.8265918827314488,
+      "carbonContent": 0.14413199999999998
+    },
+    {
+      "component": "Benzene",
+      "chemicalFormula": "c6h6",
+      "molarFraction": 1.0,
+      "totalMoles": 0.001,
+      "molecularWeight": 78.1134,
+      "percentCarbon": 0.9225817849434285,
+      "carbonContent": 0.072066
+    },
+    {
+      "component": "Hexane",
+      "chemicalFormula": "c6h14",
+      "molarFraction": 2.0,
+      "totalMoles": 0.002,
+      "molecularWeight": 86.17660000000001,
+      "percentCarbon": 0.8362594950369358,
+      "carbonContent": 0.144132
+    },
+    {
+      "component": "Toluene",
+      "chemicalFormula": "c7h8",
+      "molarFraction": 3.0,
+      "totalMoles": 0.003,
+      "molecularWeight": 92.1402,
+      "percentCarbon": 0.9124898795531159,
+      "carbonContent": 0.252231
+    },
+    {
+      "component": "Octane",
+      "chemicalFormula": "c8h18",
+      "molarFraction": 1.0,
+      "totalMoles": 0.001,
+      "molecularWeight": 114.2302,
+      "percentCarbon": 0.8411786025061674,
+      "carbonContent": 0.096088
+    },
+    {
+      "component": "Ethanol",
+      "chemicalFormula": "c2h5oh",
+      "molarFraction": 1.0,
+      "totalMoles": 0.001,
+      "molecularWeight": 46.068799999999996,
+      "percentCarbon": 0.5214375021706665,
+      "carbonContent": 0.024022
+    },
+    {
+      "component": "Acetone",
+      "chemicalFormula": "ch3coch3",
+      "molarFraction": 1.0,
+      "totalMoles": 0.001,
+      "molecularWeight": 58.0798,
+      "percentCarbon": 0.6204050289429371,
+      "carbonContent": 0.036033
+    },
+    {
+      "component": "Tetrahydrofuran",
+      "chemicalFormula": "c4h8o",
+      "molarFraction": 1.0,
+      "totalMoles": 0.001,
+      "molecularWeight": 72.1066,
+      "percentCarbon": 0.6662912964971306,
+      "carbonContent": 0.048044
+    },
+    {
+      "component": "Other non-carbon",
+      "chemicalFormula": null,
+      "molarFraction": 0.0,
+      "totalMoles": null,
+      "molecularWeight": 0.0,
+      "percentCarbon": 0,
+      "carbonContent": 0.0
+    }
+  ],
+  "totalForAllComponents": {
+    "molarFraction": 100.00000000000004,
+    "totalMoles": 0.10000000000000005,
+    "carbonContent": 2.3901890000000003
+  },
+  "oxidationFactor": 100.0,
+  "totalCo2EquivalentEmissions": 19.863031053600007
+}
