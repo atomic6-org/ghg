@@ -1,0 +1,494 @@
+{
+  "version": "stationary-combustion.1.0.0",
+  "stationarySourceFuelConsumption": [
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "anthraciteCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "anthraciteCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "bituminousCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "bituminousCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "subBituminousCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "subBituminousCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "ligniteCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "ligniteCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "woodAndWoodResiduals",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "woodAndWoodResiduals",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "distillateFuelOilNo2",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "distillateFuelOilNo2",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "residualFuelOilNo6",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "residualFuelOilNo6",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "kerosene",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "kerosene",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "liquefiedPetroleumGases",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "liquefiedPetroleumGases",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "landfillGas",
+      "quantityCombusted": 100,
+      "units": "scf"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "landfillGas",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "West Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "landfillGas",
+      "quantityCombusted": 100,
+      "units": "therm"
+    },
+    {
+      "sourceId": "BLR-013",
+      "sourceDescription": "South Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "naturalGas",
+      "quantityCombusted": 100,
+      "units": "scf"
+    },
+    {
+      "sourceId": "BLR-012",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "naturalGas",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-013",
+      "sourceDescription": "South Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "naturalGas",
+      "quantityCombusted": 100,
+      "units": "therm"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "anthraciteCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "anthraciteCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "bituminousCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "bituminousCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "subBituminousCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "subBituminousCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "ligniteCoal",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "ligniteCoal",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "woodAndWoodResiduals",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "woodAndWoodResiduals",
+      "quantityCombusted": 100,
+      "units": "shortTon"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "distillateFuelOilNo2",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "distillateFuelOilNo2",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "residualFuelOilNo6",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "residualFuelOilNo6",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "kerosene",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "kerosene",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "liquefiedPetroleumGases",
+      "quantityCombusted": 100,
+      "units": "mmbtu"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "liquefiedPetroleumGases",
+      "quantityCombusted": 100,
+      "units": "gallons"
+    },
+    {
+      "sourceId": "BLR-014",
+      "sourceDescription": "East Power Plant",
+      "sourceArea": 10517,
+      "fuelCombusted": "landfillGas",
+      "quantityCombusted": 100,
+      "units": "scf"
+    }
+  ],
+  "totalStationarySourceCombustion": [
+    {
+      "fuelType": "anthraciteCoal",
+      "quantityCombusted": 207.97130330809088,
+      "units": "shortTon"
+    },
+    {
+      "fuelType": "bituminousCoal",
+      "quantityCombusted": 208.02246289610912,
+      "units": "shortTon"
+    },
+    {
+      "fuelType": "subBituminousCoal",
+      "quantityCombusted": 211.59420289855072,
+      "units": "shortTon"
+    },
+    {
+      "fuelType": "ligniteCoal",
+      "quantityCombusted": 214.07459535538354,
+      "units": "shortTon"
+    },
+    {
+      "fuelType": "naturalGas",
+      "quantityCombusted": 107312.47559,
+      "units": "scf"
+    },
+    {
+      "fuelType": "distillateFuelOilNo2",
+      "quantityCombusted": 1649.2753623188405,
+      "units": "gallons"
+    },
+    {
+      "fuelType": "residualFuelOilNo6",
+      "quantityCombusted": 1533.3333333333335,
+      "units": "gallons"
+    },
+    {
+      "fuelType": "kerosene",
+      "quantityCombusted": 1681.4814814814813,
+      "units": "gallons"
+    },
+    {
+      "fuelType": "liquefiedPetroleumGases",
+      "quantityCombusted": 2373.913043478261,
+      "units": "gallons"
+    },
+    {
+      "fuelType": "woodAndWoodResiduals",
+      "quantityCombusted": 211.44164759725402,
+      "units": "shortTon"
+    },
+    {
+      "fuelType": "landfillGas",
+      "quantityCombusted": 227004.1237113402,
+      "units": "scf"
+    }
+  ],
+  "totalGhgEmissionsFromStationarySourceFuelCombustion": [
+    {
+      "fuelType": "anthraciteCoal",
+      "CO2": 541141.3312076525,
+      "CH4": 57400.07971303308,
+      "N2O": 8318.852132323635
+    },
+    {
+      "fuelType": "bituminousCoal",
+      "CO2": 483652.2262334537,
+      "CH4": 56998.154833533896,
+      "N2O": 8320.898515844365
+    },
+    {
+      "fuelType": "subBituminousCoal",
+      "CO2": 354631.884057971,
+      "CH4": 40202.89855072464,
+      "N2O": 5924.63768115942
+    },
+    {
+      "fuelType": "ligniteCoal",
+      "CO2": 297349.61294862774,
+      "CH4": 33395.63687543983,
+      "N2O": 4923.715693173821
+    },
+    {
+      "fuelType": "naturalGas",
+      "CO2": 5842.0911711196,
+      "CH4": 110.53184985770001,
+      "N2O": 10.731247559
+    },
+    {
+      "fuelType": "distillateFuelOilNo2",
+      "CO2": 16839.101449275364,
+      "CH4": 676.2028985507245,
+      "N2O": 131.94202898550725
+    },
+    {
+      "fuelType": "residualFuelOilNo6",
+      "CO2": 17280.666666666668,
+      "CH4": 690.0000000000001,
+      "N2O": 138.0
+    },
+    {
+      "fuelType": "kerosene",
+      "CO2": 17067.037037037036,
+      "CH4": 689.4074074074073,
+      "N2O": 134.5185185185185
+    },
+    {
+      "fuelType": "liquefiedPetroleumGases",
+      "CO2": 13483.826086956522,
+      "CH4": 664.6956521739131,
+      "N2O": 142.43478260869566
+    },
+    {
+      "fuelType": "totalFossilFuelEmissions",
+      "CO2": 1747287.7768587603,
+      "CH4": 190827.60778072124,
+      "N2O": 28045.730600172963
+    },
+    {
+      "fuelType": "woodAndWoodResiduals",
+      "CO2": 346764.3020594966,
+      "CH4": 26641.647597254007,
+      "N2O": 13320.823798627003
+    },
+    {
+      "fuelType": "landfillGas",
+      "CO2": 5732.762140206185,
+      "CH4": 352.3104,
+      "N2O": 69.4632618556701
+    },
+    {
+      "fuelType": "totalNonFossilFuelEmissions",
+      "CO2": 352497.06419970276,
+      "CH4": 26993.957997254005,
+      "N2O": 13390.287060482673
+    },
+    {
+      "fuelType": "totalEmissionsForAllFuels",
+      "CO2": 2099784.841058463,
+      "CH4": 217821.56577797525,
+      "N2O": 41436.017660655634
+    }
+  ],
+  "totalCo2EquivalentEmissions": 1765.081249266085,
+  "totalBiomassEquivalentEmissions": 352.4970641997028
+}
