@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Stationary Combustion",
+  "description": "Document schema of Stationary Combustion workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^stationary-combustion.1.0.0"
+    },
+    "stationarySourceFuelConsumption": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceArea": {
+            "title": "Source Area (sq ft)",
+            "description": "Area of space, in square feet, that source occupies",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "fuelCombusted": {
+            "title": "Fuel Combusted",
+            "description": "Dropdown selection of type of fuel combusted",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "anthraciteCoal", "bituminousCoal", "subBituminousCoal", "ligniteCoal", "naturalGas", "distillateFuelOilNo2", "residualFuelOilNo6", "kerosene", "liquefiedPetroleumGases", "woodAndWoodResiduals", "landfillGas"]
+          },
+          "quantityCombusted": {
+            "title": "Quantity Combusted",
+            "description": "Numerical representation of quantity of fuel that source has combusted previous annual year",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "units": {
+            "title": "Units",
+            "description": "Dropdown selection for unit of measurement of quantity of fuel that source has combusted previous annual year: SCF, Therm, MMBtu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "gallons", "mmbtu", "scf", "shortTon", "therm"]
+          }
+        },
+        "required": [
+          "fuelCombusted",
+          "quantityCombusted",
+          "units"
+        ]
+      }
+    },
+    "totalStationarySourceCombustion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fuelType": {
+            "title": "Fuel Type",
+            "description": "Type of fuel",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "quantityCombusted": {
+            "title": "Quantity Combusted",
+            "description": "Calculated total quantity of fuel combusted",
+            "format": ":,",
+            "formula": "atomic6ghg.formulas.stationary_combustion.make_total_combustion",
+            "type": ["number", "null"]
+          },
+          "units": {
+            "title": "Units",
+            "description": "Units of measurement for quantity of fuel combusted",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          }
+        },
+        "required": [
+          "fuelType",
+          "quantityCombusted",
+          "units"
+        ]
+      }
+    },
+    "totalGhgEmissionsFromStationarySourceFuelCombustion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fuelType": {
+            "title": "Fuel Type",
+            "description": "Type of fuel",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "CO2": {
+            "title": "CO2 (kg)",
+            "description": "Calculated quantity of CO2 combusted for given fuel type measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.stationary_combustion.calculate_co2_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 (g)",
+            "description": "Calculated quantity of CH4 combusted for given fuel type measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.stationary_combustion.calculate_ch4_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O (g)",
+            "description": "Calculated quantity of N2O combusted for given fuel type measured in grams",
+            "format": ":.1f",
+            "formula": "atomicghg.formulas.stationary_combustion.calculate_n2o_emissions",
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions (metric tons) - Stationary Combustion",
+      "description": "Calculated total CO2 equivalent emissions produced by stationary combustion measured in metric tons",
+      "format": ":.1f",
+      "formula": "atomic6ghg.formulas.stationary_combustion.make_biomass_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "totalBiomassEquivalentEmissions": {
+      "title": "Total Biomass CO2 Equivalent Emissions (metric tons) - Stationary Combustion",
+      "description": "Calculated total biomass CO2 equivalent emissions produced by stationary combustion measured in metric tons",
+      "format": ":.1f",
+      "formula": "atomic6ghg.formulas.stationary_combustion.make_biomass_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    }
+  },
+  "required": [
+    "version",
+    "stationarySourceFuelConsumption"
+  ]
+}

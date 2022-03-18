@@ -1,0 +1,67 @@
+{
+  "anthraciteCoal": {
+    "mmbtu": 0.03985651654045436,
+    "shortTon": 1.0
+  },
+  "bituminousCoal": {
+    "mmbtu": 0.04011231448054553,
+    "shortTon": 1.0
+  },
+  "coalCoke": {
+    "mmbtu": 0.04032258064516129,
+    "shortTon": 1.0
+  },
+  "distillateFuelOilNo2": {
+    "mmbtu": 7.246376811594202,
+    "gallons": 1.0
+  },
+  "kerosene": {
+    "mmbtu": 7.4074074074074066,
+    "gallons": 1.0
+  },
+  "landfillGas": {
+    "mmbtu": 2061.8556701030925,
+    "scf": 1.0,
+    "therm": 206.18556701030926
+  },
+  "ligniteCoal": {
+    "mmbtu": 0.07037297677691766,
+    "shortTon": 1.0
+  },
+  "liquefiedPetroleumGases": {
+    "mmbtu": 10.869565217391305,
+    "gallons": 1.0
+  },
+  "mixedElectricPowerSector": {
+    "mmbtu": 0.05068423720223011,
+    "shortTon": 1.0
+  },
+  "naturalGas": {
+    "mmbtu": 974.658869,
+    "scf": 1.0,
+    "decatherm": 974.658869,
+    "therm": 97.4658869,
+    "ccf": 100.0,
+    "mcf": 1000.0,
+    "cubicMeter": 35.31073446327684,
+    "kWh": 3.325536061028
+  },
+  "residualFuelOilNo6": {
+    "mmbtu": 6.666666666666667,
+    "gallons": 1.0
+  },
+  "steam": {
+    "mlb": 1.194,
+    "mmbtu": 1.0,
+    "lb": 0.001194,
+    "shortTon": 2.388
+  },
+  "subBituminousCoal": {
+    "mmbtu": 0.057971014492753624,
+    "shortTon": 1.0
+  },
+  "woodAndWoodResiduals": {
+    "mmbtu": 0.05720823798627002,
+    "shortTon": 1.0
+  }
+}
