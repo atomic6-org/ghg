@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Waste Gases",
+  "description": "Document schema of Waste Gases workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^waste-gases.1.0.0"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Scope 1 Emissions from Combustion of Waste Gases \n Guidance \n (A) Enter annual data in ORANGE cells as appropriate.  Data should be entered as an organization-wide value (all operations combined prior to entry into this table). \n (B) Enter total amount waste stream gas combusted. \n (C) Enter gas total number of moles per ft3.\n  - This number is based on specific temperature and pressure conditions.\n  - If no data are available use 0.00255 lb-mole/ft3 as a default value, based on conditions of 25oC and 1 atm.\n(D) Enter molar fraction (as a percentage) for each gas component in Table 1.\n  - This number is based on either volume or molar mass percentage for each gas component.\n  - It is assumed that the remainder of the waste stream will be made up of compounds not containing carbon."
+    },
+    "wasteStreamGasCombusted": {
+      "title": "Waste Stream Gas Combusted:",
+      "description": "Total value of waste stream gas combusted in ft^3",
+      "format": ",",
+      "formula": "None",
+      "type": "number"
+    },
+    "gasTotalNumberOfMolesPerUnitVolume": {
+      "title": "Gas total number of moles per unit volume:",
+      "description": "Gas total number of moles per unit volume in lb-mole/ft3",
+      "format": "",
+      "formula": "None",
+      "type": ["number", "null"]
+    },
+    "emissionFactorForGasWasteStream": {
+      "type": "array",
+      "title": "Table 1.  Determining Emission Factor for Gas Waste Stream",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "title": "Component",
+            "description": "Component of the gas waste stream",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "chemicalFormula": {
+            "title": "Chemical Formula",
+            "description": "Chemical formula of component gas",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "molarFraction": {
+            "title": "Molar Fraction (%)",
+            "description": "Percentage of Molar Fraction",
+            "format": "",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "totalMoles": {
+            "title": "Total Moles (lb-mole/ft3)",
+            "description": "Total number of moles in lb-mole/ft3",
+            "format": "",
+            "formula": "atom6ghg.formulas.waste_gases.calculate_total_moles",
+            "type": ["number", "null"]
+          },
+          "molecularWeight": {
+            "title": "Molecular Weight",
+            "description": "Molecular weight of given gas component",
+            "format": "",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "percentCarbon": {
+            "title": "Percent Carbon (%)",
+            "description": "Percentage of Carbon og given gas component",
+            "format": "",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "carbonContent": {
+            "title": "Carbon Content (lb/ft3)",
+            "description": "Carbon content of given gas in lb/ft3",
+            "format": "",
+            "formula": "atom6ghg.formulas.waste_gases.calculate_carbon_content",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "molarFraction"
+        ]
+      }
+    },
+    "totalForAllComponents": {
+      "title": "Total for all Components",
+      "type": "object",
+      "properties": {
+        "molarFraction": {
+          "title": "Molar Fraction (%)",
+          "description": "Total Percentage (should be 100%)",
+          "format": "",
+          "formula": "None",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "totalMoles": {
+          "title": "Total Moles (lb-mole/ft3)",
+          "description": "Total number of moles in lb-mole/ft3",
+          "format": "",
+          "formula": "atom6ghg.formulas.waste_gases.calculate_total_moles",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "carbonContent": {
+          "title": "Carbon Content (lb/ft3)",
+          "description": "Total carbon content of all waste gases in lb/ft3",
+          "format": "",
+          "formula": "atom6ghg.formulas.waste_gases.calculate_carbon_content",
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "oxidationFactor": {
+      "title": "Step 4. Enter Oxidation Factor",
+      "description": "Oxidation factor value in percent",
+      "format": "",
+      "formula": "None",
+      "type": ["number", "null"],
+      "oxidationFactorFootNote": "- If oxidation factor value is not known, use 100% as default value."
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Waste Gas Combustion",
+      "formula": "atom6ghg.formulas.waste_gases.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "footNote": {
+      "type": "string",
+      "title": "Notes: \n 1.  This tool is designed to apply the CO2 emission factor calculation methodology for a gas waste stream as provided in the Center for Corporate Climate Leadership Greenhouse Gas Inventory Guidance - Direct Emissions from Stationary Combustion Sources (January 2016). This tool can also be used to approximate emissions for other combustion sources such as gas welding and gas metal cutting."
+    }
+  },
+  "required" : [
+    "version",
+    "wasteStreamGasCombusted",
+    "gasTotalNumberOfMolesPerUnitVolume",
+    "oxidationFactor",
+    "emissionFactorForGasWasteStream"
+  ]
+}
