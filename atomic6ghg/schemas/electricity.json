@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Electricity",
+  "description": "Document schema of Electricity workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": ["string", "null"],
+      "pattern": "^electricity.1.0.0"
+    },
+    "totalElectricityPurchased": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "sourceArea": {
+            "title": "Source Area (sq ft)",
+            "description": "Area of space, in square feet, that source occupies",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "eGridSubregion": {
+            "title": "eGRID Subregion where electricity is consumed",
+            "description": "Subregion in which electricity is consumed",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": ["", "akgd", "akms", "aznm", "camx", "erct", "frcc", "hims", "hioa", "mroe", "mrow", "newe", "nwpp", "nycw", "nyli", "nyup", "prms", "rfce", "rfcm", "rfcw", "rmpa", "spno", "spso", "srmv", "srmw", "srso", "srtv", "srvc", null]
+          },
+          "electricityPurchased": {
+            "title": "Electricity Purchased (kWh)",
+            "description": "Amount of electricity purchased in kilowatt hours",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsCO2Emissions": {
+            "title": "Market-Based Emission Factors CO2 Emissions (lb/MWh)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsCH4Emissions": {
+            "title": "Market-Based Emission Factors CH4 Emissions (lb/MWh)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsN2OEmissions": {
+            "title": "Market-Based Emission Factors N2O Emissions (lb/MWh)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsCO2Emissions": {
+            "title": "Market-Based Emissions CO2 Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsCH4Emissions": {
+            "title": "Market-Based Emissions CH4 Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsN2OEmissions": {
+            "title": "Market-Based Emissions N2O Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsCO2Emissions": {
+            "title": "Location-Based Emissions CO2 Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsCH4Emissions": {
+            "title": "Location-Based Emissions CH4 Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsN2OEmissions": {
+            "title": "Location-Based Emissions N2O Emissions (lb)",
+            "description": "",
+            "format": ":.1f",
+            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "eGridSubregion",
+          "electricityPurchased"
+        ]
+      }
+    },
+    "totalEmissionsForAllSources": {
+      "title": "Total Emissions for All Sources",
+      "type": "object",
+      "properties": {
+        "electricityPurchased": {
+          "title": "Electricity Purchased (kWh)",
+          "description": "Total amount of electricity purchased in kilowatt hours",
+          "format": ":,",
+          "formula": "None",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "marketBasedEmissionsCO2Emissions": {
+          "title": "Market-Based Emissions CO2 Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "marketBasedEmissionsCH4Emissions": {
+          "title": "Market-Based Emissions CH4 Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "marketBasedEmissionsN2OEmissions": {
+          "title": "Market-Based Emissions N2O Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "locationBasedEmissionsCO2Emissions": {
+          "title": "Location-Based Emissions CO2 Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "locationBasedEmissionsCH4Emissions": {
+          "title": "Location-Based Emissions CH4 Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "locationBasedEmissionsN2OEmissions": {
+          "title": "Location-Based Emissions N2O Emissions (lb)",
+          "description": "",
+          "format": ":.1f",
+          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "CO2EquivalentEmissionsLocationBasedElectricityEmissions": {
+      "title": "CO2 Equivalent Emissions (metric tons) Location-Based Electricity Emissions",
+      "formula": "atom6ghg.formulas.electricity.make_co2_equivalent_emissions_location_based",
+      "type": ["number", "null"]
+    },
+    "CO2EquivalentEmissionsMarketBasedElectricityEmissions": {
+      "title": "CO2 Equivalent Emissions (metric tons) Market-Based Electricity Emissions",
+      "formula": "atom6ghg.formulas.electricity.make_co2_equivalent_emissions_market_based",
+      "type": ["number", "null"]
+    },
+    "footNote": {
+      "type": "string",
+      "title": "Notes:\n1.  CO2, CH4 and N2O emissions are estimated using methodology provided in EPA's Center for Corporate Climate Leadership Greenhouse Gas Inventory Guidance\n - Indirect Emissions from Purchased Electricity (January 2016)."
+    }
+  },
+  "required": [
+    "version",
+    "totalElectricityPurchased"
+  ]
+}
