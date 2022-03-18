@@ -1,0 +1,119 @@
+{
+  "naturalGas": {
+    "CO2 Factor (kg / mmBtu)": 53.06,
+    "CH4 Factor (g / mmBtu)": 1.0,
+    "N2O Factor (g / mmBtu)": 0.1,
+    "CO2 Factor (kg / Unit)": 0.05444,
+    "CH4 Factor (g / unit)": 0.00103,
+    "N2O Factor (g / unit)": 0.0001,
+    "Unit": "scf"
+  },
+  "distillateFuelOilNo2": {
+    "CO2 Factor (kg / mmBtu)": 73.96,
+    "CH4 Factor (g / mmBtu)": 3.0,
+    "N2O Factor (g / mmBtu)": 0.6,
+    "CO2 Factor (kg / Unit)": 10.21,
+    "CH4 Factor (g / unit)": 0.41,
+    "N2O Factor (g / unit)": 0.08,
+    "Unit": "gallons"
+  },
+  "residualFuelOilNo6": {
+    "CO2 Factor (kg / mmBtu)": 75.1,
+    "CH4 Factor (g / mmBtu)": 3.0,
+    "N2O Factor (g / mmBtu)": 0.6,
+    "CO2 Factor (kg / Unit)": 11.27,
+    "CH4 Factor (g / unit)": 0.45,
+    "N2O Factor (g / unit)": 0.09,
+    "Unit": "gallons"
+  },
+  "kerosene": {
+    "CO2 Factor (kg / mmBtu)": 75.2,
+    "CH4 Factor (g / mmBtu)": 3.0,
+    "N2O Factor (g / mmBtu)": 0.6,
+    "CO2 Factor (kg / Unit)": 10.15,
+    "CH4 Factor (g / unit)": 0.41,
+    "N2O Factor (g / unit)": 0.08,
+    "Unit": "gallons"
+  },
+  "liquefiedPetroleumGases": {
+    "CO2 Factor (kg / mmBtu)": 61.71,
+    "CH4 Factor (g / mmBtu)": 3.0,
+    "N2O Factor (g / mmBtu)": 0.6,
+    "CO2 Factor (kg / Unit)": 5.68,
+    "CH4 Factor (g / unit)": 0.28,
+    "N2O Factor (g / unit)": 0.06,
+    "Unit": "gallons"
+  },
+  "anthraciteCoal": {
+    "CO2 Factor (kg / mmBtu)": 103.69,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": 2602.0,
+    "CH4 Factor (g / unit)": 276.0,
+    "N2O Factor (g / unit)": 40.0,
+    "Unit": "short tons"
+  },
+  "bituminousCoal": {
+    "CO2 Factor (kg / mmBtu)": 93.28,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": 2325.0,
+    "CH4 Factor (g / unit)": 274.0,
+    "N2O Factor (g / unit)": 40.0,
+    "Unit": "short tons"
+  },
+  "subBituminousCoal": {
+    "CO2 Factor (kg / mmBtu)": 97.17,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": 1676.0,
+    "CH4 Factor (g / unit)": 190.0,
+    "N2O Factor (g / unit)": 28.0,
+    "Unit": "short tons"
+  },
+  "ligniteCoal": {
+    "CO2 Factor (kg / mmBtu)": 97.72,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": 1389.0,
+    "CH4 Factor (g / unit)": 156.0,
+    "N2O Factor (g / unit)": 23.0,
+    "Unit": "short tons"
+  },
+  "mixedElectricPowerSector": {
+    "CO2 Factor (kg / mmBtu)": 95.52,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": NaN,
+    "CH4 Factor (g / unit)": NaN,
+    "N2O Factor (g / unit)": NaN,
+    "Unit": NaN
+  },
+  "coalCoke": {
+    "CO2 Factor (kg / mmBtu)": 113.67,
+    "CH4 Factor (g / mmBtu)": 11.0,
+    "N2O Factor (g / mmBtu)": 1.6,
+    "CO2 Factor (kg / Unit)": NaN,
+    "CH4 Factor (g / unit)": NaN,
+    "N2O Factor (g / unit)": NaN,
+    "Unit": NaN
+  },
+  "woodAndWoodResiduals": {
+    "CO2 Factor (kg / mmBtu)": 0.0,
+    "CH4 Factor (g / mmBtu)": 7.2,
+    "N2O Factor (g / mmBtu)": 3.6,
+    "CO2 Factor (kg / Unit)": 1640.0,
+    "CH4 Factor (g / unit)": 126.0,
+    "N2O Factor (g / unit)": 63.0,
+    "Unit": "short tons"
+  },
+  "landfillGas": {
+    "CO2 Factor (kg / mmBtu)": 0.0,
+    "CH4 Factor (g / mmBtu)": 3.2,
+    "N2O Factor (g / mmBtu)": 0.63,
+    "CO2 Factor (kg / Unit)": 0.025254,
+    "CH4 Factor (g / unit)": 0.0015520000000000002,
+    "N2O Factor (g / unit)": 0.000306,
+    "Unit": "scf"
+  }
+}
