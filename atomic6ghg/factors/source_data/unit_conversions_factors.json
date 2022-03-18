@@ -1,0 +1,104 @@
+{
+  "bbl": {
+    "gallons": 42.0,
+    "bbl": 1.0,
+    "liters": 158.99,
+    "cubicMeter": 0.1589
+  },
+  "btu": {
+    "joules": 1055.0,
+    "btu": 1.0
+  },
+  "cubicMeter": {
+    "bbl": 6.2897,
+    "cubicMeter": 1.0,
+    "gallons": 264.2,
+    "liters": 1000.0
+  },
+  "gallons": {
+    "bbl": 0.0238,
+    "gallons": 1.0,
+    "liters": 3.785,
+    "cubicMeter": 0.003785
+  },
+  "gigajoules": {
+    "mmbtu": 0.9478,
+    "gigajoules": 1.0,
+    "kWh": 277.8
+  },
+  "gram": {
+    "shortTon": 1.1020000000000002e-06,
+    "gram": 1.0
+  },
+  "kWh": {
+    "btu": 3412.0,
+    "kWh": 1.0,
+    "kilojoules": 3600.0
+  },
+  "kilogram": {
+    "pounds": 2.205,
+    "kilogram": 1.0,
+    "shortTon": 0.0011020000000000001
+  },
+  "kilometers": {
+    "miles": 0.622,
+    "kilometers": 1.0
+  },
+  "liters": {
+    "cubicMeter": 0.001,
+    "liters": 1.0,
+    "gallons": 0.2642
+  },
+  "megajoules": {
+    "gigajoules": 0.001,
+    "megajoules": 1.0
+  },
+  "metricTon": {
+    "shortTon": 1.102,
+    "metricTon": 1.0,
+    "pounds": 2205.0,
+    "kilogram": 1000.0
+  },
+  "miles": {
+    "kilometers": 1.609,
+    "miles": 1.0
+  },
+  "mmbtu": {
+    "gigajoules": 1.055,
+    "mmbtu": 1.0,
+    "kWh": 293.0
+  },
+  "nauticalMile": {
+    "miles": 1.15,
+    "nauticalMile": 1.0
+  },
+  "pounds": {
+    "gram": 453.6,
+    "pounds": 1.0,
+    "kilogram": 0.4536,
+    "metricTon": 0.0004536,
+    "shortTon": 0.0005
+  },
+  "scf": {
+    "gallons": 7.4805,
+    "scf": 1.0,
+    "bbl": 0.1781,
+    "liters": 28.32,
+    "cubicMeter": 0.02832
+  },
+  "shortTon": {
+    "shortTon": 1.0
+  },
+  "therm": {
+    "btu": 100000.0,
+    "therm": 1.0,
+    "gigajoules": 0.1055,
+    "kWh": 29.3
+  },
+  "Kilo": 1000,
+  "Mega": 1000000,
+  "Giga": 1000000000,
+  "Tera": 1000000000000,
+  "Molecular Weigh of C": 12,
+  "Molecular Weight of CO2 ": 44
+}
