@@ -44,10 +44,23 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formulas.html">SGEC Workbook API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="business_travel.html">Business Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fire_suppression.html">Fire Suppression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mobile_sources.html">Mobile Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offsets.html">Offsets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="steam.html">Steam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste.html">Waste</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste_gases.html">Waste Gases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="factors.html">Factors</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Schemas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="certification.html">Certification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 
 <div class="relations">
@@ -161,7 +174,7 @@ Offsets page:</p>
 </pre></div>
 </div>
 <p>which corresponds with the Offsets page in the EPA’s SGEC workbook:</p>
-<img alt="../../Images/atom6-schema-spec-example-full-page.jpg" src="../../Images/atom6-schema-spec-example-full-page.jpg" />
+<img alt="_images/atom6-schema-spec-example-full-page.jpg" src="_images/atom6-schema-spec-example-full-page.jpg" />
 <p>The keys “h1Title”, “instruction”, “purchasedOffsets”, “totalPurchasedOffsets” and “footnote” correspond with the page
 title, page guidance, Total Amount Of Purchased Offsets user data entry table, Total CO2
 Equivalent Emission Reductions (metric tons) - Offsets value and footnote, respectively.</p>
@@ -186,7 +199,7 @@ of stationary fuel types that the formula code can compute for, and are enumerat
 </pre></div>
 </div>
 <p>which corresponds with:</p>
-<img alt="../../Images/atom6-schema-spec-example-enum.png" src="../../Images/atom6-schema-spec-example-enum.png" />
+<img alt="_images/atom6-schema-spec-example-enum.png" src="_images/atom6-schema-spec-example-enum.png" />
 <p>Note that the values are tokenized into camel case from the original values found in the EPA’s SGEC workbook, and
 this tokenization lookup from the original is in atom6-ghg/tools/__init__.py.</p>
 <p>The only variation in the schema pattern described above exists for the Mobile Sources page’s schema. The calculated
@@ -243,7 +256,7 @@ which does not correspond to a column explicitly, but instead contains all of th
 <p>the “emissionByYear” key does not explicitly correspond with a column in the UI, but corresponds with all the “many”
 columns “vehicleYear”, “mileage”, “CH4”, and “N2O”.</p>
 <p>This corresponds with the table structure in the EPA’s SGEC workbook:</p>
-<img alt="../../Images/atom6-schema-spec-example-one-to-many.jpg" src="../../Images/atom6-schema-spec-example-one-to-many.jpg" />
+<img alt="_images/atom6-schema-spec-example-one-to-many.jpg" src="_images/atom6-schema-spec-example-one-to-many.jpg" />
 <p>The naming convention for schemas is &lt;page&gt;.json, where &lt;page&gt; is the page’s name in snake case. All page schemas are
 found in atom6-ghg/atom6ghg/schemas.</p>
 </section>

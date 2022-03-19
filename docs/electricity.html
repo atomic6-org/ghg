@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Electricity &#8212; Atomic6-GHG  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Fire Suppression" href="fire_suppression.html" />
+    <link rel="prev" title="Commuting" href="commuting.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/atomic6-logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="business_travel.html">Business Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Electricity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.electricity">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fire_suppression.html">Fire Suppression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mobile_sources.html">Mobile Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offsets.html">Offsets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="steam.html">Steam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste.html">Waste</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste_gases.html">Waste Gases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factors.html">Factors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schemas.html">Schemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="certification.html">Certification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="commuting.html" title="previous chapter">Commuting</a></li>
+      <li>Next: <a href="fire_suppression.html" title="next chapter">Fire Suppression</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="electricity">
+<span id="electricity-api"></span><h1>Electricity<a class="headerlink" href="#electricity" title="Permalink to this headline">¶</a></h1>
+<p>Electricity is a <a class="reference external" href="glossary.html">Scope 2 Emission</a></p>
+<section id="module-atomic6ghg.formulas.electricity">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.electricity" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.electricity.</span></span><span class="sig-name descname"><span class="pre">Electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from purchased gases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_location_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_market_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emissions_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_location_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_market_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_emissions">
+<span class="sig-name descname"><span class="pre">make_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions for all fuels burned</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources">
+<span class="sig-name descname"><span class="pre">make_total_emissions_for_all_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for Electricity</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.subregions">
+<span class="sig-name descname"><span class="pre">subregions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['akgd',</span> <span class="pre">'akms',</span> <span class="pre">'aznm',</span> <span class="pre">'camx',</span> <span class="pre">'erct',</span> <span class="pre">'frcc',</span> <span class="pre">'hims',</span> <span class="pre">'hioa',</span> <span class="pre">'mroe',</span> <span class="pre">'mrow',</span> <span class="pre">'newe',</span> <span class="pre">'nwpp',</span> <span class="pre">'nycw',</span> <span class="pre">'nyli',</span> <span class="pre">'nyup',</span> <span class="pre">'prms',</span> <span class="pre">'rfce',</span> <span class="pre">'rfcm',</span> <span class="pre">'rfcw',</span> <span class="pre">'rmpa',</span> <span class="pre">'spno',</span> <span class="pre">'spso',</span> <span class="pre">'srmv',</span> <span class="pre">'srmw',</span> <span class="pre">'srso',</span> <span class="pre">'srtv',</span> <span class="pre">'srvc']</span></em><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.subregions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Electricity allows for inputs of purchased electricity quantities for the following eGrid subregions with units of kWh:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>eGrid Subregion</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AKGD (ASCC Alaska Grid)</p></td>
+</tr>
+<tr class="row-odd"><td><p>AKMS (ASCC Miscellaneous)</p></td>
+</tr>
+<tr class="row-even"><td><p>AZNM (WECC Southwest)</p></td>
+</tr>
+<tr class="row-odd"><td><p>CAMX (WECC California)</p></td>
+</tr>
+<tr class="row-even"><td><p>ERCT (ERCOT All)</p></td>
+</tr>
+<tr class="row-odd"><td><p>FRCC (FRCC All)</p></td>
+</tr>
+<tr class="row-even"><td><p>HIMS (HICC Miscellaneous</p></td>
+</tr>
+<tr class="row-odd"><td><p>HIOA (HICC Oahu)</p></td>
+</tr>
+<tr class="row-even"><td><p>MROE (MRO East)</p></td>
+</tr>
+<tr class="row-odd"><td><p>MROW (MRO West)</p></td>
+</tr>
+<tr class="row-even"><td><p>NEWE (NPCC New England)</p></td>
+</tr>
+<tr class="row-odd"><td><p>NWPP (WECC Northwest)</p></td>
+</tr>
+<tr class="row-even"><td><p>NYCW (NPCC NYC/Westchester)</p></td>
+</tr>
+<tr class="row-odd"><td><p>NYLI (NPCC Long Island)</p></td>
+</tr>
+<tr class="row-even"><td><p>NYUP (NPCC Upstate NY)</p></td>
+</tr>
+<tr class="row-odd"><td><p>PRMS (Puerto Rico Miscellaneous)</p></td>
+</tr>
+<tr class="row-even"><td><p>RFCE (RFC East)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RFCM (RFC Michigan)</p></td>
+</tr>
+<tr class="row-even"><td><p>RFCW (RFC West)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RMPA (WECC Rockies)</p></td>
+</tr>
+<tr class="row-even"><td><p>SPNO (SPP North)</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPSO (SPP South)</p></td>
+</tr>
+<tr class="row-even"><td><p>SRMV (SERC Mississippi Valley)</p></td>
+</tr>
+<tr class="row-odd"><td><p>SRMW (SERC Midwest)</p></td>
+</tr>
+<tr class="row-even"><td><p>SRSO (SERC South)</p></td>
+</tr>
+<tr class="row-odd"><td><p>SRTV (SERC Tennessee Valley)</p></td>
+</tr>
+<tr class="row-even"><td><p>SRVC (SERC Virginia/Carolina)</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fundamental calculation for each eGrid subregion are their <span class="math notranslate nohighlight">\(Market\; Based\; \text{CO}_2\)</span>,
+<span class="math notranslate nohighlight">\(Market\; Based\; \text{CH}_4\)</span>, <span class="math notranslate nohighlight">\(Market\; Based\; \text{N}_2\text{O}\)</span> emissions and their
+<span class="math notranslate nohighlight">\(Location\; Based\; \text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(Location\; Based\; \text{CH}_4\)</span>,
+<span class="math notranslate nohighlight">\(Location\; Based\; \text{N}_2\te
+xt{O}\)</span> emissions associated with the electricity purchased.
+The formulas are:</p>
+<div class="math notranslate nohighlight">
+\[Market\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Market\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
+<div class="math notranslate nohighlight">
+\[Location\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Location\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id1"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Electricity\; Purchased_{electricity}\)</span> is converted into watts, the default
+<span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is the emission factor for that
+eGrid Subregion and fuel type if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is
+input by the user, and the default <span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is
+the <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> if no
+<span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is input by the user.</p>
+<p>For electricity, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{method}\)</span> in metric tons is calculated based on the
+Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
+<div class="math notranslate nohighlight">
+\[\text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}\]</div>
+<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id2"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span> are the sums of all the emissions for that
+<span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(method\)</span> (either
+<span class="math notranslate nohighlight">\(location\; based\)</span> or <span class="math notranslate nohighlight">\(market\; based\)</span>), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that
+<span class="math notranslate nohighlight">\(GHG\)</span>.
+Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
+<span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+<dl class="citation">
+<dt class="label" id="epa2020indirectemissionsfrompurchasedelectricity"><span class="brackets">EPA2020IndirectEmissionsfromPurchasedElectricity</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2022, General Electric Company.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/electricity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

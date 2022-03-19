@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Schemas" href="schemas.html" />
-    <link rel="prev" title="SGEC Workbook API" href="formulas.html" />
+    <link rel="prev" title="Waste Gases" href="waste_gases.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -44,7 +44,19 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formulas.html">SGEC Workbook API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="business_travel.html">Business Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fire_suppression.html">Fire Suppression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mobile_sources.html">Mobile Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offsets.html">Offsets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="steam.html">Steam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste.html">Waste</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waste_gases.html">Waste Gases</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Factors</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#implementation">Implementation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#factors-data">Factors Data</a><ul>
@@ -68,13 +80,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="schemas.html">Schemas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="certification.html">Certification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="formulas.html" title="previous chapter">SGEC Workbook API</a></li>
+      <li>Previous: <a href="waste_gases.html" title="previous chapter">Waste Gases</a></li>
       <li>Next: <a href="schemas.html" title="next chapter">Schemas</a></li>
   </ul></li>
 </ul>
@@ -202,7 +215,7 @@ combustion fuel sources.</p>
 <p>The syntax for stationary combustion emission factors is
 stationary_combustion_emission_factors[fuel_type][emission_gas_conversion_key]. The emission_gas_conversion_key
 contains information about the greenhouse gas as well as the units associated with the factor (see below example).
-These keys will likely change (see <a class="reference internal" href="preliminaries.html#refactoring"><span class="std std-ref">Refactoring</span></a>)</p>
+These keys will likely change (see <span class="xref std std-ref">refactoring</span>)</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;naturalGas&quot;</span><span class="p">:</span> <span class="p">{</span>
   <span class="s2">&quot;CO2 Factor (kg / mmBtu)&quot;</span><span class="p">:</span> <span class="mf">53.06</span><span class="p">,</span>
@@ -321,7 +334,7 @@ in the example below.</p>
 </div>
 <p>All of the refrigeration and AC equipment emission factors were manually acquired from equations in the Formula
 Selection for Type of Equipment table on the Refrigeration and AC sheet in the EPA’s SGEC workbook. All of these
-factors are originally sourced from <a class="reference internal" href="formulas.html#ipcc2019v3ch7" id="id1"><span>[IPCC2019V3CH7]</span></a>.</p>
+factors are originally sourced from <a class="reference internal" href="#ipcc2019v3ch7" id="id1"><span>[IPCC2019V3CH7]</span></a>.</p>
 <dl class="citation">
 <dt class="label" id="ipcc2019v3ch7"><span class="brackets"><a class="fn-backref" href="#id1">IPCC2019V3CH7</a></span></dt>
 <dd><p>IPCC, 2019: 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories,
@@ -343,7 +356,7 @@ REFRIGERATION AND AIR-CONDITIONING SYSTEMS</p>
 </div>
 <p>These factors were scraped from the Fire Suppressant Leak Rates table on the Emission Factors sheet in the
 EPA’s SGEC workbook. Note, these factors differ from another set used in the EPA’s SGEC workbook. See
-<a class="reference internal" href="formulas.html#certification-note"><span class="std std-ref">Note</span></a>.</p>
+<a class="reference internal" href="certification.html#certification-note"><span class="std std-ref">Note</span></a>.</p>
 </section>
 <section id="molecular-weights-factors">
 <h3>Molecular Weights Factors<a class="headerlink" href="#molecular-weights-factors" title="Permalink to this headline">¶</a></h3>

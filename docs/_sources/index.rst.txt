@@ -1,16 +1,29 @@
 .. toctree::
    :hidden:
 
-   formulas
+   business_travel
+   commuting
+   electricity
+   fire_suppression
+   mobile_sources
+   offsets
+   product_transport
+   purchased_gases
+   refrigeration_and_ac
+   stationary_combustion
+   steam
+   waste
+   waste_gases
    factors
    schemas
    certification
+   glossary
 
 
-Atomic6-GHG
+Atomic6 GHG
 ===================================================================
-Welcome to Atomic6-GHG's documentation.
-Atomic6-GHG is a convenient source of carbon math for greenhouse gas calculations in Python based software.
+Welcome to Atomic6 GHG's documentation.
+Atomic6 GHG is a convenient source of carbon math for greenhouse gas calculations in Python based software.
 Initial versions of the package are specific to US-based operations.
 The API is modeled on and certified against the United States Environmental Protection Agency's (USEPA) simplified greenhouse gas emissions
 calculator (SGEC).
