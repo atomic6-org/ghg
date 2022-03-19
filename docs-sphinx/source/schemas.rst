@@ -80,7 +80,7 @@ Offsets page:
 
 which corresponds with the Offsets page in the EPA's SGEC workbook:
 
-.. image:: ../../Images/atom6-schema-spec-example-full-page.jpg
+.. image:: _static/atom6-schema-spec-example-full-page.jpg
 
 The keys "h1Title", "instruction", "purchasedOffsets", "totalPurchasedOffsets" and "footnote" correspond with the page
 title, page guidance, Total Amount Of Purchased Offsets user data entry table, Total CO2
@@ -111,7 +111,7 @@ of stationary fuel types that the formula code can compute for, and are enumerat
 
 which corresponds with:
 
-.. image:: ../../Images/atom6-schema-spec-example-enum.png
+.. image:: _static/atom6-schema-spec-example-enum.png
 
 Note that the values are tokenized into camel case from the original values found in the EPA's SGEC workbook, and
 this tokenization lookup from the original is in atom6-ghg/tools/__init__.py.
@@ -174,7 +174,7 @@ columns "vehicleYear", "mileage", "CH4", and "N2O".
 
 This corresponds with the table structure in the EPA's SGEC workbook:
 
-.. image:: ../../Images/atom6-schema-spec-example-one-to-many.jpg
+.. image:: _static/atom6-schema-spec-example-one-to-many.jpg
 
 The naming convention for schemas is <page>.json, where <page> is the page's name in snake case. All page schemas are
 found in atom6-ghg/atom6ghg/schemas.
