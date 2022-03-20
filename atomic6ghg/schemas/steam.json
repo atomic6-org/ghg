@@ -1,0 +1,224 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Steam",
+  "description": "Document schema of Steam workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": ["string", "null"],
+      "pattern": "^steam.1.0.0"
+    },
+    "emissionFactorDataForSteamPurchased": {
+      "type": "array",
+      "title": "Table 1. Fuel, Boiler, Steam and Emission Factor Data for Steam Purchased",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "sourceArea": {
+            "title": "Source Area (sq ft)",
+            "description": "Area of space, in square feet, that source occupies",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "fuelType": {
+            "title": "Fuel Type",
+            "description": "Dropdown selection of type of fuel used",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [null, "anthraciteCoal", "bituminousCoal", "coalCoke", "distillateFuelOilNo2", "kerosene", "landfillGas", "ligniteCoal", "liquefiedPetroleumGases", "mixedElectricPowerSector", "naturalGas", "residualFuelOilNo6", "subBituminousCoal", "woodAndWoodResiduals"]
+          },
+          "boilerEfficiency": {
+            "title": "Boiler Efficiency (%)",
+            "description": "Percent efficiency of the fuel combustion source",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "steamPurchased": {
+            "title": "Steam Purchased (mmBtu)",
+            "description": "Amount of energy purchased",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionFactorsCO2Factor": {
+            "title": "Location-Based Emission Factors CO2 Factor (kg / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionFactorsCH4Factor": {
+            "title": "Location-Based Emission Factors CH4 Factor (g / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionFactorsN2OFactor": {
+            "title": "Location-Based Emission Factors N2O Factor (g / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsCO2Emissions": {
+            "title": "Location-Based Emissions CO2 Emissions (kg)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsCH4Emissions": {
+            "title": "Location-Based Emissions CH4 Emissions (g)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "locationBasedEmissionsN2OEmissions": {
+            "title": "Location-Based Emissions N2O Emissions (g)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsCO2Factor": {
+            "title": "Market-Based Emission Factors CO2 Factor (kg / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsCH4Factor": {
+            "title": "Market-Based Emission Factors CH4 Factor (g / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionFactorsN2OFactor": {
+            "title": "Market-Based Emission Factors N2O Factor (g / mmBtu)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsCO2Emissions": {
+            "title": "Market-Based Emissions CO2 Emissions (kg)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsCH4Emissions": {
+            "title": "Market-Based Emissions CH4 Emissions (g)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "marketBasedEmissionsN2OEmissions": {
+            "title": "Market-Based Emissions N2O Emissions (g)",
+            "description": "",
+            "format": ":.0f",
+            "formula": "None",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "fuelType",
+          "steamPurchased"
+        ]
+      }
+    },
+    "emissionsBySourceAndFuelType": {
+      "type": "array",
+      "title": "Emissions by Source and Fuel Type for Steam Purchased",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fuelType": {
+            "title": "Fuel Type",
+            "description": "",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "locationBasedCO2Emissions": {
+            "title": "Location-Based CO2 Emissions (kg)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "type": "number"
+          },
+          "locationBasedCH4Emissions": {
+            "title": "Location-Based CH4 Emissions (g)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "type": "number"
+          },
+          "locationBasedN2OEmissions": {
+            "title": "Location-Based N2O Emissions (g)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "type": "number"
+          },
+          "marketBasedCO2Emissions": {
+            "title": "Market-Based CO2 Emissions (kg)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "type": "number"
+          },
+          "marketBasedCH4Emissions": {
+            "title": "Market-Based CH4 Emissions (g)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "type": "number"
+          },
+          "marketBasedN2OEmissions": {
+            "title": "Market-Based N2O Emissions (g)",
+            "description": "",
+            "format": "s",
+            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "CO2EquivalentEmissionsLocationBasedElectricityEmissions": {
+      "title": "CO2 Equivalent Emissions (metric tons) Location-Based Electricity Emissions",
+      "formula": "atom6ghg.formulas.steam.make_co2_equivalent_emissions_location_based",
+      "type": ["number", "null"]
+    },
+    "CO2EquivalentEmissionsMarketBasedElectricityEmissions": {
+      "title": "CO2 Equivalent Emissions (metric tons) Market-Based Electricity Emissions",
+      "formula": "atom6ghg.formulas.steam.make_co2_equivalent_emissions_market_based",
+      "type": ["number", "null"]
+    }
+  },
+  "required": [
+    "version",
+    "emissionFactorDataForSteamPurchased"
+  ]
+}
