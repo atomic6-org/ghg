@@ -32,3 +32,13 @@ def electricity_schema():
     schema = json.loads(schema_file_contents)
     v = Draft7Validator(schema=schema)
     return v
+
+
+@pytest.fixture
+def steam_schema():
+    """Provides schema validation to tests"""
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "steam.json")
+    schema = json.loads(schema_file_contents)
+    v = Draft7Validator(schema=schema)
+    return v
+
