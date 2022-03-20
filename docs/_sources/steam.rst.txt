@@ -2,6 +2,19 @@
 
 Steam
 ------
+Steam is a `Scope 2 Emission <glossary.html>`_
+
+Usage
+*****
+.. module:: atomic6ghg.formulas.steam
+
+.. autoclass:: Steam
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+EPA Equation Analysis
+*********************
 Steam allows for inputs of purchased steam quantities for the following fuel types with units of MMBtu:
 
 .. csv-table::

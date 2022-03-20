@@ -55,7 +55,11 @@
 <li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Steam</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Steam</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.steam">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="waste.html">Waste</a></li>
 <li class="toctree-l1"><a class="reference internal" href="waste_gases.html">Waste Gases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="factors.html">Factors</a></li>
@@ -101,6 +105,82 @@
             
   <section id="steam">
 <span id="steam-api"></span><h1>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h1>
+<p>Steam is a <a class="reference external" href="glossary.html">Scope 2 Emission</a></p>
+<section id="module-atomic6ghg.formulas.steam">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.steam" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.steam.</span></span><span class="sig-name descname"><span class="pre">Steam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from purchased gases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.calculate_location_based_emissions_steam">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_location_based_emissions_steam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_based_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boiler_efficiency_frac</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gas_emission</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.calculate_location_based_emissions_steam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate gas (CO2, CH4, N2O) emissions for a fuel using location based emissions factors</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.calculate_market_based_emissions_steam">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_market_based_emissions_steam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_based_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">market_based_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boiler_efficiency_frac</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gas_emission</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.calculate_market_based_emissions_steam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate gas (CO2, CH4, N2O) emissions for a fuel using market based emissions factors</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.default_boiler_efficiency_frac">
+<span class="sig-name descname"><span class="pre">default_boiler_efficiency_frac</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.8</span></em><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.default_boiler_efficiency_frac" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.fuel_types">
+<span class="sig-name descname"><span class="pre">fuel_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['anthraciteCoal',</span> <span class="pre">'bituminousCoal',</span> <span class="pre">'coalCoke',</span> <span class="pre">'distillateFuelOilNo2',</span> <span class="pre">'kerosene',</span> <span class="pre">'landfillGas',</span> <span class="pre">'ligniteCoal',</span> <span class="pre">'liquefiedPetroleumGases',</span> <span class="pre">'mixedElectricPowerSector',</span> <span class="pre">'naturalGas',</span> <span class="pre">'residualFuelOilNo6',</span> <span class="pre">'subBituminousCoal',</span> <span class="pre">'woodAndWoodResiduals']</span></em><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.fuel_types" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.make_co2_equivalent_emissions_location_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_location_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.make_co2_equivalent_emissions_location_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate location based co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.make_co2_equivalent_emissions_market_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_market_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.make_co2_equivalent_emissions_market_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate market based co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.make_emission_factor_data_for_steam_purchased">
+<span class="sig-name descname"><span class="pre">make_emission_factor_data_for_steam_purchased</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.make_emission_factor_data_for_steam_purchased" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions for each user input fuel source (each row)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.make_emissions_by_source_and_fuel_type">
+<span class="sig-name descname"><span class="pre">make_emissions_by_source_and_fuel_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.make_emissions_by_source_and_fuel_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct emissions_by_source_and_fuel_type table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for Steam</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.steam.Steam.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Steam allows for inputs of purchased steam quantities for the following fuel types with units of MMBtu:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -164,6 +244,7 @@ Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
 <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
 <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+</section>
 </section>
 
 
