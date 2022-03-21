@@ -33,3 +33,10 @@ distribution (T&D) losses) not covered in Scope 2, outsourced activities, waste 
 result the result of activities from assets not owned or controlled by the reporting organization, but that the
 organization indirectly impacts in its value chain.
 
+    **Refuse**, also called municipal solid waste, is nonhazardous solid waste that requires collection and transport to
+    a processing or disposal site. Refuse includes garbage and rubbish.
+
+    **Sludge** is any solid, semi-solid, or liquid waste generated from a municipal, commercial, or industrial
+    wastewater treatment plant, water supply treatment plant, or air pollution control facility exclusive of the treated
+    effluent from a wastewater treatment plant.
+

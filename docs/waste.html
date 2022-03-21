@@ -56,7 +56,11 @@
 <li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="steam.html">Steam</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Waste</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Waste</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.waste">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="waste_gases.html">Waste Gases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="factors.html">Factors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="schemas.html">Schemas</a></li>
@@ -101,8 +105,70 @@
             
   <section id="waste">
 <span id="waste-api"></span><h1>Waste<a class="headerlink" href="#waste" title="Permalink to this headline">¶</a></h1>
-<p>The fundamental calculation for Waste is the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> emissions produced by the
-disposal of waste materials based on the <span class="math notranslate nohighlight">\(Disposal Method\)</span> and <span class="math notranslate nohighlight">\(weight\)</span>.</p>
+<p>Waste is a <a class="reference external" href="glossary.html">Scope 3 Emission</a> that accounts for garbage or <a class="reference external" href="glossary.html">refuse</a>,
+<a class="reference external" href="glossary.html">sludge</a> from a wastewater treatment plant, water supply treatment plant, or air pollution control
+facility and other discarded material, resulting from industrial, commercial, mining, and agricultural operations, and
+from community activities.</p>
+<section id="module-atomic6ghg.formulas.waste">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.waste" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.waste.</span></span><span class="sig-name descname"><span class="pre">Waste</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from waste materials</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.calculate_co2_emissions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waste_material</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposal_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.calculate_co2_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a waste material given the disposal method weight and units</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.disposal_methods">
+<span class="sig-name descname"><span class="pre">disposal_methods</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['recycled',</span> <span class="pre">'landfilled',</span> <span class="pre">'combusted',</span> <span class="pre">'composted',</span> <span class="pre">'anaerobicallyDigestedDry',</span> <span class="pre">'anaerobicallyDigestedWet']</span></em><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.disposal_methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.make_total_emissions_by_disposal_method">
+<span class="sig-name descname"><span class="pre">make_total_emissions_by_disposal_method</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.make_total_emissions_by_disposal_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.make_waste_disposal">
+<span class="sig-name descname"><span class="pre">make_waste_disposal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.make_waste_disposal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for Waste</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.waste.Waste.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.waste.Waste.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
+<p>The fundamental calculation for Waste is the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> produced by the
+disposal of waste materials based on the <span class="math notranslate nohighlight">\(Disposal\; Method\)</span> and <span class="math notranslate nohighlight">\(weight\)</span>.</p>
 <p>Waste allows for inputs of waste materials for the calculation over the following disposal methods and units:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -166,7 +232,7 @@ disposal of waste materials based on the <span class="math notranslate nohighlig
 <td><p>Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton</p></td>
 </tr>
 <tr class="row-even"><td><p>PLA</p></td>
-<td><p>Recycled, Landfilled, Composted</p></td>
+<td><p>Landfilled, Combusted, Composted</p></td>
 <td><p>Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton</p></td>
 </tr>
 <tr class="row-odd"><td><p>Corrugated Containers</p></td>
@@ -377,13 +443,13 @@ The formula is:</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{disposal\; method}\)</span> is the sum of all the <span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span> emissions for that
 <span class="math notranslate nohighlight">\(disposal\; method\)</span> (recycled, landfilled, combusted, composted, anaerobically digested (dry digestate with
 curing), or anaerobically digested (wet digestate with curing)).
-Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
-<span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric\; tons\)</span>.</p>
 <dl class="citation">
 <dt class="label" id="ipcc2006v5ch3"><span class="brackets">IPCC2006V5CH3</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5, IPPU, Chapter 3, Solid Waste Disposal, pp. 9</p>
 </dd>
 </dl>
+</section>
 </section>
 
 
