@@ -1,0 +1,297 @@
+{
+  "aluminumCans": {
+    "recycled": 0.06,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "aluminumIngot": {
+    "recycled": 0.04,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "steelCans": {
+    "recycled": 0.32,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "copperWire": {
+    "recycled": 0.18,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "glass": {
+    "recycled": 0.05,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "hdpe": {
+    "recycled": 0.21,
+    "landfilled": 0.02,
+    "combusted": 2.8
+  },
+  "ldpe": {
+    "landfilled": 0.02,
+    "combusted": 2.8
+  },
+  "pet": {
+    "recycled": 0.23,
+    "landfilled": 0.02,
+    "combusted": 2.05
+  },
+  "lldpe": {
+    "landfilled": 0.02,
+    "combusted": 2.8
+  },
+  "pp": {
+    "landfilled": 0.02,
+    "combusted": 2.8
+  },
+  "ps": {
+    "landfilled": 0.02,
+    "combusted": 3.02
+  },
+  "pvc": {
+    "landfilled": 0.02,
+    "combusted": 1.26
+  },
+  "pla": {
+    "landfilled": 0.02,
+    "combusted": 0.01,
+    "composted": 0.17
+  },
+  "corrugatedContainers": {
+    "recycled": 0.11,
+    "landfilled": 0.9,
+    "combusted": 0.05
+  },
+  "magazinesAndThirdClassMail": {
+    "recycled": 0.02,
+    "landfilled": 0.42,
+    "combusted": 0.05
+  },
+  "newspaper": {
+    "recycled": 0.02,
+    "landfilled": 0.35,
+    "combusted": 0.05
+  },
+  "officePaper": {
+    "recycled": 0.02,
+    "landfilled": 1.25,
+    "combusted": 0.05
+  },
+  "phonebooks": {
+    "recycled": 0.04,
+    "landfilled": 0.35,
+    "combusted": 0.05
+  },
+  "textbooks": {
+    "recycled": 0.04,
+    "landfilled": 1.25,
+    "combusted": 0.05
+  },
+  "dimensionalLumber": {
+    "recycled": 0.09,
+    "landfilled": 0.17,
+    "combusted": 0.05
+  },
+  "mediumDensityFiberboard": {
+    "recycled": 0.15,
+    "landfilled": 0.07,
+    "combusted": 0.05
+  },
+  "foodWasteNonMeat": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "foodWasteMeatOnly": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "beef": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "poultry": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "grains": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "bread": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "fruitsAndVegetables": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "dairyProducts": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15,
+    "anaerobicallyDigestedDry": 0.14,
+    "anaerobicallyDigestedWet": 0.11
+  },
+  "yardTrimmings": {
+    "landfilled": 0.33,
+    "combusted": 0.05,
+    "composted": 0.19,
+    "anaerobicallyDigestedDry": 0.11
+  },
+  "grass": {
+    "landfilled": 0.26,
+    "combusted": 0.05,
+    "composted": 0.19,
+    "anaerobicallyDigestedDry": 0.09
+  },
+  "leaves": {
+    "landfilled": 0.26,
+    "combusted": 0.05,
+    "composted": 0.19,
+    "anaerobicallyDigestedDry": 0.13
+  },
+  "branches": {
+    "landfilled": 0.53,
+    "combusted": 0.05,
+    "composted": 0.19,
+    "anaerobicallyDigestedDry": 0.16
+  },
+  "mixedPaperGeneral": {
+    "recycled": 0.07,
+    "landfilled": 0.8,
+    "combusted": 0.05
+  },
+  "mixedPaperPrimarilyResidential": {
+    "recycled": 0.07,
+    "landfilled": 0.77,
+    "combusted": 0.05
+  },
+  "mixedPaperPrimarilyFromOffices": {
+    "recycled": 0.03,
+    "landfilled": 0.75,
+    "combusted": 0.05
+  },
+  "mixedMetals": {
+    "recycled": 0.23,
+    "landfilled": 0.02,
+    "combusted": 0.01
+  },
+  "mixedPlastics": {
+    "recycled": 0.22,
+    "landfilled": 0.02,
+    "combusted": 2.34
+  },
+  "mixedRecyclables": {
+    "recycled": 0.09,
+    "landfilled": 0.68,
+    "combusted": 0.11
+  },
+  "foodWaste": {
+    "landfilled": 0.58,
+    "combusted": 0.05,
+    "composted": 0.15
+  },
+  "mixedOrganics": {
+    "landfilled": 0.48,
+    "combusted": 0.05,
+    "composted": 0.17
+  },
+  "mixedMswMunicipalSolidWaste": {
+    "landfilled": 0.52,
+    "combusted": 0.43
+  },
+  "carpet": {
+    "landfilled": 0.02,
+    "combusted": 1.68
+  },
+  "desktopCpus": {
+    "landfilled": 0.02,
+    "combusted": 0.4
+  },
+  "portableElectronicDevices": {
+    "landfilled": 0.02,
+    "combusted": 0.89
+  },
+  "flatPanelDisplays": {
+    "landfilled": 0.02,
+    "combusted": 0.74
+  },
+  "crtDisplays": {
+    "landfilled": 0.02,
+    "combusted": 0.64
+  },
+  "electronicPeripherals": {
+    "landfilled": 0.02,
+    "combusted": 2.23
+  },
+  "hardCopyDevices": {
+    "landfilled": 0.02,
+    "combusted": 1.92
+  },
+  "mixedElectronics": {
+    "landfilled": 0.02,
+    "combusted": 0.87
+  },
+  "clayBricks": {
+    "landfilled": 0.02
+  },
+  "concrete": {
+    "recycled": 0.01,
+    "landfilled": 0.02
+  },
+  "flyAsh": {
+    "recycled": 0.01,
+    "landfilled": 0.02
+  },
+  "tires": {
+    "recycled": 0.1,
+    "landfilled": 0.02,
+    "combusted": 2.21
+  },
+  "asphaltConcrete": {
+    "recycled": 0.0,
+    "landfilled": 0.02
+  },
+  "asphaltShingles": {
+    "recycled": 0.03,
+    "landfilled": 0.02,
+    "combusted": 0.7
+  },
+  "drywall": {
+    "landfilled": 0.02
+  },
+  "fiberglassInsulation": {
+    "recycled": 0.05,
+    "landfilled": 0.02
+  },
+  "vinylFlooring": {
+    "landfilled": 0.02,
+    "combusted": 0.29
+  },
+  "woodFlooring": {
+    "landfilled": 0.18,
+    "combusted": 0.08
+  }
+}
