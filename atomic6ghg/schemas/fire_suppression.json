@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Fire Suppression",
+  "description": "Document schema of Fire Suppression workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^fire-suppression.1.0.0"
+    },
+    "materialBalance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gas": {
+            "title": "Gas",
+            "description": "Choose the appropriate gas from the Gas drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "inventoryChange": {
+            "title": "Inventory Change (lb)",
+            "description": "Difference of gas stored in inventory from beginning to end of reporting period measured in lbs. Includes only gas stored on-site (i.e. cylinders) and not gas contained within equipment.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "transferredAmount": {
+            "title": "Transferred Amount (lb)",
+            "description": "Gas purchased minus gas sold/disposed during reporting period. Gas purchased includes: purchases for inventory, as part of equipment servicing (not from inventory), within purchased equipment, and gas returned to the site after off-site recycling. Gas sold/disposed includes: returns to supplier, sales or disposals (including equipment), and gas sent off-site for recycling, reclamation, or destruction.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "capacityChange": {
+            "title": "Capacity Change (lb)",
+            "description": "Capacity of all units at beginning minus all units at the end of reporting period measured in lbs. Can be assumed to be capacity of new units minus capacity of retired units.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (lb)",
+            "description": "CO2 equivalent emissions (in lbs) produced by organization-wide fire suppression gas calculated using material balance.",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.fire_suppression.calculate_co2_emissions_material_balance",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "gas",
+          "inventoryChange",
+          "transferredAmount",
+          "capacityChange"
+        ]
+      }
+    },
+    "simplifiedMaterialBalance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+        "gas": {
+          "title": "Gas",
+          "description": "Choose the appropriate gas from the Gas drop down menu",
+          "format": "s",
+          "formula": "None",
+          "type": "string"
+        },
+        "gasGWP": {
+          "title": "Gas GWP",
+          "description": "Global warming potential of selected gas",
+          "format": ":,",
+          "formula": "None",
+          "type": ["number", "null"]
+        },
+        "newUnitsCharge": {
+            "title": "New Units Charge (lb)",
+            "description": "New Units: units installed during the reporting period (do not include any data for new units pre-charged by supplier). Charge: Gas added to units by organization or contractor (do not include any data for new units pre-charged by manufacturer).",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+        },
+        "newUnitsCapacity": {
+          "title": "New Units Capacity (lb)",
+          "description": "New Units: Units installed during the reporting period (do not include any data for new units pre-charged by supplier). Capacity: Sum of the full capacity for all units (do not include any data for new units pre-charged by manufacturer).",
+          "format": ":.1f",
+          "formula": "None",
+          "type": ["number", "null"]
+        },
+        "existingUnitsRecharge": {
+          "title": "Existing Units Recharge (lb)",
+          "description": "Existing Units: All other units aside from units installed during reporting period and units disposed during reporting period. Recharge: Gas added to units by organization or contractor (do not include units pre-charged by manufacturer).",
+          "format": ":.1f",
+          "formula": "None",
+          "type": ["number", "null"]
+        },
+        "disposedUnitsCapacity": {
+          "title": "Disposed Units Capacity (lb)",
+          "description": "Disposed Units: Units that were disposed of during the reporting period. Capacity: Sum of the full capacity for all units (do not include new units pre-charged by manufacturer).",
+          "format": ":.1f",
+          "formula": "None",
+          "type": ["number", "null"]
+        },
+        "disposedUnitsRecovered": {
+          "title": "Disposed Units Recovered (lb)",
+          "description": "Disposed Units: Units that were disposed of during the reporting period. Recovered: Total gas recovered from all retired units.",
+          "format": ":.1f",
+          "formula": "None",
+          "type": ["number", "null"]
+        },
+        "co2EquivalentEmissions": {
+          "title": "CO2 Equivalent Emissions (lb)",
+          "description": "CO2 equivalent emissions (in lbs) produced by organization-wide fire suppression gas calculated using simplified material balance.",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.fire_suppression.calculate_co2_emissions_simplified_material_balance",
+          "type": ["number", "null"]
+        }
+      },
+        "required": [
+          "gas",
+          "newUnitsCharge",
+          "newUnitsCapacity",
+          "existingUnitsRecharge",
+          "disposedUnitsCapacity",
+          "disposedUnitsRecovered"
+        ]
+      }
+    },
+    "screeningMethod": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "typeOfEquipment": {
+            "title": "Type of Equipment (Fixed/Portable)",
+            "description": "Choose the appropriate type of equipment from the drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "fixed", "portable"]
+          },
+          "gasType": {
+            "title": "Gas Type",
+            "description": "Choose the appropriate gas type from the Gas Type drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "co2", "hfc23", "hfc125", "hfc134a", "hfc227ea", "hfc236fa", "cf4", "c4f10"]
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unitsCapacity": {
+            "title": "Unit Capacity (kg)",
+            "description": "Amount of fire suppressant added by organization. For each unit added or removed during reporting period, multiply its capacity by a usage factor (0.0 to 1.0). If data entered for multiple units, sum the capacities for all units.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (kg)",
+            "description": "CO2 equivalent emissions (in kg) produced by source level fire suppression gas calculated using screening method.",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.fire_suppression.calculate_co2_emissions_screening_method",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "typeOfEquipment",
+          "gasType",
+          "unitsCapacity"
+        ]
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Fire Suppression Equipment",
+      "formula": "atomic6ghg.formulas.fire_suppression.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "footNote": {
+      "type": "string",
+      "title": "Notes:\n1.  Leak rates of fire extinguishers from Page A-28, US EPA (2021) - Inventory of U.S. Greenhouse Gas Emissions and Sinks:  1990 - 2018.\n2.  GWPs are from Intergovernmental Panel on Climate Change (IPCC) Fourth Assessment Report (2007)."
+    },
+    "oneOf": [
+      {
+        "required": [
+          "version",
+          "materialBalance"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "simplifiedMaterialBalance"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "screeningMethod"
+        ]
+      }
+    ]
+  }
+}
