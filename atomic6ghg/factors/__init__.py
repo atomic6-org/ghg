@@ -6,6 +6,7 @@ from .unit_conversions_factors import UnitConversionsFactors
 from .molecular_weights_factors import MolecularWeightsFactors
 from .electricity_emission_factors import ElectricityFactors
 from .refrigerants_gwp_factors import RefrigerantsGwpFactors
+from .waste_emission_factors import WasteEmissionFactors
 
 heat_content_factors = HeatContentFactors()
 stationary_combustion_emission_factors = StationaryCombustionEmissionFactors()
@@ -14,4 +15,5 @@ unit_conversions_factors = UnitConversionsFactors()
 molecular_weights_factors = MolecularWeightsFactors()
 electricity_emission_factors = ElectricityFactors()
 refrigerants_gwp_factors = RefrigerantsGwpFactors()
+waste_emission_factors = WasteEmissionFactors()
 
