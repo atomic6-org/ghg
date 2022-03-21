@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Waste",
+  "description": "Document schema of Waste workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^waste.1.0.0"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Scope 3 Emissions from Combustion of Waste \n Guidance \n    (A) Enter annual waste data in ORANGE cells. \n   (B) Choose the appropriate material and disposal method from the drop down options. For the average-data method, use one of the mixed material types, such as mixed \n    MSW. If the exact waste material is not available, consider an appropriate proxy. For example, dimensional lumber can be used as a proxy for wood furniture. \n   (C) Choose an appropriate disposal method.  Note that not all disposal methods are available for all materials.  If there is a #NA or # Value error in the emissions column, you must pick a \n    new material type or appropriate disposal method. "
+    },
+    "wasteDisposal": {
+      "type": "array",
+      "title": "Table 1.  Waste Disposal Weight by Waste Material and Disposal Method  (CO2, CH4 and N2O)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "wasteMaterial": {
+            "title": "Waste Material",
+            "description": "Dropdown selection of waste material",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "aluminumCans",
+              "aluminumIngot",
+              "steelCans",
+              "copperWire",
+              "glass",
+              "hdpe",
+              "ldpe",
+              "pet",
+              "lldpe",
+              "pp",
+              "ps",
+              "pvc",
+              "pla",
+              "corrugatedContainers",
+              "magazinesAndThirdClassMail",
+              "newspaper",
+              "officePaper",
+              "phonebooks",
+              "textbooks",
+              "dimensionalLumber",
+              "mediumDensityFiberboard",
+              "foodWasteNonMeat",
+              "foodWasteMeatOnly",
+              "beef",
+              "poultry",
+              "grains",
+              "bread",
+              "fruitsAndVegetables",
+              "dairyProducts",
+              "yardTrimmings",
+              "grass",
+              "leaves",
+              "branches",
+              "mixedPaperGeneral",
+              "mixedPaperPrimarilyResidential",
+              "mixedPaperPrimarilyFromOffices",
+              "mixedMetals",
+              "mixedPlastics",
+              "mixedRecyclables",
+              "foodWaste",
+              "mixedOrganics",
+              "mixedMswMunicipalSolidWaste",
+              "carpet",
+              "desktopCpus",
+              "portableElectronicDevices",
+              "flatPanelDisplays",
+              "crtDisplays",
+              "electronicPeripherals",
+              "hardCopyDevices",
+              "mixedElectronics",
+              "clayBricks",
+              "concrete",
+              "flyAsh",
+              "tires",
+              "asphaltConcrete",
+              "asphaltShingles",
+              "drywall",
+              "fiberglassInsulation",
+              "vinylFlooring",
+              "woodFlooring"
+            ]
+          },
+          "disposalMethod": {
+            "title": "Disposal Method",
+            "description": "Dropdown selection of disposal method used for selected waste material",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "recycled",
+              "landfilled",
+              "combusted",
+              "composted",
+              "anaerobicallyDigestedDry",
+              "anaerobicallyDigestedWet"
+            ]
+          },
+          "weight": {
+            "title": "Weight",
+            "description": "Weight of waste material selected",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "unit": {
+            "title": "Unit",
+            "description": "Dropdown selection for unit of measurement for weight of waste material",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": [
+              "",
+              "gram",
+              "kilogram",
+              "metricTon",
+              "pounds",
+              "shortTon"
+            ]
+          },
+          "CO2Emissions": {
+            "title": "CO2e Emissions (kg)",
+            "description": "Calculated CO2 emissions from disposal of selected waste using selected waste disposal method",
+            "format": ":,",
+            "formula": "atomic6ghg.formulas.commuting.calculate_co2_emissions",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "wasteMaterial",
+          "disposalMethod",
+          "weight",
+          "unit"
+        ]
+      }
+    },
+    "totalEmissionsByDisposalMethod": {
+      "type": "array",
+      "title": "Total Emissions by Disposal Method",
+      "items": {
+        "type": "object",
+        "properties": {
+          "wasteMaterial": {
+            "title": "Waste Material",
+            "description": "Type of waste material",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "CO2": {
+            "title": "CO2e (kg)",
+            "description": "CO2 emissions combusted by selected type of waste material",
+            "format": ":,",
+            "formula": "atomic6ghg.formulas.commuting.make_emissions_by_disposal_method",
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Waste",
+      "formula": "atomic6ghg.formulas.commuting.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    }
+  },
+  "required" : [
+    "version",
+    "wasteDisposal"
+  ]
+}
