@@ -1,0 +1,680 @@
+{
+  "version": "waste.1.0.0",
+  "wasteDisposal": [
+    {
+      "sourceId": "Bldg-012",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "aluminumCans",
+      "disposalMethod": "recycled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 6.612000000000002
+    },
+    {
+      "sourceId": "Bldg-013",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "aluminumIngot",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 440.8
+    },
+    {
+      "sourceId": "Bldg-014",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "steelCans",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 3526400.0
+    },
+    {
+      "sourceId": "Bldg-015",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "copperWire",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 899.9999999999999
+    },
+    {
+      "sourceId": "Bldg-016",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "glass",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 500000.0
+    },
+    {
+      "sourceId": "Bldg-017",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "hdpe",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 2.204
+    },
+    {
+      "sourceId": "Bldg-018",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "ldpe",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 220.4
+    },
+    {
+      "sourceId": "Bldg-019",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pet",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-020",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "lldpe",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 100.0
+    },
+    {
+      "sourceId": "Bldg-021",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pp",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 200000.0
+    },
+    {
+      "sourceId": "Bldg-022",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "ps",
+      "disposalMethod": "combusted",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 332.8040000000001
+    },
+    {
+      "sourceId": "Bldg-023",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pvc",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 13885.2
+    },
+    {
+      "sourceId": "Bldg-024",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pla",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 110200.0
+    },
+    {
+      "sourceId": "Bldg-025",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "corrugatedContainers",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 250.0
+    },
+    {
+      "sourceId": "Bldg-026",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "magazinesAndThirdClassMail",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 500000.0
+    },
+    {
+      "sourceId": "Bldg-027",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "newspaper",
+      "disposalMethod": "recycled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 2.204
+    },
+    {
+      "sourceId": "Bldg-028",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "officePaper",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 220.4
+    },
+    {
+      "sourceId": "Bldg-029",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "phonebooks",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 440800.0
+    },
+    {
+      "sourceId": "Bldg-030",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "textbooks",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 200.0
+    },
+    {
+      "sourceId": "Bldg-031",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "dimensionalLumber",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 900000.0
+    },
+    {
+      "sourceId": "Bldg-032",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mediumDensityFiberboard",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 7.714000000000003
+    },
+    {
+      "sourceId": "Bldg-033",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "foodWasteNonMeat",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 6391.6
+    },
+    {
+      "sourceId": "Bldg-034",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "foodWasteMeatOnly",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 6391600.0
+    },
+    {
+      "sourceId": "Bldg-035",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "beef",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 2900.0
+    },
+    {
+      "sourceId": "Bldg-036",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "poultry",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 5800000.0
+    },
+    {
+      "sourceId": "Bldg-037",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "grains",
+      "disposalMethod": "combusted",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 5.510000000000001
+    },
+    {
+      "sourceId": "Bldg-038",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "bread",
+      "disposalMethod": "anaerobicallyDigestedWet",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 1212.2000000000003
+    },
+    {
+      "sourceId": "Bldg-039",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "fruitsAndVegetables",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 551000.0000000001
+    },
+    {
+      "sourceId": "Bldg-040",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "dairyProducts",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 250.0
+    },
+    {
+      "sourceId": "Bldg-041",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "yardTrimmings",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 500000.0
+    },
+    {
+      "sourceId": "Bldg-042",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "grass",
+      "disposalMethod": "anaerobicallyDigestedDry",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 9.918000000000001
+    },
+    {
+      "sourceId": "Bldg-043",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "leaves",
+      "disposalMethod": "composted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 2093.8
+    },
+    {
+      "sourceId": "Bldg-044",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "branches",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 551000.0000000001
+    },
+    {
+      "sourceId": "Bldg-045",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "branches",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 2650.0000000000005
+    },
+    {
+      "sourceId": "Bldg-046",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedPaperGeneral",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 700000.0000000001
+    },
+    {
+      "sourceId": "Bldg-047",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedPaperPrimarilyResidential",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 84.85400000000001
+    },
+    {
+      "sourceId": "Bldg-048",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedPaperPrimarilyFromOffices",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 8265.0
+    },
+    {
+      "sourceId": "Bldg-049",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedMetals",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-050",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedPlastics",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 100.0
+    },
+    {
+      "sourceId": "Bldg-051",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedRecyclables",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 6800000.000000001
+    },
+    {
+      "sourceId": "Bldg-052",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "foodWaste",
+      "disposalMethod": "combusted",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 5.510000000000001
+    },
+    {
+      "sourceId": "Bldg-053",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedOrganics",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 551.0000000000001
+    },
+    {
+      "sourceId": "Bldg-054",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedMswMunicipalSolidWaste",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 4738600.0
+    },
+    {
+      "sourceId": "Bldg-055",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "carpet",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 8400.0
+    },
+    {
+      "sourceId": "Bldg-056",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "desktopCpus",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 4000000.0
+    },
+    {
+      "sourceId": "Bldg-057",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "portableElectronicDevices",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 2.204
+    },
+    {
+      "sourceId": "Bldg-058",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "flatPanelDisplays",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 8154.8
+    },
+    {
+      "sourceId": "Bldg-059",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "crtDisplays",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-060",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "electronicPeripherals",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 11150.0
+    },
+    {
+      "sourceId": "Bldg-061",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "hardCopyDevices",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 200000.0
+    },
+    {
+      "sourceId": "Bldg-062",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "mixedElectronics",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 2.204
+    },
+    {
+      "sourceId": "Bldg-063",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "clayBricks",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 220.4
+    },
+    {
+      "sourceId": "Bldg-064",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "concrete",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-065",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "flyAsh",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 100.0
+    },
+    {
+      "sourceId": "Bldg-066",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "tires",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 200000.0
+    },
+    {
+      "sourceId": "Bldg-067",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "asphaltConcrete",
+      "disposalMethod": "recycled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 0.0
+    },
+    {
+      "sourceId": "Bldg-068",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "asphaltShingles",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 7713.999999999999
+    },
+    {
+      "sourceId": "Bldg-069",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "drywall",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-070",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "fiberglassInsulation",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 250.0
+    },
+    {
+      "sourceId": "Bldg-071",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "vinylFlooring",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 2900000.0
+    },
+    {
+      "sourceId": "Bldg-072",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "woodFlooring",
+      "disposalMethod": "combusted",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 8.816
+    },
+    {
+      "sourceId": "Bldg-073",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "aluminumCans",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 661.2000000000002
+    },
+    {
+      "sourceId": "Bldg-074",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "aluminumIngot",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 440800.0
+    },
+    {
+      "sourceId": "Bldg-075",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "steelCans",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 1600.0
+    },
+    {
+      "sourceId": "Bldg-076",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "copperWire",
+      "disposalMethod": "recycled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 1800000.0
+    },
+    {
+      "sourceId": "Bldg-077",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "glass",
+      "disposalMethod": "landfilled",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 2.204
+    },
+    {
+      "sourceId": "Bldg-078",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "hdpe",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 220.4
+    },
+    {
+      "sourceId": "Bldg-079",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "ldpe",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "metricTon",
+      "CO2Emissions": 220400.0
+    },
+    {
+      "sourceId": "Bldg-080",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pet",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "pounds",
+      "CO2Emissions": 100.0
+    },
+    {
+      "sourceId": "Bldg-081",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "lldpe",
+      "disposalMethod": "landfilled",
+      "weight": 10000,
+      "unit": "shortTon",
+      "CO2Emissions": 200000.0
+    },
+    {
+      "sourceId": "Bldg-082",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "pp",
+      "disposalMethod": "combusted",
+      "weight": 100000,
+      "unit": "gram",
+      "CO2Emissions": 308.56000000000006
+    },
+    {
+      "sourceId": "Bldg-083",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "wasteMaterial": "ps",
+      "disposalMethod": "combusted",
+      "weight": 10000,
+      "unit": "kilogram",
+      "CO2Emissions": 33280.40000000001
+    }
+  ],
+  "totalEmissionsByDisposalMethod": [
+    {
+      "wasteMaterial": "recycled",
+      "CO2": 8312281.216
+    },
+    {
+      "wasteMaterial": "landfilled",
+      "CO2": 21135369.183999997
+    },
+    {
+      "wasteMaterial": "combusted",
+      "CO2": 13935096.600000001
+    },
+    {
+      "wasteMaterial": "composted",
+      "CO2": 2093.8
+    },
+    {
+      "wasteMaterial": "anaerobicallyDigestedDry",
+      "CO2": 9.918000000000001
+    },
+    {
+      "wasteMaterial": "anaerobicallyDigestedWet",
+      "CO2": 1212.2000000000003
+    }
+  ],
+  "totalCo2EquivalentEmissions": 43386.062917999996
+}
