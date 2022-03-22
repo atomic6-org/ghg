@@ -62,6 +62,15 @@ def purchased_gases_schema():
 
 
 @pytest.fixture
+def business_travel_schema():
+    """Provides schema validation to tests"""
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "business_travel.json")
+    schema = json.loads(schema_file_contents)
+    v = Draft7Validator(schema=schema)
+    return v
+
+
+@pytest.fixture
 def waste_schema():
     """Provides schema validation to tests"""
     schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "waste.json")

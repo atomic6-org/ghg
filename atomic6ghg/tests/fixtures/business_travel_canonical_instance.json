@@ -1,0 +1,1161 @@
+{
+  "version": "business-travel.1.0.0",
+  "personalVehicleRentalCarOrTaxiBusinessTravel": [
+    {
+      "sourceId": "JD-002",
+      "sourceDescription": "John Doe 2",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 111.0,
+      "CO2": 51.504000000000005,
+      "CH4": 1.332,
+      "N2O": 1.11
+    },
+    {
+      "sourceId": "JD-003",
+      "sourceDescription": "John Doe 3",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 222.0,
+      "CO2": 75.70200000000001,
+      "CH4": 1.9979999999999998,
+      "N2O": 1.776
+    },
+    {
+      "sourceId": "JD-004",
+      "sourceDescription": "John Doe 4",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 300.0,
+      "CO2": 56.7,
+      "CH4": 21.000000000000004,
+      "N2O": 2.1
+    },
+    {
+      "sourceId": "JD-005",
+      "sourceDescription": "John Doe 5",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 200.0,
+      "CO2": 92.80000000000001,
+      "CH4": 2.4,
+      "N2O": 2.0
+    },
+    {
+      "sourceId": "JD-006",
+      "sourceDescription": "John Doe 6",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 400.0,
+      "CO2": 136.4,
+      "CH4": 3.5999999999999996,
+      "N2O": 3.2
+    },
+    {
+      "sourceId": "JD-007",
+      "sourceDescription": "John Doe 7",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 500.0,
+      "CO2": 94.5,
+      "CH4": 35.0,
+      "N2O": 3.5
+    },
+    {
+      "sourceId": "JD-008",
+      "sourceDescription": "John Doe 8",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 600.0,
+      "CO2": 278.40000000000003,
+      "CH4": 7.2,
+      "N2O": 6.0
+    },
+    {
+      "sourceId": "JD-009",
+      "sourceDescription": "John Doe 9",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 1512.0,
+      "CO2": 515.592,
+      "CH4": 13.607999999999999,
+      "N2O": 12.096
+    },
+    {
+      "sourceId": "JD-010",
+      "sourceDescription": "John Doe 10",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 485.0,
+      "CO2": 91.665,
+      "CH4": 33.95,
+      "N2O": 3.395
+    },
+    {
+      "sourceId": "JD-011",
+      "sourceDescription": "John Doe 11",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 3000.0,
+      "CO2": 1392.0,
+      "CH4": 36.0,
+      "N2O": 30.0
+    },
+    {
+      "sourceId": "JD-012",
+      "sourceDescription": "John Doe 12",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 841.0,
+      "CO2": 286.781,
+      "CH4": 7.568999999999999,
+      "N2O": 6.728
+    },
+    {
+      "sourceId": "JD-013",
+      "sourceDescription": "John Doe 13",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 124.0,
+      "CO2": 23.436,
+      "CH4": 8.680000000000001,
+      "N2O": 0.868
+    },
+    {
+      "sourceId": "JD-014",
+      "sourceDescription": "John Doe 14",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 781.0,
+      "CO2": 362.384,
+      "CH4": 9.372,
+      "N2O": 7.8100000000000005
+    },
+    {
+      "sourceId": "JD-015",
+      "sourceDescription": "John Doe 15",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 582.0,
+      "CO2": 198.46200000000002,
+      "CH4": 5.2379999999999995,
+      "N2O": 4.656
+    },
+    {
+      "sourceId": "JD-016",
+      "sourceDescription": "John Doe 16",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 83.0,
+      "CO2": 15.687,
+      "CH4": 5.8100000000000005,
+      "N2O": 0.581
+    },
+    {
+      "sourceId": "JD-017",
+      "sourceDescription": "John Doe 17",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 81.0,
+      "CO2": 37.584,
+      "CH4": 0.972,
+      "N2O": 0.81
+    },
+    {
+      "sourceId": "JD-018",
+      "sourceDescription": "John Doe 18",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 58.0,
+      "CO2": 19.778000000000002,
+      "CH4": 0.5219999999999999,
+      "N2O": 0.464
+    },
+    {
+      "sourceId": "JD-019",
+      "sourceDescription": "John Doe 19",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 180.0,
+      "CO2": 34.02,
+      "CH4": 12.600000000000001,
+      "N2O": 1.26
+    },
+    {
+      "sourceId": "JD-020",
+      "sourceDescription": "John Doe 20",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 581.0,
+      "CO2": 269.584,
+      "CH4": 6.972,
+      "N2O": 5.8100000000000005
+    },
+    {
+      "sourceId": "JF-001",
+      "sourceDescription": "Source Description 1",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 851.0,
+      "CO2": 290.19100000000003,
+      "CH4": 7.659,
+      "N2O": 6.808
+    },
+    {
+      "sourceId": "JF-002",
+      "sourceDescription": "Source Description 2",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 693.0,
+      "CO2": 130.977,
+      "CH4": 48.510000000000005,
+      "N2O": 4.851
+    },
+    {
+      "sourceId": "JF-003",
+      "sourceDescription": "Source Description 3",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 94.0,
+      "CO2": 43.616,
+      "CH4": 1.1280000000000001,
+      "N2O": 0.9400000000000001
+    },
+    {
+      "sourceId": "JF-004",
+      "sourceDescription": "Source Description 4",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 257.0,
+      "CO2": 87.637,
+      "CH4": 2.3129999999999997,
+      "N2O": 2.056
+    },
+    {
+      "sourceId": "JF-005",
+      "sourceDescription": "Source Description 5",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 194.0,
+      "CO2": 36.666,
+      "CH4": 13.580000000000002,
+      "N2O": 1.358
+    },
+    {
+      "sourceId": "JF-006",
+      "sourceDescription": "Source Description 6",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 896.0,
+      "CO2": 415.744,
+      "CH4": 10.752,
+      "N2O": 8.96
+    },
+    {
+      "sourceId": "JF-007",
+      "sourceDescription": "Source Description 7",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 28.0,
+      "CO2": 9.548,
+      "CH4": 0.252,
+      "N2O": 0.224
+    },
+    {
+      "sourceId": "JF-008",
+      "sourceDescription": "Source Description 8",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 1048.0,
+      "CO2": 198.072,
+      "CH4": 73.36000000000001,
+      "N2O": 7.336
+    },
+    {
+      "sourceId": "JF-009",
+      "sourceDescription": "Source Description 9",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 581.0,
+      "CO2": 269.584,
+      "CH4": 6.972,
+      "N2O": 5.8100000000000005
+    },
+    {
+      "sourceId": "JF-010",
+      "sourceDescription": "Source Description 10",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 5086.0,
+      "CO2": 1734.326,
+      "CH4": 45.773999999999994,
+      "N2O": 40.688
+    },
+    {
+      "sourceId": "JF-011",
+      "sourceDescription": "Source Description 11",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 123.0,
+      "CO2": 23.247,
+      "CH4": 8.610000000000001,
+      "N2O": 0.861
+    },
+    {
+      "sourceId": "JF-012",
+      "sourceDescription": "Source Description 12",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 65.0,
+      "CO2": 30.16,
+      "CH4": 0.78,
+      "N2O": 0.65
+    },
+    {
+      "sourceId": "JF-013",
+      "sourceDescription": "Source Description 13",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 34.0,
+      "CO2": 11.594000000000001,
+      "CH4": 0.306,
+      "N2O": 0.272
+    },
+    {
+      "sourceId": "JF-014",
+      "sourceDescription": "Source Description 14",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 765.0,
+      "CO2": 144.585,
+      "CH4": 53.550000000000004,
+      "N2O": 5.355
+    },
+    {
+      "sourceId": "JF-015",
+      "sourceDescription": "Source Description 15",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 851.0,
+      "CO2": 394.86400000000003,
+      "CH4": 10.212,
+      "N2O": 8.51
+    },
+    {
+      "sourceId": "JF-016",
+      "sourceDescription": "Source Description 16",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 438.0,
+      "CO2": 149.358,
+      "CH4": 3.9419999999999997,
+      "N2O": 3.504
+    },
+    {
+      "sourceId": "JF-017",
+      "sourceDescription": "Source Description 17",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 129.0,
+      "CO2": 24.381,
+      "CH4": 9.030000000000001,
+      "N2O": 0.903
+    },
+    {
+      "sourceId": "JF-018",
+      "sourceDescription": "Source Description 18",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 596.0,
+      "CO2": 276.54400000000004,
+      "CH4": 7.152,
+      "N2O": 5.96
+    },
+    {
+      "sourceId": "JF-019",
+      "sourceDescription": "Source Description 19",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 281.0,
+      "CO2": 95.82100000000001,
+      "CH4": 2.529,
+      "N2O": 2.248
+    }
+  ],
+  "totalForAllPersonalVehicleBusinessTravel": {
+    "CO2": 8399.894,
+    "CH4": 520.234,
+    "N2O": 201.45799999999994
+  },
+  "railOrBusBusinessTravel": [
+    {
+      "sourceId": "JA-001",
+      "sourceDescription": "Source Description 1",
+      "vehicleType": "transitRail",
+      "passengerMiles": 200.0,
+      "CO2": 21.2,
+      "CH4": 1.9,
+      "N2O": 0.26
+    },
+    {
+      "sourceId": "JA-002",
+      "sourceDescription": "Source Description 2",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 300.0,
+      "CO2": 17.400000000000002,
+      "CH4": 1.65,
+      "N2O": 0.21
+    },
+    {
+      "sourceId": "JA-003",
+      "sourceDescription": "Source Description 3",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 400.0,
+      "CO2": 60.0,
+      "CH4": 4.68,
+      "N2O": 1.52
+    },
+    {
+      "sourceId": "JA-004",
+      "sourceDescription": "Source Description 4",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 500.0,
+      "CO2": 56.5,
+      "CH4": 4.6,
+      "N2O": 1.3
+    },
+    {
+      "sourceId": "JA-005",
+      "sourceDescription": "Source Description 5",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 600.0,
+      "CO2": 85.8,
+      "CH4": 7.140000000000001,
+      "N2O": 1.7399999999999998
+    },
+    {
+      "sourceId": "JA-006",
+      "sourceDescription": "Source Description 6",
+      "vehicleType": "bus",
+      "passengerMiles": 700.0,
+      "CO2": 37.8,
+      "CH4": 14.42,
+      "N2O": 0.63
+    },
+    {
+      "sourceId": "JA-007",
+      "sourceDescription": "Source Description 7",
+      "vehicleType": "transitRail",
+      "passengerMiles": 800.0,
+      "CO2": 84.8,
+      "CH4": 7.6,
+      "N2O": 1.04
+    },
+    {
+      "sourceId": "JA-008",
+      "sourceDescription": "Source Description 8",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 900.0,
+      "CO2": 52.2,
+      "CH4": 4.949999999999999,
+      "N2O": 0.63
+    },
+    {
+      "sourceId": "JA-009",
+      "sourceDescription": "Source Description 9",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 1000.0,
+      "CO2": 150.0,
+      "CH4": 11.700000000000001,
+      "N2O": 3.8
+    },
+    {
+      "sourceId": "JA-010",
+      "sourceDescription": "Source Description 10",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 1100.0,
+      "CO2": 124.3,
+      "CH4": 10.12,
+      "N2O": 2.86
+    },
+    {
+      "sourceId": "JA-011",
+      "sourceDescription": "Source Description 11",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 1200.0,
+      "CO2": 171.6,
+      "CH4": 14.280000000000001,
+      "N2O": 3.4799999999999995
+    },
+    {
+      "sourceId": "JA-012",
+      "sourceDescription": "Source Description 12",
+      "vehicleType": "bus",
+      "passengerMiles": 1300.0,
+      "CO2": 70.2,
+      "CH4": 26.78,
+      "N2O": 1.17
+    },
+    {
+      "sourceId": "JA-013",
+      "sourceDescription": "Source Description 13",
+      "vehicleType": "transitRail",
+      "passengerMiles": 1400.0,
+      "CO2": 148.4,
+      "CH4": 13.299999999999999,
+      "N2O": 1.8199999999999998
+    },
+    {
+      "sourceId": "JA-014",
+      "sourceDescription": "Source Description 14",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 1500.0,
+      "CO2": 87.0,
+      "CH4": 8.25,
+      "N2O": 1.05
+    },
+    {
+      "sourceId": "JA-015",
+      "sourceDescription": "Source Description 15",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 1600.0,
+      "CO2": 240.0,
+      "CH4": 18.72,
+      "N2O": 6.08
+    },
+    {
+      "sourceId": "JA-016",
+      "sourceDescription": "Source Description 16",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 1700.0,
+      "CO2": 192.1,
+      "CH4": 15.64,
+      "N2O": 4.42
+    },
+    {
+      "sourceId": "JA-017",
+      "sourceDescription": "Source Description 17",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 1800.0,
+      "CO2": 257.4,
+      "CH4": 21.42,
+      "N2O": 5.22
+    },
+    {
+      "sourceId": "JA-018",
+      "sourceDescription": "Source Description 18",
+      "vehicleType": "bus",
+      "passengerMiles": 1900.0,
+      "CO2": 102.6,
+      "CH4": 39.14,
+      "N2O": 1.71
+    },
+    {
+      "sourceId": "JA-019",
+      "sourceDescription": "Source Description 19",
+      "vehicleType": "transitRail",
+      "passengerMiles": 2000.0,
+      "CO2": 212.0,
+      "CH4": 19.0,
+      "N2O": 2.6
+    },
+    {
+      "sourceId": "JA-020",
+      "sourceDescription": "Source Description 20",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 2100.0,
+      "CO2": 121.80000000000001,
+      "CH4": 11.549999999999999,
+      "N2O": 1.47
+    },
+    {
+      "sourceId": "JB-001",
+      "sourceDescription": "Source Description 21",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 2200.0,
+      "CO2": 330.0,
+      "CH4": 25.740000000000002,
+      "N2O": 8.36
+    },
+    {
+      "sourceId": "JB-002",
+      "sourceDescription": "Source Description 22",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 500.0,
+      "CO2": 56.5,
+      "CH4": 4.6,
+      "N2O": 1.3
+    },
+    {
+      "sourceId": "JB-003",
+      "sourceDescription": "Source Description 23",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 501.0,
+      "CO2": 71.643,
+      "CH4": 5.961900000000001,
+      "N2O": 1.4528999999999999
+    },
+    {
+      "sourceId": "JB-004",
+      "sourceDescription": "Source Description 24",
+      "vehicleType": "bus",
+      "passengerMiles": 503.0,
+      "CO2": 27.162,
+      "CH4": 10.3618,
+      "N2O": 0.4527
+    },
+    {
+      "sourceId": "JB-005",
+      "sourceDescription": "Source Description 25",
+      "vehicleType": "transitRail",
+      "passengerMiles": 504.0,
+      "CO2": 53.424,
+      "CH4": 4.788,
+      "N2O": 0.6552
+    },
+    {
+      "sourceId": "JB-006",
+      "sourceDescription": "Source Description 26",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 505.0,
+      "CO2": 29.290000000000003,
+      "CH4": 2.7775,
+      "N2O": 0.3535
+    },
+    {
+      "sourceId": "JB-007",
+      "sourceDescription": "Source Description 27",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 506.0,
+      "CO2": 75.89999999999999,
+      "CH4": 5.9202,
+      "N2O": 1.9228
+    },
+    {
+      "sourceId": "JB-008",
+      "sourceDescription": "Source Description 28",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 507.0,
+      "CO2": 57.291000000000004,
+      "CH4": 4.6644,
+      "N2O": 1.3182
+    },
+    {
+      "sourceId": "JB-009",
+      "sourceDescription": "Source Description 29",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 508.0,
+      "CO2": 72.64399999999999,
+      "CH4": 6.0452,
+      "N2O": 1.4731999999999998
+    },
+    {
+      "sourceId": "JB-010",
+      "sourceDescription": "Source Description 30",
+      "vehicleType": "bus",
+      "passengerMiles": 509.0,
+      "CO2": 27.486,
+      "CH4": 10.4854,
+      "N2O": 0.4581
+    },
+    {
+      "sourceId": "JB-011",
+      "sourceDescription": "Source Description 31",
+      "vehicleType": "transitRail",
+      "passengerMiles": 510.0,
+      "CO2": 54.059999999999995,
+      "CH4": 4.845,
+      "N2O": 0.6629999999999999
+    },
+    {
+      "sourceId": "JB-012",
+      "sourceDescription": "Source Description 32",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 511.0,
+      "CO2": 29.638,
+      "CH4": 2.8104999999999998,
+      "N2O": 0.3577
+    },
+    {
+      "sourceId": "JB-013",
+      "sourceDescription": "Source Description 33",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 512.0,
+      "CO2": 76.8,
+      "CH4": 5.9904,
+      "N2O": 1.9456
+    },
+    {
+      "sourceId": "JB-014",
+      "sourceDescription": "Source Description 34",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 513.0,
+      "CO2": 57.969,
+      "CH4": 4.7196,
+      "N2O": 1.3337999999999999
+    },
+    {
+      "sourceId": "JB-015",
+      "sourceDescription": "Source Description 35",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 514.0,
+      "CO2": 73.502,
+      "CH4": 6.1166,
+      "N2O": 1.4906
+    },
+    {
+      "sourceId": "JB-016",
+      "sourceDescription": "Source Description 36",
+      "vehicleType": "bus",
+      "passengerMiles": 515.0,
+      "CO2": 27.81,
+      "CH4": 10.609,
+      "N2O": 0.46349999999999997
+    },
+    {
+      "sourceId": "JB-017",
+      "sourceDescription": "Source Description 37",
+      "vehicleType": "transitRail",
+      "passengerMiles": 516.0,
+      "CO2": 54.696,
+      "CH4": 4.902,
+      "N2O": 0.6708
+    },
+    {
+      "sourceId": "JB-018",
+      "sourceDescription": "Source Description 38",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 517.0,
+      "CO2": 29.986,
+      "CH4": 2.8434999999999997,
+      "N2O": 0.3619
+    },
+    {
+      "sourceId": "JB-019",
+      "sourceDescription": "Source Description 39",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 518.0,
+      "CO2": 77.7,
+      "CH4": 6.0606,
+      "N2O": 1.9684
+    },
+    {
+      "sourceId": "JB-020",
+      "sourceDescription": "Source Description 40",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 519.0,
+      "CO2": 58.647,
+      "CH4": 4.7748,
+      "N2O": 1.3494
+    },
+    {
+      "sourceId": "JB-021",
+      "sourceDescription": "Source Description 41",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 520.0,
+      "CO2": 74.36,
+      "CH4": 6.188000000000001,
+      "N2O": 1.508
+    },
+    {
+      "sourceId": "JB-022",
+      "sourceDescription": "Source Description 42",
+      "vehicleType": "bus",
+      "passengerMiles": 521.0,
+      "CO2": 28.134,
+      "CH4": 10.7326,
+      "N2O": 0.4689
+    },
+    {
+      "sourceId": "JB-023",
+      "sourceDescription": "Source Description 43",
+      "vehicleType": "transitRail",
+      "passengerMiles": 522.0,
+      "CO2": 55.332,
+      "CH4": 4.959,
+      "N2O": 0.6786
+    },
+    {
+      "sourceId": "JB-024",
+      "sourceDescription": "Source Description 44",
+      "vehicleType": "intercityRailNortheastCorridor",
+      "passengerMiles": 523.0,
+      "CO2": 30.334000000000003,
+      "CH4": 2.8764999999999996,
+      "N2O": 0.3661
+    },
+    {
+      "sourceId": "JB-025",
+      "sourceDescription": "Source Description 45",
+      "vehicleType": "intercityRailOtherRoutes",
+      "passengerMiles": 524.0,
+      "CO2": 78.6,
+      "CH4": 6.1308,
+      "N2O": 1.9912
+    },
+    {
+      "sourceId": "JB-026",
+      "sourceDescription": "Source Description 46",
+      "vehicleType": "intercityRailNationalAverage",
+      "passengerMiles": 525.0,
+      "CO2": 59.325,
+      "CH4": 4.83,
+      "N2O": 1.365
+    },
+    {
+      "sourceId": "JB-027",
+      "sourceDescription": "Source Description 47",
+      "vehicleType": "commuterRail",
+      "passengerMiles": 526.0,
+      "CO2": 75.21799999999999,
+      "CH4": 6.2594,
+      "N2O": 1.5253999999999999
+    },
+    {
+      "sourceId": "JB-028",
+      "sourceDescription": "Source Description 48",
+      "vehicleType": "bus",
+      "passengerMiles": 527.0,
+      "CO2": 28.458,
+      "CH4": 10.8562,
+      "N2O": 0.4743
+    }
+  ],
+  "totalForAllRailAndBusBusinessTravel": {
+    "CO2": 4065.0089999999987,
+    "CH4": 444.6889000000003,
+    "N2O": 79.73880000000001
+  },
+  "airBusinessTravel": [
+    {
+      "sourceId": "JE-001",
+      "sourceDescription": "Air Source Desc. 01",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 1000.0,
+      "CO2": 131.0,
+      "CH4": 0.6,
+      "N2O": 4.2
+    },
+    {
+      "sourceId": "JE-002",
+      "sourceDescription": "Air Source Desc. 02",
+      "flightLength": "longHaul",
+      "passengerMiles": 1100.0,
+      "CO2": 177.1,
+      "CH4": 0.6599999999999999,
+      "N2O": 5.61
+    },
+    {
+      "sourceId": "JE-003",
+      "sourceDescription": "Air Source Desc. 03",
+      "flightLength": "shortHaul",
+      "passengerMiles": 1200.0,
+      "CO2": 247.2,
+      "CH4": 8.520000000000001,
+      "N2O": 7.8
+    },
+    {
+      "sourceId": "JE-004",
+      "sourceDescription": "Air Source Desc. 04",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 1300.0,
+      "CO2": 170.3,
+      "CH4": 0.7799999999999999,
+      "N2O": 5.46
+    },
+    {
+      "sourceId": "JE-005",
+      "sourceDescription": "Air Source Desc. 05",
+      "flightLength": "longHaul",
+      "passengerMiles": 1400.0,
+      "CO2": 225.4,
+      "CH4": 0.84,
+      "N2O": 7.140000000000001
+    },
+    {
+      "sourceId": "JE-006",
+      "sourceDescription": "Air Source Desc. 06",
+      "flightLength": "shortHaul",
+      "passengerMiles": 1500.0,
+      "CO2": 309.0,
+      "CH4": 10.65,
+      "N2O": 9.75
+    },
+    {
+      "sourceId": "JE-007",
+      "sourceDescription": "Air Source Desc. 07",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 1600.0,
+      "CO2": 209.60000000000002,
+      "CH4": 0.96,
+      "N2O": 6.72
+    },
+    {
+      "sourceId": "JE-008",
+      "sourceDescription": "Air Source Desc. 08",
+      "flightLength": "longHaul",
+      "passengerMiles": 1700.0,
+      "CO2": 273.7,
+      "CH4": 1.02,
+      "N2O": 8.67
+    },
+    {
+      "sourceId": "JE-009",
+      "sourceDescription": "Air Source Desc. 09",
+      "flightLength": "shortHaul",
+      "passengerMiles": 1800.0,
+      "CO2": 370.79999999999995,
+      "CH4": 12.780000000000001,
+      "N2O": 11.7
+    },
+    {
+      "sourceId": "JE-010",
+      "sourceDescription": "Air Source Desc. 10",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 1900.0,
+      "CO2": 248.9,
+      "CH4": 1.14,
+      "N2O": 7.9799999999999995
+    },
+    {
+      "sourceId": "JE-011",
+      "sourceDescription": "Air Source Desc. 11",
+      "flightLength": "longHaul",
+      "passengerMiles": 2000.0,
+      "CO2": 322.0,
+      "CH4": 1.2,
+      "N2O": 10.200000000000001
+    },
+    {
+      "sourceId": "JE-012",
+      "sourceDescription": "Air Source Desc. 12",
+      "flightLength": "shortHaul",
+      "passengerMiles": 2100.0,
+      "CO2": 432.59999999999997,
+      "CH4": 14.91,
+      "N2O": 13.649999999999999
+    },
+    {
+      "sourceId": "JE-013",
+      "sourceDescription": "Air Source Desc. 13",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 2200.0,
+      "CO2": 288.2,
+      "CH4": 1.3199999999999998,
+      "N2O": 9.24
+    },
+    {
+      "sourceId": "JE-014",
+      "sourceDescription": "Air Source Desc. 14",
+      "flightLength": "longHaul",
+      "passengerMiles": 2300.0,
+      "CO2": 370.3,
+      "CH4": 1.38,
+      "N2O": 11.73
+    },
+    {
+      "sourceId": "JE-015",
+      "sourceDescription": "Air Source Desc. 15",
+      "flightLength": "shortHaul",
+      "passengerMiles": 2400.0,
+      "CO2": 494.4,
+      "CH4": 17.040000000000003,
+      "N2O": 15.6
+    },
+    {
+      "sourceId": "JE-016",
+      "sourceDescription": "Air Source Desc. 16",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 2500.0,
+      "CO2": 327.5,
+      "CH4": 1.4999999999999998,
+      "N2O": 10.5
+    },
+    {
+      "sourceId": "JE-017",
+      "sourceDescription": "Air Source Desc. 17",
+      "flightLength": "longHaul",
+      "passengerMiles": 2600.0,
+      "CO2": 418.6,
+      "CH4": 1.5599999999999998,
+      "N2O": 13.260000000000002
+    },
+    {
+      "sourceId": "JE-018",
+      "sourceDescription": "Air Source Desc. 18",
+      "flightLength": "shortHaul",
+      "passengerMiles": 2700.0,
+      "CO2": 556.1999999999999,
+      "CH4": 19.17,
+      "N2O": 17.55
+    },
+    {
+      "sourceId": "JE-019",
+      "sourceDescription": "Air Source Desc. 19",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 2800.0,
+      "CO2": 366.8,
+      "CH4": 1.68,
+      "N2O": 11.76
+    },
+    {
+      "sourceId": "JE-020",
+      "sourceDescription": "Air Source Desc. 20",
+      "flightLength": "longHaul",
+      "passengerMiles": 2900.0,
+      "CO2": 466.90000000000003,
+      "CH4": 1.7399999999999998,
+      "N2O": 14.790000000000001
+    },
+    {
+      "sourceId": "JE-021",
+      "sourceDescription": "Air Source Desc. 21",
+      "flightLength": "shortHaul",
+      "passengerMiles": 3000.0,
+      "CO2": 618.0,
+      "CH4": 21.3,
+      "N2O": 19.5
+    },
+    {
+      "sourceId": "JE-022",
+      "sourceDescription": "Air Source Desc. 22",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 3100.0,
+      "CO2": 406.1,
+      "CH4": 1.8599999999999999,
+      "N2O": 13.02
+    },
+    {
+      "sourceId": "JE-023",
+      "sourceDescription": "Air Source Desc. 23",
+      "flightLength": "longHaul",
+      "passengerMiles": 3200.0,
+      "CO2": 515.2,
+      "CH4": 1.92,
+      "N2O": 16.32
+    },
+    {
+      "sourceId": "JE-024",
+      "sourceDescription": "Air Source Desc. 24",
+      "flightLength": "shortHaul",
+      "passengerMiles": 3300.0,
+      "CO2": 679.8,
+      "CH4": 23.43,
+      "N2O": 21.45
+    },
+    {
+      "sourceId": "JE-025",
+      "sourceDescription": "Air Source Desc. 25",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 3400.0,
+      "CO2": 445.40000000000003,
+      "CH4": 2.04,
+      "N2O": 14.28
+    },
+    {
+      "sourceId": "JE-026",
+      "sourceDescription": "Air Source Desc. 26",
+      "flightLength": "longHaul",
+      "passengerMiles": 3500.0,
+      "CO2": 563.5,
+      "CH4": 2.0999999999999996,
+      "N2O": 17.85
+    },
+    {
+      "sourceId": "JE-027",
+      "sourceDescription": "Air Source Desc. 27",
+      "flightLength": "shortHaul",
+      "passengerMiles": 3600.0,
+      "CO2": 741.5999999999999,
+      "CH4": 25.560000000000002,
+      "N2O": 23.4
+    },
+    {
+      "sourceId": "JE-028",
+      "sourceDescription": "Air Source Desc. 28",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 3700.0,
+      "CO2": 484.70000000000005,
+      "CH4": 2.2199999999999998,
+      "N2O": 15.54
+    },
+    {
+      "sourceId": "JE-029",
+      "sourceDescription": "Air Source Desc. 29",
+      "flightLength": "longHaul",
+      "passengerMiles": 3800.0,
+      "CO2": 611.8000000000001,
+      "CH4": 2.28,
+      "N2O": 19.380000000000003
+    },
+    {
+      "sourceId": "JE-030",
+      "sourceDescription": "Air Source Desc. 30",
+      "flightLength": "shortHaul",
+      "passengerMiles": 3900.0,
+      "CO2": 803.4,
+      "CH4": 27.69,
+      "N2O": 25.349999999999998
+    },
+    {
+      "sourceId": "JE-031",
+      "sourceDescription": "Air Source Desc. 31",
+      "flightLength": "mediumHaul",
+      "passengerMiles": 4000.0,
+      "CO2": 524.0,
+      "CH4": 2.4,
+      "N2O": 16.8
+    },
+    {
+      "sourceId": "JE-032",
+      "sourceDescription": "Air Source Desc. 32",
+      "flightLength": "longHaul",
+      "passengerMiles": 4100.0,
+      "CO2": 660.1,
+      "CH4": 2.46,
+      "N2O": 20.91
+    }
+  ],
+  "totalForAllAirBusinessTravel": {
+    "CO2": 13460.1,
+    "CH4": 214.71,
+    "N2O": 427.11
+  },
+  "totalCo2EmissionsByTravelType": [
+    {
+      "transportType": "passengerCars",
+      "CO2": 3611.19,
+      "CH4": 95.30999999999997,
+      "N2O": 84.72000000000001
+    },
+    {
+      "transportType": "lightDutyTruck",
+      "CO2": 3914.7679999999996,
+      "CH4": 101.244,
+      "N2O": 84.37
+    },
+    {
+      "transportType": "motorcycle",
+      "CO2": 873.9359999999999,
+      "CH4": 323.68000000000006,
+      "N2O": 32.368
+    },
+    {
+      "transportType": "intercityRailNortheastCorridor",
+      "CO2": 397.648,
+      "CH4": 37.708,
+      "N2O": 4.799200000000001
+    },
+    {
+      "transportType": "intercityRailOtherRoutes",
+      "CO2": 1089.0,
+      "CH4": 84.94199999999998,
+      "N2O": 27.587999999999994
+    },
+    {
+      "transportType": "intercityRailNationalAverage",
+      "CO2": 662.6320000000001,
+      "CH4": 53.9488,
+      "N2O": 15.2464
+    },
+    {
+      "transportType": "commuterRail",
+      "CO2": 882.1669999999999,
+      "CH4": 73.4111,
+      "N2O": 17.8901
+    },
+    {
+      "transportType": "transitRail",
+      "CO2": 683.9119999999999,
+      "CH4": 61.294,
+      "N2O": 8.3876
+    },
+    {
+      "transportType": "bus",
+      "CO2": 349.65,
+      "CH4": 133.385,
+      "N2O": 5.8275
+    },
+    {
+      "transportType": "shortHaul",
+      "CO2": 5253.0,
+      "CH4": 181.05,
+      "N2O": 165.75
+    },
+    {
+      "transportType": "mediumHaul",
+      "CO2": 3602.5,
+      "CH4": 16.499999999999996,
+      "N2O": 115.49999999999999
+    },
+    {
+      "transportType": "longHaul",
+      "CO2": 4604.6,
+      "CH4": 17.159999999999997,
+      "N2O": 145.86
+    }
+  ],
+  "totalCo2EquivalentEmissions": 26.165569248899995
+}

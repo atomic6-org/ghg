@@ -74,42 +74,42 @@
             "title": "Market-Based Emissions CO2 Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
             "type": ["number", "null"]
           },
           "marketBasedEmissionsCH4Emissions": {
             "title": "Market-Based Emissions CH4 Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
             "type": ["number", "null"]
           },
           "marketBasedEmissionsN2OEmissions": {
             "title": "Market-Based Emissions N2O Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
             "type": ["number", "null"]
           },
           "locationBasedEmissionsCO2Emissions": {
             "title": "Location-Based Emissions CO2 Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
             "type": ["number", "null"]
           },
           "locationBasedEmissionsCH4Emissions": {
             "title": "Location-Based Emissions CH4 Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
             "type": ["number", "null"]
           },
           "locationBasedEmissionsN2OEmissions": {
             "title": "Location-Based Emissions N2O Emissions (lb)",
             "description": "",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+            "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
             "type": ["number", "null"]
           }
         },
@@ -137,7 +137,7 @@
           "title": "Market-Based Emissions CO2 Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -147,7 +147,7 @@
           "title": "Market-Based Emissions CH4 Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -157,7 +157,7 @@
           "title": "Market-Based Emissions N2O Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_market_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -167,7 +167,7 @@
           "title": "Location-Based Emissions CO2 Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -177,7 +177,7 @@
           "title": "Location-Based Emissions CH4 Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -187,7 +187,7 @@
           "title": "Location-Based Emissions N2O Emissions (lb)",
           "description": "",
           "format": ":.1f",
-          "formula": "atom6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
+          "formula": "atomic6ghg.formulas.electricity.calculate_location_based_emissions_electricity",
           "type": [
             "number",
             "null"
@@ -197,12 +197,12 @@
     },
     "CO2EquivalentEmissionsLocationBasedElectricityEmissions": {
       "title": "CO2 Equivalent Emissions (metric tons) Location-Based Electricity Emissions",
-      "formula": "atom6ghg.formulas.electricity.make_co2_equivalent_emissions_location_based",
+      "formula": "atomic6ghg.formulas.electricity.make_co2_equivalent_emissions_location_based",
       "type": ["number", "null"]
     },
     "CO2EquivalentEmissionsMarketBasedElectricityEmissions": {
       "title": "CO2 Equivalent Emissions (metric tons) Market-Based Electricity Emissions",
-      "formula": "atom6ghg.formulas.electricity.make_co2_equivalent_emissions_market_based",
+      "formula": "atomic6ghg.formulas.electricity.make_co2_equivalent_emissions_market_based",
       "type": ["number", "null"]
     },
     "footNote": {

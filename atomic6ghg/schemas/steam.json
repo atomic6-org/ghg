@@ -165,42 +165,42 @@
             "title": "Location-Based CO2 Emissions (kg)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_location_based_emissions_steam",
             "type": "number"
           },
           "locationBasedCH4Emissions": {
             "title": "Location-Based CH4 Emissions (g)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_location_based_emissions_steam",
             "type": "number"
           },
           "locationBasedN2OEmissions": {
             "title": "Location-Based N2O Emissions (g)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_location_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_location_based_emissions_steam",
             "type": "number"
           },
           "marketBasedCO2Emissions": {
             "title": "Market-Based CO2 Emissions (kg)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_market_based_emissions_steam",
             "type": "number"
           },
           "marketBasedCH4Emissions": {
             "title": "Market-Based CH4 Emissions (g)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_market_based_emissions_steam",
             "type": "number"
           },
           "marketBasedN2OEmissions": {
             "title": "Market-Based N2O Emissions (g)",
             "description": "",
             "format": "s",
-            "formula": "atom6ghg.formulas.steam.calculate_market_based_emissions_steam",
+            "formula": "atomic6ghg.formulas.steam.calculate_market_based_emissions_steam",
             "type": "number"
           }
         }
@@ -208,12 +208,12 @@
     },
     "CO2EquivalentEmissionsLocationBasedElectricityEmissions": {
       "title": "CO2 Equivalent Emissions (metric tons) Location-Based Electricity Emissions",
-      "formula": "atom6ghg.formulas.steam.make_co2_equivalent_emissions_location_based",
+      "formula": "atomic6ghg.formulas.steam.make_co2_equivalent_emissions_location_based",
       "type": ["number", "null"]
     },
     "CO2EquivalentEmissionsMarketBasedElectricityEmissions": {
       "title": "CO2 Equivalent Emissions (metric tons) Market-Based Electricity Emissions",
-      "formula": "atom6ghg.formulas.steam.make_co2_equivalent_emissions_market_based",
+      "formula": "atomic6ghg.formulas.steam.make_co2_equivalent_emissions_market_based",
       "type": ["number", "null"]
     }
   },
