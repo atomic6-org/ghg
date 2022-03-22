@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Purchased Gases &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -52,7 +51,11 @@
 <li class="toctree-l1"><a class="reference internal" href="mobile_sources.html">Mobile Sources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="offsets.html">Offsets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Purchased Gases</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Purchased Gases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.purchased_gases">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="refrigeration_and_ac.html">Refrigeration and AC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="steam.html">Steam</a></li>
@@ -99,9 +102,76 @@
 
           <div class="body" role="main">
             
-  <section id="purchased-gases">
+  <div class="section" id="purchased-gases">
 <span id="purchased-gases-api"></span><h1>Purchased Gases<a class="headerlink" href="#purchased-gases" title="Permalink to this headline">¶</a></h1>
-<p>Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams. These complex gas streams include:</p>
+<p>Purchased Gases is a <a class="reference external" href="glossary.html">scope 1 emission</a> that accounts for <a class="reference external" href="glossary.html">purchased gas stream</a>.
+Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.  For example, CO2
+gas is often used in welding operations.  These gases are typically released to the atmosphere after use.  Any releases
+of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
+Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG
+inventory or reported as a memo item.</p>
+<div class="section" id="module-atomic6ghg.formulas.purchased_gases">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.purchased_gases" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.purchased_gases.</span></span><span class="sig-name descname"><span class="pre">PurchasedGases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from purchased gases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.calculate_co2_emissions_purchased_gases">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_purchased_gases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.calculate_co2_emissions_purchased_gases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.make_purchased_gases">
+<span class="sig-name descname"><span class="pre">make_purchased_gases</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.make_purchased_gases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for PurchasedGases</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.purchased_gases.PurchasedGases.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas.purchased_gases</span> <span class="kn">import</span> <span class="n">PurchasedGases</span>
+
+<span class="n">calculated_data</span> <span class="o">=</span> <span class="n">PurchasedGases</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+
+<span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt><strong>Parameters:</strong></dt><dd><ul class="simple">
+<li><p><strong>input_data</strong> - (dict) input data that follows the JSON schema</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams.</p>
+<p>These complex gas streams include:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 100%" />
@@ -263,7 +333,8 @@ value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span cl
 <dd><p>EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11</p>
 </dd>
 </dl>
-</section>
+</div>
+</div>
 
 
           </div>

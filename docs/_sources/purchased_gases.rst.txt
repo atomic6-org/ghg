@@ -2,7 +2,39 @@
 
 Purchased Gases
 ---------------
-Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams. These complex gas streams include:
+Purchased Gases is a `scope 1 emission <glossary.html>`_ that accounts for `purchased gas stream <glossary.html>`_.
+Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.  For example, CO2
+gas is often used in welding operations.  These gases are typically released to the atmosphere after use.  Any releases
+of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
+Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG
+inventory or reported as a memo item.
+
+Usage
+**********
+.. module:: atomic6ghg.formulas.purchased_gases
+
+.. autoclass:: PurchasedGases
+   :members:
+   :undoc-members:
+   :inherited-members:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas.purchased_gases import PurchasedGases
+
+    calculated_data = PurchasedGases.to_dict(input_data)
+
+    calculated_data['totalCo2EquivalentEmissions']
+
+**Parameters:**
+    * **input_data** - (dict) input data that follows the JSON schema
+
+EPA Equation Analysis
+**************************************************
+Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams.
+
+
+These complex gas streams include:
 
 .. csv-table::
     :file: ./purchased_gases.csv
