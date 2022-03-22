@@ -1,0 +1,442 @@
+{
+  "version": "fire-suppression.1.0.0",
+  "materialBalance": [
+    {
+      "gas": "co2",
+      "gasGWP": 1,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 2.5
+    },
+    {
+      "gas": "hfc23",
+      "gasGWP": 14800,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 37000
+    },
+    {
+      "gas": "hfc125",
+      "gasGWP": 3500,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 8750
+    },
+    {
+      "gas": "hfc134a",
+      "gasGWP": 1430,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 3575
+    },
+    {
+      "gas": "hfc227ea",
+      "gasGWP": 3220,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 8050
+    },
+    {
+      "gas": "hfc236fa",
+      "gasGWP": 9810,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 24525
+    },
+    {
+      "gas": "cf4",
+      "gasGWP": 7390,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 18475
+    },
+    {
+      "gas": "c4f10",
+      "gasGWP": 8860,
+      "inventoryChange": 1,
+      "transferredAmount": 0.5,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 22150
+    }
+  ],
+  "simplifiedMaterialBalance": [
+    {
+      "gas": "co2",
+      "gasGWP": 1,
+      "newUnitsCharge": 10000,
+      "newUnitsCapacity": 15000,
+      "existingUnitsRecharge": 5000,
+      "disposedUnitsCapacity": 15000,
+      "disposedUnitsRecovered": 10000,
+      "co2EquivalentEmissions": 5000
+    },
+    {
+      "gas": "hfc23",
+      "gasGWP": 14800,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 7400
+    },
+    {
+      "gas": "hfc125",
+      "gasGWP": 3500,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 1750
+    },
+    {
+      "gas": "hfc134a",
+      "gasGWP": 1430,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 715
+    },
+    {
+      "gas": "hfc227ea",
+      "gasGWP": 3220,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 1610
+    },
+    {
+      "gas": "hfc236fa",
+      "gasGWP": 9810,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 4905
+    },
+    {
+      "gas": "cf4",
+      "gasGWP": 7390,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 3695
+    },
+    {
+      "gas": "c4f10",
+      "gasGWP": 8860,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 1.5,
+      "existingUnitsRecharge": 0.5,
+      "disposedUnitsCapacity": 1.5,
+      "disposedUnitsRecovered": 1,
+      "co2EquivalentEmissions": 4430
+    }
+  ],
+  "screeningMethod": [
+    {
+      "sourceId": "Bldg-012",
+      "typeOfEquipment": "fixed",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 1000,
+      "co2EquivalentEmissions": 35
+    },
+    {
+      "sourceId": "Bldg-013",
+      "typeOfEquipment": "portable",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 1000,
+      "co2EquivalentEmissions": 25
+    },
+    {
+      "sourceId": "Bldg-014",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 518
+    },
+    {
+      "sourceId": "Bldg-015",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 370
+    },
+    {
+      "sourceId": "Bldg-016",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc125",
+      "gasGWP": 3500,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 122.50000000000001
+    },
+    {
+      "sourceId": "Bldg-017",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc125",
+      "gasGWP": 3500,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 87.5
+    },
+    {
+      "sourceId": "Bldg-018",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc134a",
+      "gasGWP": 1430,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 50.050000000000004
+    },
+    {
+      "sourceId": "Bldg-019",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc134a",
+      "gasGWP": 1430,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 35.75
+    },
+    {
+      "sourceId": "Bldg-020",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc227ea",
+      "gasGWP": 3220,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 112.70000000000002
+    },
+    {
+      "sourceId": "Bldg-021",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc227ea",
+      "gasGWP": 3220,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 80.5
+    },
+    {
+      "sourceId": "Bldg-022",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc236fa",
+      "gasGWP": 9810,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 343.35
+    },
+    {
+      "sourceId": "Bldg-023",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc236fa",
+      "gasGWP": 9810,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 245.25
+    },
+    {
+      "sourceId": "Bldg-024",
+      "typeOfEquipment": "fixed",
+      "gasType": "cf4",
+      "gasGWP": 7390,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 258.65000000000003
+    },
+    {
+      "sourceId": "Bldg-025",
+      "typeOfEquipment": "portable",
+      "gasType": "cf4",
+      "gasGWP": 7390,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 184.75
+    },
+    {
+      "sourceId": "Bldg-026",
+      "typeOfEquipment": "fixed",
+      "gasType": "c4f10",
+      "gasGWP": 8860,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 310.1
+    },
+    {
+      "sourceId": "Bldg-027",
+      "typeOfEquipment": "portable",
+      "gasType": "c4f10",
+      "gasGWP": 8860,
+      "unitsCapacity": 1,
+      "co2EquivalentEmissions": 221.5
+    },
+    {
+      "sourceId": "Bldg-028",
+      "typeOfEquipment": "fixed",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 1500,
+      "co2EquivalentEmissions": 52.50000000000001
+    },
+    {
+      "sourceId": "Bldg-029",
+      "typeOfEquipment": "portable",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 1500,
+      "co2EquivalentEmissions": 37.5
+    },
+    {
+      "sourceId": "Bldg-030",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 259
+    },
+    {
+      "sourceId": "Bldg-031",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 185
+    },
+    {
+      "sourceId": "Bldg-032",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc134a",
+      "gasGWP": 1430,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 100.10000000000001
+    },
+    {
+      "sourceId": "Bldg-033",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc134a",
+      "gasGWP": 1430,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 71.5
+    },
+    {
+      "sourceId": "Bldg-034",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc227ea",
+      "gasGWP": 3220,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 56.35000000000001
+    },
+    {
+      "sourceId": "Bldg-035",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc227ea",
+      "gasGWP": 3220,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 40.25
+    },
+    {
+      "sourceId": "Bldg-036",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc236fa",
+      "gasGWP": 9810,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 171.675
+    },
+    {
+      "sourceId": "Bldg-037",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc236fa",
+      "gasGWP": 9810,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 122.625
+    },
+    {
+      "sourceId": "Bldg-038",
+      "typeOfEquipment": "fixed",
+      "gasType": "cf4",
+      "gasGWP": 7390,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 129.32500000000002
+    },
+    {
+      "sourceId": "Bldg-039",
+      "typeOfEquipment": "portable",
+      "gasType": "cf4",
+      "gasGWP": 7390,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 92.375
+    },
+    {
+      "sourceId": "Bldg-040",
+      "typeOfEquipment": "fixed",
+      "gasType": "c4f10",
+      "gasGWP": 8860,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 155.05
+    },
+    {
+      "sourceId": "Bldg-041",
+      "typeOfEquipment": "portable",
+      "gasType": "c4f10",
+      "gasGWP": 8860,
+      "unitsCapacity": 0.5,
+      "co2EquivalentEmissions": 110.75
+    },
+    {
+      "sourceId": "Bldg-042",
+      "typeOfEquipment": "fixed",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 2000,
+      "co2EquivalentEmissions": 70
+    },
+    {
+      "sourceId": "Bldg-043",
+      "typeOfEquipment": "portable",
+      "gasType": "co2",
+      "gasGWP": 1,
+      "unitsCapacity": 2000,
+      "co2EquivalentEmissions": 50
+    },
+    {
+      "sourceId": "Bldg-044",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 1036
+    },
+    {
+      "sourceId": "Bldg-045",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc23",
+      "gasGWP": 14800,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 740
+    },
+    {
+      "sourceId": "Bldg-046",
+      "typeOfEquipment": "fixed",
+      "gasType": "hfc125",
+      "gasGWP": 3500,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 245.00000000000003
+    },
+    {
+      "sourceId": "Bldg-047",
+      "typeOfEquipment": "portable",
+      "gasType": "hfc125",
+      "gasGWP": 3500,
+      "unitsCapacity": 2,
+      "co2EquivalentEmissions": 175
+    }
+  ],
+  "totalCo2EquivalentEmissions": 75.862542
+}
