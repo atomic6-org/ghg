@@ -2,7 +2,7 @@
 
 Fire Suppression
 ----------------
-Fire Suppression calculates emissions for fire suppressant gas use. There are three different carbon accounting methods
+Fire Suppression is a `Scope 1 Emission <glossary.html>`_ that accounts for fire suppressant gas use. There are three different carbon accounting methods
 employed in the final formula to calculate :math:`\text{CO}_2\; Equivalent\; Emissions` , and all three can be
 utilized simultaneously if need be.
 
@@ -10,7 +10,7 @@ The EPA's SGEC workbook employs three methods for calculating emissions in Fire 
 simplified material balance, and screening method.
 
 Class Documentation
-******
+************************
 .. module:: atomic6ghg.formulas.electricity
 
 .. autoclass:: Electricity
@@ -19,7 +19,7 @@ Class Documentation
     :inherited-members:
 
 Example Usage
-******
+******************
 
 Python example code usage:
 

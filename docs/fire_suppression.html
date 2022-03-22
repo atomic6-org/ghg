@@ -49,7 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fire Suppression</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#class-documentation">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.electricity">Class Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-balance">Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simplified-material-balance">Simplified Material Balance</a></li>
@@ -108,14 +108,14 @@
             
   <section id="fire-suppression">
 <span id="fire-suppression-api"></span><h1>Fire Suppression<a class="headerlink" href="#fire-suppression" title="Permalink to this headline">¶</a></h1>
-<p>Fire Suppression calculates emissions for fire suppressant gas use. There are three different carbon accounting methods
+<p>Fire Suppression is a <a class="reference external" href="glossary.html">Scope 1 Emission</a> that accounts for fire suppressant gas use. There are three different carbon accounting methods
 employed in the final formula to calculate <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> , and all three can be
 utilized simultaneously if need be.</p>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.</p>
-<section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="module-atomic6ghg.formulas.electricity"></span><dl class="py class">
+<section id="module-atomic6ghg.formulas.electricity">
+<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.electricity" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.electricity.</span></span><span class="sig-name descname"><span class="pre">Electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculate emissions from purchased gases</p>
