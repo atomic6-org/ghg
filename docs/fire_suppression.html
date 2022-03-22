@@ -49,6 +49,8 @@
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fire Suppression</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-documentation">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-balance">Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simplified-material-balance">Simplified Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#screening-method">Screening Method</a></li>
@@ -111,6 +113,93 @@ employed in the final formula to calculate <span class="math notranslate nohighl
 utilized simultaneously if need be.</p>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.</p>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-atomic6ghg.formulas.electricity"></span><dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.electricity.</span></span><span class="sig-name descname"><span class="pre">Electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from purchased gases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_location_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_market_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emissions_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_location_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_market_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_emissions">
+<span class="sig-name descname"><span class="pre">make_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions for all fuels burned</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources">
+<span class="sig-name descname"><span class="pre">make_total_emissions_for_all_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for Electricity</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.subregions">
+<span class="sig-name descname"><span class="pre">subregions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['akgd',</span> <span class="pre">'akms',</span> <span class="pre">'aznm',</span> <span class="pre">'camx',</span> <span class="pre">'erct',</span> <span class="pre">'frcc',</span> <span class="pre">'hims',</span> <span class="pre">'hioa',</span> <span class="pre">'mroe',</span> <span class="pre">'mrow',</span> <span class="pre">'newe',</span> <span class="pre">'nwpp',</span> <span class="pre">'nycw',</span> <span class="pre">'nyli',</span> <span class="pre">'nyup',</span> <span class="pre">'prms',</span> <span class="pre">'rfce',</span> <span class="pre">'rfcm',</span> <span class="pre">'rfcw',</span> <span class="pre">'rmpa',</span> <span class="pre">'spno',</span> <span class="pre">'spso',</span> <span class="pre">'srmv',</span> <span class="pre">'srmw',</span> <span class="pre">'srso',</span> <span class="pre">'srtv',</span> <span class="pre">'srvc']</span></em><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.subregions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">FireSuppression</span>
+
+<span class="n">fire_suppression_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;fire-suppression.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;materialBalance&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;hfc23&quot;</span><span class="p">,</span> <span class="s2">&quot;inventoryChange&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+            <span class="s2">&quot;transferredAmount&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;capacityChange&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">FireSuppression</span><span class="p">(</span><span class="n">fire_suppression_input</span><span class="p">)</span>
+
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
 <section id="material-balance">
 <h2>Material Balance<a class="headerlink" href="#material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The fundamental calculation for each fire suppressant gas type input for the Material Balance Method are their

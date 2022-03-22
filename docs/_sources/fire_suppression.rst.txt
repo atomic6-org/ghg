@@ -9,6 +9,36 @@ utilized simultaneously if need be.
 The EPA's SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.
 
+Class Documentation
+******
+.. module:: atomic6ghg.formulas.electricity
+
+.. autoclass:: Electricity
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import FireSuppression
+
+    fire_suppression_input: dict = {
+        "version": "fire-suppression.1.0.0",
+        "materialBalance": [
+            {"gas": "hfc23", "inventoryChange": 25,
+                "transferredAmount": 10, "capacityChange": 0}
+        ]
+    }
+    engine = FireSuppression(fire_suppression_input)
+
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
 Material Balance
 ****************
 The fundamental calculation for each fire suppressant gas type input for the Material Balance Method are their
