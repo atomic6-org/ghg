@@ -1,12 +1,14 @@
 import pytest
 import json
+import os
 
 from atomic6ghg.formulas import StationaryCombustion
 
 
 @pytest.fixture
 def canonical_data():
-    with open("./tests/fixtures/stationary_combustion_canonical_instance.json", 'r', encoding='utf-8') as canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/stationary_combustion_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         stationary_combustion_document = json.load(canonical_instance)
         return stationary_combustion_document
 

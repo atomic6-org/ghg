@@ -1,11 +1,13 @@
 import pytest
 import json
+import os
 
 from atomic6ghg.formulas import Electricity, null_replacer
 
 @pytest.fixture
 def canonical_data():
-    with open("./tests/fixtures/electricity_canonical_instance.json", 'r', encoding='utf-8') as canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/electricity_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         electricity_document = json.load(canonical_instance)
         return electricity_document
 
