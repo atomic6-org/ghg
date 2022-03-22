@@ -20,7 +20,84 @@ Usage
 
 .. code-block:: python
 
-    from atomic6ghg.formulas.purchased_gases import PurchasedGases
+    from atomic6ghg.formulas import PurchasedGases
+
+    input_data = json.load(
+    """
+    {
+      "version": "purchased-gases.1.0.0",
+      "purchasedGases": [
+        {
+          "gas": "ch4",
+          "gasGWP": 25,
+          "purchasedAmount": 300,
+          "co2EquivalentEmissions": 7500
+        },
+        {
+          "gas": "ch4",
+          "gasGWP": 25,
+          "purchasedAmount": 400,
+          "co2EquivalentEmissions": 10000
+        },
+        {
+          "gas": "nf3",
+          "gasGWP": 17200,
+          "purchasedAmount": 30,
+          "co2EquivalentEmissions": 516000
+        },
+        {
+          "gas": "hfc134a",
+          "gasGWP": 1430,
+          "purchasedAmount": 50,
+          "co2EquivalentEmissions": 71500
+        },
+        {
+          "gas": "c2f6",
+          "gasGWP": 12200,
+          "purchasedAmount": 70,
+          "co2EquivalentEmissions": 854000
+        },
+        {
+          "gas": "c6f14",
+          "gasGWP": 9300,
+          "purchasedAmount": 1123,
+          "co2EquivalentEmissions": 10443900
+        },
+        {
+          "gas": "r422a",
+          "gasGWP": 3143,
+          "purchasedAmount": 595,
+          "co2EquivalentEmissions": 1870085
+        },
+        {
+          "gas": "hfc125",
+          "gasGWP": 3500,
+          "purchasedAmount": 582,
+          "co2EquivalentEmissions": 2037000
+        },
+        {
+          "gas": "r502",
+          "gasGWP": 0,
+          "purchasedAmount": 182,
+          "co2EquivalentEmissions": 0
+        },
+        {
+          "gas": "r401b",
+          "gasGWP": 14,
+          "purchasedAmount": 56,
+          "co2EquivalentEmissions": 784
+        },
+        {
+          "gas": "r422d",
+          "gasGWP": 2729,
+          "purchasedAmount": 19,
+          "co2EquivalentEmissions": 51851
+        }
+      ],
+      "totalCo2EquivalentEmissions": 7195.284432
+    }
+    """
+    )
 
     calculated_data = PurchasedGases.to_dict(input_data)
 
