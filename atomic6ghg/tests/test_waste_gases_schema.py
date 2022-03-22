@@ -2,6 +2,7 @@
 import json
 import jsonschema
 import pytest
+import os
 
 
 def test_minimum_required(waste_gases_schema):
@@ -65,7 +66,7 @@ def test_with_invalid_emission_factors_for_gas_waste_stream(waste_gases_schema):
 
 def test_canonical_instance(waste_gases_schema):
     """test"""
-    with open("./tests/fixtures/waste_gases_canonical_instance.json", 'r', encoding='utf-8') as \
-            canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/waste_gases_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         canonical_waste_gases_document = json.load(canonical_instance)
         waste_gases_schema.validate(canonical_waste_gases_document)

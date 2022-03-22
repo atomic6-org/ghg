@@ -1,12 +1,14 @@
 import pytest
 import json
+import os
 
 from atomic6ghg.formulas import WasteGases
 from atomic6ghg.formulas.waste_gases import null_replacer
 
 @pytest.fixture
 def canonical_data():
-    with open("./tests/fixtures/waste_gases_canonical_instance.json", 'r', encoding='utf-8') as canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/waste_gases_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         waste_gases_document = json.load(canonical_instance)
         return waste_gases_document
 

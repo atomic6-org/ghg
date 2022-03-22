@@ -2,6 +2,7 @@
 import json
 import jsonschema
 import pytest
+import os
 
 
 def test_minimum_required(stationary_combustion_schema):
@@ -56,7 +57,7 @@ def test_with_invalid_fuel_consumption(stationary_combustion_schema):
 
 def test_canonical_instance(stationary_combustion_schema):
     """test"""
-    with open("./tests/fixtures/stationary_combustion_canonical_instance.json", 'r', encoding='utf-8') as \
-            canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/stationary_combustion_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         canonical_stationary_combustion_document = json.load(canonical_instance)
         stationary_combustion_schema.validate(canonical_stationary_combustion_document)
