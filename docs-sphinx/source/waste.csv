@@ -11,7 +11,7 @@ LLDPE, "Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb
 PP, "Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
 PS, "Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
 PVC, "Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
-PLA, "Recycled, Landfilled, Composted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
+PLA, "Landfilled, Combusted, Composted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
 Corrugated Containers, "Recycled, Landfilled, Combusted",  "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
 Magazines and Third Class Mail, "Recycled, Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
 Newspaper, "Recycled, Landfilled, Combusted", "Gram (g), Kilogram (kg), Metric Ton, Pounds (lb), Short Ton"
