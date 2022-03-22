@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Purchased Gases",
+  "description": "Document schema of Purchased Gases workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^purchased-gases.1.0.0"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Scope 1 Emissions from Purchased Gases \n Guidance \n (A)  Any use and release of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) is required to be included in the GHG inventory. Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG inventory or reported as a memo item. \n (B) Select the gas you purchase from the drop down menu and the amount purchased for the annual inventory reporting period in the ORANGE cells. \n (C) It is assumed that all gas purchased in the reporting period used and released during the reporting period.  If your business makes bulk purchases and plans on using the gas for several years, divide the bulk amount by the years of usage and report that amount. \n Tip: If you purchase bulk gas, remember to report it for future years as well."
+    },
+    "purchasedGases": {
+      "type": "array",
+      "title": "Table 1. Purchased Gases",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gas": {
+            "title": "Gas",
+            "description": "Choose the appropriate gas from the Gas drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": [
+              "",
+              "co2",
+              "ch4",
+              "n2o",
+              "hfc23",
+              "hfc32",
+              "hfc41",
+              "hfc125",
+              "hfc134",
+              "hfc134a",
+              "hfc143",
+              "hfc143a",
+              "hfc152",
+              "hfc152a",
+              "hfc161",
+              "hfc227ea",
+              "hfc236cb",
+              "hfc236ea",
+              "hfc236fa",
+              "hfc245ca",
+              "hfc245fa",
+              "hfc365mfc",
+              "hfc4310mee",
+              "sf6",
+              "nf3",
+              "cf4",
+              "c2f6",
+              "c3f8",
+              "cc4f8",
+              "c4f10",
+              "c5f12",
+              "c6f14",
+              "r401a",
+              "r401b",
+              "r401c",
+              "r402a",
+              "r402b",
+              "r403b",
+              "r404a",
+              "r406a",
+              "r407a",
+              "r407b",
+              "r407c",
+              "r407d",
+              "r407e",
+              "r408a",
+              "r409a",
+              "r410a",
+              "r410b",
+              "r411a",
+              "r411b",
+              "r413a",
+              "r414a",
+              "r414b",
+              "r417a",
+              "r422a",
+              "r422d",
+              "r423a",
+              "r424a",
+              "r426a",
+              "r428a",
+              "r434a",
+              "r500",
+              "r502",
+              "r504",
+              "r507",
+              "r508a",
+              "r508b"
+            ]
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "purchasedAmount": {
+            "title": "Purchased Amount (lb)",
+            "description": "Amount of gas purchased in lb",
+            "format": ",",
+            "formula": "None",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (lb)",
+            "description": "CO2 equivalent emissions (in lbs) produced by organization-wide gas purchased calculated using material balance.",
+            "format": ",",
+            "formula": "atom6ghg.formulas.purchased_gases.calculate_co2_emissions_purchased_gases",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "gas",
+          "purchasedAmount"
+        ]
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Purchased Gas",
+      "formula": "atom6ghg.formulas.purchased_gases.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "footNote": {
+      "type": "string",
+      "title": "Notes: \n 1.  GWPs are from Intergovernmental Panel on Climate Change (IPCC) Fourth Assessment Report (2007)."
+    }
+  },
+  "required" : [
+    "version",
+    "purchasedGases"
+  ]
+}
