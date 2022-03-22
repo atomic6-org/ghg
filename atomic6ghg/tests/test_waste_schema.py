@@ -2,6 +2,7 @@
 import json
 import jsonschema
 import pytest
+import os
 
 
 def test_minimum_required(waste_schema):
@@ -59,7 +60,7 @@ def test_with_invalid_waste_schema(waste_schema):
 
 def test_canonical_instance(waste_schema):
     """test"""
-    with open("./tests/fixtures/waste_canonical_instance.json", 'r', encoding='utf-8') as \
-            canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/waste_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         canonical_waste_document = json.load(canonical_instance)
         waste_schema.validate(canonical_waste_document)

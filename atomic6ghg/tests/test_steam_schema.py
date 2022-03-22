@@ -2,6 +2,7 @@
 import json
 import jsonschema
 import pytest
+import os
 
 
 def test_minimum_required(steam_schema):
@@ -77,7 +78,7 @@ def test_with_invalid_inputs(steam_schema):
 
 def test_canonical_instance(steam_schema):
     """test"""
-    with open("./tests/fixtures/steam_canonical_instance.json", 'r', encoding='utf-8') as \
-            canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/steam_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         canonical_steam_document = json.load(canonical_instance)
         steam_schema.validate(canonical_steam_document)

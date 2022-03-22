@@ -2,7 +2,7 @@
 import json
 import jsonschema
 import pytest
-
+import os
 
 def test_minimum_required(electricity_schema):
     """test"""
@@ -71,7 +71,7 @@ def test_with_invalid_gas_gwp(electricity_schema):
 
 def test_canonical_instance(electricity_schema):
     """test"""
-    with open("./tests/fixtures/electricity_canonical_instance.json", 'r', encoding='utf-8') as \
-            canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/electricity_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         canonical_electricity_document = json.load(canonical_instance)
         electricity_schema.validate(canonical_electricity_document)

@@ -1,12 +1,14 @@
 import pytest
 import json
+import os
 
 from atomic6ghg.formulas import Steam, null_replacer
 
 
 @pytest.fixture
 def canonical_data():
-    with open("./tests/fixtures/steam_canonical_instance.json", 'r', encoding='utf-8') as canonical_instance:
+    TEST_FILENAME = os.path.join(os.path.dirname(__file__), './fixtures/steam_canonical_instance.json')
+    with open(TEST_FILENAME, 'r', encoding='utf-8') as canonical_instance:
         steam_document = json.load(canonical_instance)
         return steam_document
 
