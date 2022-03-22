@@ -1,0 +1,74 @@
+{
+  "passengerCars": {
+    "co2": 0.341,
+    "ch4": 0.009,
+    "n2o": 0.008,
+    "units": "vehicle-mile"
+  },
+  "lightDutyTruck": {
+    "co2": 0.464,
+    "ch4": 0.012,
+    "n2o": 0.01,
+    "units": "vehicle-mile"
+  },
+  "motorcycle": {
+    "co2": 0.189,
+    "ch4": 0.07,
+    "n2o": 0.007,
+    "units": "vehicle-mile"
+  },
+  "intercityRailNortheastCorridor": {
+    "co2": 0.058,
+    "ch4": 0.0055,
+    "n2o": 0.0007,
+    "units": "passenger-mile"
+  },
+  "intercityRailOtherRoutes": {
+    "co2": 0.15,
+    "ch4": 0.0117,
+    "n2o": 0.0038,
+    "units": "passenger-mile"
+  },
+  "intercityRailNationalAverage": {
+    "co2": 0.113,
+    "ch4": 0.0092,
+    "n2o": 0.0026,
+    "units": "passenger-mile"
+  },
+  "commuterRail": {
+    "co2": 0.143,
+    "ch4": 0.0119,
+    "n2o": 0.0029,
+    "units": "passenger-mile"
+  },
+  "transitRail": {
+    "co2": 0.106,
+    "ch4": 0.0095,
+    "n2o": 0.0013,
+    "units": "passenger-mile"
+  },
+  "bus": {
+    "co2": 0.054,
+    "ch4": 0.0206,
+    "n2o": 0.0009,
+    "units": "passenger-mile"
+  },
+  "shortHaul": {
+    "co2": 0.206,
+    "ch4": 0.0071,
+    "n2o": 0.0065,
+    "units": "passenger-mile"
+  },
+  "mediumHaul": {
+    "co2": 0.131,
+    "ch4": 0.0006,
+    "n2o": 0.0042,
+    "units": "passenger-mile"
+  },
+  "longHaul": {
+    "co2": 0.161,
+    "ch4": 0.0006,
+    "n2o": 0.0051,
+    "units": "passenger-mile"
+  }
+}
