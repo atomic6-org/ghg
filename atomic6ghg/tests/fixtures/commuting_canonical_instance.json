@@ -1,0 +1,830 @@
+{
+  "version": "commuting.1.0.0",
+  "personalVehicle": [
+    {
+      "sourceId": "JD-001",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "JD-002",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "JD-003",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 100.0,
+      "CO2": 18.9,
+      "CH4": 7.000000000000001,
+      "N2O": 0.7000000000000001
+    },
+    {
+      "sourceId": "JD-004",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 2000.0,
+      "CO2": 682.0,
+      "CH4": 18.0,
+      "N2O": 16.0
+    },
+    {
+      "sourceId": "JD-005",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 2000.0,
+      "CO2": 928.0,
+      "CH4": 24.0,
+      "N2O": 20.0
+    },
+    {
+      "sourceId": "JD-006",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 2000.0,
+      "CO2": 378.0,
+      "CH4": 140.0,
+      "N2O": 14.0
+    },
+    {
+      "sourceId": "JD-007",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 300.0,
+      "CO2": 102.30000000000001,
+      "CH4": 2.6999999999999997,
+      "N2O": 2.4
+    },
+    {
+      "sourceId": "JD-008",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 300.0,
+      "CO2": 139.20000000000002,
+      "CH4": 3.6,
+      "N2O": 3.0
+    },
+    {
+      "sourceId": "JD-009",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 300.0,
+      "CO2": 56.7,
+      "CH4": 21.000000000000004,
+      "N2O": 2.1
+    },
+    {
+      "sourceId": "JD-010",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 450.0,
+      "CO2": 153.45000000000002,
+      "CH4": 4.05,
+      "N2O": 3.6
+    },
+    {
+      "sourceId": "JD-011",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 450.0,
+      "CO2": 208.8,
+      "CH4": 5.4,
+      "N2O": 4.5
+    },
+    {
+      "sourceId": "JD-012",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 450.0,
+      "CO2": 85.05,
+      "CH4": 31.500000000000004,
+      "N2O": 3.15
+    },
+    {
+      "sourceId": "JD-013",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 10000.0,
+      "CO2": 3410.0000000000005,
+      "CH4": 90.0,
+      "N2O": 80.0
+    },
+    {
+      "sourceId": "JD-014",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 10000.0,
+      "CO2": 4640.0,
+      "CH4": 120.0,
+      "N2O": 100.0
+    },
+    {
+      "sourceId": "JD-015",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 10000.0,
+      "CO2": 1890.0,
+      "CH4": 700.0000000000001,
+      "N2O": 70.0
+    },
+    {
+      "sourceId": "JD-016",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 250.0,
+      "CO2": 85.25,
+      "CH4": 2.25,
+      "N2O": 2.0
+    },
+    {
+      "sourceId": "JD-017",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 250.0,
+      "CO2": 116.0,
+      "CH4": 3.0,
+      "N2O": 2.5
+    },
+    {
+      "sourceId": "JD-018",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 250.0,
+      "CO2": 47.25,
+      "CH4": 17.5,
+      "N2O": 1.75
+    },
+    {
+      "sourceId": "JD-019",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 350.0,
+      "CO2": 119.35000000000001,
+      "CH4": 3.15,
+      "N2O": 2.8000000000000003
+    },
+    {
+      "sourceId": "JD-020",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 350.0,
+      "CO2": 162.4,
+      "CH4": 4.2,
+      "N2O": 3.5
+    },
+    {
+      "sourceId": "JD-021",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 350.0,
+      "CO2": 66.15,
+      "CH4": 24.500000000000004,
+      "N2O": 2.45
+    },
+    {
+      "sourceId": "JD-022",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 123.0,
+      "CO2": 41.943000000000005,
+      "CH4": 1.107,
+      "N2O": 0.984
+    },
+    {
+      "sourceId": "JD-023",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 123.0,
+      "CO2": 57.072,
+      "CH4": 1.476,
+      "N2O": 1.23
+    },
+    {
+      "sourceId": "JD-024",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 123.0,
+      "CO2": 23.247,
+      "CH4": 8.610000000000001,
+      "N2O": 0.861
+    },
+    {
+      "sourceId": "JD-025",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 1234.0,
+      "CO2": 420.79400000000004,
+      "CH4": 11.106,
+      "N2O": 9.872
+    },
+    {
+      "sourceId": "JD-026",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 1234.0,
+      "CO2": 572.576,
+      "CH4": 14.808,
+      "N2O": 12.34
+    },
+    {
+      "sourceId": "JD-027",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 1234.0,
+      "CO2": 233.226,
+      "CH4": 86.38000000000001,
+      "N2O": 8.638
+    },
+    {
+      "sourceId": "JD-028",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 432.0,
+      "CO2": 147.312,
+      "CH4": 3.888,
+      "N2O": 3.456
+    },
+    {
+      "sourceId": "JD-029",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 432.0,
+      "CO2": 200.448,
+      "CH4": 5.184,
+      "N2O": 4.32
+    },
+    {
+      "sourceId": "JD-030",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 432.0,
+      "CO2": 81.648,
+      "CH4": 30.240000000000002,
+      "N2O": 3.024
+    },
+    {
+      "sourceId": "JD-031",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 4321.0,
+      "CO2": 1473.461,
+      "CH4": 38.888999999999996,
+      "N2O": 34.568
+    },
+    {
+      "sourceId": "JD-032",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 4321.0,
+      "CO2": 2004.9440000000002,
+      "CH4": 51.852000000000004,
+      "N2O": 43.21
+    },
+    {
+      "sourceId": "JD-033",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 4321.0,
+      "CO2": 816.669,
+      "CH4": 302.47,
+      "N2O": 30.247
+    },
+    {
+      "sourceId": "JD-034",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 800.0,
+      "CO2": 272.8,
+      "CH4": 7.199999999999999,
+      "N2O": 6.4
+    },
+    {
+      "sourceId": "JD-035",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 800.0,
+      "CO2": 371.20000000000005,
+      "CH4": 9.6,
+      "N2O": 8.0
+    },
+    {
+      "sourceId": "JD-036",
+      "sourceDescription": "West Power Plant",
+      "vehicleType": "motorcycle",
+      "vehicleMiles": 800.0,
+      "CO2": 151.2,
+      "CH4": 56.00000000000001,
+      "N2O": 5.6000000000000005
+    }
+  ],
+  "totalForAllPersonalVehicleEmployeeCommuting": {
+    "CO2": 20237.840000000004,
+    "CH4": 1852.7600000000002,
+    "N2O": 508.99999999999994
+  },
+  "publicTransportation": [
+    {
+      "sourceId": "JD-001",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 100.0,
+      "CO2": 5.800000000000001,
+      "CH4": 0.5499999999999999,
+      "N2O": 0.06999999999999999
+    },
+    {
+      "sourceId": "JD-002",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 100.0,
+      "CO2": 15.0,
+      "CH4": 1.17,
+      "N2O": 0.38
+    },
+    {
+      "sourceId": "JD-003",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 100.0,
+      "CO2": 11.3,
+      "CH4": 0.9199999999999999,
+      "N2O": 0.26
+    },
+    {
+      "sourceId": "JD-004",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 100.0,
+      "CO2": 14.299999999999999,
+      "CH4": 1.1900000000000002,
+      "N2O": 0.29
+    },
+    {
+      "sourceId": "JD-005",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 100.0,
+      "CO2": 10.6,
+      "CH4": 0.95,
+      "N2O": 0.13
+    },
+    {
+      "sourceId": "JD-006",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 100.0,
+      "CO2": 5.4,
+      "CH4": 2.06,
+      "N2O": 0.09
+    },
+    {
+      "sourceId": "JD-007",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 2000.0,
+      "CO2": 116.0,
+      "CH4": 11.0,
+      "N2O": 1.4
+    },
+    {
+      "sourceId": "JD-008",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 2000.0,
+      "CO2": 300.0,
+      "CH4": 23.400000000000002,
+      "N2O": 7.6
+    },
+    {
+      "sourceId": "JD-009",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 2000.0,
+      "CO2": 226.0,
+      "CH4": 18.4,
+      "N2O": 5.2
+    },
+    {
+      "sourceId": "JD-010",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 2000.0,
+      "CO2": 286.0,
+      "CH4": 23.8,
+      "N2O": 5.8
+    },
+    {
+      "sourceId": "JD-011",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 2000.0,
+      "CO2": 212.0,
+      "CH4": 19.0,
+      "N2O": 2.6
+    },
+    {
+      "sourceId": "JD-012",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 2000.0,
+      "CO2": 108.0,
+      "CH4": 41.2,
+      "N2O": 1.8
+    },
+    {
+      "sourceId": "JD-013",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 300.0,
+      "CO2": 17.400000000000002,
+      "CH4": 1.65,
+      "N2O": 0.21
+    },
+    {
+      "sourceId": "JD-014",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 300.0,
+      "CO2": 45.0,
+      "CH4": 3.5100000000000002,
+      "N2O": 1.14
+    },
+    {
+      "sourceId": "JD-015",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 300.0,
+      "CO2": 33.9,
+      "CH4": 2.76,
+      "N2O": 0.7799999999999999
+    },
+    {
+      "sourceId": "JD-016",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 300.0,
+      "CO2": 42.9,
+      "CH4": 3.5700000000000003,
+      "N2O": 0.8699999999999999
+    },
+    {
+      "sourceId": "JD-017",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 300.0,
+      "CO2": 31.8,
+      "CH4": 2.85,
+      "N2O": 0.38999999999999996
+    },
+    {
+      "sourceId": "JD-018",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 300.0,
+      "CO2": 16.2,
+      "CH4": 6.18,
+      "N2O": 0.27
+    },
+    {
+      "sourceId": "JD-019",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 450.0,
+      "CO2": 26.1,
+      "CH4": 2.4749999999999996,
+      "N2O": 0.315
+    },
+    {
+      "sourceId": "JD-020",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 450.0,
+      "CO2": 67.5,
+      "CH4": 5.265000000000001,
+      "N2O": 1.71
+    },
+    {
+      "sourceId": "JD-021",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 450.0,
+      "CO2": 50.85,
+      "CH4": 4.14,
+      "N2O": 1.17
+    },
+    {
+      "sourceId": "JD-022",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 450.0,
+      "CO2": 64.35,
+      "CH4": 5.355,
+      "N2O": 1.305
+    },
+    {
+      "sourceId": "JD-023",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 450.0,
+      "CO2": 47.699999999999996,
+      "CH4": 4.2749999999999995,
+      "N2O": 0.585
+    },
+    {
+      "sourceId": "JD-024",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 450.0,
+      "CO2": 24.3,
+      "CH4": 9.27,
+      "N2O": 0.40499999999999997
+    },
+    {
+      "sourceId": "JD-025",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 10000.0,
+      "CO2": 580.0,
+      "CH4": 55.0,
+      "N2O": 7.0
+    },
+    {
+      "sourceId": "JD-026",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 10000.0,
+      "CO2": 1500.0,
+      "CH4": 117.0,
+      "N2O": 38.0
+    },
+    {
+      "sourceId": "JD-027",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 10000.0,
+      "CO2": 1130.0,
+      "CH4": 92.0,
+      "N2O": 26.0
+    },
+    {
+      "sourceId": "JD-028",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 10000.0,
+      "CO2": 1429.9999999999998,
+      "CH4": 119.00000000000001,
+      "N2O": 28.999999999999996
+    },
+    {
+      "sourceId": "JD-029",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 10000.0,
+      "CO2": 1060.0,
+      "CH4": 95.0,
+      "N2O": 13.0
+    },
+    {
+      "sourceId": "JD-030",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 10000.0,
+      "CO2": 540.0,
+      "CH4": 206.0,
+      "N2O": 9.0
+    },
+    {
+      "sourceId": "JD-031",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 250.0,
+      "CO2": 14.5,
+      "CH4": 1.375,
+      "N2O": 0.175
+    },
+    {
+      "sourceId": "JD-032",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 250.0,
+      "CO2": 37.5,
+      "CH4": 2.9250000000000003,
+      "N2O": 0.95
+    },
+    {
+      "sourceId": "JD-033",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 250.0,
+      "CO2": 28.25,
+      "CH4": 2.3,
+      "N2O": 0.65
+    },
+    {
+      "sourceId": "JD-034",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 250.0,
+      "CO2": 35.75,
+      "CH4": 2.975,
+      "N2O": 0.725
+    },
+    {
+      "sourceId": "JD-035",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 250.0,
+      "CO2": 26.5,
+      "CH4": 2.375,
+      "N2O": 0.325
+    },
+    {
+      "sourceId": "JD-036",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 250.0,
+      "CO2": 13.5,
+      "CH4": 5.15,
+      "N2O": 0.225
+    },
+    {
+      "sourceId": "JD-037",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 123.0,
+      "CO2": 7.134,
+      "CH4": 0.6765,
+      "N2O": 0.0861
+    },
+    {
+      "sourceId": "JD-038",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 123.0,
+      "CO2": 18.45,
+      "CH4": 1.4391,
+      "N2O": 0.4674
+    },
+    {
+      "sourceId": "JD-039",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 123.0,
+      "CO2": 13.899000000000001,
+      "CH4": 1.1316,
+      "N2O": 0.3198
+    },
+    {
+      "sourceId": "JD-040",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 123.0,
+      "CO2": 17.589,
+      "CH4": 1.4637,
+      "N2O": 0.35669999999999996
+    },
+    {
+      "sourceId": "JD-041",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 123.0,
+      "CO2": 13.038,
+      "CH4": 1.1684999999999999,
+      "N2O": 0.1599
+    },
+    {
+      "sourceId": "JD-042",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 123.0,
+      "CO2": 6.642,
+      "CH4": 2.5338,
+      "N2O": 0.11069999999999999
+    },
+    {
+      "sourceId": "JD-043",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNortheastCorridor",
+      "passengerMiles": 1234.0,
+      "CO2": 71.572,
+      "CH4": 6.787,
+      "N2O": 0.8638
+    },
+    {
+      "sourceId": "JD-044",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailOtherRoutes",
+      "passengerMiles": 1234.0,
+      "CO2": 185.1,
+      "CH4": 14.437800000000001,
+      "N2O": 4.6892
+    },
+    {
+      "sourceId": "JD-045",
+      "sourceDescription": "West Power Plant",
+      "transportType": "intercityRailNationalAverage",
+      "passengerMiles": 1234.0,
+      "CO2": 139.442,
+      "CH4": 11.3528,
+      "N2O": 3.2083999999999997
+    },
+    {
+      "sourceId": "JD-046",
+      "sourceDescription": "West Power Plant",
+      "transportType": "commuterRail",
+      "passengerMiles": 1234.0,
+      "CO2": 176.462,
+      "CH4": 14.684600000000001,
+      "N2O": 3.5786
+    },
+    {
+      "sourceId": "JD-047",
+      "sourceDescription": "West Power Plant",
+      "transportType": "transitRail",
+      "passengerMiles": 1234.0,
+      "CO2": 130.804,
+      "CH4": 11.722999999999999,
+      "N2O": 1.6041999999999998
+    },
+    {
+      "sourceId": "JD-048",
+      "sourceDescription": "West Power Plant",
+      "transportType": "bus",
+      "passengerMiles": 1234.0,
+      "CO2": 66.636,
+      "CH4": 25.4204,
+      "N2O": 1.1106
+    }
+  ],
+  "totalForAllPublicTransportationEmployeeCommuting": {
+    "CO2": 9021.168,
+    "CH4": 988.8588000000001,
+    "N2O": 176.37539999999996
+  },
+  "totalCO2EmissionsByCommutingType": [
+    {
+      "transportType": "passengerCars",
+      "CO2": 6942.760000000001,
+      "CH4": 183.24,
+      "N2O": 162.88
+    },
+    {
+      "transportType": "lightDutyTruck",
+      "CO2": 9447.04,
+      "CH4": 244.31999999999996,
+      "N2O": 203.6
+    },
+    {
+      "transportType": "motorcycle",
+      "CO2": 3848.04,
+      "CH4": 1425.2000000000003,
+      "N2O": 142.52
+    },
+    {
+      "transportType": "intercityRailNortheastCorridor",
+      "CO2": 838.506,
+      "CH4": 79.51350000000001,
+      "N2O": 10.1199
+    },
+    {
+      "transportType": "intercityRailOtherRoutes",
+      "CO2": 2168.55,
+      "CH4": 169.14690000000002,
+      "N2O": 54.9366
+    },
+    {
+      "transportType": "intercityRailNationalAverage",
+      "CO2": 1633.641,
+      "CH4": 133.0044,
+      "N2O": 37.58819999999999
+    },
+    {
+      "transportType": "commuterRail",
+      "CO2": 2067.3509999999997,
+      "CH4": 172.0383,
+      "N2O": 41.9253
+    },
+    {
+      "transportType": "transitRail",
+      "CO2": 1532.442,
+      "CH4": 137.3415,
+      "N2O": 18.794099999999997
+    },
+    {
+      "transportType": "bus",
+      "CO2": 780.678,
+      "CH4": 297.8142,
+      "N2O": 13.011299999999999
+    }
+  ],
+  "totalCO2EquivalentEmissions": 29.534290339200002
+}
