@@ -107,7 +107,8 @@
             
   <div class="section" id="refrigeration-and-ac">
 <span id="refrigeration-and-ac-api"></span><h1>Refrigeration and AC<a class="headerlink" href="#refrigeration-and-ac" title="Permalink to this headline">¶</a></h1>
-<p>Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.</p>
+<p>Refrigeration and Air Conditioning (AC) is <a class="reference external" href="glossary.html">scope 1 emission</a>.
+Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.</p>
 <div class="section" id="module-atomic6ghg.formulas.refrigeration_and_ac">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.refrigeration_and_ac" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
@@ -182,11 +183,11 @@
 <span class="n">refrigeration_and_ac_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;refrigeration-and-ac.1.0.0&quot;</span><span class="p">,</span>
     <span class="s2">&quot;materialBalance&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Gas GWP&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Global warming potential of selected gas&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;:,&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;formula&quot;</span><span class="p">:</span> <span class="s2">&quot;None&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">,</span> <span class="s2">&quot;null&quot;</span><span class="p">]}</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;co2&quot;</span><span class="p">,</span> <span class="s2">&quot;gasGWP&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;inventoryChange&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;transferredAmount&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;capacityChange&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;co2EquivalentEmissions&quot;</span><span class="p">:</span> <span class="mi">300</span>
+        <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
 <span class="n">engine</span> <span class="o">=</span> <span class="n">RefrigerationAndAc</span><span class="p">(</span><span class="n">refrigeration_and_ac_input</span><span class="p">)</span>

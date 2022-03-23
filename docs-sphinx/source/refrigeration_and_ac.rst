@@ -2,6 +2,7 @@
 
 Refrigeration and AC
 --------------------
+Refrigeration and Air Conditioning (AC) is `scope 1 emission <glossary.html>`_.
 Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.
 
 
@@ -22,11 +23,11 @@ Python example code usage:
     refrigeration_and_ac_input: dict = {
         "version": "refrigeration-and-ac.1.0.0",
         "materialBalance": [
-            {"title": "Gas GWP",
-            "description": "Global warming potential of selected gas",
-            "format": ":,",
-            "formula": "None",
-            "type": ["number", "null"]}
+            {
+              "gas": "co2", "gasGWP": 1, "inventoryChange": 100,
+                "transferredAmount": 100, "capacityChange": 100,
+                "co2EquivalentEmissions": 300
+            }
         ]
     }
     engine = RefrigerationAndAc(refrigeration_and_ac_input)
