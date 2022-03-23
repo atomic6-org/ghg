@@ -118,11 +118,20 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="stationary_combustion.html#atomic6ghg.formulas.stationary_combustion.StationaryCombustion.all_fuels">all_fuels (atomic6ghg.formulas.stationary_combustion.StationaryCombustion attribute)</a>
 </li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.all_vehicles">all_vehicles (atomic6ghg.formulas.commuting.Commuting attribute)</a>
+</li>
       <li>
     atomic6ghg.formulas.business_travel
 
       <ul>
         <li><a href="business_travel.html#module-atomic6ghg.formulas.business_travel">module</a>
+</li>
+      </ul></li>
+      <li>
+    atomic6ghg.formulas.commuting
+
+      <ul>
+        <li><a href="commuting.html#module-atomic6ghg.formulas.commuting">module</a>
 </li>
       </ul></li>
       <li>
@@ -139,6 +148,8 @@
         <li><a href="fire_suppression.html#module-atomic6ghg.formulas.fire_suppression">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     atomic6ghg.formulas.purchased_gases
 
@@ -146,8 +157,6 @@
         <li><a href="purchased_gases.html#module-atomic6ghg.formulas.purchased_gases">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     atomic6ghg.formulas.stationary_combustion
 
@@ -208,10 +217,10 @@
 </li>
       <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_simplified_material_balance">calculate_co2_emissions_simplified_material_balance() (atomic6ghg.formulas.fire_suppression.FireSuppression static method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity">calculate_location_based_emissions_electricity() (atomic6ghg.formulas.electricity.Electricity static method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="steam.html#atomic6ghg.formulas.steam.Steam.calculate_location_based_emissions_steam">calculate_location_based_emissions_steam() (atomic6ghg.formulas.steam.Steam static method)</a>
 </li>
       <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity">calculate_market_based_emissions_electricity() (atomic6ghg.formulas.electricity.Electricity static method)</a>
@@ -223,8 +232,14 @@
       <li><a href="waste_gases.html#atomic6ghg.formulas.waste_gases.WasteGases.calculate_total_moles">calculate_total_moles() (atomic6ghg.formulas.waste_gases.WasteGases static method)</a>
 </li>
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.calculate_transportation_emissions">calculate_transportation_emissions() (atomic6ghg.formulas.business_travel.BusinessTravel static method)</a>
+
+      <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.calculate_transportation_emissions">(atomic6ghg.formulas.commuting.Commuting static method)</a>
 </li>
+      </ul></li>
       <li><a href="stationary_combustion.html#atomic6ghg.formulas.stationary_combustion.StationaryCombustion.common_units">common_units (atomic6ghg.formulas.stationary_combustion.StationaryCombustion attribute)</a>
+</li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting">Commuting (class in atomic6ghg.formulas.commuting)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -283,6 +298,8 @@
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.make_co2_equivalent_emissions">make_co2_equivalent_emissions() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
 
       <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_co2_equivalent_emissions">(atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
         <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.make_co2_equivalent_emissions">(atomic6ghg.formulas.fire_suppression.FireSuppression method)</a>
 </li>
         <li><a href="purchased_gases.html#atomic6ghg.formulas.purchased_gases.PurchasedGases.make_co2_equivalent_emissions">(atomic6ghg.formulas.purchased_gases.PurchasedGases method)</a>
@@ -316,15 +333,21 @@
         <li><a href="stationary_combustion.html#atomic6ghg.formulas.stationary_combustion.StationaryCombustion.make_emissions">(atomic6ghg.formulas.stationary_combustion.StationaryCombustion method)</a>
 </li>
       </ul></li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_emissions_by_commuting_type">make_emissions_by_commuting_type() (atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
       <li><a href="steam.html#atomic6ghg.formulas.steam.Steam.make_emissions_by_source_and_fuel_type">make_emissions_by_source_and_fuel_type() (atomic6ghg.formulas.steam.Steam method)</a>
 </li>
       <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.make_material_balance">make_material_balance() (atomic6ghg.formulas.fire_suppression.FireSuppression method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_personal_vehicle">make_personal_vehicle() (atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_rental_car_or_taxi">make_personal_vehicle_rental_car_or_taxi() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_total">make_personal_vehicle_total() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
+</li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_public_transportation">make_public_transportation() (atomic6ghg.formulas.commuting.Commuting method)</a>
 </li>
       <li><a href="purchased_gases.html#atomic6ghg.formulas.purchased_gases.PurchasedGases.make_purchased_gases">make_purchased_gases() (atomic6ghg.formulas.purchased_gases.PurchasedGases method)</a>
 </li>
@@ -344,6 +367,10 @@
 </li>
       <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources">make_total_emissions_for_all_sources() (atomic6ghg.formulas.electricity.Electricity method)</a>
 </li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_total_for_all_personal_vehicle">make_total_for_all_personal_vehicle() (atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.make_total_for_all_public_transportation">make_total_for_all_public_transportation() (atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
       <li><a href="waste.html#atomic6ghg.formulas.waste.Waste.make_waste_disposal">make_waste_disposal() (atomic6ghg.formulas.waste.Waste method)</a>
 </li>
       <li>
@@ -351,6 +378,8 @@
 
       <ul>
         <li><a href="business_travel.html#module-atomic6ghg.formulas.business_travel">atomic6ghg.formulas.business_travel</a>
+</li>
+        <li><a href="commuting.html#module-atomic6ghg.formulas.commuting">atomic6ghg.formulas.commuting</a>
 </li>
         <li><a href="electricity.html#module-atomic6ghg.formulas.electricity">atomic6ghg.formulas.electricity</a>
 </li>
@@ -382,9 +411,15 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.personal_vehicles">personal_vehicles (atomic6ghg.formulas.business_travel.BusinessTravel attribute)</a>
+
+      <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.personal_vehicles">(atomic6ghg.formulas.commuting.Commuting attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.public_transit">public_transit (atomic6ghg.formulas.commuting.Commuting attribute)</a>
+</li>
       <li><a href="purchased_gases.html#atomic6ghg.formulas.purchased_gases.PurchasedGases">PurchasedGases (class in atomic6ghg.formulas.purchased_gases)</a>
 </li>
   </ul></td>
@@ -398,6 +433,8 @@
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.recalc">recalc() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
 
       <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.recalc">(atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
         <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.recalc">(atomic6ghg.formulas.electricity.Electricity method)</a>
 </li>
         <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.recalc">(atomic6ghg.formulas.fire_suppression.FireSuppression method)</a>
@@ -436,6 +473,8 @@
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.to_dict">to_dict() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
 
       <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.to_dict">(atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
         <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.to_dict">(atomic6ghg.formulas.electricity.Electricity method)</a>
 </li>
         <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.to_dict">(atomic6ghg.formulas.fire_suppression.FireSuppression method)</a>
@@ -456,6 +495,8 @@
       <li><a href="business_travel.html#atomic6ghg.formulas.business_travel.BusinessTravel.to_json">to_json() (atomic6ghg.formulas.business_travel.BusinessTravel method)</a>
 
       <ul>
+        <li><a href="commuting.html#atomic6ghg.formulas.commuting.Commuting.to_json">(atomic6ghg.formulas.commuting.Commuting method)</a>
+</li>
         <li><a href="electricity.html#atomic6ghg.formulas.electricity.Electricity.to_json">(atomic6ghg.formulas.electricity.Electricity method)</a>
 </li>
         <li><a href="fire_suppression.html#atomic6ghg.formulas.fire_suppression.FireSuppression.to_json">(atomic6ghg.formulas.fire_suppression.FireSuppression method)</a>
