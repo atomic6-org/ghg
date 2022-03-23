@@ -1,0 +1,2097 @@
+{
+  "heavyDutyVehicles": {
+    "gasoline": {
+      "1985": {
+        "ch4_factor": 0.409,
+        "n2o_factor": 0.0515,
+        "year_display": "1985-1986"
+      },
+      "1986": {
+        "ch4_factor": 0.409,
+        "n2o_factor": 0.0515,
+        "year_display": "1985-1986"
+      },
+      "1987": {
+        "ch4_factor": 0.3675,
+        "n2o_factor": 0.0849,
+        "year_display": "1987"
+      },
+      "1988": {
+        "ch4_factor": 0.3492,
+        "n2o_factor": 0.0933,
+        "year_display": "1988-1989"
+      },
+      "1989": {
+        "ch4_factor": 0.3492,
+        "n2o_factor": 0.0933,
+        "year_display": "1988-1989"
+      },
+      "1990": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1991": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1992": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1993": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1994": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1995": {
+        "ch4_factor": 0.3246,
+        "n2o_factor": 0.1142,
+        "year_display": "1990-1995"
+      },
+      "1996": {
+        "ch4_factor": 0.1278,
+        "n2o_factor": 0.168,
+        "year_display": "1996"
+      },
+      "1997": {
+        "ch4_factor": 0.0924,
+        "n2o_factor": 0.1726,
+        "year_display": "1997"
+      },
+      "1998": {
+        "ch4_factor": 0.0655,
+        "n2o_factor": 0.175,
+        "year_display": "1998"
+      },
+      "1999": {
+        "ch4_factor": 0.0648,
+        "n2o_factor": 0.1724,
+        "year_display": "1999"
+      },
+      "2000": {
+        "ch4_factor": 0.063,
+        "n2o_factor": 0.166,
+        "year_display": "2000"
+      },
+      "2001": {
+        "ch4_factor": 0.0577,
+        "n2o_factor": 0.1468,
+        "year_display": "2001"
+      },
+      "2002": {
+        "ch4_factor": 0.0634,
+        "n2o_factor": 0.1673,
+        "year_display": "2002"
+      },
+      "2003": {
+        "ch4_factor": 0.0602,
+        "n2o_factor": 0.1553,
+        "year_display": "2003"
+      },
+      "2004": {
+        "ch4_factor": 0.0298,
+        "n2o_factor": 0.0164,
+        "year_display": "2004"
+      },
+      "2005": {
+        "ch4_factor": 0.0297,
+        "n2o_factor": 0.0083,
+        "year_display": "2005"
+      },
+      "2006": {
+        "ch4_factor": 0.0299,
+        "n2o_factor": 0.0241,
+        "year_display": "2006"
+      },
+      "2007": {
+        "ch4_factor": 0.0322,
+        "n2o_factor": 0.0015,
+        "year_display": "2007"
+      },
+      "2008": {
+        "ch4_factor": 0.034,
+        "n2o_factor": 0.0015,
+        "year_display": "2008"
+      },
+      "2009": {
+        "ch4_factor": 0.0339,
+        "n2o_factor": 0.0015,
+        "year_display": "2009"
+      },
+      "2010": {
+        "ch4_factor": 0.032,
+        "n2o_factor": 0.0015,
+        "year_display": "2010"
+      },
+      "2011": {
+        "ch4_factor": 0.0304,
+        "n2o_factor": 0.0015,
+        "year_display": "2011"
+      },
+      "2012": {
+        "ch4_factor": 0.0313,
+        "n2o_factor": 0.0015,
+        "year_display": "2012"
+      },
+      "2013": {
+        "ch4_factor": 0.0313,
+        "n2o_factor": 0.0015,
+        "year_display": "2013"
+      },
+      "2014": {
+        "ch4_factor": 0.0315,
+        "n2o_factor": 0.0015,
+        "year_display": "2014"
+      },
+      "2015": {
+        "ch4_factor": 0.0332,
+        "n2o_factor": 0.0021,
+        "year_display": "2015"
+      },
+      "2016": {
+        "ch4_factor": 0.0321,
+        "n2o_factor": 0.0061,
+        "year_display": "2016"
+      },
+      "2017": {
+        "ch4_factor": 0.0329,
+        "n2o_factor": 0.0084,
+        "year_display": "2017"
+      },
+      "2018": {
+        "ch4_factor": 0.0326,
+        "n2o_factor": 0.0082,
+        "year_display": "2018"
+      }
+    }
+  },
+  "lightDutyTrucks": {
+    "gasoline": {
+      "1987": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1988": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1989": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1990": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1991": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1992": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1993": {
+        "ch4_factor": 0.0813,
+        "n2o_factor": 0.1035,
+        "year_display": "1987-1993"
+      },
+      "1994": {
+        "ch4_factor": 0.0646,
+        "n2o_factor": 0.0982,
+        "year_display": "1994"
+      },
+      "1995": {
+        "ch4_factor": 0.0517,
+        "n2o_factor": 0.0908,
+        "year_display": "1995"
+      },
+      "1996": {
+        "ch4_factor": 0.0452,
+        "n2o_factor": 0.0871,
+        "year_display": "1996"
+      },
+      "1997": {
+        "ch4_factor": 0.0452,
+        "n2o_factor": 0.0871,
+        "year_display": "1997"
+      },
+      "1998": {
+        "ch4_factor": 0.0412,
+        "n2o_factor": 0.0787,
+        "year_display": "1998"
+      },
+      "1999": {
+        "ch4_factor": 0.0333,
+        "n2o_factor": 0.0618,
+        "year_display": "1999"
+      },
+      "2000": {
+        "ch4_factor": 0.034,
+        "n2o_factor": 0.0631,
+        "year_display": "2000"
+      },
+      "2001": {
+        "ch4_factor": 0.0221,
+        "n2o_factor": 0.0379,
+        "year_display": "2001"
+      },
+      "2002": {
+        "ch4_factor": 0.0242,
+        "n2o_factor": 0.0424,
+        "year_display": "2002"
+      },
+      "2003": {
+        "ch4_factor": 0.0221,
+        "n2o_factor": 0.0373,
+        "year_display": "2003"
+      },
+      "2004": {
+        "ch4_factor": 0.0115,
+        "n2o_factor": 0.0088,
+        "year_display": "2004"
+      },
+      "2005": {
+        "ch4_factor": 0.0105,
+        "n2o_factor": 0.0064,
+        "year_display": "2005"
+      },
+      "2006": {
+        "ch4_factor": 0.0108,
+        "n2o_factor": 0.008,
+        "year_display": "2006"
+      },
+      "2007": {
+        "ch4_factor": 0.0103,
+        "n2o_factor": 0.0061,
+        "year_display": "2007"
+      },
+      "2008": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0036,
+        "year_display": "2008"
+      },
+      "2009": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0036,
+        "year_display": "2009"
+      },
+      "2010": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0035,
+        "year_display": "2010"
+      },
+      "2011": {
+        "ch4_factor": 0.0096,
+        "n2o_factor": 0.0034,
+        "year_display": "2011"
+      },
+      "2012": {
+        "ch4_factor": 0.0096,
+        "n2o_factor": 0.0033,
+        "year_display": "2012"
+      },
+      "2013": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0035,
+        "year_display": "2013"
+      },
+      "2014": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0033,
+        "year_display": "2014"
+      },
+      "2015": {
+        "ch4_factor": 0.0094,
+        "n2o_factor": 0.0031,
+        "year_display": "2015"
+      },
+      "2016": {
+        "ch4_factor": 0.0091,
+        "n2o_factor": 0.0029,
+        "year_display": "2016"
+      },
+      "2017": {
+        "ch4_factor": 0.0084,
+        "n2o_factor": 0.0018,
+        "year_display": "2017"
+      },
+      "2018": {
+        "ch4_factor": 0.0081,
+        "n2o_factor": 0.0015,
+        "year_display": "2018"
+      }
+    },
+    "biodiesel": {
+      "default": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.021,
+        "year_display": ""
+      }
+    },
+    "cng": {
+      "default": {
+        "ch4_factor": 0.123,
+        "n2o_factor": 0.011,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "1960": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1961": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1962": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1963": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1964": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1965": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1966": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1967": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1968": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1969": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1970": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1971": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1972": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1973": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1974": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1975": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1976": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1977": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1978": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1979": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1980": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1981": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1982": {
+        "ch4_factor": 0.0011,
+        "n2o_factor": 0.0017,
+        "year_display": "1960-1982"
+      },
+      "1983": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1984": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1985": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1986": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1987": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1988": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1989": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1990": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1991": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1992": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1993": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1994": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1995": {
+        "ch4_factor": 0.0009,
+        "n2o_factor": 0.0014,
+        "year_display": "1983-1995"
+      },
+      "1996": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "1997": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "1998": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "1999": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2000": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2001": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2002": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2003": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2004": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2005": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2006": {
+        "ch4_factor": 0.001,
+        "n2o_factor": 0.0015,
+        "year_display": "1996-2006"
+      },
+      "2007": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2008": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2009": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2010": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2011": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2012": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2013": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2014": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2015": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2016": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2017": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      },
+      "2018": {
+        "ch4_factor": 0.029,
+        "n2o_factor": 0.0214,
+        "year_display": "2007-2018"
+      }
+    },
+    "ethanol": {
+      "default": {
+        "ch4_factor": 0.012,
+        "n2o_factor": 0.011,
+        "year_display": ""
+      }
+    },
+    "lng": {
+      "default": {
+        "ch4_factor": 0.123,
+        "n2o_factor": 0.011,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.012,
+        "n2o_factor": 0.013,
+        "year_display": ""
+      }
+    }
+  },
+  "motorcycles": {
+    "gasoline": {
+      "1960": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1961": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1962": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1963": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1964": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1965": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1966": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1967": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1968": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1969": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1970": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1971": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1972": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1973": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1974": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1975": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1976": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1977": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1978": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1979": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1980": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1981": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1982": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1983": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1984": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1985": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1986": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1987": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1988": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1989": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1990": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1991": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1992": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1993": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1994": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1995": {
+        "ch4_factor": 0.0899,
+        "n2o_factor": 0.0087,
+        "year_display": "1960-1995"
+      },
+      "1996": {
+        "ch4_factor": 0.0672,
+        "n2o_factor": 0.0069,
+        "year_display": "1996-present"
+      }
+    }
+  },
+  "passengerCars": {
+    "gasoline": {
+      "1984": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1985": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1986": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1987": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1988": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1989": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1990": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1991": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1992": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1993": {
+        "ch4_factor": 0.0704,
+        "n2o_factor": 0.0647,
+        "year_display": "1984-1993"
+      },
+      "1994": {
+        "ch4_factor": 0.0617,
+        "n2o_factor": 0.0603,
+        "year_display": "1994"
+      },
+      "1995": {
+        "ch4_factor": 0.0531,
+        "n2o_factor": 0.056,
+        "year_display": "1995"
+      },
+      "1996": {
+        "ch4_factor": 0.0434,
+        "n2o_factor": 0.0503,
+        "year_display": "1996"
+      },
+      "1997": {
+        "ch4_factor": 0.0337,
+        "n2o_factor": 0.0446,
+        "year_display": "1997"
+      },
+      "1998": {
+        "ch4_factor": 0.024,
+        "n2o_factor": 0.0389,
+        "year_display": "1998"
+      },
+      "1999": {
+        "ch4_factor": 0.0215,
+        "n2o_factor": 0.0355,
+        "year_display": "1999"
+      },
+      "2000": {
+        "ch4_factor": 0.0175,
+        "n2o_factor": 0.0304,
+        "year_display": "2000"
+      },
+      "2001": {
+        "ch4_factor": 0.0105,
+        "n2o_factor": 0.0212,
+        "year_display": "2001"
+      },
+      "2002": {
+        "ch4_factor": 0.0102,
+        "n2o_factor": 0.0207,
+        "year_display": "2002"
+      },
+      "2003": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0181,
+        "year_display": "2003"
+      },
+      "2004": {
+        "ch4_factor": 0.0078,
+        "n2o_factor": 0.0085,
+        "year_display": "2004"
+      },
+      "2005": {
+        "ch4_factor": 0.0075,
+        "n2o_factor": 0.0067,
+        "year_display": "2005"
+      },
+      "2006": {
+        "ch4_factor": 0.0076,
+        "n2o_factor": 0.0075,
+        "year_display": "2006"
+      },
+      "2007": {
+        "ch4_factor": 0.0072,
+        "n2o_factor": 0.0052,
+        "year_display": "2007"
+      },
+      "2008": {
+        "ch4_factor": 0.0072,
+        "n2o_factor": 0.0049,
+        "year_display": "2008"
+      },
+      "2009": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2009"
+      },
+      "2010": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2010"
+      },
+      "2011": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2011"
+      },
+      "2012": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2012"
+      },
+      "2013": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2013"
+      },
+      "2014": {
+        "ch4_factor": 0.0071,
+        "n2o_factor": 0.0046,
+        "year_display": "2014"
+      },
+      "2015": {
+        "ch4_factor": 0.0068,
+        "n2o_factor": 0.0042,
+        "year_display": "2015"
+      },
+      "2016": {
+        "ch4_factor": 0.0065,
+        "n2o_factor": 0.0038,
+        "year_display": "2016"
+      },
+      "2017": {
+        "ch4_factor": 0.0054,
+        "n2o_factor": 0.0018,
+        "year_display": "2017"
+      },
+      "2018": {
+        "ch4_factor": 0.0052,
+        "n2o_factor": 0.0016,
+        "year_display": "2018"
+      }
+    },
+    "diesel": {
+      "1960": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1961": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1962": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1963": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1964": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1965": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1966": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1967": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1968": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1969": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1970": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1971": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1972": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1973": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1974": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1975": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1976": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1977": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1978": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1979": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1980": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1981": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1982": {
+        "ch4_factor": 0.0006,
+        "n2o_factor": 0.0012,
+        "year_display": "1960-1982"
+      },
+      "1983": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1984": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1985": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1986": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1987": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1988": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1989": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1990": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1991": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1992": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1993": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1994": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1995": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1983-1995"
+      },
+      "1996": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "1997": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "1998": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "1999": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2000": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2001": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2002": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2003": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2004": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2005": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2006": {
+        "ch4_factor": 0.0005,
+        "n2o_factor": 0.001,
+        "year_display": "1996-2006"
+      },
+      "2007": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2008": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2009": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2010": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2011": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2012": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2013": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2014": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2015": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2016": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2017": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      },
+      "2018": {
+        "ch4_factor": 0.0302,
+        "n2o_factor": 0.0192,
+        "year_display": "2007-2018"
+      }
+    }
+  },
+  "buses": {
+    "biodiesel": {
+      "default": {
+        "ch4_factor": 0.009,
+        "n2o_factor": 0.043,
+        "year_display": ""
+      }
+    },
+    "cng": {
+      "default": {
+        "ch4_factor": 10.0,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "ethanol": {
+      "default": {
+        "ch4_factor": 0.022,
+        "n2o_factor": 0.032,
+        "year_display": ""
+      }
+    },
+    "lng": {
+      "default": {
+        "ch4_factor": 10.0,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.034,
+        "n2o_factor": 0.017,
+        "year_display": ""
+      }
+    },
+    "methanol": {
+      "default": {
+        "ch4_factor": 0.022,
+        "n2o_factor": 0.032,
+        "year_display": ""
+      }
+    }
+  },
+  "heavyDutyTrucks": {
+    "biodiesel": {
+      "default": {
+        "ch4_factor": 0.009,
+        "n2o_factor": 0.043,
+        "year_display": ""
+      }
+    },
+    "cng": {
+      "default": {
+        "ch4_factor": 3.7,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "ethanol": {
+      "default": {
+        "ch4_factor": 0.075,
+        "n2o_factor": 0.028,
+        "year_display": ""
+      }
+    },
+    "lng": {
+      "default": {
+        "ch4_factor": 3.7,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.013,
+        "n2o_factor": 0.026,
+        "year_display": ""
+      }
+    },
+    "methanol": {
+      "default": {
+        "ch4_factor": 0.075,
+        "n2o_factor": 0.028,
+        "year_display": ""
+      }
+    }
+  },
+  "lightDutyCars": {
+    "biodiesel": {
+      "default": {
+        "ch4_factor": 0.03,
+        "n2o_factor": 0.019,
+        "year_display": ""
+      }
+    },
+    "cng": {
+      "default": {
+        "ch4_factor": 0.082,
+        "n2o_factor": 0.006,
+        "year_display": ""
+      }
+    },
+    "ethanol": {
+      "default": {
+        "ch4_factor": 0.008,
+        "n2o_factor": 0.006,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.008,
+        "n2o_factor": 0.006,
+        "year_display": ""
+      }
+    },
+    "methanol": {
+      "default": {
+        "ch4_factor": 0.008,
+        "n2o_factor": 0.006,
+        "year_display": ""
+      }
+    }
+  },
+  "mediumAndHeavyDutyVehicles": {
+    "diesel": {
+      "1960": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1961": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1962": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1963": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1964": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1965": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1966": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1967": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1968": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1969": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1970": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1971": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1972": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1973": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1974": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1975": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1976": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1977": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1978": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1979": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1980": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1981": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1982": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1983": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1984": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1985": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1986": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1987": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1988": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1989": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1990": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1991": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1992": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1993": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1994": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1995": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1996": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1997": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1998": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "1999": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2000": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2001": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2002": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2003": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2004": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2005": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2006": {
+        "ch4_factor": 0.0051,
+        "n2o_factor": 0.0048,
+        "year_display": "1960-2006"
+      },
+      "2007": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2008": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2009": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2010": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2011": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2012": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2013": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2014": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2015": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2016": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2017": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      },
+      "2018": {
+        "ch4_factor": 0.0095,
+        "n2o_factor": 0.0431,
+        "year_display": "2007-2018"
+      }
+    }
+  },
+  "mediumDutyTrucks": {
+    "biodiesel": {
+      "default": {
+        "ch4_factor": 0.009,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "cng": {
+      "default": {
+        "ch4_factor": 4.2,
+        "n2o_factor": 0.001,
+        "year_display": ""
+      }
+    },
+    "lng": {
+      "default": {
+        "ch4_factor": 4.2,
+        "n2o_factor": 0.043,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.014,
+        "n2o_factor": 0.034,
+        "year_display": ""
+      }
+    }
+  },
+  "agriculturalEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 12.96,
+        "n2o_factor": 0.06,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 7.24,
+        "n2o_factor": 0.21,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.28,
+        "n2o_factor": 0.49,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 2.19,
+        "n2o_factor": 0.39,
+        "year_display": ""
+      }
+    }
+  },
+  "agriculturalOffroadTrucks": {
+    "gasoline": {
+      "default": {
+        "ch4_factor": 7.24,
+        "n2o_factor": 0.21,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.13,
+        "n2o_factor": 0.49,
+        "year_display": ""
+      }
+    }
+  },
+  "aircraft": {
+    "jetFuel": {
+      "default": {
+        "ch4_factor": 0.0,
+        "n2o_factor": 0.3,
+        "year_display": ""
+      }
+    },
+    "aviationGasoline": {
+      "default": {
+        "ch4_factor": 7.06,
+        "n2o_factor": 0.11,
+        "year_display": ""
+      }
+    }
+  },
+  "airportEquipment": {
+    "gasoline": {
+      "default": {
+        "ch4_factor": 2.58,
+        "n2o_factor": 0.25,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.17,
+        "n2o_factor": 0.49,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.33,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    }
+  },
+  "constructionMiningEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 12.42,
+        "n2o_factor": 0.07,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 5.58,
+        "n2o_factor": 0.2,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.2,
+        "n2o_factor": 0.47,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 1.05,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    }
+  },
+  "constructionMiningOffroadTrucks": {
+    "gasoline": {
+      "default": {
+        "ch4_factor": 5.58,
+        "n2o_factor": 0.2,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.13,
+        "n2o_factor": 0.49,
+        "year_display": ""
+      }
+    }
+  },
+  "industrialCommercialEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 15.14,
+        "n2o_factor": 0.06,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 5.48,
+        "n2o_factor": 0.2,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.23,
+        "n2o_factor": 0.47,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.44,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    }
+  },
+  "lawnAndGardenEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 15.57,
+        "n2o_factor": 0.06,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 5.84,
+        "n2o_factor": 0.18,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.33,
+        "n2o_factor": 0.47,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 0.35,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    }
+  },
+  "locomotives": {
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.8,
+        "n2o_factor": 0.26,
+        "year_display": ""
+      }
+    }
+  },
+  "loggingEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 12.03,
+        "n2o_factor": 0.08,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 6.71,
+        "n2o_factor": 0.18,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.1,
+        "n2o_factor": 0.49,
+        "year_display": ""
+      }
+    }
+  },
+  "railroadEquipment": {
+    "gasoline": {
+      "default": {
+        "ch4_factor": 5.78,
+        "n2o_factor": 0.19,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.44,
+        "n2o_factor": 0.42,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 1.2,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    }
+  },
+  "recreationalEquipment": {
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 7.81,
+        "n2o_factor": 0.03,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 8.45,
+        "n2o_factor": 0.19,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.41,
+        "n2o_factor": 0.41,
+        "year_display": ""
+      }
+    },
+    "lpg": {
+      "default": {
+        "ch4_factor": 2.98,
+        "n2o_factor": 0.38,
+        "year_display": ""
+      }
+    }
+  },
+  "shipsAndBoats": {
+    "residualFuelOil": {
+      "default": {
+        "ch4_factor": 0.55,
+        "n2o_factor": 0.55,
+        "year_display": ""
+      }
+    },
+    "gasoline2Stroke": {
+      "default": {
+        "ch4_factor": 9.54,
+        "n2o_factor": 0.06,
+        "year_display": ""
+      }
+    },
+    "gasoline4Stroke": {
+      "default": {
+        "ch4_factor": 4.88,
+        "n2o_factor": 0.23,
+        "year_display": ""
+      }
+    },
+    "diesel": {
+      "default": {
+        "ch4_factor": 0.31,
+        "n2o_factor": 0.5,
+        "year_display": ""
+      }
+    }
+  }
+}
