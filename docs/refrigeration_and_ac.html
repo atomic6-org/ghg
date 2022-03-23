@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Refrigeration and AC &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -54,6 +53,8 @@
 <li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Refrigeration and AC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.refrigeration_and_ac">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-balance">Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simplified-material-balance">Simplified Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#screening-method">Screening Method</a></li>
@@ -104,8 +105,99 @@
 
           <div class="body" role="main">
             
-  <section id="refrigeration-and-ac">
+  <div class="section" id="refrigeration-and-ac">
 <span id="refrigeration-and-ac-api"></span><h1>Refrigeration and AC<a class="headerlink" href="#refrigeration-and-ac" title="Permalink to this headline">¶</a></h1>
+<p>Refrigeration and Air Conditioning (AC) is <a class="reference external" href="glossary.html">scope 1 emission</a>. Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.</p>
+<div class="section" id="module-atomic6ghg.formulas.refrigeration_and_ac">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.refrigeration_and_ac" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.refrigeration_and_ac.</span></span><span class="sig-name descname"><span class="pre">RefrigerationAndAc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from refrigeration and air conditioning equipment</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inventory_change</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transferred_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_change</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_screening_method">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_screening_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_equipment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_operating_units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_disposed_units</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_simplified_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_simplified_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">existing_units_recharge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_recovered</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.calculate_co2_emissions_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_material_balance">
+<span class="sig-name descname"><span class="pre">make_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_screening_method">
+<span class="sig-name descname"><span class="pre">make_screening_method</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_simplified_material_balance">
+<span class="sig-name descname"><span class="pre">make_simplified_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.make_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for RefrigerationAndAc</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">RefrigerationAndAc</span>
+
+<span class="n">refrigeration_and_ac_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;refrigeration-and-ac.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;materialBalance&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;co2&quot;</span><span class="p">,</span> <span class="s2">&quot;gasGWP&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;inventoryChange&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;transferredAmount&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;capacityChange&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;co2EquivalentEmissions&quot;</span><span class="p">:</span> <span class="mi">300</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">RefrigerationAndAc</span><span class="p">(</span><span class="n">refrigeration_and_ac_input</span><span class="p">)</span>
+
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Refrigeration and AC calculates emissions for refrigerant gas use. There are three different carbon accounting methods
 employed in the formula, and all three can be utilized simultaneously if need be. In general, Refrigeration and AC
 allows for inputs of gases for the following:</p>
@@ -216,7 +308,8 @@ allows for inputs of gases for the following:</p>
 </table>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Refrigeration and AC: material balance,
 simplified material balance, and the screening method.</p>
-<section id="material-balance">
+</div>
+<div class="section" id="material-balance">
 <h2>Material Balance<a class="headerlink" href="#material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The Material Balance Method tracks emissions of refrigerants from equipment through a mass balance analysis. Releases
 of refrigerants can be calculated based on the inventory (in storage, not in operating equipment), purchases and sales
@@ -242,8 +335,8 @@ volume for a given refrigerant during the reporting period.</p>
 <dd><p>EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 8</p>
 </dd>
 </dl>
-</section>
-<section id="simplified-material-balance">
+</div>
+<div class="section" id="simplified-material-balance">
 <h2>Simplified Material Balance<a class="headerlink" href="#simplified-material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The Simplified Material Balance Method is a simplified version of the Material Balance Method. With this simplified
 method, there are fewer flows of refrigerants to consider. This method is appropriate for entities that do not maintain
@@ -270,8 +363,8 @@ recovered from retiring equipment.</p>
 <dd><p>EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 10</p>
 </dd>
 </dl>
-</section>
-<section id="screening-method">
+</div>
+<div class="section" id="screening-method">
 <h2>Screening Method<a class="headerlink" href="#screening-method" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the refrigerant gases, the Screening Method requires an equipment type to be entered to the refrigerant
 used with the equipment, and must be one of the following:</p>
@@ -336,8 +429,8 @@ and the final value is divided by <span class="math notranslate nohighlight">\(1
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, IPPU, Chapter 7, Emissions of Fluorinated Substitutes for Ozone Depleting Substances, pp. 48</p>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
 
           </div>

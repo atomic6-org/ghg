@@ -2,6 +2,42 @@
 
 Refrigeration and AC
 --------------------
+Refrigeration and Air Conditioning (AC) is `scope 1 emission <glossary.html>`_. Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.
+
+
+Usage
+**********
+.. module:: atomic6ghg.formulas.refrigeration_and_ac
+.. autoclass:: RefrigerationAndAc
+   :members:
+   :undoc-members:
+   :inherited-members:
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import RefrigerationAndAc
+
+    refrigeration_and_ac_input: dict = {
+        "version": "refrigeration-and-ac.1.0.0",
+        "materialBalance": [
+            {
+              "gas": "co2", "gasGWP": 1, "inventoryChange": 100,
+                "transferredAmount": 100, "capacityChange": 100,
+                "co2EquivalentEmissions": 300
+            }
+        ]
+    }
+    engine = RefrigerationAndAc(refrigeration_and_ac_input)
+
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
+
+EPA Equation Analysis
+**************************************************
+
 Refrigeration and AC calculates emissions for refrigerant gas use. There are three different carbon accounting methods
 employed in the formula, and all three can be utilized simultaneously if need be. In general, Refrigeration and AC
 allows for inputs of gases for the following:
