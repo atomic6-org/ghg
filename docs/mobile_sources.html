@@ -49,7 +49,12 @@
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fire_suppression.html">Fire Suppression</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Mobile Sources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mobile Sources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.mobile_sources">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="offsets.html">Offsets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="product_transport.html">Product Transport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="purchased_gases.html">Purchased Gases</a></li>
@@ -101,6 +106,168 @@
             
   <section id="mobile-sources">
 <span id="mobile-sources-api"></span><h1>Mobile Sources<a class="headerlink" href="#mobile-sources" title="Permalink to this headline">¶</a></h1>
+<p>Mobile Sources is a <a class="reference external" href="glossary.html">Scope 1 Emission</a> that accounts for the combustion of fuels to power on- and off-road vehicles and equipment.</p>
+<section id="module-atomic6ghg.formulas.mobile_sources">
+<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.mobile_sources" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.mobile_sources.</span></span><span class="sig-name descname"><span class="pre">MobileSources</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from mobile source vehicles</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.calculate_ch4_emissions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_ch4_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_year</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.calculate_ch4_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CH4 emissions for a mobile source vehicle. usage is either fuel_usage or miles_traveled depending
+on if the vehicle_type is non-road or on road, respectively.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.calculate_co2_emissions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_usage</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.calculate_co2_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a mobile source fuel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.calculate_n2o_emissions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_n2o_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_year</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.calculate_n2o_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CH4 emissions for a mobile source vehicle. usage is either fuel_usage or miles_traveled depending
+on if the vehicle_type is non-road or on road, respectively.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.co2_fuel_map">
+<span class="sig-name descname"><span class="pre">co2_fuel_map</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'gasoline2Stroke':</span> <span class="pre">'gasoline',</span> <span class="pre">'gasoline4Stroke':</span> <span class="pre">'gasoline',</span> <span class="pre">'methanol':</span> <span class="pre">'ethanol'}</span></em><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.co2_fuel_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.co2_fuels_units">
+<span class="sig-name descname"><span class="pre">co2_fuels_units</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'aviationGasoline':</span> <span class="pre">'gallons',</span> <span class="pre">'biodiesel':</span> <span class="pre">'gallons',</span> <span class="pre">'cng':</span> <span class="pre">'scf',</span> <span class="pre">'diesel':</span> <span class="pre">'gallons',</span> <span class="pre">'ethanol':</span> <span class="pre">'gallons',</span> <span class="pre">'gasoline':</span> <span class="pre">'gallons',</span> <span class="pre">'jetFuel':</span> <span class="pre">'gallons',</span> <span class="pre">'lng':</span> <span class="pre">'gallons',</span> <span class="pre">'lpg':</span> <span class="pre">'gallons',</span> <span class="pre">'residualFuelOil':</span> <span class="pre">'gallons'}</span></em><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.co2_fuels_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.get_fuel_usage">
+<span class="sig-name descname"><span class="pre">get_fuel_usage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_usage</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.get_fuel_usage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get non biomass fuel usage for each fuel type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_biomass_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_total_biomass_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_biomass_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate total biomass CO2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_total_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate total CO2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_mobile_sources_fuel_usage_and_co2_emissions">
+<span class="sig-name descname"><span class="pre">make_total_mobile_sources_fuel_usage_and_co2_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_mobile_sources_fuel_usage_and_co2_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format total_fuel_usage_and_co2_emissions data for schema</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_non_road_mobile_source_fuel_usage_and_emissions">
+<span class="sig-name descname"><span class="pre">make_total_organization_wide_non_road_mobile_source_fuel_usage_and_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_non_road_mobile_source_fuel_usage_and_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select non-road vehicle data and format total_useage_and_ch4_and_n2o_emissions for schema</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_on_road_gasoline_mobile_source_mileage_and_emissions">
+<span class="sig-name descname"><span class="pre">make_total_organization_wide_on_road_gasoline_mobile_source_mileage_and_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_on_road_gasoline_mobile_source_mileage_and_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select gasoline on road vehicle data and format total_useage_and_ch4_and_n2o_emissions for schema</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_on_road_non_gasoline_mobile_source_mileage_and_emissions">
+<span class="sig-name descname"><span class="pre">make_total_organization_wide_on_road_non_gasoline_mobile_source_mileage_and_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.make_total_organization_wide_on_road_non_gasoline_mobile_source_mileage_and_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select non-gasoline on road vehicle data and format total_useage_and_ch4_and_n2o_emissions for schema</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.non_biomass_co2_fuel_map">
+<span class="sig-name descname"><span class="pre">non_biomass_co2_fuel_map</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'biodiesel':</span> <span class="pre">'diesel',</span> <span class="pre">'ethanol':</span> <span class="pre">'gasoline'}</span></em><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.non_biomass_co2_fuel_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.nonroad_vehicles">
+<span class="sig-name descname"><span class="pre">nonroad_vehicles</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['agriculturalEquipment',</span> <span class="pre">'agriculturalOffroadTrucks',</span> <span class="pre">'aircraft',</span> <span class="pre">'airportEquipment',</span> <span class="pre">'constructionMiningEquipment',</span> <span class="pre">'constructionMiningOffroadTrucks',</span> <span class="pre">'industrialCommercialEquipment',</span> <span class="pre">'lawnAndGardenEquipment',</span> <span class="pre">'locomotives',</span> <span class="pre">'loggingEquipment',</span> <span class="pre">'railroadEquipment',</span> <span class="pre">'recreationalEquipment',</span> <span class="pre">'shipsAndBoats']</span></em><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.nonroad_vehicles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for MobileSources</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.road_vehicles">
+<span class="sig-name descname"><span class="pre">road_vehicles</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['heavyDutyVehicles',</span> <span class="pre">'lightDutyTrucks',</span> <span class="pre">'motorcycles',</span> <span class="pre">'passengerCars',</span> <span class="pre">'buses',</span> <span class="pre">'heavyDutyTrucks',</span> <span class="pre">'lightDutyCars',</span> <span class="pre">'mediumAndHeavyDutyVehicles',</span> <span class="pre">'mediumDutyTrucks']</span></em><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.road_vehicles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_mobile_source_use_and_emissions_by_vehicle_type">
+<span class="sig-name descname"><span class="pre">tabulate_mobile_source_use_and_emissions_by_vehicle_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_usage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">miles_traveled</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_mobile_source_use_and_emissions_by_vehicle_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate total fuel usage, total mileage, and CH4 and N2O emissions for vehicles</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_subtable_data">
+<span class="sig-name descname"><span class="pre">tabulate_subtable_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_subtable_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loop over user input data and make all sub-tables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_total_mobile_sources_fuel_usage_and_co2_emissions">
+<span class="sig-name descname"><span class="pre">tabulate_total_mobile_sources_fuel_usage_and_co2_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fuel_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel_usage</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.tabulate_total_mobile_sources_fuel_usage_and_co2_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input fuel_type and fuel_usage</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.mobile_sources.MobileSources.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.mobile_sources.MobileSources.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">MobileSources</span>
+
+<span class="n">mobile_sources_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;mobile-sources.1.0.0&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;mobileSourcesFuelConsumption&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;onOrNonRoad&quot;</span><span class="p">:</span> <span class="s2">&quot;OnRoad&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;vehicleType&quot;</span><span class="p">:</span> <span class="s2">&quot;heavyDutyTrucks&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fuelType&quot;</span><span class="p">:</span> <span class="s2">&quot;lpg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;vehicleYear&quot;</span><span class="p">:</span> <span class="mi">1995</span><span class="p">,</span>
+      <span class="s2">&quot;fuelUsage&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+      <span class="s2">&quot;milesTraveled&quot;</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">MobileSources</span><span class="p">(</span><span class="n">mobile_sources_input</span><span class="p">)</span>
+
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Mobile sources allows for inputs of fuel usage for the following vehicle type and fuel type combinations:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -244,6 +411,7 @@ Note that in atomic6, the final value of this calculation is divided by <span cl
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 3: Mobile Combustion, pp. 12-13</p>
 </dd>
 </dl>
+</section>
 </section>
 
 
