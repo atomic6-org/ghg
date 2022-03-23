@@ -119,7 +119,7 @@
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide gas purchased calculated using material balance.",
             "format": ",",
-            "formula": "atom6ghg.formulas.purchased_gases.calculate_co2_emissions_purchased_gases",
+            "formula": "atomic6ghg.formulas.purchased_gases.calculate_co2_emissions_purchased_gases",
             "type": [
               "number",
               "null"
@@ -134,7 +134,7 @@
     },
     "totalCo2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Purchased Gas",
-      "formula": "atom6ghg.formulas.purchased_gases.make_co2_equivalent_emissions",
+      "formula": "atomic6ghg.formulas.purchased_gases.make_co2_equivalent_emissions",
       "type": ["number", "null"]
     },
     "footNote": {

@@ -1,0 +1,340 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Mobile Sources",
+    "description": "Document schema of Mobile Sources workbook page in SGEC",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "pattern": "^mobile-sources.1.0.0"
+        },
+        "instructions": {
+            "type": "string",
+            "title": "Scope 1 Emissions from Mobile Sources \n Guidance \n '(A) Enter annual data for each vehicle or group of vehicles (grouped by vehicle type, vehicle year, and fuel type) in ORANGE cells in \n     Table 1.  Example entry is shown in first row (GREEN Italics).  Only enter vehicles owned or leased by your organization on this sheet.  All other vehicle use such as employee commuting or business travel is considered a scope 3 emissions source and should be reported in the corresponding scope 3 sheets. \n - Select \"On-Road\" or \"Non-Road\" from drop down box to determine the Vehicle Types available. \n - Select \"Vehicle Type\" from drop down box (closest type available). \n  - Enter \"Fuel Usage\" in appropriate units (units appear when vehicle type is selected). \n - If mileage or fuel usage is unknown, estimate using approximate fuel economy values (see Reference Table below). \n - Vehicle year and Miles traveled are not necessary for non-road equiment. \n '(B) When using biofuels, typically the biofuel (biodiesel or ethanol) is mixed with a petroleum fuel (diesel or gasoline) for use in vehicles. Enter the biodiesel and ethanol percentages of the fuel if known, or leave default values. \n '(C) Biomass CO2 emissions from biodiesel and ethanol are not reported in the total emissions, but are reported separately at the bottom of the sheet."
+        },
+        "biodieselPercent": {
+            "title": "Biodeisel Percent:",
+            "description": "Percent of Biodiesel of the fuel",
+            "format": "",
+            "formula": "",
+            "type": "number"
+        },
+        "ethanolPercent": {
+            "title": "Ethanol Percent:",
+            "description": "Percent of Ethanol of the fuel",
+            "format": "",
+            "formula": "",
+            "type": "number"
+        },
+        "mobileSourcesFuelConsumption": {
+            "type": "array",
+            "title": "Table 1.  Mobile Source Fuel Combustion and Miles Traveled",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sourceId": {
+                        "title": "Source ID",
+                        "description": "Alphanumerical code or ID for source",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string"
+                    },
+                    "sourceDescription": {
+                        "title": "Source Description",
+                        "description": "Name of source",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string"
+                    },
+                    "onOrNonRoad": {
+                        "title": "On-Road or Non-Road?",
+                        "description": "Dropdown Selection of vehicle road type: OnRoad, NonRoad",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string",
+                        "enum": ["", "OnRoad", "NonRoad"]
+                    },
+                    "vehicleType": {
+                        "title": "Vehicle Type",
+                        "description": "Dropdown Selection of vehicle type. When On-Road is selected in On or Non Road dropdown: Passenger Cars - Gasoline, Light-Duty Trucks - Gasoline, Heavy-Duty Trucks - Gasoline, Motorcycles - Gasoline, Passenger Cars - Diesel, Light-Duty Trucks - Diesel, Medium- and Heavy-Duty Trucks - Diesel, Light-Duty Cars - Methanol, Light-Duty Cars - Ethanol, Light-Duty Cars - CNG, Light-Duty Cars - LPG, Light-Duty Cars -Biodiesel, Light-Duty Trucks - Ethanol, Light-Duty Trucks - CNG, Light-Duty Trucks - LPG, Light-Duty Trucks - LNG, Light-Duty Trucks - Biodiesel, Medium-Duty Trucks - CNG, Medium-Duty Trucks - LPG, Medium-Duty Trucks - LNG, Medium-Duty Trucks - Biodiesel, Heavy-Duty Trucks - Methanol, Heavy-Duty Trucks - Ethanol, Heavy-Duty Trucks - CNG, Heavy-Duty Trucks - LPG, Heavy-Duty Trucks - LNG, Heavy-Duty Trucks - Biodiesel, Buses - Methanol, Buses- Ethanol, Buses - CNG, Buses - LPG, Buses- LNG, Buses - Biodiesel. When Non-Road is selected: Ships and Boats - Residual Fuel Oil, Ships and Boats - Gasoline (2 stroke), Ships and Boats - Gasoline (4 stroke), Ships and Boats - Diesel, Locomotives - Diesel, Aircraft - Jet Fuel, Aircraft - Aviation Gasoline, Agricultural Equipment - Gasoline (2 stroke), Agricultural Equipment - Gasoline (4 stroke), Agricultural Equipment - Diesel, Agricultural Equipment - LPG, Agricultural Offroad Trucks - Gasoline, Agricultural Offroad Trucks - Diesel, Construction/Mining Equipment - Gasoline (2 stroke),  Construction/Mining Equipment - Gasoline (4 stroke),  Construction/Mining Equipment - Diesel,  Construction/Mining Equipment - LPG,  Construction/Mining Offroad Trucks - Gasoline, Construction/Mining Offroad Trucks - Diesel, Lawn and Garden Equipment - Gasoline (2 stroke), Lawn and Garden Equipment - Gasoline (4 stroke), Lawn and Garden Equipment - Diesel, Lawn and Garden Equipment - LPG, Airport Equipment - Gasoline, Airport Equipment - Diesel, Airport Equipment - LPG, Industrial/Commercial Equipment - Gasoline (2 stroke), Industrial/Commercial Equipment - (4 stroke), Industrial/Commercial Equipment - Diesel, Industrial/Commercial Equipment - LPG, Logging Equipment - Gasoline (2 stroke), Logging Equipment - Gasoline (4 stroke), Logging Equipment - Diesel, Logging Equipment - LPG, Recreational Equipment - Gasoline (2 stroke), Recreational Equipment - Gasoline (4 stroke), Recreational Equipment - Diesel, Recreational Equipment - LPG ",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string",
+                        "enum": ["", "passengerCars", "lightDutyTrucks", "heavyDutyVehicles", "motorcycles", "lightDutyCars",
+                            "mediumDutyTrucks", "heavyDutyTrucks", "buses", "shipsAndBoats", "locomotives", "aircraft",
+                            "agriculturalEquipment", "agriculturalOffroadTrucks", "constructionMiningEquipment",
+                            "constructionMiningOffroadTrucks", "lawnAndGardenEquipment", "airportEquipment",
+                            "industrialCommercialEquipment", "loggingEquipment", "railroadEquipment", "recreationalEquipment",
+                            "mediumAndHeavyDutyVehicles"
+                        ]
+                    },
+                    "fuelType": {
+                        "title": "",
+                        "description": "The fuel type of the vehicle. This column is created by the UI by taking the value after the '-' in vehicleType.",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string",
+                        "enum": ["", "gasoline", "diesel", "methanol", "ethanol", "biodiesel", "lpg", "lng", "cng", "residualFuelOil",
+                            "jetFuel", "gasoline2Stroke", "gasoline4Stroke", "aviationGasoline"
+                        ]
+                    },
+                    "vehicleYear": {
+                        "title": "Vehicle Year",
+                        "description": "Make Year of the Vehicle",
+                        "format": "",
+                        "formula": "None",
+                        "type": ["number", "null"]
+                    },
+                    "fuelUsage": {
+                        "title": "Fuel Usage",
+                        "description": "Numerical representation of quantity of fuel used previous annual year",
+                        "format": ",",
+                        "formula": "None",
+                        "type": ["number", "null"]
+                    },
+                    "units": {
+                        "title": "Units",
+                        "description": "Formulated representation of unit of measurement of quantity of fuel that source has combusted previous annual year: scf if one of the following - Light-Duty Cars - CNG, Light-Duty Trucks - CNG, Medium-Duty Trucks - CNG, Heavy-Duty Trucks - CNG, Buses - CNG. All others: gal",
+                        "format": "s",
+                        "formula": "None",
+                        "type": ["string", "null"],
+                        "enum": ["", "gal", "scf", null]
+                    },
+                    "milesTraveled": {
+                        "title": "Miles Traveled",
+                        "description": "Numerical representation of miles traveled for previous annual year",
+                        "format": ",",
+                        "formula": "None",
+                        "type": ["number", "null"]
+                    }
+                },
+                "required": [
+                    "fuelType",
+                    "vehicleType",
+                    "vehicleYear",
+                    "fuelUsage",
+                    "milesTraveled"
+                ]
+            }
+        },
+        "totalMobileSourcesFuelUsageAndCO2Emissions": {
+            "type": "array",
+            "title": "Total Organization-Wide Mobile Source Fuel Usage and CO2 Emissions (On-Road and Off-Road Vehicles)",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "fuelType": {
+                        "title": "Fuel Type",
+                        "description": "Type of Fuel",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string"
+                    },
+                    "fuelUsage": {
+                        "title": "Fuel Usage",
+                        "description": "Calculated total usage of fuel",
+                        "format": ",",
+                        "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_fuel_usage_per_fuel_type",
+                        "type": ["number", "null"]
+                    },
+                    "units": {
+                        "title": "Units",
+                        "description": "Units of measurement for quantity of fuel usage",
+                        "format": "s",
+                        "formula": "None",
+                        "type": "string"
+                    },
+                    "CO2": {
+                        "title": "CO2 (kg)",
+                        "description": "Calculated quantity of CO2 combusted for given fuel type measured in kilograms",
+                        "format": ":.1f",
+                        "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_co2_emissions_per_fuel_type",
+                        "type": ["number", "null"]
+                    }
+                },
+                "required": [
+                    "fuelType",
+                    "fuelUsage",
+                    "units",
+                    "CO2"
+                ]
+            }
+        },
+        "totalOrganizationWideOnRoadGasolineMobileSourceMileageAndEmissions": {
+            "type": "array",
+            "title": "Total Organization-Wide On-Road Gasoline Mobile Source Mileage and CH4/N2O Emissions",
+            "items": {
+                "vehicleType": {
+                    "title": "Vehicle Type",
+                    "type": "object",
+                    "description": "Type of Vehicle",
+                    "format": "s",
+                    "formula": "atomic6ghg.formulas.mobiles_sources.total_organization_wide_on_road_mileage_ch4_n2o_emissions"
+                },
+                "emissionByYear": {
+                    "type": "object",
+                    "properties": {
+                        "vehicleYear": {
+                            "title": "Vehicle Year",
+                            "description": "Make year of the Vehicle",
+                            "format": "s",
+                            "formula": "None",
+                            "type": "number"
+                        },
+                        "mileage": {
+                            "title": "Mileage (miles)",
+                            "description": "Calculated total mileage of the vehicle",
+                            "format": ",",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_mileage",
+                            "type": ["number", "null"]
+                        },
+                        "CH4": {
+                            "title": "CH4 (g)",
+                            "description": "Calculated quantity of CH4 combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_ch4",
+                            "type": ["number", "null"]
+                        },
+                        "N2O": {
+                            "title": "N2O (g)",
+                            "description": "Calculated quantity of N2O combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_n2o",
+                            "type": ["number", "null"]
+                        }
+                    }
+                }
+            },
+            "required": [
+                "vehicleType"
+            ]
+        },
+        "totalOrganizationWideOnRoadNonGasolineMobileSourceMileageAndEmissions": {
+            "type": "array",
+            "title": "Total Organization-Wide On-Road Non-Gasoline Mobile Source Mileage and CH4/N2O Emissions",
+            "items": {
+                "vehicleType": {
+                    "title": "Vehicle Type",
+                    "type": "object",
+                    "description": "Type of Vehicle",
+                    "format": "s",
+                    "formula": "None"
+                },
+                "fuelType": {
+                    "title": "Fuel Type",
+                    "type": "object",
+                    "description": "Type of Fuel",
+                    "format": "s",
+                    "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_non_gasoline_mileage_ch4_n2o"
+                },
+                "emissionByYear": {
+                    "type:": "object",
+                    "properties": {
+                        "vehicleYear": {
+                            "title": "Vehicle Year",
+                            "description": "Make year of the Vehicle",
+                            "format": "s",
+                            "formula": "None",
+                            "type": "number"
+                        },
+                        "mileage": {
+                            "title": "Mileage (miles)",
+                            "description": "Calculated total mileage of the vehicle",
+                            "format": ",",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_non_gasoline_mileage",
+                            "type": ["number", "null"]
+                        },
+                        "CH4": {
+                            "title": "CH4 (g)",
+                            "description": "Calculated quantity of CH4 combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_non_gasoline_ch4",
+                            "type": ["number", "null"]
+                        },
+                        "N2O": {
+                            "title": "N2O (g)",
+                            "description": "Calculated quantity of N2O combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_on_road_non_gasoline_n2o",
+                            "type": ["number", "null"]
+                        }
+                    }
+                }
+            },
+            "required": [
+                "vehicleType"
+            ]
+        },
+        "totalOrganizationWideNonRoadMobileSourceFuelUsageAndEmissions": {
+            "type": "array",
+            "title": "Total Organization-Wide Non-Road Mobile Source Fuel Usage and CH4/N2O Emissions",
+            "items": {
+                "vehicleType": {
+                    "title": "Vehicle Type",
+                    "type": "array",
+                    "description": "Type of Vehicle",
+                    "format": "s",
+                    "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_non_road_fuel_usage_ch4_n2o"
+                },
+                "emissionByFuelType": {
+                    "type": "object",
+                    "properties": {
+                        "fuelType": {
+                            "title": "Fuel Type",
+                            "description": "Fuel Type of Vehicle",
+                            "format": "s",
+                            "formula": "None",
+                            "type": "string"
+                        },
+                        "fuelUsage": {
+                            "title": "Fuel Usage (gallons)",
+                            "description": "Calculated total usage of fuel",
+                            "format": ",",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_non_road_fuel_usage",
+                            "type": ["number", "null"]
+                        },
+                        "CH4": {
+                            "title": "CH4 (g)",
+                            "description": "Calculated quantity of CH4 combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_non_road_ch4",
+                            "type": ["number", "null"]
+                        },
+                        "N2O": {
+                            "title": "N2O (g)",
+                            "description": "Calculated quantity of N2O combusted for given fuel type measured in grams",
+                            "format": ":.1f",
+                            "formula": "atomic6ghg.formulas.mobile_sources.total_organization_wide_non_road_n2o",
+                            "type": ["number", "null"]
+                        }
+                    }
+                }
+            },
+            "required": [
+                "vehicleType"
+            ]
+        },
+        "totalCo2EquivalentEmissions": {
+            "title": "Total CO2 Equivalent Emissions (metric tons) - Mobile Sources",
+            "description": "Calculated total CO2 equivalent emissions produced by mobile sources measured in metric tons",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.mobile_sources.make_biomass_co2_equivalent_emissions",
+            "type": ["number", "null"]
+        },
+        "totalBiomassCo2EquivalentEmissions": {
+            "title": "Total Biomass CO2 Equivalent Emissions (metric tons) - Mobile Sources",
+            "description": "Calculated total biomass CO2 equivalent emissions produced by mobile sources measured in metric tons",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.mobile_sources.make_biomass_co2_equivalent_emissions",
+            "type": ["number", "null"]
+        },
+        "footNote": {
+            "type": "string",
+            "title": "Note: \n 1.  Average mpg values from the U.S. Department of Transportation, Federal Highway Administration, Highway Statistics 2019 (Nov 2020), Table VM-1."
+        }
+    },
+    "required": [
+        "version",
+        "mobileSourcesFuelConsumption"
+    ]
+}

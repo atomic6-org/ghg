@@ -15,6 +15,13 @@ def stationary_combustion_schema():
     v = Draft7Validator(schema=schema)
     return v
 
+@pytest.fixture
+def mobile_sources_schema():
+    """Provides schema validation to tests"""
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "mobile_sources.json")
+    schema = json.loads(schema_file_contents)
+    verified = Draft7Validator(schema=schema)
+    return verified
 
 @pytest.fixture
 def waste_gases_schema():
@@ -46,7 +53,7 @@ def steam_schema():
 @pytest.fixture()
 def refrigeration_and_ac_schema():
     """Provides schema validation to tests"""
-    schema_file_contents = pkgutil.get_data("atom6ghg.schemas", "refrigeration_and_ac.json")
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "refrigeration_and_ac.json")
     schema = json.loads(schema_file_contents)
     v = Draft7Validator(schema=schema)
     return v
@@ -64,7 +71,7 @@ def fire_suppression_schema():
 @pytest.fixture
 def purchased_gases_schema():
     """Provides schema validation to tests"""
-    schema_file_contents = pkgutil.get_data("atom6ghg.schemas", "purchased_gases.json")
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "purchased_gases.json")
     schema = json.loads(schema_file_contents)
     v = Draft7Validator(schema=schema)
     return v

@@ -10,6 +10,8 @@ from .refrigerants_gwp_factors import RefrigerantsGwpFactors
 from .fire_suppression_leak_rates_factors import FireSuppressionFactors
 from .business_travel_factors import BusinessTravelFactors
 from .waste_emission_factors import WasteEmissionFactors
+from .mobile_combustion_ch4_and_n2o_emission_factors import MobileCombustionCh4AndN2oEmissionFactors
+from .mobile_combustion_co2_emission_factors import MobileCombustionCo2EmissionFactors
 
 heat_content_factors = HeatContentFactors()
 stationary_combustion_emission_factors = StationaryCombustionEmissionFactors()
@@ -22,4 +24,5 @@ refrigeration_and_ac_equipment_emission_factors = RefrigerationAndAcEquipmentEmi
 fire_suppression_leak_rates_factors = FireSuppressionFactors()
 business_travel_factors = BusinessTravelFactors()
 waste_emission_factors = WasteEmissionFactors()
-
+mobile_combustion_ch4_and_n2o_emission_factors = MobileCombustionCh4AndN2oEmissionFactors()
+mobile_combustion_co2_emission_factors = MobileCombustionCo2EmissionFactors()
