@@ -1,0 +1,57 @@
+{
+  "description": "These factors were embedded in equations in the EPA GHG calculator worksheet. They seem to originate from https://www.theclimateregistry.org/wp-content/uploads/2021/05/2021-Default-Emission-Factor-Document.pdf, see table 4.1 on page 71.",
+  "carAcUnits": {
+    "installationEmissionFactor": 0.005,
+    "operatingEmissionFactor": 0.2,
+    "refrigerantRemainingAtDisposal": 0.5,
+    "recoveryEfficiency": 0.5
+  },
+  "chillers": {
+    "installationEmissionFactor": 0.01,
+    "operatingEmissionFactor": 0.15,
+    "refrigerantRemainingAtDisposal": 1.0,
+    "recoveryEfficiency": 0.95
+  },
+  "domesticRefrigeration": {
+    "installationEmissionFactor": 0.01,
+    "operatingEmissionFactor": 0.005,
+    "refrigerantRemainingAtDisposal": 0.8,
+    "recoveryEfficiency": 0.7
+  },
+  "industrialRefrigeration": {
+    "installationEmissionFactor": 0.03,
+    "operatingEmissionFactor": 0.25,
+    "refrigerantRemainingAtDisposal": 1.0,
+    "recoveryEfficiency": 0.9
+  },
+  "lightDutyTruckAcUnits": {
+    "installationEmissionFactor": 0.005,
+    "operatingEmissionFactor": 0.2,
+    "refrigerantRemainingAtDisposal": 0.5,
+    "recoveryEfficiency": 0.5
+  },
+  "mediumLargeCommercial": {
+    "installationEmissionFactor": 0.03,
+    "operatingEmissionFactor": 0.35,
+    "refrigerantRemainingAtDisposal": 1.0,
+    "recoveryEfficiency": 0.7
+  },
+  "residentialCommercialAc": {
+    "installationEmissionFactor": 0.01,
+    "operatingEmissionFactor": 0.1,
+    "refrigerantRemainingAtDisposal": 0.8,
+    "recoveryEfficiency": 0.8
+  },
+  "standAloneCommercial": {
+    "installationEmissionFactor": 0.03,
+    "operatingEmissionFactor": 0.15,
+    "refrigerantRemainingAtDisposal": 0.8,
+    "recoveryEfficiency": 0.7
+  },
+  "transportRefrigeration": {
+    "installationEmissionFactor": 0.01,
+    "operatingEmissionFactor": 0.5,
+    "refrigerantRemainingAtDisposal": 0.5,
+    "recoveryEfficiency": 0.7
+  }
+}
