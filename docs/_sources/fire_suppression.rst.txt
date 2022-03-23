@@ -11,9 +11,9 @@ simplified material balance, and screening method.
 
 Class Documentation
 ************************
-.. module:: atomic6ghg.formulas.electricity
+.. module:: atomic6ghg.formulas.fire_suppression
 
-.. autoclass:: Electricity
+.. autoclass:: FireSuppression
     :members:
     :undoc-members:
     :inherited-members:

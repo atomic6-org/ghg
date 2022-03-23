@@ -49,7 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fire Suppression</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.electricity">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.fire_suppression">Class Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-balance">Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simplified-material-balance">Simplified Material Balance</a></li>
@@ -113,68 +113,69 @@ employed in the final formula to calculate <span class="math notranslate nohighl
 utilized simultaneously if need be.</p>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.</p>
-<section id="module-atomic6ghg.formulas.electricity">
-<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.electricity" title="Permalink to this headline">¶</a></h2>
+<section id="module-atomic6ghg.formulas.fire_suppression">
+<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.fire_suppression" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.electricity.</span></span><span class="sig-name descname"><span class="pre">Electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate emissions from purchased gases</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.fire_suppression.</span></span><span class="sig-name descname"><span class="pre">FireSuppression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from fire suppression equipment</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_location_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_location_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inventory_change</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transferred_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_change</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_material_balance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_market_based_emissions_electricity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purchased_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emissions_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subregion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.calculate_market_based_emissions_electricity" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_screening_method">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_screening_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_equipment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit_capacity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based">
-<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_location_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_location_based" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_simplified_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_simplified_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">existing_units_recharge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_recovered</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculate co2 equivalent emissions</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based">
-<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions_market_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_co2_equivalent_emissions_market_based" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate co2 equivalent emissions</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_material_balance">
+<span class="sig-name descname"><span class="pre">make_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_emissions">
-<span class="sig-name descname"><span class="pre">make_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_emissions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate emissions for all fuels burned</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_screening_method">
+<span class="sig-name descname"><span class="pre">make_screening_method</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources">
-<span class="sig-name descname"><span class="pre">make_total_emissions_for_all_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.make_total_emissions_for_all_sources" title="Permalink to this definition">¶</a></dt>
-<dd><p>Make total row</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_simplified_material_balance">
+<span class="sig-name descname"><span class="pre">make_simplified_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.recalc">
-<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.recalc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Execute recalc procedure for Electricity</p>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for FireSuppression</p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.subregions">
-<span class="sig-name descname"><span class="pre">subregions</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['akgd',</span> <span class="pre">'akms',</span> <span class="pre">'aznm',</span> <span class="pre">'camx',</span> <span class="pre">'erct',</span> <span class="pre">'frcc',</span> <span class="pre">'hims',</span> <span class="pre">'hioa',</span> <span class="pre">'mroe',</span> <span class="pre">'mrow',</span> <span class="pre">'newe',</span> <span class="pre">'nwpp',</span> <span class="pre">'nycw',</span> <span class="pre">'nyli',</span> <span class="pre">'nyup',</span> <span class="pre">'prms',</span> <span class="pre">'rfce',</span> <span class="pre">'rfcm',</span> <span class="pre">'rfcw',</span> <span class="pre">'rmpa',</span> <span class="pre">'spno',</span> <span class="pre">'spso',</span> <span class="pre">'srmv',</span> <span class="pre">'srmw',</span> <span class="pre">'srso',</span> <span class="pre">'srtv',</span> <span class="pre">'srvc']</span></em><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.subregions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_dict">
-<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_dict" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.to_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>API to expose _output</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atomic6ghg.formulas.electricity.Electricity.to_json">
-<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.electricity.Electricity.to_json" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.to_json" title="Permalink to this definition">¶</a></dt>
 <dd><p>API to expose _output as JSON</p>
 </dd></dl>
 
