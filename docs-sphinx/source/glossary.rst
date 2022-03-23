@@ -40,3 +40,11 @@ organization indirectly impacts in its value chain.
     wastewater treatment plant, water supply treatment plant, or air pollution control facility exclusive of the treated
     effluent from a wastewater treatment plant.
 
+    **Vehicle Miles** is a measure used extensively in transportation planning. It measures the amount of travel for
+    all vehicles in a geographic region over a given period of time.
+
+    **Ton-Miles** is a term used to refer to one ton of freight carried one miles, as a unit of traffic. Ton-miles
+    should not be calculated by simply multiplying total miles by total tons - this calculation effectively assumes
+    that the entire tonnage is transported on each and every truck, railcar, aircraft, or barge and will likely
+    overstate ton-miles.
+

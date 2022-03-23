@@ -3,9 +3,41 @@
 
 Product Transport
 -----------------
-Product Transport calculates emissions from transportation of products. There are two different tables and
-therefore two different methods to calculate emissions from employee commuting. The first is for those products which
-are transported over vehicle miles, the second is for those products which are transported over ton miles.
+Product Transport is a `Scope 3 Emission <glossary.html>`_ that accounts for emissions from transportation of products.
+This can be transportation via `vehicle miles <glossary.html>`_ or via `ton-miles <glossary.html>`_.
+
+Class Documentation
+************************
+.. module:: atomic6ghg.formulas.product_transport
+
+.. autoclass:: ProductTransport
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******************
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import ProductTransport
+    product_transport_input: dict = {
+        "version": "product-transport.1.0.0",
+        "productTransportByVehicleMiles": [
+            {"vehicleType": "passengerCars", "vehicleMiles": 250}
+        ]
+    }
+    engine = ProductTransport(product_transport_input)
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
+EPA Equation Analysis
+**********************
+There are two different tables and therefore two different methods to calculate emissions from employee commuting. The
+first is for those products which are transported over vehicle miles, the second is for those products which are
+transported over ton miles.
 
 Product Transport allows for inputs of vehicle types for the calculation over vehicle miles for the following vehicle types:
 
@@ -51,8 +83,7 @@ This equation is derived from Equation 5 from [EPA2008OptionalEmissionsfromCommu
 where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions for that
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either vehicle miles or ton miles), and :math:`GWP_{GHG}` is the global warming potential of that :math:`GHG`.
-Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
-:math:`metric \; tons`.
+Note that in atomic6 the final value of this calculation is converted to :math:`metric \; tons`.
 
 
 .. [EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport] EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 10
