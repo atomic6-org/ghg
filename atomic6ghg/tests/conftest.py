@@ -69,6 +69,15 @@ def fire_suppression_schema():
 
 
 @pytest.fixture
+def purchased_offsets_schema():
+    """Provides schema validation to tests"""
+    schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "purchased_offsets.json")
+    schema = json.loads(schema_file_contents)
+    v = Draft7Validator(schema=schema)
+    return v
+
+
+@pytest.fixture
 def purchased_gases_schema():
     """Provides schema validation to tests"""
     schema_file_contents = pkgutil.get_data("atomic6ghg.schemas", "purchased_gases.json")

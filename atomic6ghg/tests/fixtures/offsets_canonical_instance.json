@@ -1,0 +1,51 @@
+{
+  "version": "purchased-offsets.1.0.0",
+  "purchasedOffsets": [
+    {
+      "projectId": "Orange",
+      "projectDescription": "Orange Project",
+      "purchasedOffset": 3000
+    },
+    {
+      "projectId": "Apple",
+      "projectDescription": "Apple Project",
+      "purchasedOffset": 4000
+    },
+    {
+      "projectId": "Grape",
+      "projectDescription": "Grape Project",
+      "purchasedOffset": 5555
+    },
+    {
+      "projectId": "Banana",
+      "projectDescription": "Banana Project",
+      "purchasedOffset": 6000
+    },
+    {
+      "projectId": "Citrus",
+      "projectDescription": "Citrus Project",
+      "purchasedOffset": 7000
+    },
+    {
+      "projectId": "Starfruit",
+      "projectDescription": "Starfuit Project",
+      "purchasedOffset": 8000
+    },
+    {
+      "projectId": "Dragonfruit",
+      "projectDescription": "Dragonfruit Project",
+      "purchasedOffset": 7777
+    },
+    {
+      "projectId": "Test Id",
+      "projectDescription": "Test Id Project",
+      "purchasedOffset": 9999
+    },
+    {
+      "projectId": "Donut",
+      "projectDescription": "Donut Project",
+      "purchasedOffset": 100
+    }
+  ],
+  "totalPurchasedOffsets": 53431.0
+}
