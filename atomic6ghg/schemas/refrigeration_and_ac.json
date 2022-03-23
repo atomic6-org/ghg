@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Refrigeration and AC",
+  "description": "Document schema of Refrigeration and AC workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^refrigeration-and-ac.1.0.0"
+    },
+    "materialBalance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gas": {
+            "title": "Gas",
+            "description": "Choose the appropriate gas from the Gas drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "co2", "hfc23", "hfc32", "hfc125", "hfc134a", "hfc143a", "hfc152a", "hfc236fa", "sf6", "cf4", "c2f6", "r401a", "r401b", "r401c", "r402a", "r402b", "r403b", "r404a", "r406a", "r407a", "r407b", "r407c", "r407d", "r407e", "r408a", "r409a", "r410a", "r410b", "r411a", "r411b", "r413a", "r414a", "r414b", "r417a", "r422a", "r422d", "r423a", "r424a", "r426a", "r428a", "r434a", "r500", "r502", "r504", "r507", "r508a", "r508b"]
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "inventoryChange": {
+            "title": "Inventory Change (lb)",
+            "description": "Difference of gas stored in inventory from beginning to end of reporting period measured in lbs",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "transferredAmount": {
+            "title": "Transferred Amount (lb)",
+            "description": "Gas purchased minus gas sold/disposed during reporting period. Gas purchased includes: purchases for inventory, as part of equipment servicing (not from inventory), within purchased equipment, and gas returned to the site after off-site recycling. Gas sold/disposed includes: returns to supplier, sales or disposals (including equipment), and gas sent off-site for recycling, reclamation, or destruction.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "capacityChange": {
+            "title": "Capacity Change (lb)",
+            "description": "Capacity of all units at beginning minus all units at the end of reporting period measured in lbs. Can be assumed to be capacity of new units minus capacity of retired units.",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (lb)",
+            "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using material balance.",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_material_balance",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "gas",
+          "inventoryChange",
+          "transferredAmount",
+          "capacityChange"
+        ]
+      }
+    },
+    "simplifiedMaterialBalance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gas": {
+            "title": "Gas",
+            "description": "Choose the appropriate gas from the Gas drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "co2", "hfc23", "hfc32", "hfc125", "hfc134a", "hfc143a", "hfc152a", "hfc236fa", "sf6", "cf4", "c2f6", "r401a", "r401b", "r401c", "r402a", "r402b", "r403b", "r404a", "r406a", "r407a", "r407b", "r407c", "r407d", "r407e", "r408a", "r409a", "r410a", "r410b", "r411a", "r411b", "r413a", "r414a", "r414b", "r417a", "r422a", "r422d", "r423a", "r424a", "r426a", "r428a", "r434a", "r500", "r502", "r504", "r507", "r508a", "r508b"]
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "newUnitsCharge": {
+              "title": "New Units Charge (lb)",
+              "description": "New Units: units installed during the reporting period (do not include any data for new units pre-charged by supplier). Charge: Gas added to units by organization or contractor (do not include any data for new units pre-charged by manufacturer).",
+              "format": ":.1f",
+              "formula": "",
+              "type": ["number", "null"]
+          },
+          "newUnitsCapacity": {
+            "title": "New Units Capacity (lb)",
+            "description": "New Units: Units installed during the reporting period (do not include any data for new units pre-charged by supplier). Capacity: Sum of the full capacity for all units (do not include any data for new units pre-charged by manufacturer).",
+            "format": ":.1f",
+            "formula": "",
+            "type": ["number", "null"]
+          },
+          "existingUnitsRecharge": {
+                "title": "Existing Units Recharge (lb)",
+                "description": "Existing Units: All other units aside from units installed during reporting period and units disposed during reporting period. Recharge: Gas added to units by organization or contractor (do not include units pre-charged by manufacturer).",
+                "format": ":.1f",
+                "formula": "",
+                "type": ["number", "null"]
+          },
+          "disposedUnitsCapacity": {
+            "title": "Disposed Units Capacity (lb)",
+            "description": "Disposed Units: Units that were disposed of during the reporting period. Capacity: Sum of the full capacity for all units (do not include new units pre-charged by manufacturer).",
+            "format": ":.1f",
+            "formula": "",
+            "type": ["number", "null"]
+          },
+          "disposedUnitsRecovered": {
+            "title": "Disposed Units Recovered (lb)",
+            "description": "Disposed Units: Units that were disposed of during the reporting period. Recovered: Total gas recovered from all retired units.",
+            "format": ":.1f",
+            "formula": "",
+            "type": ["number", "null"]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (lb)",
+            "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using simplified material balance.",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_simplified_material_balance",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "gas",
+          "newUnitsCharge",
+          "newUnitsCapacity",
+          "existingUnitsRecharge",
+          "disposedUnitsCapacity",
+          "disposedUnitsRecovered"
+        ]
+      }
+    },
+    "screeningMethod": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "typeOfEquipment": {
+            "title": "Type of Equipment",
+            "description": "Choose the appropriate type of equipment (closest available) from the drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "carAcUnits", "chillers", "domesticRefrigeration", "industrialRefrigeration", "lightDutyTruckAcUnits", "mediumLargeCommercial", "residentialCommercialAc", "standAloneCommercial", "transportRefrigeration"]
+          },
+          "gas": {
+            "title": "Gas",
+            "description": "Choose the appropriate gas from the Gas drop down menu",
+            "format": "s",
+            "formula": "None",
+            "type": "string",
+            "enum": ["", "co2", "hfc23", "hfc32", "hfc125", "hfc134a", "hfc143a", "hfc152a", "hfc236fa", "sf6", "cf4", "c2f6", "r401a", "r401b", "r401c", "r402a", "r402b", "r403b", "r404a", "r406a", "r407a", "r407b", "r407c", "r407d", "r407e", "r408a", "r409a", "r410a", "r410b", "r411a", "r411b", "r413a", "r414a", "r414b", "r417a", "r422a", "r422d", "r423a", "r424a", "r426a", "r428a", "r434a", "r500", "r502", "r504", "r507", "r508a", "r508b"]
+          },
+          "gasGWP": {
+            "title": "Gas GWP",
+            "description": "Global warming potential of selected gas",
+            "format": ":,",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "newUnitsCharge": {
+            "title": "New Units Charge (kg)",
+            "description": "Amount of refrigerant added by organization (do not include pre-charge amount from manufacturer).",
+            "format": ":.1f",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "capacityOperatingUnits": {
+            "title": "Capacity Operating Units (kg)",
+            "description": "Refrigerant capacity for all units operating during reporting period. For each unit added or removed during reporting period, multiply its capacity by a usage factor (0.0 to 1.0). If data entered for multiple units, sum the capacities or charge quantity for all like units. If capacity of unit(s) is not known, use upper value of default capacity provided in Reference Table.",
+            "format": ":.1f",
+            "formula": "",
+            "type": ["number", "null"]
+          },
+          "capacityDisposedUnits": {
+            "title": "Capacity Disposed Units (kg)",
+            "description": "Refrigerant capacity for all disposed units during reporting period. For each unit added or removed during reporting period, multiply its capacity by a usage factor (0.0 to 1.0). If data entered for multiple units, sum the capacities or charge quantity for all like units. If capacity of unit(s) is not known, use upper value of default capacity provided in Reference Table.",
+            "format": ":.1f",
+            "formula": "",
+            "type": ["number", "null"]
+          },
+          "co2EquivalentEmissions": {
+            "title": "CO2 Equivalent Emissions (kg)",
+            "description": "CO2 equivalent emissions (in kg) produced by source level refrigeration gas calculated using screening method.",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_screening_method",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "gas",
+          "typeOfEquipment",
+          "newUnitsCharge",
+          "capacityOperatingUnits",
+          "capacityDisposedUnits"
+        ]
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Refrigeration and AC Equipment",
+      "formula": "atomic6ghg.formulas.refrigeration_and_ac.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "footNote": {
+      "type": "string",
+      "title": "Notes:\n1.  CO2 emissions estimated using emission factors provided in Table 3 of the Center for Corporate Climate Leadership Greenhouse Gas Inventory Guidance\n    Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression and Industrial Gases. (Dec 2020).\n2.  GWPs are from Intergovernmental Panel on Climate Change (IPCC) Fourth Assessment Report (2007)."
+    },
+    "oneOf": [
+      {
+        "required": [
+          "version",
+          "materialBalance"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "simplifiedMaterialBalance"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "screeningMethod"
+        ]
+      }
+    ]
+  }
+}
