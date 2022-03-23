@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Purchased Gases &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -102,7 +103,7 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="purchased-gases">
+  <section id="purchased-gases">
 <span id="purchased-gases-api"></span><h1>Purchased Gases<a class="headerlink" href="#purchased-gases" title="Permalink to this headline">¶</a></h1>
 <p>Purchased Gases is a <a class="reference external" href="glossary.html">scope 1 emission</a> that accounts for <a class="reference external" href="glossary.html">purchased gas stream</a>.
 Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.  For example, CO2
@@ -110,7 +111,7 @@ gas is often used in welding operations.  These gases are typically released to 
 of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
 Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG
 inventory or reported as a memo item.</p>
-<div class="section" id="module-atomic6ghg.formulas.purchased_gases">
+<section id="module-atomic6ghg.formulas.purchased_gases">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.purchased_gases" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_gases.PurchasedGases">
@@ -154,7 +155,84 @@ inventory or reported as a memo item.</p>
 
 </dd></dl>
 
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas.purchased_gases</span> <span class="kn">import</span> <span class="n">PurchasedGases</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">PurchasedGases</span>
+
+<span class="n">input_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;version&quot;: &quot;purchased-gases.1.0.0&quot;,</span>
+<span class="sd">  &quot;purchasedGases&quot;: [</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;ch4&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 25,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 300,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 7500</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;ch4&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 25,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 400,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 10000</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;nf3&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 17200,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 30,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 516000</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;hfc134a&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 1430,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 50,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 71500</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;c2f6&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 12200,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 70,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 854000</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;c6f14&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 9300,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 1123,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 10443900</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;r422a&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 3143,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 595,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 1870085</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;hfc125&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 3500,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 582,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 2037000</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;r502&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 0,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 182,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 0</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;r401b&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 14,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 56,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 784</span>
+<span class="sd">    },</span>
+<span class="sd">    {</span>
+<span class="sd">      &quot;gas&quot;: &quot;r422d&quot;,</span>
+<span class="sd">      &quot;gasGWP&quot;: 2729,</span>
+<span class="sd">      &quot;purchasedAmount&quot;: 19,</span>
+<span class="sd">      &quot;co2EquivalentEmissions&quot;: 51851</span>
+<span class="sd">    }</span>
+<span class="sd">  ],</span>
+<span class="sd">  &quot;totalCo2EquivalentEmissions&quot;: 7195.284432</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="p">)</span>
 
 <span class="n">calculated_data</span> <span class="o">=</span> <span class="n">PurchasedGases</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
 
@@ -167,8 +245,8 @@ inventory or reported as a memo item.</p>
 </ul>
 </dd>
 </dl>
-</div>
-<div class="section" id="epa-equation-analysis">
+</section>
+<section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Purchased gases calculates the carbon content (or emission factor) for some complex purchased gas streams.</p>
 <p>These complex gas streams include:</p>
@@ -333,8 +411,8 @@ value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span cl
 <dd><p>EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
