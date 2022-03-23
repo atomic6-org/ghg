@@ -26,7 +26,7 @@ class BusinessTravel(Formula):
         self.recalc(self.wks_data)
 
     def recalc(self, wks_data: dict) -> dict:
-        """Execute recalc procedure for Commuting"""
+        """Execute recalc procedure for Business Travel"""
         self.wks_data = wks_data
 
         self.make_personal_vehicle_rental_car_or_taxi()

@@ -45,7 +45,12 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Business Travel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Business Travel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.business_travel">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fire_suppression.html">Fire Suppression</a></li>
@@ -101,6 +106,129 @@
             
   <section id="business-travel">
 <span id="business-travel-api"></span><h1>Business Travel<a class="headerlink" href="#business-travel" title="Permalink to this headline">¶</a></h1>
+<p>Business Travel is a <a class="reference external" href="glossary.html">Scope 3 Emission</a> that accounts for employee business travel including personal
+vehicle travel, rail or bus travel, and air travel. The Business Travel category includes emissions from the
+transportation of employees for business related activities in vehicles owned or operated by third parties, such as
+aircraft, trains, buses, and passenger cars.</p>
+<section id="module-atomic6ghg.formulas.business_travel">
+<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.business_travel" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.business_travel.</span></span><span class="sig-name descname"><span class="pre">BusinessTravel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from business travel</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.calculate_transportation_emissions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_transportation_emissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">travel_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_miles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.calculate_transportation_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions for a gas given travel factor and vehicle miles inputs</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.flight_length">
+<span class="sig-name descname"><span class="pre">flight_length</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['shortHaul',</span> <span class="pre">'mediumHaul',</span> <span class="pre">'longHaul']</span></em><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.flight_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_air_business_travel">
+<span class="sig-name descname"><span class="pre">make_air_business_travel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_air_business_travel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row in Air table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_air_total">
+<span class="sig-name descname"><span class="pre">make_air_total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_air_total" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row for air</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_co2_emissions_by_travel_type">
+<span class="sig-name descname"><span class="pre">make_co2_emissions_by_travel_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_co2_emissions_by_travel_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_rental_car_or_taxi">
+<span class="sig-name descname"><span class="pre">make_personal_vehicle_rental_car_or_taxi</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_rental_car_or_taxi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row in Personal Vehicle, Rental Car or Taxi table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_total">
+<span class="sig-name descname"><span class="pre">make_personal_vehicle_total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_personal_vehicle_total" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row for personal vehicles</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_rail_or_bus">
+<span class="sig-name descname"><span class="pre">make_rail_or_bus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_rail_or_bus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row in Rail or Bus table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.make_rail_or_bus_total">
+<span class="sig-name descname"><span class="pre">make_rail_or_bus_total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.make_rail_or_bus_total" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make total row for rail or bus</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.personal_vehicles">
+<span class="sig-name descname"><span class="pre">personal_vehicles</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['passengerCars',</span> <span class="pre">'lightDutyTruck',</span> <span class="pre">'motorcycle']</span></em><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.personal_vehicles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.rail_or_bus">
+<span class="sig-name descname"><span class="pre">rail_or_bus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['intercityRailNortheastCorridor',</span> <span class="pre">'intercityRailOtherRoutes',</span> <span class="pre">'intercityRailNationalAverage',</span> <span class="pre">'commuterRail',</span> <span class="pre">'transitRail',</span> <span class="pre">'bus']</span></em><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.rail_or_bus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for Business Travel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.business_travel.BusinessTravel.vehicle_types_all">
+<span class="sig-name descname"><span class="pre">vehicle_types_all</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['passengerCars',</span> <span class="pre">'lightDutyTruck',</span> <span class="pre">'motorcycle',</span> <span class="pre">'intercityRailNortheastCorridor',</span> <span class="pre">'intercityRailOtherRoutes',</span> <span class="pre">'intercityRailNationalAverage',</span> <span class="pre">'commuterRail',</span> <span class="pre">'transitRail',</span> <span class="pre">'bus',</span> <span class="pre">'shortHaul',</span> <span class="pre">'mediumHaul',</span> <span class="pre">'longHaul']</span></em><a class="headerlink" href="#atomic6ghg.formulas.business_travel.BusinessTravel.vehicle_types_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">BusinessTravel</span>
+<span class="n">business_travel_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;business-travel.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;personalVehicleRentalCarOrTaxiBusinessTravel&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;vehicleType&quot;</span><span class="p">:</span> <span class="s2">&quot;passengerCars&quot;</span><span class="p">,</span> <span class="s2">&quot;vehicleMiles&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">BusinessTravel</span><span class="p">(</span><span class="n">business_travel_input</span><span class="p">)</span>
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="epa-equation-analysis">
+<h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Business Travel calculates emissions from business travel of employees. There are three different tables and
 therefore three different methods to calculate emissions from employee business travel. The first is for those employees
 traveling by car, the second is for those employees traveling by rail or bus, and third one is for those employee
@@ -187,8 +315,8 @@ The formula is:</p>
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either personal vehicle, public transportation, or air travel), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the
 global warming potential of that <span class="math notranslate nohighlight">\(GHG\)</span>.
-Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
-<span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+</section>
 </section>
 
 
