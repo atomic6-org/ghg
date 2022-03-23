@@ -53,7 +53,7 @@
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using material balance.",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_material_balance",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_material_balance",
             "type": ["number", "null"]
           }
         },
@@ -124,7 +124,7 @@
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using simplified material balance.",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_simplified_material_balance",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_simplified_material_balance",
             "type": ["number", "null"]
           }
         },
@@ -197,7 +197,7 @@
             "title": "CO2 Equivalent Emissions (kg)",
             "description": "CO2 equivalent emissions (in kg) produced by source level refrigeration gas calculated using screening method.",
             "format": ":.1f",
-            "formula": "atom6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_screening_method",
+            "formula": "atomic6ghg.formulas.refrigeration_and_ac.calculate_co2_emissions_screening_method",
             "type": ["number", "null"]
           }
         },
@@ -212,7 +212,7 @@
     },
     "totalCo2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Refrigeration and AC Equipment",
-      "formula": "atom6ghg.formulas.refrigeration_and_ac.make_co2_equivalent_emissions",
+      "formula": "atomic6ghg.formulas.refrigeration_and_ac.make_co2_equivalent_emissions",
       "type": ["number", "null"]
     },
     "footNote": {
