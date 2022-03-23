@@ -2,8 +2,8 @@
 # pylint: disable=no-name-in-module
 import logging
 
-from atom6ghg.formulas import Formula, null_replacer
-from atom6ghg.factors import refrigerants_gwp_factors, unit_conversions_factors
+from atomic6ghg.formulas import Formula, null_replacer
+from atomic6ghg.factors import refrigerants_gwp_factors, unit_conversions_factors
 
 logger = logging.getLogger(__name__)
 
