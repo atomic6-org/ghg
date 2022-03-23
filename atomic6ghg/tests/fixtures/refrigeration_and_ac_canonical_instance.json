@@ -1,0 +1,588 @@
+{
+  "version": "refrigeration-and-ac.1.0.0",
+  "materialBalance": [
+    {
+      "gas": "co2",
+      "gasGWP": 1,
+      "inventoryChange": 100,
+      "transferredAmount": 100,
+      "capacityChange": 100,
+      "co2EquivalentEmissions": 300
+    },
+    {
+      "gas": "hfc23",
+      "gasGWP": 14800,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 44400
+    },
+    {
+      "gas": "r508b",
+      "gasGWP": 13396,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 40188
+    },
+    {
+      "gas": "hfc125",
+      "gasGWP": 3500,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 10500
+    },
+    {
+      "gas": "r507",
+      "gasGWP": 3985,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 11955
+    },
+    {
+      "gas": "r424a",
+      "gasGWP": 2440,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 7320
+    },
+    {
+      "gas": "sf6",
+      "gasGWP": 22800,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 68400
+    },
+    {
+      "gas": "cf4",
+      "gasGWP": 7390,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 22170
+    },
+    {
+      "gas": "c2f6",
+      "gasGWP": 12200,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 36600
+    },
+    {
+      "gas": "hfc236fa",
+      "gasGWP": 9810,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 29430
+    },
+    {
+      "gas": "r508a",
+      "gasGWP": 13214,
+      "inventoryChange": 1,
+      "transferredAmount": 1,
+      "capacityChange": 1,
+      "co2EquivalentEmissions": 39642
+    }
+  ],
+  "simplifiedMaterialBalance": [
+    {
+      "gas": "co2",
+      "gasGWP": 1,
+      "newUnitsCharge": 100,
+      "newUnitsCapacity": 50,
+      "existingUnitsRecharge": 100,
+      "disposedUnitsCapacity": 50,
+      "disposedUnitsRecovered": 25,
+      "co2EquivalentEmissions": 175
+    },
+    {
+      "gas": "hfc143a",
+      "gasGWP": 4470,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 8940
+    },
+    {
+      "gas": "hfc152a",
+      "gasGWP": 124,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 248
+    },
+    {
+      "gas": "r401a",
+      "gasGWP": 16,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 32
+    },
+    {
+      "gas": "r423a",
+      "gasGWP": 2280,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 4560
+    },
+    {
+      "gas": "r407a",
+      "gasGWP": 2107,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 4214
+    },
+    {
+      "gas": "r508b",
+      "gasGWP": 13396,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 26792
+    },
+    {
+      "gas": "r401c",
+      "gasGWP": 19,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 38
+    },
+    {
+      "gas": "hfc143a",
+      "gasGWP": 4470,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 8940
+    },
+    {
+      "gas": "r500",
+      "gasGWP": 32,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 64
+    },
+    {
+      "gas": "c2f6",
+      "gasGWP": 12200,
+      "newUnitsCharge": 1,
+      "newUnitsCapacity": 0.5,
+      "existingUnitsRecharge": 1,
+      "disposedUnitsCapacity": 1,
+      "disposedUnitsRecovered": 0.5,
+      "co2EquivalentEmissions": 24400
+    }
+  ],
+  "screeningMethod": [
+    {
+      "sourceId": "Bldg-012",
+      "typeOfEquipment": "domesticRefrigeration",
+      "gas": "hfc32",
+      "gasGWP": 675.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 759.375
+    },
+    {
+      "sourceId": "Bldg-013",
+      "typeOfEquipment": "standAloneCommercial",
+      "gas": "hfc134a",
+      "gasGWP": 1430.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 4676.1
+    },
+    {
+      "sourceId": "Bldg-014",
+      "typeOfEquipment": "mediumLargeCommercial",
+      "gas": "cf4",
+      "gasGWP": 7390.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 25865
+    },
+    {
+      "sourceId": "Bldg-015",
+      "typeOfEquipment": "transportRefrigeration",
+      "gas": "r407b",
+      "gasGWP": 2804.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 4416.3
+    },
+    {
+      "sourceId": "Bldg-016",
+      "typeOfEquipment": "industrialRefrigeration",
+      "gas": "hfc23",
+      "gasGWP": 14800.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 48840
+    },
+    {
+      "sourceId": "Bldg-017",
+      "typeOfEquipment": "chillers",
+      "gas": "hfc125",
+      "gasGWP": 3500.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 4112.499999999999
+    },
+    {
+      "sourceId": "Bldg-018",
+      "typeOfEquipment": "residentialCommercialAc",
+      "gas": "r407c",
+      "gasGWP": 1774.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 2093.32
+    },
+    {
+      "sourceId": "Bldg-019",
+      "typeOfEquipment": "carAcUnits",
+      "gas": "r414a",
+      "gasGWP": 0.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 0
+    },
+    {
+      "sourceId": "Bldg-020",
+      "typeOfEquipment": "lightDutyTruckAcUnits",
+      "gas": "r422d",
+      "gasGWP": 2729.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 2251.4249999999997
+    },
+    {
+      "sourceId": "Bldg-021",
+      "typeOfEquipment": "domesticRefrigeration",
+      "gas": "r411b",
+      "gasGWP": 4.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 4.5
+    },
+    {
+      "sourceId": "Bldg-022",
+      "typeOfEquipment": "standAloneCommercial",
+      "gas": "r413a",
+      "gasGWP": 2053.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 6713.31
+    },
+    {
+      "sourceId": "Bldg-023",
+      "typeOfEquipment": "mediumLargeCommercial",
+      "gas": "r423a",
+      "gasGWP": 2280.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 7980
+    },
+    {
+      "sourceId": "Bldg-024",
+      "typeOfEquipment": "transportRefrigeration",
+      "gas": "r507",
+      "gasGWP": 3985.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 6276.375
+    },
+    {
+      "sourceId": "Bldg-025",
+      "typeOfEquipment": "industrialRefrigeration",
+      "gas": "r504",
+      "gasGWP": 325.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 1072.5
+    },
+    {
+      "sourceId": "Bldg-026",
+      "typeOfEquipment": "chillers",
+      "gas": "r428a",
+      "gasGWP": 3607.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 4238.224999999999
+    },
+    {
+      "sourceId": "Bldg-027",
+      "typeOfEquipment": "residentialCommercialAc",
+      "gas": "hfc236fa",
+      "gasGWP": 9810.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 11575.800000000001
+    },
+    {
+      "sourceId": "Bldg-028",
+      "typeOfEquipment": "carAcUnits",
+      "gas": "r417a",
+      "gasGWP": 2346.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 1935.4499999999998
+    },
+    {
+      "sourceId": "Bldg-029",
+      "typeOfEquipment": "lightDutyTruckAcUnits",
+      "gas": "hfc134a",
+      "gasGWP": 1430.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 1179.75
+    },
+    {
+      "sourceId": "Bldg-030",
+      "typeOfEquipment": "domesticRefrigeration",
+      "gas": "r401a",
+      "gasGWP": 16.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 18
+    },
+    {
+      "sourceId": "Bldg-031",
+      "typeOfEquipment": "standAloneCommercial",
+      "gas": "r403b",
+      "gasGWP": 3444.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 11261.88
+    },
+    {
+      "sourceId": "Bldg-032",
+      "typeOfEquipment": "mediumLargeCommercial",
+      "gas": "r404a",
+      "gasGWP": 3922.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 13727
+    },
+    {
+      "sourceId": "Bldg-033",
+      "typeOfEquipment": "transportRefrigeration",
+      "gas": "r406a",
+      "gasGWP": 0.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 0
+    },
+    {
+      "sourceId": "Bldg-034",
+      "typeOfEquipment": "industrialRefrigeration",
+      "gas": "r407a",
+      "gasGWP": 2107.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 6953.099999999999
+    },
+    {
+      "sourceId": "Bldg-035",
+      "typeOfEquipment": "industrialRefrigeration",
+      "gas": "r408a",
+      "gasGWP": 2301.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 7593.299999999999
+    },
+    {
+      "sourceId": "Bldg-036",
+      "typeOfEquipment": "chillers",
+      "gas": "r409a",
+      "gasGWP": 0.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 0
+    },
+    {
+      "sourceId": "Bldg-037",
+      "typeOfEquipment": "residentialCommercialAc",
+      "gas": "r410a",
+      "gasGWP": 2088.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 2463.84
+    },
+    {
+      "sourceId": "Bldg-038",
+      "typeOfEquipment": "carAcUnits",
+      "gas": "r411a",
+      "gasGWP": 14.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 11.549999999999999
+    },
+    {
+      "sourceId": "Bldg-039",
+      "typeOfEquipment": "lightDutyTruckAcUnits",
+      "gas": "r411b",
+      "gasGWP": 4.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 3.3
+    },
+    {
+      "sourceId": "Bldg-040",
+      "typeOfEquipment": "domesticRefrigeration",
+      "gas": "r413a",
+      "gasGWP": 2053.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 2309.625
+    },
+    {
+      "sourceId": "Bldg-041",
+      "typeOfEquipment": "standAloneCommercial",
+      "gas": "r414b",
+      "gasGWP": 0.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 0
+    },
+    {
+      "sourceId": "Bldg-042",
+      "typeOfEquipment": "mediumLargeCommercial",
+      "gas": "hfc125",
+      "gasGWP": 3500.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 12250
+    },
+    {
+      "sourceId": "Bldg-043",
+      "typeOfEquipment": "transportRefrigeration",
+      "gas": "sf6",
+      "gasGWP": 22800.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 35910
+    },
+    {
+      "sourceId": "Bldg-044",
+      "typeOfEquipment": "industrialRefrigeration",
+      "gas": "r434a",
+      "gasGWP": 3245.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 10708.5
+    },
+    {
+      "sourceId": "Bldg-045",
+      "typeOfEquipment": "chillers",
+      "gas": "hfc143a",
+      "gasGWP": 4470.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 5252.249999999999
+    },
+    {
+      "sourceId": "Bldg-046",
+      "typeOfEquipment": "residentialCommercialAc",
+      "gas": "cf4",
+      "gasGWP": 7390.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 8720.2
+    },
+    {
+      "sourceId": "Bldg-047",
+      "typeOfEquipment": "carAcUnits",
+      "gas": "r500",
+      "gasGWP": 32.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 26.4
+    },
+    {
+      "sourceId": "Bldg-048",
+      "typeOfEquipment": "lightDutyTruckAcUnits",
+      "gas": "r428a",
+      "gasGWP": 3607.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 2975.7749999999996
+    },
+    {
+      "sourceId": "Bldg-049",
+      "typeOfEquipment": "domesticRefrigeration",
+      "gas": "r434a",
+      "gasGWP": 3245.0,
+      "newUnitsCharge": 100,
+      "capacityOperatingUnits": 1,
+      "capacityDisposedUnits": 0.5,
+      "co2EquivalentEmissions": 3650.625
+    }
+  ],
+  "totalCo2EquivalentEmissions": 434.4153838
+}

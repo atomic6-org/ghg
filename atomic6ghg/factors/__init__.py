@@ -2,6 +2,7 @@
 from .heat_content_factors import HeatContentFactors
 from .stationary_combustion_emission_factors import StationaryCombustionEmissionFactors
 from .refrigerants_gwp_factors import RefrigerantsGwpFactors
+from .refrigeration_and_ac_equipment_emission_factors import RefrigerationAndAcEquipmentEmissionFactors
 from .unit_conversions_factors import UnitConversionsFactors
 from .molecular_weights_factors import MolecularWeightsFactors
 from .electricity_emission_factors import ElectricityFactors
@@ -17,6 +18,7 @@ unit_conversions_factors = UnitConversionsFactors()
 molecular_weights_factors = MolecularWeightsFactors()
 electricity_emission_factors = ElectricityFactors()
 refrigerants_gwp_factors = RefrigerantsGwpFactors()
+refrigeration_and_ac_equipment_emission_factors = RefrigerationAndAcEquipmentEmissionFactors()
 fire_suppression_leak_rates_factors = FireSuppressionFactors()
 business_travel_factors = BusinessTravelFactors()
 waste_emission_factors = WasteEmissionFactors()

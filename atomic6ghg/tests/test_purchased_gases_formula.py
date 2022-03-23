@@ -3,7 +3,7 @@ import json
 import os
 
 from atomic6ghg.formulas import PurchasedGases
-from atom6icghg.formulas.purchased_gases import null_replacer
+from atomic6ghg.formulas.purchased_gases import null_replacer
 
 
 @pytest.fixture

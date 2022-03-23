@@ -43,6 +43,15 @@ def steam_schema():
     return v
 
 
+@pytest.fixture()
+def refrigeration_and_ac_schema():
+    """Provides schema validation to tests"""
+    schema_file_contents = pkgutil.get_data("atom6ghg.schemas", "refrigeration_and_ac.json")
+    schema = json.loads(schema_file_contents)
+    v = Draft7Validator(schema=schema)
+    return v
+
+
 @pytest.fixture
 def fire_suppression_schema():
     """Provides schema validation to tests"""
