@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Commuting",
+  "description": "Document schema of Commuting workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^commuting.1.0.0"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Scope 3 Emissions from Employee Commuting \n Guidance \n (A) Enter annual data in ORANGE cells in the table corresponding to the transport method.  Example entry is shown in first row (GREEN Italics). \n (B) Mileage data can be entered for individual trips or individual employees, or miles for multiple employees can be subtotaled by vehicle type or flight length., (C) For employees traveling by car, select \"Vehicle Type\" and enter miles traveled (vehicle-miles) in Table 1. \n (D) For employees traveling by rail or bus, select \"Vehicle Type\" and enter miles traveled (passenger-miles) in Table 2. \n (E) For employees traveling by air, select \"Flight Length\" and enter miles traveled (passenger-miles) in Table 3."
+    },
+    "personalVehicle": {
+      "type": "array",
+      "title": "Table 1. Personal Vehicle - Employee Commuting by Vehicle-Miles (CO2, CH4 and N2O)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "vehicleType": {
+            "title": "Vehicle Type",
+            "description": "Dropdown Selection of vehicle type",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "passengerCars",
+              "lightDutyTruck",
+              "motorcycle",
+              null
+            ]
+          },
+          "vehicleMiles": {
+            "title": "Vehicle-Miles (miles)",
+            "description": "Numerical representation of miles traveled",
+            "format": ",",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "CO2": {
+            "title": "CO2 Emissions (kg)",
+            "description": "Calculated quantity of CO2 combusted for given vehicle measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 Emissions (g)",
+            "description": "Calculated quantity of CH4 combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O Emissions (g)",
+            "description": "Calculated quantity of N2O combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "vehicleType",
+          "vehicleMiles"
+        ]
+      }
+    },
+    "totalForAllPersonalVehicleEmployeeCommuting": {
+      "title": "Total for all Personal Vehicle Employee Commuting",
+      "type": "object",
+      "properties": {
+        "CO2": {
+          "title": "CO2 Emissions (kg)",
+          "description": "Calculated total quantity of CO2 combusted for all personal vehicle commuting measured in kilograms",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "CH4": {
+          "title": "CH4 Emissions (g)",
+          "description": "Calculated total quantity of CH4 combusted for all personal vehicle commuting measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "N2O": {
+          "title": "N2O Emissions (g)",
+          "description": "Calculated total quantity of N2O combusted for all personal vehicle commuting measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+    }
+  }
+},
+    "publicTransportation": {
+      "type": "array",
+      "title": "Table 2.  Public Transportation - Commuting by Passenger-Miles (CO2, CH4 and N2O)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "transportType": {
+            "title": "Transport Type",
+            "description": "Dropdown Selection of transport type",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "intercityRailNortheastCorridor",
+              "intercityRailOtherRoutes",
+              "intercityRailNationalAverage",
+              "commuterRail",
+              "transitRail",
+              "bus",
+              null
+            ]
+          },
+          "passengerMiles": {
+            "title": "Passenger-Miles (miles)",
+            "description": "Numerical representation of miles traveled",
+            "format": ",",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "CO2": {
+            "title": "CO2 Emissions (kg)",
+            "description": "Calculated quantity of CO2 combusted for given vehicle measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 Emissions (g)",
+            "description": "Calculated quantity of CH4 combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O Emissions (g)",
+            "description": "Calculated quantity of N2O combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "transportType",
+          "passengerMiles"
+        ]
+      }
+    },
+    "totalForAllPublicTransportationEmployeeCommuting": {
+      "title": "Total for all Public Transportation Employee Commuting",
+      "type": "object",
+      "properties": {
+        "CO2": {
+          "title": "CO2 Emissions (kg)",
+          "description": "Calculated total quantity of CO2 combusted for all public transportation commuting measured in kilograms",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "CH4": {
+          "title": "CH4 Emissions (g)",
+          "description": "Calculated total quantity of CH4 combusted for all public transportation commuting measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "N2O": {
+          "title": "N2O Emissions (g)",
+          "description": "Calculated total quantity of N2O combusted for all public transportation commuting measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+    }
+  }
+},
+    "totalCO2EmissionsByCommutingType": {
+      "type": "array",
+      "title": "Total CO2 Emissions by Commuting Type",
+      "items": {
+        "type": "object",
+        "properties": {
+          "transportType": {
+            "title": "Transport Type",
+            "description": "Type of transportation",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "CO2": {
+            "title": "CO2 (kg)",
+            "description": "Calculated quantity of CO2 combusted for given transport measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 (g)",
+            "description": "Calculated quantity of CH4 combusted for given transport measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O (g)",
+            "description": "Calculated quantity of N2O combusted for given transport measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.commuting.calculate_transportation_emissions",
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "totalCO2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions (metric tons) - Commuting",
+      "formula": "atomic6ghg.formulas.commuting.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    }
+  },
+  "anyOf": [
+      {
+        "required": [
+          "version",
+          "personalVehicle"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "publicTransportation"
+        ]
+      }
+    ]
+}
