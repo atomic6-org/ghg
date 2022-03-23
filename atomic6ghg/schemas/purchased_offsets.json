@@ -52,7 +52,7 @@
         ]
       }
     },
-    "totalPurchasedOffsets,": {
+    "totalPurchasedOffsets": {
       "title": "Total CO2 Equivalent Emission Reductions (metric tons) - Offsets",
       "formula": "atomic6ghg.formulas.purchased_offsets.make_co2_equivalent_emissions",
       "type": ["number", "null"]
