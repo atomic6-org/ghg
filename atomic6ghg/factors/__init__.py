@@ -9,6 +9,7 @@ from .electricity_emission_factors import ElectricityFactors
 from .refrigerants_gwp_factors import RefrigerantsGwpFactors
 from .fire_suppression_leak_rates_factors import FireSuppressionFactors
 from .business_travel_factors import BusinessTravelFactors
+from .product_transport_emission_factors import ProductTransportEmissionFactors
 from .waste_emission_factors import WasteEmissionFactors
 
 heat_content_factors = HeatContentFactors()
@@ -21,5 +22,6 @@ refrigerants_gwp_factors = RefrigerantsGwpFactors()
 refrigeration_and_ac_equipment_emission_factors = RefrigerationAndAcEquipmentEmissionFactors()
 fire_suppression_leak_rates_factors = FireSuppressionFactors()
 business_travel_factors = BusinessTravelFactors()
+product_transport_emission_factors = ProductTransportEmissionFactors()
 waste_emission_factors = WasteEmissionFactors()
 
