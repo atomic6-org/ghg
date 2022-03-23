@@ -1,0 +1,49 @@
+{
+  "mediumAndHeavyDutyTruck": {
+    "vehicle-mile": {
+      "co2": 1.407,
+      "ch4": 0.013,
+      "n2o": 0.033
+    },
+    "ton-mile": {
+      "co2": 0.211,
+      "ch4": 0.002,
+      "n2o": 0.0049
+    }
+  },
+  "passengerCars": {
+    "vehicle-mile": {
+      "co2": 0.341,
+      "ch4": 0.009,
+      "n2o": 0.008
+    }
+  },
+  "lightDutyTruck": {
+    "vehicle-mile": {
+      "co2": 0.464,
+      "ch4": 0.012,
+      "n2o": 0.01
+    }
+  },
+  "rail": {
+    "ton-mile": {
+      "co2": 0.022,
+      "ch4": 0.0017,
+      "n2o": 0.0005
+    }
+  },
+  "waterborneCraft": {
+    "ton-mile": {
+      "co2": 0.036,
+      "ch4": 0.0116,
+      "n2o": 0.0016
+    }
+  },
+  "aircraft": {
+    "ton-mile": {
+      "co2": 1.16,
+      "ch4": 0.0,
+      "n2o": 0.0357
+    }
+  }
+}

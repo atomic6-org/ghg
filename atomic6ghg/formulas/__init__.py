@@ -10,5 +10,6 @@ from atomic6ghg.formulas.fire_suppression import FireSuppression
 from atomic6ghg.formulas.commuting import Commuting
 from atomic6ghg.formulas.business_travel import BusinessTravel
 from atomic6ghg.formulas.purchased_gases import PurchasedGases
+from atomic6ghg.formulas.product_transport import ProductTransport
 from atomic6ghg.formulas.waste import Waste
 from atomic6ghg.formulas.mobile_sources import MobileSources

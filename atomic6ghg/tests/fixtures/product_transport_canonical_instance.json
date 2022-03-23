@@ -1,0 +1,740 @@
+{
+  "version": "product-transport.1.0.0",
+  "productTransportByVehicleMiles": [
+    {
+      "sourceId": "Bldg-013",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 140.7,
+      "CH4": 1.3,
+      "N2O": 3.3000000000000003
+    },
+    {
+      "sourceId": "Bldg-014",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "Bldg-015",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "Bldg-016",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-017",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-018",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 140.7,
+      "CH4": 1.3,
+      "N2O": 3.3000000000000003
+    },
+    {
+      "sourceId": "Bldg-019",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "Bldg-020",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "Bldg-021",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-022",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "Bldg-023",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "Bldg-024",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 140.7,
+      "CH4": 1.3,
+      "N2O": 3.3000000000000003
+    },
+    {
+      "sourceId": "Bldg-025",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "Bldg-026",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "Bldg-027",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-028",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 140.7,
+      "CH4": 1.3,
+      "N2O": 3.3000000000000003
+    },
+    {
+      "sourceId": "Bldg-029",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": 100.0,
+      "CO2": 46.400000000000006,
+      "CH4": 1.2,
+      "N2O": 1.0
+    },
+    {
+      "sourceId": "Bldg-030",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 100.0,
+      "CO2": 34.1,
+      "CH4": 0.8999999999999999,
+      "N2O": 0.8
+    },
+    {
+      "sourceId": "Bldg-031",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-032",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "lightDutyTruck",
+      "vehicleMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-033",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "passengerCars",
+      "vehicleMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-034",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "vehicleMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-035",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-036",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-037",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-038",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-039",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-040",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-041",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-042",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-043",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-044",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-045",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-046",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-047",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-048",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-049",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-050",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "vehicleMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    }
+  ],
+  "totalForProductTransportByVehicleMiles": {
+    "CO2": 965.3,
+    "CH4": 15.700000000000001,
+    "N2O": 22.200000000000006
+  },
+  "productTransportByTonMiles": [
+    {
+      "sourceId": "Bldg-013",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "shortTonMiles": 100.0,
+      "CO2": 21.099999999999998,
+      "CH4": 0.2,
+      "N2O": 0.49
+    },
+    {
+      "sourceId": "Bldg-014",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "rail",
+      "shortTonMiles": 100.0,
+      "CO2": 2.1999999999999997,
+      "CH4": 0.16999999999999998,
+      "N2O": 0.05
+    },
+    {
+      "sourceId": "Bldg-015",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "aircraft",
+      "shortTonMiles": 100.0,
+      "CO2": 115.99999999999999,
+      "CH4": 0.0,
+      "N2O": 3.5700000000000003
+    },
+    {
+      "sourceId": "Bldg-016",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "waterborneCraft",
+      "shortTonMiles": 100.0,
+      "CO2": 3.5999999999999996,
+      "CH4": 1.16,
+      "N2O": 0.16
+    },
+    {
+      "sourceId": "Bldg-017",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "shortTonMiles": 100.0,
+      "CO2": 21.099999999999998,
+      "CH4": 0.2,
+      "N2O": 0.49
+    },
+    {
+      "sourceId": "Bldg-018",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "rail",
+      "shortTonMiles": 100.0,
+      "CO2": 2.1999999999999997,
+      "CH4": 0.16999999999999998,
+      "N2O": 0.05
+    },
+    {
+      "sourceId": "Bldg-019",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "aircraft",
+      "shortTonMiles": 100.0,
+      "CO2": 115.99999999999999,
+      "CH4": 0.0,
+      "N2O": 3.5700000000000003
+    },
+    {
+      "sourceId": "Bldg-020",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "waterborneCraft",
+      "shortTonMiles": 100.0,
+      "CO2": 3.5999999999999996,
+      "CH4": 1.16,
+      "N2O": 0.16
+    },
+    {
+      "sourceId": "Bldg-021",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "shortTonMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-022",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "rail",
+      "shortTonMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-023",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "aircraft",
+      "shortTonMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-024",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "waterborneCraft",
+      "shortTonMiles": null,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-025",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-026",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-027",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "shortTonMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-028",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "rail",
+      "shortTonMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-029",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "aircraft",
+      "shortTonMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-030",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "waterborneCraft",
+      "shortTonMiles": 0.0,
+      "CO2": 0.0,
+      "CH4": 0.0,
+      "N2O": 0.0
+    },
+    {
+      "sourceId": "Bldg-031",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "mediumAndHeavyDutyTruck",
+      "shortTonMiles": 100.0,
+      "CO2": 21.099999999999998,
+      "CH4": 0.2,
+      "N2O": 0.49
+    },
+    {
+      "sourceId": "Bldg-032",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "rail",
+      "shortTonMiles": 100.0,
+      "CO2": 2.1999999999999997,
+      "CH4": 0.16999999999999998,
+      "N2O": 0.05
+    },
+    {
+      "sourceId": "Bldg-033",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "aircraft",
+      "shortTonMiles": 100.0,
+      "CO2": 115.99999999999999,
+      "CH4": 0.0,
+      "N2O": 3.5700000000000003
+    },
+    {
+      "sourceId": "Bldg-034",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": "waterborneCraft",
+      "shortTonMiles": 100.0,
+      "CO2": 3.5999999999999996,
+      "CH4": 1.16,
+      "N2O": 0.16
+    },
+    {
+      "sourceId": "Bldg-035",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-036",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-037",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-038",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-039",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-040",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-041",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-042",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-043",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-044",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-045",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-046",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-047",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-048",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-049",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    },
+    {
+      "sourceId": "Bldg-050",
+      "sourceDescription": "East Power Plant Finished Goods",
+      "vehicleType": null,
+      "shortTonMiles": 100.0,
+      "CO2": null,
+      "CH4": null,
+      "N2O": null
+    }
+  ],
+  "totalForAllProductTransportByTonMiles": {
+    "CO2": 428.7,
+    "CH4": 4.59,
+    "N2O": 12.810000000000002
+  },
+  "totalEmissionsByProductTransportType": [
+    {
+      "transportType": "mediumAndHeavyDutyTruck",
+      "CO2": 626.0999999999999,
+      "CH4": 5.800000000000001,
+      "N2O": 14.670000000000002
+    },
+    {
+      "transportType": "lightDutyTruck",
+      "CO2": 232.00000000000003,
+      "CH4": 6.0,
+      "N2O": 5.0
+    },
+    {
+      "transportType": "passengerCars",
+      "CO2": 170.5,
+      "CH4": 4.5,
+      "N2O": 4.0
+    },
+    {
+      "transportType": "rail",
+      "CO2": 6.6,
+      "CH4": 0.51,
+      "N2O": 0.15000000000000002
+    },
+    {
+      "transportType": "aircraft",
+      "CO2": 347.99999999999994,
+      "CH4": 0.0,
+      "N2O": 10.71
+    },
+    {
+      "transportType": "waterborneCraft",
+      "CO2": 10.799999999999999,
+      "CH4": 3.4799999999999995,
+      "N2O": 0.48
+    }
+  ],
+  "totalCo2EquivalentEmissions": 1.40494023
+}
