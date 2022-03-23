@@ -1,8 +1,50 @@
-
 .. _mobile-sources-api:
 
 Mobile Sources
 --------------
+
+Mobile Sources is a `Scope 1 Emission <glossary.html>`_ that accounts for the combustion of fuels to power on- and off-road vehicles and equipment.
+
+Class Documentation
+************************
+.. module:: atomic6ghg.formulas.mobile_sources
+
+.. autoclass:: MobileSources
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******************
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import MobileSources
+
+    mobile_sources_input: dict = {
+      "version": "mobile-sources.1.0.0",
+      "mobileSourcesFuelConsumption": [
+        {
+          "sourceId": "",
+          "sourceDescription": "",
+          "onOrNonRoad": "OnRoad",
+          "vehicleType": "heavyDutyTrucks",
+          "fuelType": "lpg",
+          "vehicleYear": 1995,
+          "fuelUsage": 10000,
+          "milesTraveled": 0
+        }
+      ]
+    }
+    engine = MobileSources(mobile_sources_input)
+
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
+EPA Equation Analysis
+******************
 Mobile sources allows for inputs of fuel usage for the following vehicle type and fuel type combinations:
 
 .. csv-table::
