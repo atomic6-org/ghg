@@ -48,3 +48,7 @@ organization indirectly impacts in its value chain.
     that the entire tonnage is transported on each and every truck, railcar, aircraft, or barge and will likely
     overstate ton-miles.
 
+**Carbon Storage** also known as carbon sequestration, is a complex method of capturing carbon dioxide emissions and
+storing them in coal seams, aquifers, depleted oil and gas reservoirs and other spaces deep under the surface of the
+Earth.
+

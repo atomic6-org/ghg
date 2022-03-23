@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "purchasedOffsets",
+  "description": "Document schema of Offsets workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^purchased-offsets.1.0.0"
+    },
+    "h1Title": {
+      "type": "string",
+      "title": "Purchased Offsets"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Enter quantity of offsets purchased for each offset project in terms of CO2 equivalent. Enter offsets purchased for the inventory reporting period."
+    },
+    "purchasedOffsets": {
+      "type": "array",
+      "title": "Table 1. Total Amount of Purchased Offsets",
+      "items": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "title": "ID",
+            "description": "Global warming potential of selected gas",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "projectDescription": {
+            "title": "Project Description",
+            "description": "",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "purchasedOffset": {
+            "title": "Offsets Purchased (Metric Tons CO2e)",
+            "description": "",
+            "format": ",",
+            "formula": "None",
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "purchasedOffset"
+        ]
+      }
+    },
+    "totalPurchasedOffsets": {
+      "title": "Total CO2 Equivalent Emission Reductions (metric tons) - Offsets",
+      "formula": "atomic6ghg.formulas.purchased_offsets.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    },
+    "footNote": {}
+  },
+  "required": [
+    "version",
+    "purchasedOffsets"
+  ]
+}

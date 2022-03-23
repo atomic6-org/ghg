@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Refrigeration and AC &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -105,10 +106,10 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="refrigeration-and-ac">
+  <section id="refrigeration-and-ac">
 <span id="refrigeration-and-ac-api"></span><h1>Refrigeration and AC<a class="headerlink" href="#refrigeration-and-ac" title="Permalink to this headline">¶</a></h1>
 <p>Refrigeration and Air Conditioning (AC) is <a class="reference external" href="glossary.html">scope 1 emission</a>. Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.</p>
-<div class="section" id="module-atomic6ghg.formulas.refrigeration_and_ac">
+<section id="module-atomic6ghg.formulas.refrigeration_and_ac">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.refrigeration_and_ac" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.refrigeration_and_ac.RefrigerationAndAc">
@@ -195,8 +196,8 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="epa-equation-analysis">
+</section>
+<section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Refrigeration and AC calculates emissions for refrigerant gas use. There are three different carbon accounting methods
 employed in the formula, and all three can be utilized simultaneously if need be. In general, Refrigeration and AC
@@ -308,8 +309,8 @@ allows for inputs of gases for the following:</p>
 </table>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Refrigeration and AC: material balance,
 simplified material balance, and the screening method.</p>
-</div>
-<div class="section" id="material-balance">
+</section>
+<section id="material-balance">
 <h2>Material Balance<a class="headerlink" href="#material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The Material Balance Method tracks emissions of refrigerants from equipment through a mass balance analysis. Releases
 of refrigerants can be calculated based on the inventory (in storage, not in operating equipment), purchases and sales
@@ -335,8 +336,8 @@ volume for a given refrigerant during the reporting period.</p>
 <dd><p>EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 8</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="simplified-material-balance">
+</section>
+<section id="simplified-material-balance">
 <h2>Simplified Material Balance<a class="headerlink" href="#simplified-material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The Simplified Material Balance Method is a simplified version of the Material Balance Method. With this simplified
 method, there are fewer flows of refrigerants to consider. This method is appropriate for entities that do not maintain
@@ -363,8 +364,8 @@ recovered from retiring equipment.</p>
 <dd><p>EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 10</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="screening-method">
+</section>
+<section id="screening-method">
 <h2>Screening Method<a class="headerlink" href="#screening-method" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the refrigerant gases, the Screening Method requires an equipment type to be entered to the refrigerant
 used with the equipment, and must be one of the following:</p>
@@ -429,8 +430,8 @@ and the final value is divided by <span class="math notranslate nohighlight">\(1
 <dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, IPPU, Chapter 7, Emissions of Fluorinated Substitutes for Ozone Depleting Substances, pp. 48</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
