@@ -2,7 +2,39 @@
 
 Commuting
 ---------
-Commuting calculates emissions from transportation of employees to and from work. There are two different tables and
+Commuting is a `Scope 3 Emission <glossary.html>`_ that includes emissions from transportation of employees between
+their homes and their worksites. Employees can commute via personal vehicle or public transport. Atomic6ghg
+uses the distance-based method for calculating emissions from employee commuting.
+
+Class Documentation
+************************
+.. module:: atomic6ghg.formulas.commuting
+
+.. autoclass:: Commuting
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******************
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import Commuting
+    commuting_input: dict = {
+        "version": "commuting.1.0.0",
+        "personalVehicle": [
+            {"vehicleType": "passengerCars", "vehicleMiles": 250}
+        ]
+    }
+    engine = Commuting(commuting_input)
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
+EPA Equation Analysis
+**********************
+There are two different tables and
 therefore two different methods to calculate emissions from employee commuting. The first is for those employees who
 commute via of personal vehicle, the second is for those employees who commute via public transportation.
 
@@ -51,5 +83,4 @@ where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either personal vehicle or public transport), and :math:`GWP_{GHG}` is the
 global warming potential of that :math:`GHG`.
-Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
-:math:`metric \; tons`.
+Note that in atomic6 the final value of this calculation is converted into :math:`metric \; tons`.

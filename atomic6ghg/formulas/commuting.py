@@ -87,7 +87,7 @@ class Commuting(Formula):
         self._output['personalVehicle'] = personal_vehicle
 
     def make_total_for_all_personal_vehicle(self):
-        """ Make total row """
+        """ Make total row for Personal Vehicle table"""
         total_for_all_personal_vehicle = {
                      'CO2': self._total_emissions['personalVehicle']['CO2'],
                      'CH4': self._total_emissions['personalVehicle']['CH4'],
@@ -147,7 +147,7 @@ class Commuting(Formula):
         self._output['publicTransportation'] = public_transportation
 
     def make_total_for_all_public_transportation(self):
-        """ Make total row """
+        """ Make total row for Public Transportation table """
         total_for_all_public_transportation = {
                      'CO2': self._total_emissions['publicTransportation']['CO2'],
                      'CH4': self._total_emissions['publicTransportation']['CH4'],
@@ -182,7 +182,7 @@ class Commuting(Formula):
         return ret
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """ Calculate co2 equivalent emissions """
         total = (self._total_emissions['total']['CO2'] +
                  (self._total_emissions['total']['CH4'] / 1000 * refrigerants_gwp_factors['ch4']) +
                  (self._total_emissions['total']['N2O'] / 1000 * refrigerants_gwp_factors['n2o'])) / 1000
