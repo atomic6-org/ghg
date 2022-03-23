@@ -57,7 +57,7 @@
             "title": "Total Moles (lb-mole/ft3)",
             "description": "Total number of moles in lb-mole/ft3",
             "format": "",
-            "formula": "atom6ghg.formulas.waste_gases.calculate_total_moles",
+            "formula": "atomic6ghg.formulas.waste_gases.calculate_total_moles",
             "type": ["number", "null"]
           },
           "molecularWeight": {
@@ -78,7 +78,7 @@
             "title": "Carbon Content (lb/ft3)",
             "description": "Carbon content of given gas in lb/ft3",
             "format": "",
-            "formula": "atom6ghg.formulas.waste_gases.calculate_carbon_content",
+            "formula": "atomic6ghg.formulas.waste_gases.calculate_carbon_content",
             "type": ["number", "null"]
           }
         },
@@ -105,7 +105,7 @@
           "title": "Total Moles (lb-mole/ft3)",
           "description": "Total number of moles in lb-mole/ft3",
           "format": "",
-          "formula": "atom6ghg.formulas.waste_gases.calculate_total_moles",
+          "formula": "atomic6ghg.formulas.waste_gases.calculate_total_moles",
           "type": [
             "number",
             "null"
@@ -115,7 +115,7 @@
           "title": "Carbon Content (lb/ft3)",
           "description": "Total carbon content of all waste gases in lb/ft3",
           "format": "",
-          "formula": "atom6ghg.formulas.waste_gases.calculate_carbon_content",
+          "formula": "atomic6ghg.formulas.waste_gases.calculate_carbon_content",
           "type": [
             "number",
             "null"
@@ -133,7 +133,7 @@
     },
     "totalCo2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Waste Gas Combustion",
-      "formula": "atom6ghg.formulas.waste_gases.make_co2_equivalent_emissions",
+      "formula": "atomic6ghg.formulas.waste_gases.make_co2_equivalent_emissions",
       "type": ["number", "null"]
     },
     "footNote": {

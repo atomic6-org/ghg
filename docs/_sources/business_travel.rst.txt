@@ -2,6 +2,41 @@
 
 Business Travel
 ---------------
+Business Travel is a `Scope 3 Emission <glossary.html>`_ that accounts for employee business travel including personal
+vehicle travel, rail or bus travel, and air travel. The Business Travel category includes emissions from the
+transportation of employees for business related activities in vehicles owned or operated by third parties, such as
+aircraft, trains, buses, and passenger cars.
+
+
+Class Documentation
+************************
+.. module:: atomic6ghg.formulas.business_travel
+
+.. autoclass:: BusinessTravel
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******************
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import BusinessTravel
+    business_travel_input: dict = {
+        "version": "business-travel.1.0.0",
+        "personalVehicleRentalCarOrTaxiBusinessTravel": [
+            {"vehicleType": "passengerCars", "vehicleMiles": 250}
+        ]
+    }
+    engine = BusinessTravel(business_travel_input)
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
+
+EPA Equation Analysis
+**********************
 Business Travel calculates emissions from business travel of employees. There are three different tables and
 therefore three different methods to calculate emissions from employee business travel. The first is for those employees
 traveling by car, the second is for those employees traveling by rail or bus, and third one is for those employee
@@ -58,5 +93,4 @@ where :math:`Total\; Emissions_{GHG, transport}` is the sum of all the emissions
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`transport`
 (either personal vehicle, public transportation, or air travel), and :math:`GWP_{GHG}` is the
 global warming potential of that :math:`GHG`.
-Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
-:math:`metric \; tons`.
+Note that in atomic6 the final value of this calculation is converted into :math:`metric \; tons`.
