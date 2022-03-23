@@ -1,0 +1,283 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Product Transport",
+  "description": "Document schema of Product Transport workbook page in SGEC",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^product-transport.1.0.0"
+    },
+    "instruction": {
+      "type": "string",
+      "title": "Scope 3 Emissions from Product Transport \n Guidance \n (A) Enter annual data in ORANGE cells in the table corresponding to the transport method.  Example entry is shown in first row (GREEN Italics). \n (B) For rail, water, or air shipments, enter short ton-mile data in Table 2.  See Help sheet for details on calculating short ton-miles. \n (C) For road shipments, if your organization's product is the only product transported in the vehicle (i.e. full truckload shipment) then enter the vehicle type and miles for each leg of transport in Table 1.  Emissions are calculated using vehicle-miles. \n (D) For road shipments, if your organization's product makes up only part of the truck load (i.e. less-than-load or LTL shipment), then enter the vehicle type and short ton-miles (product weight (short tons) x distance) for each leg of transport in Table 2.  Emissions are calculated using short ton-miles.  See Help sheet for details on calculating ton-miles.  \n Tip: Make sure all transport legs are accounted for from manufacturing facility to distribution to customer."
+    },
+    "productTransportByVehicleMiles": {
+      "type": "array",
+      "title": "Table 1.  On-Road Vehicle Product Transport by Vehicle-Miles  (CO2, CH4 and N2O)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "vehicleType": {
+            "title": "Vehicle Type",
+            "description": "Dropdown Selection of vehicle type",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "passengerCars",
+              "lightDutyTruck",
+              "mediumAndHeavyDutyTruck",
+              null
+            ]
+          },
+          "vehicleMiles": {
+            "title": "Vehicle-Miles (miles)",
+            "description": "Numerical representation of miles traveled",
+            "format": ",",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "CO2": {
+            "title": "CO2 Emissions (kg)",
+            "description": "Calculated quantity of CO2 combusted for given vehicle measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 Emissions (g)",
+            "description": "Calculated quantity of CH4 combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O Emissions (g)",
+            "description": "Calculated quantity of N2O combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "vehicleType",
+          "vehicleMiles"
+        ]
+      }
+    },
+    "totalForProductTransportByVehicleMiles": {
+      "title": "Total for Product Transport by Vehicle-Miles",
+      "type": "object",
+      "properties": {
+        "CO2": {
+          "title": "CO2 Emissions (kg)",
+          "description": "Calculated total quantity of CO2 combusted for all vehicle miles measured in kilograms",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "CH4": {
+          "title": "CH4 Emissions (g)",
+          "description": "Calculated total quantity of CH4 combusted for all vehicle miles measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "N2O": {
+          "title": "N2O Emissions (g)",
+          "description": "Calculated total quantity of N2O combusted for all vehicle miles measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "productTransportByTonMiles": {
+      "type": "array",
+      "title": "Table 2.  Product Transport by Ton-Miles (CO2, CH4 and N2O)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "title": "Source ID",
+            "description": "Alphanumerical code or ID for source",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "sourceDescription": {
+            "title": "Source Description",
+            "description": "Name of source",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"]
+          },
+          "vehicleType": {
+            "title": "Vehicle Type",
+            "description": "Dropdown Selection of vehicle type",
+            "format": "s",
+            "formula": "None",
+            "type": ["string", "null"],
+            "enum": [
+              "",
+              "mediumAndHeavyDutyTruck",
+              "rail",
+              "aircraft",
+              "waterborneCraft",
+              null
+            ]
+          },
+          "shortTonMiles": {
+            "title": "Short Ton-Miles",
+            "description": "Numerical representation of miles traveled",
+            "format": ",",
+            "formula": "None",
+            "type": ["number", "null"]
+          },
+          "CO2": {
+            "title": "CO2 Emissions (kg)",
+            "description": "Calculated quantity of CO2 combusted for given vehicle measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 Emissions (g)",
+            "description": "Calculated quantity of CH4 combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O Emissions (g)",
+            "description": "Calculated quantity of N2O combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+            "type": ["number", "null"]
+          }
+        },
+        "required": [
+          "vehicleType",
+          "shortTonMiles"
+        ]
+      }
+    },
+    "totalForAllProductTransportByTonMiles": {
+      "title": "Total for all Product Transport by Ton-Miles",
+      "type": "object",
+      "properties": {
+        "CO2": {
+          "title": "CO2 Emissions (kg)",
+          "description": "Calculated total quantity of CO2 combusted for all ton miles measured in kilograms",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "CH4": {
+          "title": "CH4 Emissions (g)",
+          "description": "Calculated total quantity of CH4 combusted for all ton miles measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "N2O": {
+          "title": "N2O Emissions (g)",
+          "description": "Calculated total quantity of N2O combusted for all ton miles measured in grams",
+          "format": ":.1f",
+          "formula": "atomic6ghg.formulas.product_transport.calculate_vehicle_emissions",
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "totalEmissionsByProductTransportType": {
+      "type": "array",
+      "title": " Total Emissions by Product Transport Type",
+      "items": {
+        "type": "object",
+        "properties": {
+          "transportType": {
+            "title": "Transport Type",
+            "description": "Type of transportation",
+            "format": "s",
+            "formula": "None",
+            "type": "string"
+          },
+          "CO2": {
+            "title": "CO2 (kg)",
+            "description": "Calculated quantity of CO2 combusted for given vehicle measured in kilograms",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.make_total_emissions_by_product_transport_type",
+            "type": ["number", "null"]
+          },
+          "CH4": {
+            "title": "CH4 (g)",
+            "description": "Calculated quantity of CH4 combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.make_total_emissions_by_product_transport_type",
+            "type": ["number", "null"]
+          },
+          "N2O": {
+            "title": "N2O (g)",
+            "description": "Calculated quantity of N2O combusted for given vehicle measured in grams",
+            "format": ":.1f",
+            "formula": "atomic6ghg.formulas.product_transport.make_total_emissions_by_product_transport_type",
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "totalCo2EquivalentEmissions": {
+      "title": "Total CO2 Equivalent Emissions  (metric tons) - Product Transport",
+      "formula": "atomg6ghg.formulas.product_transport.make_co2_equivalent_emissions",
+      "type": ["number", "null"]
+    }
+  },
+  "anyOf": [
+      {
+        "required": [
+          "version",
+          "productTransportByVehicleMiles"
+        ]
+      },
+      {
+        "required": [
+          "version",
+          "productTransportByTonMiles"
+        ]
+      }
+    ]
+}
