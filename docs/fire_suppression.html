@@ -49,6 +49,8 @@
 <li class="toctree-l1"><a class="reference internal" href="commuting.html">Commuting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electricity.html">Electricity</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fire Suppression</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.fire_suppression">Class Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-balance">Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simplified-material-balance">Simplified Material Balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#screening-method">Screening Method</a></li>
@@ -106,11 +108,99 @@
             
   <section id="fire-suppression">
 <span id="fire-suppression-api"></span><h1>Fire Suppression<a class="headerlink" href="#fire-suppression" title="Permalink to this headline">¶</a></h1>
-<p>Fire Suppression calculates emissions for fire suppressant gas use. There are three different carbon accounting methods
+<p>Fire Suppression is a <a class="reference external" href="glossary.html">Scope 1 Emission</a> that accounts for fire suppressant gas use. There are three different carbon accounting methods
 employed in the final formula to calculate <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> , and all three can be
 utilized simultaneously if need be.</p>
 <p>The EPA’s SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.</p>
+<section id="module-atomic6ghg.formulas.fire_suppression">
+<span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.fire_suppression" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atomic6ghg.formulas.fire_suppression.</span></span><span class="sig-name descname"><span class="pre">FireSuppression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate emissions from fire suppression equipment</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inventory_change</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transferred_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_change</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_screening_method">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_screening_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_equipment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit_capacity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_simplified_material_balance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_co2_emissions_simplified_material_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">existing_units_recharge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_capacity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disposed_units_recovered</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.calculate_co2_emissions_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 emissions for a gas given simplified material balance inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_co2_equivalent_emissions">
+<span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate co2 equivalent emissions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_material_balance">
+<span class="sig-name descname"><span class="pre">make_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_screening_method">
+<span class="sig-name descname"><span class="pre">make_screening_method</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_screening_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.make_simplified_material_balance">
+<span class="sig-name descname"><span class="pre">make_simplified_material_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.make_simplified_material_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CO2 equivalent emissions for each input row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.recalc">
+<span class="sig-name descname"><span class="pre">recalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wks_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.recalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute recalc procedure for FireSuppression</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atomic6ghg.formulas.fire_suppression.FireSuppression.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.fire_suppression.FireSuppression.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>API to expose _output as JSON</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">FireSuppression</span>
+
+<span class="n">fire_suppression_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;fire-suppression.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;materialBalance&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;hfc23&quot;</span><span class="p">,</span> <span class="s2">&quot;inventoryChange&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+            <span class="s2">&quot;transferredAmount&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;capacityChange&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">FireSuppression</span><span class="p">(</span><span class="n">fire_suppression_input</span><span class="p">)</span>
+
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
 <section id="material-balance">
 <h2>Material Balance<a class="headerlink" href="#material-balance" title="Permalink to this headline">¶</a></h2>
 <p>The fundamental calculation for each fire suppressant gas type input for the Material Balance Method are their

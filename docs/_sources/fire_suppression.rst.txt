@@ -2,12 +2,42 @@
 
 Fire Suppression
 ----------------
-Fire Suppression calculates emissions for fire suppressant gas use. There are three different carbon accounting methods
+Fire Suppression is a `Scope 1 Emission <glossary.html>`_ that accounts for fire suppressant gas use. There are three different carbon accounting methods
 employed in the final formula to calculate :math:`\text{CO}_2\; Equivalent\; Emissions` , and all three can be
 utilized simultaneously if need be.
 
 The EPA's SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.
+
+Class Documentation
+************************
+.. module:: atomic6ghg.formulas.fire_suppression
+
+.. autoclass:: FireSuppression
+    :members:
+    :undoc-members:
+    :inherited-members:
+
+Example Usage
+******************
+
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import FireSuppression
+
+    fire_suppression_input: dict = {
+        "version": "fire-suppression.1.0.0",
+        "materialBalance": [
+            {"gas": "hfc23", "inventoryChange": 25,
+                "transferredAmount": 10, "capacityChange": 0}
+        ]
+    }
+    engine = FireSuppression(fire_suppression_input)
+
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
 
 Material Balance
 ****************
