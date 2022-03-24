@@ -160,7 +160,7 @@ class RefrigerationAndAc(Formula):
         return ret
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """Calculate co2 equivalent emissions """
         total = (unit_conversions_factors['pounds']['kilogram'] * (self._total_emissions['materialBalance'] +
                   self._total_emissions['simplifiedMaterialBalance']) + self._total_emissions['screeningMethod']) / 1000.
 
