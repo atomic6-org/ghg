@@ -149,7 +149,7 @@ class ProductTransport(Formula):
         return ret
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """ Calculate co2 equivalent emissions """
         co2_total = self._total_emissions_by_miles['CO2'] + self._total_emissions_by_short_ton['CO2']
         ch4_total = self._total_emissions_by_miles['CH4'] + self._total_emissions_by_short_ton['CH4']
         n2o_total = self._total_emissions_by_miles['N2O'] + self._total_emissions_by_short_ton['N2O']

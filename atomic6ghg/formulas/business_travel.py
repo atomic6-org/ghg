@@ -240,7 +240,7 @@ class BusinessTravel(Formula):
         return ret
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """Calculate co2 equivalent emissions """
         total = (self._total_emissions['total']['CO2'] +
                  (self._total_emissions['total']['CH4'] / 1000 * refrigerants_gwp_factors['ch4']) +
                  (self._total_emissions['total']['N2O'] / 1000 * refrigerants_gwp_factors['n2o'])) / 1000

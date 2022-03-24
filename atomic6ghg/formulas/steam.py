@@ -170,7 +170,7 @@ class Steam(Formula):
         self._output['emissionsBySourceAndFuelType'] = emissions_by_source_and_fuel_type
 
     def make_co2_equivalent_emissions_location_based(self):
-        """ calculate location based co2 equivalent emissions """
+        """ Calculate location based co2 equivalent emissions """
         location_based_emissions_co2_emissions = self._total_emissions['locationBasedCO2Emissions']
         location_based_emissions_ch4_emissions = self._total_emissions['locationBasedCH4Emissions']
         location_based_emissions_n2o_emissions = self._total_emissions['locationBasedN2OEmissions']
@@ -181,7 +181,7 @@ class Steam(Formula):
         self._output['CO2EquivalentEmissionsLocationBasedElectricityEmissions'] = total
 
     def make_co2_equivalent_emissions_market_based(self):
-        """ calculate market based co2 equivalent emissions """
+        """ Calculate market based co2 equivalent emissions """
         market_based_emissions_co2_emissions = self._total_emissions['marketBasedCO2Emissions']
         market_based_emissions_ch4_emissions = self._total_emissions['marketBasedCH4Emissions']
         market_based_emissions_n2o_emissions = self._total_emissions['marketBasedN2OEmissions']
