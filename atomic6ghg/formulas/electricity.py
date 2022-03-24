@@ -142,7 +142,7 @@ class Electricity(Formula):
         return ret
 
     def make_co2_equivalent_emissions_location_based(self):
-        """ calculate co2 equivalent emissions """
+        """Calculate co2 equivalent emissions """
         location_based_emissions_co2_emissions = self._total_emissions['locationBasedEmissionsCO2Emissions']
         location_based_emissions_ch4_emissions = self._total_emissions['locationBasedEmissionsCH4Emissions']
         location_based_emissions_n2o_emissions = self._total_emissions['locationBasedEmissionsN2OEmissions']
@@ -154,7 +154,7 @@ class Electricity(Formula):
         self._output['CO2EquivalentEmissionsLocationBasedElectricityEmissions'] = total
 
     def make_co2_equivalent_emissions_market_based(self):
-        """ calculate co2 equivalent emissions """
+        """Calculate co2 equivalent emissions """
         market_based_emissions_co2_emissions = self._total_emissions['marketBasedEmissionsCO2Emissions']
         market_based_emissions_ch4_emissions = self._total_emissions['marketBasedEmissionsCH4Emissions']
         market_based_emissions_n2o_emissions = self._total_emissions['marketBasedEmissionsN2OEmissions']

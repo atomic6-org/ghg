@@ -110,7 +110,7 @@ class StationaryCombustion(Formula):
         return stationary_combustion_emission_factors[fuel]['N2O Factor (g / unit)'] * total_fuel_combustion
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """ Calculate co2 equivalent emissions """
         # Units of CH4 and N2O emissions are in grams and need to be converted to kilograms
         conversions = {'CO2': 1., 'CH4': 1 / 1000., 'N2O': 1 / 1000.}
         total_fossil = sum([self._total_emissions['totalFossilFuelEmissions'][gas] *
