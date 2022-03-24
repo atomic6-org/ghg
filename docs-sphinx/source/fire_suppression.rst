@@ -2,9 +2,9 @@
 
 Fire Suppression
 ----------------
-Fire Suppression is a `Scope 1 Emission <glossary.html>`_ that accounts for fire suppressant gas use. There are three different carbon accounting methods
-employed in the final formula to calculate :math:`\text{CO}_2\; Equivalent\; Emissions` , and all three can be
-utilized simultaneously if need be.
+Fire Suppression is a `Scope 1 Emission <glossary.html>`_ that accounts for `fire suppressant <glossary.html>`_ gas use.
+There are three different carbon accounting methods employed in the final formula to calculate
+:math:`\text{CO}_2\; Equivalent\; Emissions` , and all three can be utilized simultaneously if need be.
 
 The EPA's SGEC workbook employs three methods for calculating emissions in Fire Suppression: material balance,
 simplified material balance, and screening method.
@@ -58,7 +58,7 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
    \text{CO}_2\; Equivalent\; Emissions_{B, E, gas} = GWP_{gas} \cdot \left(\left(I_{B} - I_{E}\right) + \left(P - S\right) + \left(C_{B} - C_{E}\right)\right)
 
-This is derived from Equation 5 from [EPA2015FugitiveEmissions]_.
+This is derived from Equation 5 from [EPA2015_p8]_.
 
 where :math:`gas` is the refrigerant gas type, :math:`GWP_{gas}` is the global
 warming potential for that :math:`gas`, :math:`\left(I_{B} - I_{E}\right)` is the inventory change or the difference
@@ -69,7 +69,7 @@ sales or disbursements (:math:`S`), and :math:`\left(C_{B} - C_{E}\right)` is th
 the total equipment volume for a given fire suppressant during the reporting period.
 
 
-This is derived from Equation 5 from [EPA2015FugitiveEmissions]_.
+.. [EPA2015_p8] `EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 8 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=11>`_
 
 Simplified Material Balance
 ***************************
@@ -98,7 +98,7 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
    \text{CO}_2\; Equivalent\; Emissions_{N, S, D, gas} = GWP_{gas} \cdot \left(\left(P_{N} - C_{N}\right) + P_{S} + \left(C_{D} - R_{D}\right)\right)
 
-This is derived from Equation 6 from [EPA2015FugitiveEmissionsSimplified]_.
+This is derived from Equation 6 from [EPA2015_p10]_.
 
 where :math:`gas` is the fire suppressant type, :math:`GWP_{gas}` is the global warming potential for that :math:`gas`,
 :math:`P_{N}` is the new units charge or the purchases of fire suppressant used to charge new equipment, :math:`C_{N}`
@@ -106,6 +106,8 @@ is the new units capacity or the total fire suppressant capacity of the new equi
 units recharge or the purchases of fire suppressant used to service equipment, :math:`C_{D}` is the disposed units
 capacity or the total fire suppressant capacity of retiring equipment, and :math:`R_{D}` is the disposed units
 recovered or the fire suppressant recovered from retiring equipment.
+
+.. [EPA2015_p10] `EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 10 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=13>`_
 
 Screening Method
 ****************
@@ -137,14 +139,14 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
     \text{CO}_2\; Equivalent\; Emissions_{gas, E} = GWP_{gas} \cdot EF_{E} \cdot Unit\; Capacity
 
-This is derived from Section 2.1.2 from [EPA2014FugitiveEmissionsScreening]_.
+This is derived from Section 2.1.2 from [EPA2014_p7]_.
 
 where :math:`gas` is the fire suppressant gas type, :math:`E` is the type of equipment (either fixed or portable)
 :math:`GWP_{gas}` is the global warming potential for that :math:`gas`,
 :math:`EF_{E}` is the emission factor for that equipment type :math:`E`, and
 :math:`Unit\; Capacity` is the fire suppressant capacity for each piece of equipment.
 
-.. [EPA2014FugitiveEmissionsScreening] EPA, 2014: 2014 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 7
+.. [EPA2014_p7] `EPA, 2014: 2014 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 7 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=10>`_
 
 For fire suppression, the :math:`\text{CO}_2\; Equivalent\; Emissions_{method}` in metric tons is calculated.
 The formula is:
@@ -154,10 +156,8 @@ The formula is:
 
     \text{CO}_2\; Equivalent\; Emissions_{method} = \sum_{n=1}^{\infty} Emissions_{method}
 
-This equation is derived from [EPA2015FugitiveEmissions]_.
+This equation is derived from [EPA2015_p8]_.
 
 where :math:`Emissions_{method}` are the total :math:`\text{CO}_2\; Emissions` for that :math:`method`
 (material balance, simplified material balance, or screening method).
-Note that in atomic6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
-are multiplied by :math:`kilogram\; per\; pound` to convert the values from :math:`lbs` to :math:`kilograms`
-and the final value is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
+Note that in atomic6 final values are converted into :math:`metric \; tons`.

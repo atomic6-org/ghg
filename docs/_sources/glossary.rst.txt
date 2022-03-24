@@ -21,6 +21,8 @@ combustion in boilers, furnaces, vehicles.
     water, thermal fluid), or hybrid technologies to provide the hear energy required for various manufacturing
     operations.
 
+    **Fire suppressant** systems are used to extinguish or control fires, and are activated by hear, smoke, or a
+    combination of the two.
 
 **Scope 2 Emissions** are electricity indirect GHG emissions that include emissions from consumption of purchased
 electricity, heat, cooling or steam. These emissions are a result of a company's activities but often occur outside a
