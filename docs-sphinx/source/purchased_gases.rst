@@ -3,11 +3,10 @@
 Purchased Gases
 ---------------
 Purchased Gases is a `scope 1 emission <glossary.html>`_ that accounts for `purchased gas stream <glossary.html>`_.
-Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.  For example, CO2
-gas is often used in welding operations.  These gases are typically released to the atmosphere after use.  Any releases
-of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
-Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG
-inventory or reported as a memo item.
+Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.
+For example, CO2 gas is often used in welding operations.
+These gases are typically released to the atmosphere after use. Any releases of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
+Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG inventory or reported as a memo item.
 
 Usage
 **********
@@ -122,7 +121,7 @@ The fundamental calculations for each purchased gas Component are their
 .. math::
    \text{CO}_2\; Equivalent\; Emissions_{gas} = GWP_{gas} * Purchased Amount_{gas}
 
-These equations are derived from Equation 4 from [EPA2016DirectEmissionsfromStationaryCombustionSources]_.
+These equations are derived from Equation 4 from [EPA2015_p11]_.
 
 where :math:`\text{CO}_2\; Equivalent\; Emissions_{gas}` is the total CO2 equivalent in merit unit pounds, :math:`GWP_{gas}`
 is the global warming potential for that gas.
@@ -136,13 +135,11 @@ The formula is:
 
     \text{CO}_2\; Equivalent\; Emissions_{gas} = \sum_{n=1}^{\infty} \text{CO}_2\; Equivalent\; Emissions_{gas}
 
-This equation is derived from [EPA2016DirectEmissionsfromStationaryCombustionSources]_.
+This equation is derived from [EPA2015_p11]_.
 
 where :math:`gas` is the purchased gas.
-Note that in atomic6 the final value of this calculation is multiplied by :math:`kilogram\; per\; pound` to convert this
-value from :math:`lbs` to :math:`kilograms` then divided by :math:`1000` to convert this value into
-:math:`metric \; tons`.
+Note that in atomic6 final values are converted into :math:`metric \; tons`.
 
 
-.. [EPA2016DirectEmissionsfromStationaryCombustionSources] EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11
+.. [EPA2015_p11] `EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Method for Purchased Gases, pp. 11 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=11>`_
 
