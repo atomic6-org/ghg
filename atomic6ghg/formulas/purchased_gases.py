@@ -58,7 +58,7 @@ class PurchasedGases(Formula):
 
 
     def make_co2_equivalent_emissions(self):
-        """ calculate co2 equivalent emissions """
+        """ Calculate co2 equivalent emissions """
         total = (unit_conversions_factors['pounds']['kilogram'] * (self._total_emissions['purchasedGases'])) / 1000.
 
         self._output['totalCo2EquivalentEmissions'] = total
