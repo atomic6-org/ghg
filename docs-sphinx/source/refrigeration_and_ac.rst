@@ -2,7 +2,7 @@
 
 Refrigeration and AC
 --------------------
-Refrigeration and Air Conditioning (AC) is `scope 1 emission <glossary.html>`_. Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.
+Refrigeration and Air Conditioning (AC) is `Scope 1 Emission <glossary.html>`_. Refrigeration and Air Conditioning (AC) equipment sources can vary in size based on the type of organization.  Emissions from refrigeration and AC devices, in facilities or vehicles, are caused by the leakage of chemicals with global warming impact during use, maintenance and/or disposal of the device.  They are often small sources for office-based organizations.  For example, a small office building may have one rooftop AC unit while a grocery store chain may have several rooftop AC units per store as well as a multitude of other refrigeration equipment.
 
 
 Usage
@@ -24,8 +24,7 @@ Python example code usage:
         "materialBalance": [
             {
               "gas": "co2", "gasGWP": 1, "inventoryChange": 100,
-                "transferredAmount": 100, "capacityChange": 100,
-                "co2EquivalentEmissions": 300
+                "transferredAmount": 100, "capacityChange": 100
             }
         ]
     }
@@ -67,7 +66,7 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
    \text{CO}_2\; Equivalent\; Emissions_{B, E, gas} = GWP_{gas} \cdot \left(\left(I_{B} - I_{E}\right) + \left(P - S\right) + \left(C_{B} - C_{E}\right)\right)
 
-This is derived from Equation 5 from [EPA2015FugitiveEmissions]_.
+This is derived from Equation 5 from [EPA2015_p8]_.
 
 where :math:`gas` is the refrigerant gas type, :math:`GWP_{gas}` is the global
 warming potential for that :math:`gas`, :math:`\left(I_{B} - I_{E}\right)` is the inventory change or the difference
@@ -78,7 +77,7 @@ amount of refrigerant purchases or other acquisitions (:math:`P`) and the amount
 (:math:`S`), and :math:`\left(C_{B} - C_{E}\right)` is the  capacity change or the net change to the total equipment
 volume for a given refrigerant during the reporting period.
 
-.. [EPA2015FugitiveEmissions] EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 8
+.. [EPA2015_p8] `EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 8 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=11>`_
 
 
 Simplified Material Balance
@@ -98,9 +97,9 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
 .. math::
 
-   \text{CO}_2\; Equivalent\; Emissions_{N, S, D, gas} = GWP_{gas} \cdot \left(\left(P_{N} - C_{N}\right) + P_{S} + \left(C_{D} - R{D}\right)\right)
+   \text{CO}_2\; Equivalent\; Emissions_{N, S, D, gas} = GWP_{gas} \cdot \left(\left(P_{N} - C_{N}\right) + P_{S} + \left(C_{D} - R_{D}\right)\right)
 
-This is derived from Equation 6 from [EPA2015FugitiveEmissionsSimplified]_.
+This is derived from Equation 6 from [EPA2015_p10]_.
 
 where :math:`gas` is the refrigerant gas type, :math:`GWP_{gas}` is the global warming potential for that :math:`gas`,
 :math:`P_{N}` is the new units charge or the purchases of refrigerant used to charge new equipment, :math:`C_{N}` is
@@ -109,7 +108,7 @@ recharge or the purchases of refrigerant used to service equipment, :math:`C_{D}
 total refrigerant capacity of retiring equipment, and :math:`R_{D}` is the disposed units recovered or the refrigerant
 recovered from retiring equipment.
 
-.. [EPA2015FugitiveEmissionsSimplified] EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 10
+.. [EPA2015_p10] `EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Direct Fugitive Emissions from Refrigeration, Air Conditioning, Fire Suppression, and Industrial Gases, pp. 10 <https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=13>`_
 
 
 Screening Method
@@ -135,7 +134,7 @@ The formula for :math:`\text{CO}_2\; Equivalent\; Emissions` is:
 
    \text{CO}_2\; Equivalent\; Emissions_{B, E, gas} = GWP_{gas} \cdot \left(\left(I_{B} - I_{E}\right) + \left(P - S\right) + \left(C_{B} - C_{E}\right)\right)
 
-This is derived from Equation 7.9 from [IPCC2006V3CH7]_.
+This is derived from Equation 7.9 from [IPCC2006_V3CH7]_.
 
 where :math:`gas` is the refrigerant gas type, :math:`GWP_{gas}` is the global warming potential for that :math:`gas`,
 :math:`I_{B} - I_{E}` is the inventory change or the difference of gas stored in inventory from the beginning to the
@@ -154,13 +153,11 @@ The formula is:
 
     \text{CO}_2\; Equivalent\; Emissions_{method} = \sum_{n=1}^{\infty} Emissions_{method}
 
-This equation is derived from [IPCC2006V3CH7]_.
+This equation is derived from [IPCC2006_V3CH7]_.
 
 where :math:`Emissions_{method}` are the total :math:`\text{CO}_2\; Emissions` for that :math:`method`
 (material balance, simplified material balance, or screening method).
-Note that in atomic6 the :math:`Emissions_{material\; balance}` and :math:`Emissions_{simplified\; material\; balance}`
-are multiplied by :math:`kilogram\; per\; pound` to convert the values from :math:`lbs` to :math:`kilograms`
-and the final value is divided by :math:`1000` to convert this value into :math:`metric \; tons`.
+Note that in atomic6 the final value is converted into :math:`metric \; tons`.
 
 
-.. [IPCC2006V3CH7] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, IPPU, Chapter 7, Emissions of Fluorinated Substitutes for Ozone Depleting Substances, pp. 48
+.. [IPCC2006_V3CH7] `IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, IPPU, Chapter 7, Emissions of Fluorinated Substitutes for Ozone Depleting Substances, pp. 48 <https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/3_Volume3/V3_7_Ch7_ODS_Substitutes.pdf#page=48>`_
