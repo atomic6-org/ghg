@@ -21,15 +21,26 @@ Usage
 
 .. code-block:: python
 
-    from atomic6-ghg.formulas.stationary_combustion import StationaryCombustion
+    from atomic6ghg.formulas import StationaryCombustion
 
-    calculated_data = StationaryCombustion.to_dict(input_data)
+    input_data = {
+      "version": "stationary-combustion.1.0.0",
+      "stationarySourceFuelConsumption": [
+        {
+          "sourceId": "BLR-014",
+          "sourceDescription": "West Power Plant",
+          "sourceArea": 10517,
+          "fuelCombusted": "anthraciteCoal",
+          "quantityCombusted": 100,
+          "units": "mmbtu"
+        }
+      ]
+    }
 
-    calculated_data['totalCo2EquivalentEmissions']
-    calculated_data['totalBiomassEquivalentEmissions']
+    calculated_data = StationaryCombustion(input_data).to_dict()
 
-**Parameters:**
-    * **input_data** - (dict) input data that follows the JSON schema
+    print(calculated_data['totalCo2EquivalentEmissions'])
+    print(calculated_data['totalBiomassEquivalentEmissions'])
 
 
 EPA Equation Analysis
