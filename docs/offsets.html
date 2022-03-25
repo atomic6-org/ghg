@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Offsets &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -104,12 +103,12 @@
 
           <div class="body" role="main">
             
-  <section id="offsets">
+  <div class="section" id="offsets">
 <span id="offsets-api"></span><h1>Offsets<a class="headerlink" href="#offsets" title="Permalink to this headline">¶</a></h1>
-<p>A carbon offset is a project that is a specific activity intended to reduce GHG emissions, increase
-<a class="reference external" href="glossary.html">carbon storage</a>, or enhance GHG removals from the atmosphere. The offset can be used to address direct and indirect
-emissions associated with an organization’s operations.</p>
-<section id="module-atomic6ghg.formulas.purchased_offsets">
+<p>A <cite>carbon offset</cite> <a class="reference internal" href="#epa2018-offset" id="id1"><span>[EPA2018_offset]</span></a> is a project that is a specific activity intended to reduce GHG emissions, increase
+<a class="reference external" href="glossary.html">carbon storage</a>, or enhance GHG removals from the atmosphere.
+The offset can be used to address direct and indirect emissions associated with an organization’s operations.</p>
+<div class="section" id="module-atomic6ghg.formulas.purchased_offsets">
 <span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.purchased_offsets" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.purchased_offsets.PurchasedOffsets">
@@ -147,8 +146,8 @@ emissions associated with an organization’s operations.</p>
 
 </dd></dl>
 
-</section>
-<section id="example-usage">
+</div>
+<div class="section" id="example-usage">
 <h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
 <p>Python example code usage:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">PurchasedOffsets</span>
@@ -163,8 +162,8 @@ emissions associated with an organization’s operations.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalPurchasedOffsets&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
-<section id="epa-equation-analysis">
+</div>
+<div class="section" id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Offsets calculates the total purchased <span class="math notranslate nohighlight">\(\text{CO}_2\)</span> offsets by summing up the inputs of offsets purchased.</p>
 <p>The fundamental calculation for offsets is their <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emission\; Reductions\)</span></p>
@@ -172,9 +171,15 @@ emissions associated with an organization’s operations.</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emission\; Reductions = \sum_{n=1}^{\infty} Purchased\; Offset_{n}\]</div>
 <p>where <span class="math notranslate nohighlight">\(Purchased\; Offset_{n}\)</span> is the amount of offsets that have been purchased during the reporting period for
-one entry in the offsets table.</p>
-</section>
-</section>
+one entry in the offsets table.
+Note that in atomic6 final values for offsets are converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+<dl class="citation">
+<dt class="label" id="epa2018-offset"><span class="brackets"><a class="fn-backref" href="#id1">EPA2018_offset</a></span></dt>
+<dd><p>EPA &amp; Green power partnership, Offsets and RECs &lt;<a class="reference external" href="https://www.epa.gov/sites/default/files/2018-03/documents/gpp_guide_recs_offsets.pdf#page=3">https://www.epa.gov/sites/default/files/2018-03/documents/gpp_guide_recs_offsets.pdf#page=3</a>&gt;</p>
+</dd>
+</dl>
+</div>
+</div>
 
 
           </div>
