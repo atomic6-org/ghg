@@ -6,6 +6,11 @@ __pycache__/
 # Docker stuff
 dblocal/docker/
 
+# Sphinx Docs build files
+.doctrees/
+_sources/
+objects.inv
+
 # C extensions
 *.so
 
