@@ -57,6 +57,7 @@
 <li class="toctree-l1"><a class="reference internal" href="stationary_combustion.html">Stationary Combustion</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Steam</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#module-atomic6ghg.formulas.steam">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#epa-equation-analysis">EPA Equation Analysis</a></li>
 </ul>
 </li>
@@ -178,6 +179,35 @@
 
 </dd></dl>
 
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">Steam</span>
+<span class="n">steam_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;steam.1.0.0&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;emissionFactorDataForSteamPurchased&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;BLR-012&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Steam Generator&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sourceArea&quot;</span><span class="p">:</span> <span class="mi">15000</span><span class="p">,</span>
+      <span class="s2">&quot;fuelType&quot;</span><span class="p">:</span> <span class="s2">&quot;coalCoke&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;boilerEfficiency&quot;</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span>
+      <span class="s2">&quot;steamPurchased&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+      <span class="s2">&quot;locationBasedEmissionFactorsCO2Factor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;locationBasedEmissionFactorsCH4Factor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;locationBasedEmissionFactorsN2OFactor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;marketBasedEmissionFactorsCO2Factor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;marketBasedEmissionFactorsCH4Factor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;marketBasedEmissionFactorsN2OFactor&quot;</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">Steam</span><span class="p">(</span><span class="n">steam_input</span><span class="p">)</span>
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;CO2EquivalentEmissionsLocationBasedElectricityEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
 </section>
 <section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
