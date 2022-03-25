@@ -24,6 +24,12 @@ combustion in boilers, furnaces, vehicles.
     **Fire suppressant** systems are used to extinguish or control fires, and are activated by hear, smoke, or a
     combination of the two.
 
+    **CFC** or Chlorofluorocarbon is gases covered under the 1987 Montreal Protocol and used for refrigeration, air conditioning, packaging, insulation, solvents, or aerosol propellants. Since they are not destroyed in the lower atmosphere, CFCs drift into the upper atmosphere where, given suitable conditions, they break down ozone. These gases are being replaced by other compounds: hydrochlorofluorocarbons, an interim replacement for CFCs that are also covered under the Montreal Protocol, and hydrofluorocarbons, which are covered under the Kyoto Protocol. All these substances are also greenhouse gases. See hydrochlorofluorocarbons, hydrofluorocarbons, perfluorocarbons, ozone depleting substance.
+
+    **HCFC** or Hydrochlorofluorocarbons is compounds containing hydrogen, fluorine, chlorine, and carbon atoms. Although ozone depleting substances, they are less potent at destroying stratospheric ozone than chlorofluorocarbons (CFCs). They have been introduced as temporary replacements for CFCs and are also greenhouse gases. See ozone depleting substance.
+
+    **HFC**/hydrofluorocarbons and **PFC**/perfluorocarbons are types of gases those contains Fluorinated gases (F-gases), which have been introduced as substitutes for Ozone-depleting substances in many sectors such as refrigeration and air conditioning applications. These gases do not deplete the ozone layer, but they are greenhouse gases. This means that these new gases also contribute to climate change.
+
 **Scope 2 Emissions** are electricity indirect GHG emissions that include emissions from consumption of purchased
 electricity, heat, cooling or steam. These emissions are a result of a company's activities but often occur outside a
 company's physical facility.
