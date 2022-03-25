@@ -3,9 +3,9 @@
 
 Offsets
 -------
-A carbon offset is a project that is a specific activity intended to reduce GHG emissions, increase
-`carbon storage <glossary.html>`_, or enhance GHG removals from the atmosphere. The offset can be used to address direct and indirect
-emissions associated with an organization's operations.
+A `carbon offset` [EPA2018_offset]_ is a project that is a specific activity intended to reduce GHG emissions, increase
+`carbon storage <glossary.html>`_, or enhance GHG removals from the atmosphere.
+The offset can be used to address direct and indirect emissions associated with an organization's operations.
 
 Class Documentation
 ************************
@@ -47,3 +47,6 @@ The formulas is:
 
 where :math:`Purchased\; Offset_{n}` is the amount of offsets that have been purchased during the reporting period for
 one entry in the offsets table.
+Note that in atomic6 final values for offsets are converted into :math:`metric \; tons`.
+
+.. [EPA2018_offset] `EPA & Green power partnership, Offsets and RECs <https://www.epa.gov/sites/default/files/2018-03/documents/gpp_guide_recs_offsets.pdf#page=3>`_
