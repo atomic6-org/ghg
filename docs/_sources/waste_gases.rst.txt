@@ -17,11 +17,23 @@ Usage
 
 .. code-block:: python
 
-    from atomic6ghg.formulas.waste_gases import WasteGases
-
-    calculated_data = WasteGases.to_dict(input_data)
-
-    calculated_data['totalCo2EquivalentEmissions']
+    from atomic6ghg.formulas import WasteGases
+    waste_gases_input: dict = {
+        "version": "waste-gases.1.0.0",
+        "wasteStreamGasCombusted": 5000,
+        "gasTotalNumberOfMolesPerUnitVolume": 0.1,
+        "emissionFactorForGasWasteStream": [
+            {
+                "component": "Carbon Dioxide",
+                "chemicalFormula": "CO2",
+                "molarFraction": 27
+             }
+        ],
+        "oxidationFactor": 100
+    }
+    engine = WasteGases(waste_gases_input)
+    outputs: dict = engine.to_dict()
+    print(outputs.get('totalCo2EquivalentEmissions'))
 
 **Parameters:**
     * **input_data** - (dict) input data that follows the JSON schema
@@ -54,7 +66,7 @@ when combustion occurs.
 
     Carbon\; Content_{a} = Total\; Moles_{a} \cdot Molecular\; Weight_{a} \cdot Percent\; Carbon_{a}
 
-These equations are derived from Equation 4 from [EPA2016DirectEmissionsfromStationaryCombustionSources]_.
+These equations are derived from Equation 5 from [EPA2016_p11]_.
 
 where :math:`Carbon\; Content_{a}` is the amount of carbon produced from gas :math:`a`, :math:`Total\; Moles_{a}` is
 the Molar concentration of gas :math:`a`, :math:`Molecular\; Weight_{a}` is the molecular weight of gas component
@@ -68,10 +80,13 @@ For waste gases, the :math:`\text{CO}_2\; Equivalent\; Emissions` in metric tons
 
     \text{CO}_2\; Equivalent\; Emissions = Total\; Carbon\; Content\; for\; All\; Components \cdot Oxidation\; Factor \cdot Atomic\; Weight\; of\; Carbon \cdot Molar\; Concentration
 
-This equation is derived from Equation 5 from [EPA2016DirectEmissionsfromStationaryCombustionSources]_.
+This equation is derived from Equation 5 from [EPA2016_p11]_.
 
 where :math:`Total\; Carbon\; Content` is the sum of all the carbon contents for all gas components,
 :math:`Oxidation\; Factor` is the percentage of carbon that is actually oxidized when combustion occurs,
 :math:`Atomic\; Weight\; of\; Carbon` is the natural atomic weight of carbon gas, and :math:`Molar\; Concentration` is
 the gas total number of moles per unit volume.
+
+
+.. [EPA2016_p11] `EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11 <https://www.epa.gov/sites/default/files/2016-03/documents/stationaryemissions_3_2016.pdf#page=14>`_
 

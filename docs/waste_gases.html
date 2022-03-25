@@ -174,11 +174,23 @@ combusted with a <a class="reference external" href="glossary.html">flare</a> or
 
 </dd></dl>
 
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas.waste_gases</span> <span class="kn">import</span> <span class="n">WasteGases</span>
-
-<span class="n">calculated_data</span> <span class="o">=</span> <span class="n">WasteGases</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
-
-<span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">WasteGases</span>
+<span class="n">waste_gases_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;waste-gases.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;wasteStreamGasCombusted&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+    <span class="s2">&quot;gasTotalNumberOfMolesPerUnitVolume&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="s2">&quot;emissionFactorForGasWasteStream&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;component&quot;</span><span class="p">:</span> <span class="s2">&quot;Carbon Dioxide&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;chemicalFormula&quot;</span><span class="p">:</span> <span class="s2">&quot;CO2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;molarFraction&quot;</span><span class="p">:</span> <span class="mi">27</span>
+         <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;oxidationFactor&quot;</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">WasteGases</span><span class="p">(</span><span class="n">waste_gases_input</span><span class="p">)</span>
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 <dl class="simple">
@@ -266,18 +278,23 @@ molar fraction of gas <span class="math notranslate nohighlight">\(a\)</span>, a
 when combustion occurs.</p>
 <div class="math notranslate nohighlight">
 \[Carbon\; Content_{a} = Total\; Moles_{a} \cdot Molecular\; Weight_{a} \cdot Percent\; Carbon_{a}\]</div>
-<p>These equations are derived from Equation 4 from <a class="reference internal" href="purchased_gases.html#epa2016directemissionsfromstationarycombustionsources" id="id1"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>These equations are derived from Equation 5 from <a class="reference internal" href="#epa2016-p11" id="id1"><span>[EPA2016_p11]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Carbon\; Content_{a}\)</span> is the amount of carbon produced from gas <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(Total\; Moles_{a}\)</span> is
 the Molar concentration of gas <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(Molecular\; Weight_{a}\)</span> is the molecular weight of gas component
 <span class="math notranslate nohighlight">\(a\)</span>, and <span class="math notranslate nohighlight">\(Percent\; Carbon_{a}\)</span> is the carbon fraction of gas <span class="math notranslate nohighlight">\(a\)</span>.</p>
 <p>For waste gases, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> in metric tons is calculated. The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions = Total\; Carbon\; Content\; for\; All\; Components \cdot Oxidation\; Factor \cdot Atomic\; Weight\; of\; Carbon \cdot Molar\; Concentration\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="purchased_gases.html#epa2016directemissionsfromstationarycombustionsources" id="id2"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2016-p11" id="id2"><span>[EPA2016_p11]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Carbon\; Content\)</span> is the sum of all the carbon contents for all gas components,
 <span class="math notranslate nohighlight">\(Oxidation\; Factor\)</span> is the percentage of carbon that is actually oxidized when combustion occurs,
 <span class="math notranslate nohighlight">\(Atomic\; Weight\; of\; Carbon\)</span> is the natural atomic weight of carbon gas, and <span class="math notranslate nohighlight">\(Molar\; Concentration\)</span> is
 the gas total number of moles per unit volume.</p>
+<dl class="citation">
+<dt class="label" id="epa2016-p11"><span class="brackets">EPA2016_p11</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://www.epa.gov/sites/default/files/2016-03/documents/stationaryemissions_3_2016.pdf#page=14">EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11</a></p>
+</dd>
+</dl>
 </section>
 </section>
 
