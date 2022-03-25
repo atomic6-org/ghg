@@ -295,27 +295,36 @@ traveling by air.</p>
 </table>
 <p>The fundamental calculation for each vehicle type, public transport type, flight length for personal vehicle,
 public transport, and flight length business travel are their <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, and
-<span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emissions associated with the vehicle type or flight length and based on the vehicle miles traveled.</p>
+<span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emissions associated with the vehicle type or flight length and based on the miles
+traveled.</p>
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Travel\; Emissions_{travel\ mode, \, T} = Travel_{travel\, mode} \cdot EF_{T}\]</div>
-<p>This equation is derived from Equation 1 from <span id="id1">[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008-p4" id="id1"><span>[EPA2008_p4]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Travel\; Emissions_{travel\ mode, \, T}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
 or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Travel_{travel\, mode}\)</span> is the travel distance in miles for a
-specific travel mode, which can be vehicle miles traveled, passenger miles traveled or flight length for personal vehicle
-, public transportation or flight respectively and <span class="math notranslate nohighlight">\(EF_{T}\)</span> is the travel <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
-or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emission factor which is based on the type of personal vehicle, public transport
-or air travel.</p>
+specific travel mode, which can be vehicle miles traveled, passenger miles traveled or flight length for personal
+vehicle, public transportation or flight respectively and <span class="math notranslate nohighlight">\(EF_{T}\)</span> is the travel <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>,
+<span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emission factor which is based on the type of personal vehicle,
+public transport or air travel.</p>
 <p>For business travel, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{GHG, transport}\)</span> in metric tons is calculated.
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from <span id="id2">[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span>.</p>
+<p>This equation is derived from <a class="reference internal" href="#epa2008-p4-7" id="id2"><span>[EPA2008_p4-7]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either personal vehicle, public transportation, or air travel), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the
 global warming potential of that <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+<dl class="citation">
+<dt class="label" id="epa2008-p4"><span class="brackets"><a class="fn-backref" href="#id1">EPA2008_p4</a></span></dt>
+<dd><p><a class="reference external" href="https://nepis.epa.gov/Exe/ZyNET.exe/P1001177.txt?ZyActionD=ZyDocument&amp;Client=EPA&amp;Index=2006%20Thru%202010&amp;Docs=&amp;Query=&amp;Time=&amp;EndTime=&amp;SearchMethod=1&amp;TocRestrict=n&amp;Toc=&amp;TocEntry=&amp;QField=&amp;QFieldYear=&amp;QFieldMonth=&amp;QFieldDay=&amp;UseQField=&amp;IntQFieldOp=0&amp;ExtQFieldOp=0&amp;XmlQuery=&amp;File=D%3A%5CZYFILES%5CINDEX%20DATA%5C06THRU10%5CTXT%5C00000003%5CP1001177.txt&amp;User=ANONYMOUS&amp;Password=anonymous&amp;SortMethod=h%7C-&amp;MaximumDocuments=1&amp;FuzzyDegree=0&amp;ImageQuality=r75g8/r75g8/x150y150g16/i425&amp;Display=hpfr&amp;DefSeekPage=x&amp;SearchBack=ZyActionL&amp;Back=ZyActionS&amp;BackDesc=Results%20page&amp;MaximumPages=1&amp;ZyEntry=7&amp;slide">EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 4</a></p>
+</dd>
+<dt class="label" id="epa2008-p4-7"><span class="brackets"><a class="fn-backref" href="#id2">EPA2008_p4-7</a></span></dt>
+<dd><p><a class="reference external" href="https://nepis.epa.gov/Exe/ZyNET.exe/P1001177.txt?ZyActionD=ZyDocument&amp;Client=EPA&amp;Index=2006%20Thru%202010&amp;Docs=&amp;Query=&amp;Time=&amp;EndTime=&amp;SearchMethod=1&amp;TocRestrict=n&amp;Toc=&amp;TocEntry=&amp;QField=&amp;QFieldYear=&amp;QFieldMonth=&amp;QFieldDay=&amp;UseQField=&amp;IntQFieldOp=0&amp;ExtQFieldOp=0&amp;XmlQuery=&amp;File=D%3A%5CZYFILES%5CINDEX%20DATA%5C06THRU10%5CTXT%5C00000003%5CP1001177.txt&amp;User=ANONYMOUS&amp;Password=anonymous&amp;SortMethod=h%7C-&amp;MaximumDocuments=1&amp;FuzzyDegree=0&amp;ImageQuality=r75g8/r75g8/x150y150g16/i425&amp;Display=hpfr&amp;DefSeekPage=x&amp;SearchBack=ZyActionL&amp;Back=ZyActionS&amp;BackDesc=Results%20page&amp;MaximumPages=1&amp;ZyEntry=7&amp;slide">EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 4-7</a></p>
+</dd>
+</dl>
 </section>
 </section>
 
