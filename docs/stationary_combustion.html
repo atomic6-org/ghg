@@ -199,20 +199,28 @@ the volume of waste by removing combustible matter.</p>
 
 </dd></dl>
 
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6</span><span class="o">-</span><span class="n">ghg</span><span class="o">.</span><span class="n">formulas</span><span class="o">.</span><span class="n">stationary_combustion</span> <span class="kn">import</span> <span class="nn">StationaryCombustion</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">StationaryCombustion</span>
 
-<span class="n">calculated_data</span> <span class="o">=</span> <span class="n">StationaryCombustion</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+<span class="n">input_data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;stationary-combustion.1.0.0&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;stationarySourceFuelConsumption&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;BLR-014&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;West Power Plant&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sourceArea&quot;</span><span class="p">:</span> <span class="mi">10517</span><span class="p">,</span>
+      <span class="s2">&quot;fuelCombusted&quot;</span><span class="p">:</span> <span class="s2">&quot;anthraciteCoal&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;quantityCombusted&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+      <span class="s2">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;mmbtu&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
 
-<span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">]</span>
-<span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalBiomassEquivalentEmissions&#39;</span><span class="p">]</span>
+<span class="n">calculated_data</span> <span class="o">=</span> <span class="n">StationaryCombustion</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">calculated_data</span><span class="p">[</span><span class="s1">&#39;totalBiomassEquivalentEmissions&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-<dl class="simple">
-<dt><strong>Parameters:</strong></dt><dd><ul class="simple">
-<li><p><strong>input_data</strong> - (dict) input data that follows the JSON schema</p></li>
-</ul>
-</dd>
-</dl>
 </section>
 <section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
