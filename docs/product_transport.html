@@ -106,8 +106,8 @@
             
   <section id="product-transport">
 <span id="product-transport-api"></span><h1>Product Transport<a class="headerlink" href="#product-transport" title="Permalink to this headline">¶</a></h1>
-<p>Product Transport is a <a class="reference external" href="glossary.html">Scope 3 Emission</a> that accounts for emissions from transportation of products.
-This can be transportation via <a class="reference external" href="glossary.html">vehicle miles</a> or via <a class="reference external" href="glossary.html">ton-miles</a>.</p>
+<p>Product Transport is a <a class="reference external" href="glossary.html">Scope 3 Emission</a> that accounts for emissions from the transportation of
+products. This can be transportation via <a class="reference external" href="glossary.html">vehicle miles</a> or via <a class="reference external" href="glossary.html">ton-miles</a>.</p>
 <section id="module-atomic6ghg.formulas.product_transport">
 <span id="class-documentation"></span><h2>Class Documentation<a class="headerlink" href="#module-atomic6ghg.formulas.product_transport" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
@@ -123,7 +123,7 @@ This can be transportation via <a class="reference external" href="glossary.html
 <dl class="py method">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.product_transport.ProductTransport.make_co2_equivalent_emissions">
 <span class="sig-name descname"><span class="pre">make_co2_equivalent_emissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atomic6ghg.formulas.product_transport.ProductTransport.make_co2_equivalent_emissions" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate co2 equivalent emissions</p>
+<dd><p>Calculate co2 equivalent emissions</p>
 </dd></dl>
 
 <dl class="py method">
@@ -253,28 +253,27 @@ transported over ton miles.</p>
 </table>
 <p>The fundamental calculation for each vehicle type for vehicle miles and ton miles
 are their <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, and <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emissions associated
-with the vehicle type and based on the vehicle miles or ton miles traveled, respectively.</p>
+with the vehicle type and based on the vehicle miles or ton miles traveled.</p>
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
-\[Emissions_{units,\; gas,\; vehicle\; type} = Vehicle\; Miles\; Traveled_{unit} \cdot EF_{gas,\; vehicle\; type}\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id1"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
-<p>where <span class="math notranslate nohighlight">\(Emissions_{unit, gas, vehicle\; type}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
-or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Vehicle\; Miles\; Traveled_{units}\)</span> is the travel distance in
-<span class="math notranslate nohighlight">\(units\)</span> (vehicle miles or ton miles), and <span class="math notranslate nohighlight">\(EF_{gas, vehicle\; type}\)</span> is the product transport
-emission factor of that <span class="math notranslate nohighlight">\(gas\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>)
-which is based on the <span class="math notranslate nohighlight">\(vehicle\; type\)</span>.</p>
+\[Emissions_{transport, GHG,\; vehicle\; type} = Miles\; Traveled_{transport} \cdot EF_{GHG,\; vehicle\; type}\]</div>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008-p10" id="id1"><span>[EPA2008_p10]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Emissions_{transport, GHG, vehicle\; type}\)</span> is the mass of the <span class="math notranslate nohighlight">\(GHG\)</span> (either <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>,
+<span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) emitted, <span class="math notranslate nohighlight">\(Miles\; Traveled_{transport}\)</span> is the travel
+distance over the <span class="math notranslate nohighlight">\(transport\)</span> (either vehicle miles or ton-miles), and <span class="math notranslate nohighlight">\(EF_{gas, vehicle\; type}\)</span> is the product transport emission factor of that <span class="math notranslate nohighlight">\(GHG\)</span>
+(<span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) which is based on the <span class="math notranslate nohighlight">\(vehicle\; type\)</span>.</p>
 <p>For product transport, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{GHG, transport}\)</span> in metric tons is calculated.
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport" id="id2"><span>[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span></a>.</p>
+<p>This equation is derived from Equation 5 from <a class="reference internal" href="#epa2008-p10" id="id2"><span>[EPA2008_p10]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either vehicle miles or ton miles), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is converted to <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="epa2008optionalemissionsfromcommutingbusinesstravelandproducttransport"><span class="brackets">EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 10</p>
+<dt class="label" id="epa2008-p10"><span class="brackets">EPA2008_p10</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://nepis.epa.gov/Exe/ZyNET.exe/P1001177.txt?ZyActionD=ZyDocument&amp;Client=EPA&amp;Index=2006%20Thru%202010&amp;Docs=&amp;Query=&amp;Time=&amp;EndTime=&amp;SearchMethod=1&amp;TocRestrict=n&amp;Toc=&amp;TocEntry=&amp;QField=&amp;QFieldYear=&amp;QFieldMonth=&amp;QFieldDay=&amp;UseQField=&amp;IntQFieldOp=0&amp;ExtQFieldOp=0&amp;XmlQuery=&amp;File=D%3A%5CZYFILES%5CINDEX%20DATA%5C06THRU10%5CTXT%5C00000003%5CP1001177.txt&amp;User=ANONYMOUS&amp;Password=anonymous&amp;SortMethod=h%7C-&amp;MaximumDocuments=1&amp;FuzzyDegree=0&amp;ImageQuality=r75g8/r75g8/x150y150g16/i425&amp;Display=hpfr&amp;DefSeekPage=x&amp;SearchBack=ZyActionL&amp;Back=ZyActionS&amp;BackDesc=Results%20page&amp;MaximumPages=1&amp;ZyEntry=13&amp;slide">EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 10</a></p>
 </dd>
 </dl>
 </section>
