@@ -3,7 +3,8 @@
 Mobile Sources
 --------------
 
-Mobile Sources is a `Scope 1 Emission <glossary.html>`_ that accounts for the combustion of fuels to power on- and off-road vehicles and equipment.
+Mobile Sources is a `Scope 1 Emission <glossary.html>`_ that accounts for the combustion of fuels to power
+on- and off-road vehicles and equipment.
 
 Class Documentation
 ************************
@@ -44,7 +45,7 @@ Python example code usage:
     print(outputs.get('totalCo2EquivalentEmissions'))
 
 EPA Equation Analysis
-******************
+**********************
 Mobile sources allows for inputs of fuel usage for the following vehicle type and fuel type combinations:
 
 .. csv-table::
@@ -128,4 +129,4 @@ Note that in atomic6, the final value of this calculation is divided by :math:`1
 :math:`metric \; tons`.
 
 
-.. [IPCC2006V2CH3] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 3: Mobile Combustion, pp. 12-13
+.. [IPCC2006V2CH3] `IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 3: Mobile Combustion, pp. 12-13 <https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_3_Ch3_Mobile_Combustion.pdf>`_
