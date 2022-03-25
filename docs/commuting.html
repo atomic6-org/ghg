@@ -200,7 +200,18 @@ uses the distance-based method for calculating emissions from employee commuting
 <span class="n">commuting_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;commuting.1.0.0&quot;</span><span class="p">,</span>
     <span class="s2">&quot;personalVehicle&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span><span class="s2">&quot;vehicleType&quot;</span><span class="p">:</span> <span class="s2">&quot;passengerCars&quot;</span><span class="p">,</span> <span class="s2">&quot;vehicleMiles&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">}</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;BLR-014&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;West Power Plant&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;vehicleType&quot;</span><span class="p">:</span> <span class="s2">&quot;passengerCars&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;vehicleMiles&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;publicTransportation&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;BLR-014&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;West Power Plant&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;transportType&quot;</span><span class="p">:</span> <span class="s2">&quot;bus&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;passengerMiles&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
 <span class="n">engine</span> <span class="o">=</span> <span class="n">Commuting</span><span class="p">(</span><span class="n">commuting_input</span><span class="p">)</span>
@@ -211,9 +222,9 @@ uses the distance-based method for calculating emissions from employee commuting
 </section>
 <section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
-<p>There are two different tables and
-therefore two different methods to calculate emissions from employee commuting. The first is for those employees who
-commute via of personal vehicle, the second is for those employees who commute via public transportation.</p>
+<p>There are two different tables and therefore two different methods to calculate emissions from employee commuting. The
+first is for those employees who commute via of personal vehicle, the second is for those employees who commute via
+public transportation.</p>
 <p>Commuting allows for inputs of personal vehicle types for the following vehicle types:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -262,7 +273,7 @@ with the vehicle type and based on the vehicle miles traveled.</p>
 <p>The formulas are:</p>
 <div class="math notranslate nohighlight">
 \[Travel\; Emissions_{travel\, mode, T} = Travel_{travel\, mode} \cdot EF_{T}\]</div>
-<p>This equation is derived from Equation 1 from <span id="id1">[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2008-p4" id="id1"><span>[EPA2008_p4]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Travel\; Emissions_{travel\, mode, T}\)</span> is the mass of <span class="math notranslate nohighlight">\(\text{CO}_2\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>,
 or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emitted, <span class="math notranslate nohighlight">\(Travel_{travel\, mode}\)</span> is the travel distance in miles for a
 specific travel mode, which is either vehicle miles traveled or passenger miles traveled for personal vehicle
@@ -272,12 +283,20 @@ or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span> emis
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{GHG, transport} = \sum_{n=1}^{\infty} Total\; Emissions_{GHG, transport} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from <span id="id2">[EPA2008OptionalEmissionsfromCommutingBusinessTravelandProductTransport]</span>.</p>
+<p>This equation is derived from <a class="reference internal" href="#epa2008-p4-6" id="id2"><span>[EPA2008_p4-6]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{GHG, transport}\)</span> is the sum of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(transport\)</span>
 (either personal vehicle or public transport), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the
 global warming potential of that <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+<dl class="citation">
+<dt class="label" id="epa2008-p4"><span class="brackets"><a class="fn-backref" href="#id1">EPA2008_p4</a></span></dt>
+<dd><p><a class="reference external" href="https://nepis.epa.gov/Exe/ZyNET.exe/P1001177.txt?ZyActionD=ZyDocument&amp;Client=EPA&amp;Index=2006%20Thru%202010&amp;Docs=&amp;Query=&amp;Time=&amp;EndTime=&amp;SearchMethod=1&amp;TocRestrict=n&amp;Toc=&amp;TocEntry=&amp;QField=&amp;QFieldYear=&amp;QFieldMonth=&amp;QFieldDay=&amp;UseQField=&amp;IntQFieldOp=0&amp;ExtQFieldOp=0&amp;XmlQuery=&amp;File=D%3A%5CZYFILES%5CINDEX%20DATA%5C06THRU10%5CTXT%5C00000003%5CP1001177.txt&amp;User=ANONYMOUS&amp;Password=anonymous&amp;SortMethod=h%7C-&amp;MaximumDocuments=1&amp;FuzzyDegree=0&amp;ImageQuality=r75g8/r75g8/x150y150g16/i425&amp;Display=hpfr&amp;DefSeekPage=x&amp;SearchBack=ZyActionL&amp;Back=ZyActionS&amp;BackDesc=Results%20page&amp;MaximumPages=1&amp;ZyEntry=7&amp;slide">EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 4</a></p>
+</dd>
+<dt class="label" id="epa2008-p4-6"><span class="brackets"><a class="fn-backref" href="#id2">EPA2008_p4-6</a></span></dt>
+<dd><p><a class="reference external" href="https://nepis.epa.gov/Exe/ZyNET.exe/P1001177.txt?ZyActionD=ZyDocument&amp;Client=EPA&amp;Index=2006%20Thru%202010&amp;Docs=&amp;Query=&amp;Time=&amp;EndTime=&amp;SearchMethod=1&amp;TocRestrict=n&amp;Toc=&amp;TocEntry=&amp;QField=&amp;QFieldYear=&amp;QFieldMonth=&amp;QFieldDay=&amp;UseQField=&amp;IntQFieldOp=0&amp;ExtQFieldOp=0&amp;XmlQuery=&amp;File=D%3A%5CZYFILES%5CINDEX%20DATA%5C06THRU10%5CTXT%5C00000003%5CP1001177.txt&amp;User=ANONYMOUS&amp;Password=anonymous&amp;SortMethod=h%7C-&amp;MaximumDocuments=1&amp;FuzzyDegree=0&amp;ImageQuality=r75g8/r75g8/x150y150g16/i425&amp;Display=hpfr&amp;DefSeekPage=x&amp;SearchBack=ZyActionL&amp;Back=ZyActionS&amp;BackDesc=Results%20page&amp;MaximumPages=1&amp;ZyEntry=7&amp;slide">EPA, 2008: 2008 EPA Greenhouse Gas Inventory Protocol Core Module Guidance Optional Emissions from Commuting, Business Travel and Product Transport, pp. 4-6</a></p>
+</dd>
+</dl>
 </section>
 </section>
 
