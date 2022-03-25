@@ -27,8 +27,7 @@ Electricity allows for inputs of purchased electricity quantities for the follow
 The fundamental calculation for each eGrid subregion are their :math:`Market\; Based\; \text{CO}_2`,
 :math:`Market\; Based\; \text{CH}_4`, :math:`Market\; Based\; \text{N}_2\text{O}` emissions and their
 :math:`Location\; Based\; \text{CO}_2`, :math:`Location\; Based\; \text{CH}_4`,
-:math:`Location\; Based\; \text{N}_2\te
-xt{O}` emissions associated with the electricity purchased.
+:math:`Location\; Based\; \text{N}_2\text{O}` emissions associated with the electricity purchased.
 The formulas are:
 
 
@@ -51,7 +50,7 @@ the :math:`Location\; Based\; Emission\; Factor_{eGrid\ subregion}` if no
 :math:`Market\; Based\; Emission\; Factor_{eGrid\ subregion}` value is input by the user.
 
 For electricity, the :math:`\text{CO}_2\; Equivalent\; Emissions_{method}` in metric tons is calculated based on the
-Total\; Emissions\; for\; All\; Sources_{method, GHG}. The formula is:
+:math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}`. The formula is:
 
 
 .. math::
