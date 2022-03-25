@@ -2,7 +2,7 @@
 
 Steam
 ------
-Steam is a `Scope 2 Emission <glossary.html>`_
+Steam is a `Scope 2 Emission <glossary.html>`_ that accounts for emissions from purchased steam.
 
 Usage
 *****
@@ -68,7 +68,7 @@ The formulas are:
     Market\; Based\; Emissions_{GHG,\, fuel} = \frac{Steam\; Purchased_{fuel} \cdot Market\; Based\; Emission\; Factor_{GHG,\, fuel}}{Boiler\; Efficiency}
 
 
-This equation is derived from Equation 2.1 from [IPCC2006V2CH2]_ (see Stationary Combustion), with accounting for :math:`Boiler\; Efficiency`.
+This equation is derived from Equation 2.1 from [IPCC2006_V2CH2]_ (see Stationary Combustion), with accounting for :math:`Boiler\; Efficiency`.
 
 where the default :math:`Boiler\; Efficiency` value is 80% if no :math:`Boiler\; Efficiency` value is input by the user,
 the default :math:`Location\; Based\; Emission\; Factor_{GHG,\, fuel}` value is the emission factor for that fuel
@@ -85,7 +85,7 @@ Total\; Emissions\; for\; All\; Sources_{method, GHG}. The formula is:
 
     \text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}
 
-This equation is derived from Equation 2.2 from [IPCC2006V2CH2]_.
+This equation is derived from Equation 2.2 from [IPCC2006_V2CH2]_.
 
 where :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}` are the sums of all the emissions for that
 :math:`GHG` (:math:`\text{CO}_2\;`, :math:`\text{CH}_4`, or :math:`\text{N}_2\text{O}`) and :math:`method` (either
@@ -93,3 +93,5 @@ where :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}` are the sums
 :math:`GHG`.
 Note that in atomic6 the final value of this calculation is divided by :math:`1000` to convert this value into
 :math:`metric \; tons`.
+
+.. [IPCC2006_V2CH2] `IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 2: Stationary Combustion <https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf>`_
