@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steam &#8212; Atomic6-GHG  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -104,10 +103,10 @@
 
           <div class="body" role="main">
             
-  <section id="steam">
+  <div class="section" id="steam">
 <span id="steam-api"></span><h1>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h1>
-<p>Steam is a <a class="reference external" href="glossary.html">Scope 2 Emission</a></p>
-<section id="module-atomic6ghg.formulas.steam">
+<p>Steam is a <a class="reference external" href="glossary.html">Scope 2 Emission</a> that accounts for emissions from purchased steam.</p>
+<div class="section" id="module-atomic6ghg.formulas.steam">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.steam" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atomic6ghg.formulas.steam.Steam">
@@ -179,8 +178,8 @@
 
 </dd></dl>
 
-</section>
-<section id="example-usage">
+</div>
+<div class="section" id="example-usage">
 <h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
 <p>Python example code usage:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">Steam</span>
@@ -208,8 +207,8 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;CO2EquivalentEmissionsLocationBasedElectricityEmissions&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
-<section id="epa-equation-analysis">
+</div>
+<div class="section" id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Steam allows for inputs of purchased steam quantities for the following fuel types with units of MMBtu:</p>
 <table class="docutils align-default">
@@ -256,7 +255,7 @@ The formulas are:</p>
 \[Location\; Based\; Emissions_{GHG,\, fuel} = \frac{Steam\; Purchased_{fuel} \cdot Location\; Based\; Emission\; Factor_{GHG,\, fuel}}{Boiler\; Efficiency}\]</div>
 <div class="math notranslate nohighlight">
 \[Market\; Based\; Emissions_{GHG,\, fuel} = \frac{Steam\; Purchased_{fuel} \cdot Market\; Based\; Emission\; Factor_{GHG,\, fuel}}{Boiler\; Efficiency}\]</div>
-<p>This equation is derived from Equation 2.1 from <a class="reference internal" href="stationary_combustion.html#ipcc2006v2ch2" id="id1"><span>[IPCC2006V2CH2]</span></a> (see Stationary Combustion), with accounting for <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span>.</p>
+<p>This equation is derived from Equation 2.1 from <a class="reference internal" href="#ipcc2006-v2ch2" id="id1"><span>[IPCC2006_V2CH2]</span></a> (see Stationary Combustion), with accounting for <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span>.</p>
 <p>where the default <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span> value is 80% if no <span class="math notranslate nohighlight">\(Boiler\; Efficiency\)</span> value is input by the user,
 the default <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{GHG,\, fuel}\)</span> value is the emission factor for that fuel
 type if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{GHG,\, fuel}\)</span> value is input by the user,
@@ -267,15 +266,20 @@ value is input by the user.</p>
 Total; Emissions; for; All; Sources_{method, GHG}. The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="stationary_combustion.html#ipcc2006v2ch2" id="id2"><span>[IPCC2006V2CH2]</span></a>.</p>
+<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#ipcc2006-v2ch2" id="id2"><span>[IPCC2006_V2CH2]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span> are the sums of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(method\)</span> (either
 <span class="math notranslate nohighlight">\(location\; based\)</span> or <span class="math notranslate nohighlight">\(market\; based\)</span>), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that
 <span class="math notranslate nohighlight">\(GHG\)</span>.
 Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
 <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
-</section>
-</section>
+<dl class="citation">
+<dt class="label" id="ipcc2006-v2ch2"><span class="brackets">IPCC2006_V2CH2</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf">IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy, Chapter 2: Stationary Combustion</a></p>
+</dd>
+</dl>
+</div>
+</div>
 
 
           </div>
