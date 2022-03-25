@@ -5,7 +5,7 @@ Purchased Gases
 Purchased Gases is a `scope 1 emission <glossary.html>`_ that accounts for `purchased gas stream <glossary.html>`_.
 Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.
 For example, CO2 gas is often used in welding operations.
-These gases are typically released to the atmosphere after use. Any releases of the seven major greenhouse gases (CO2, CH4, N2O, `PFCs <glossary,html>`_, `HFCs <glossary.html>`_, SF6, and NF3) must be included in the GHG inventory.
+These gases are typically released to the atmosphere after use. Any releases of the seven major greenhouse gases (CO2, CH4, N2O, `PFCs <glossary.html>`_, `HFCs <glossary.html>`_, SF6, and NF3) must be included in the GHG inventory.
 Ozone depleting substances, such as `CFCs <glossary.html>`_ and `HCFCs <glossary.html>`_, are regulated internationally and are typically excluded from a GHG inventory or reported as a memo item.
 
 Usage
