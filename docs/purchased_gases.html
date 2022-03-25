@@ -106,11 +106,10 @@
   <section id="purchased-gases">
 <span id="purchased-gases-api"></span><h1>Purchased Gases<a class="headerlink" href="#purchased-gases" title="Permalink to this headline">¶</a></h1>
 <p>Purchased Gases is a <a class="reference external" href="glossary.html">scope 1 emission</a> that accounts for <a class="reference external" href="glossary.html">purchased gas stream</a>.
-Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.  For example, CO2
-gas is often used in welding operations.  These gases are typically released to the atmosphere after use.  Any releases
-of the seven major greenhouse gases (CO2, CH4, N2O, PFCs, HFCs, SF6, and NF3) must be included in the GHG inventory.
-Ozone depleting substances, such as CFCs and HCFCs, are regulated internationally and are typically excluded from a GHG
-inventory or reported as a memo item.</p>
+Industrial gases are sometimes used in processes such as manufacturing, testing, or laboratory uses.
+For example, CO2 gas is often used in welding operations.
+These gases are typically released to the atmosphere after use. Any releases of the seven major greenhouse gases (CO2, CH4, N2O, <a class="reference external" href="glossary.html">PFCs</a>, <a class="reference external" href="glossary.html">HFCs</a>, SF6, and NF3) must be included in the GHG inventory.
+Ozone depleting substances, such as <a class="reference external" href="glossary.html">CFCs</a> and <a class="reference external" href="glossary.html">HCFCs</a>, are regulated internationally and are typically excluded from a GHG inventory or reported as a memo item.</p>
 <section id="module-atomic6ghg.formulas.purchased_gases">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.purchased_gases" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
@@ -394,21 +393,19 @@ inventory or reported as a memo item.</p>
 <p>The fundamental calculations for each purchased gas Component are their</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{gas} = GWP_{gas} * Purchased Amount_{gas}\]</div>
-<p>These equations are derived from Equation 4 from <a class="reference internal" href="#epa2016directemissionsfromstationarycombustionsources" id="id1"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>These equations are derived from Equation 4 from <a class="reference internal" href="#epa2015-p11" id="id1"><span>[EPA2015_p11]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{gas}\)</span> is the total CO2 equivalent in merit unit pounds, <span class="math notranslate nohighlight">\(GWP_{gas}\)</span>
 is the global warming potential for that gas.</p>
 <p>For purchased gases, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{gas}\)</span> in metric tons is calculated.
 The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{gas} = \sum_{n=1}^{\infty} \text{CO}_2\; Equivalent\; Emissions_{gas}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#epa2016directemissionsfromstationarycombustionsources" id="id2"><span>[EPA2016DirectEmissionsfromStationaryCombustionSources]</span></a>.</p>
+<p>This equation is derived from <a class="reference internal" href="#epa2015-p11" id="id2"><span>[EPA2015_p11]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(gas\)</span> is the purchased gas.
-Note that in atomic6 the final value of this calculation is multiplied by <span class="math notranslate nohighlight">\(kilogram\; per\; pound\)</span> to convert this
-value from <span class="math notranslate nohighlight">\(lbs\)</span> to <span class="math notranslate nohighlight">\(kilograms\)</span> then divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
-<span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+Note that in atomic6 final values are converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="epa2016directemissionsfromstationarycombustionsources"><span class="brackets">EPA2016DirectEmissionsfromStationaryCombustionSources</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>EPA, 2016: 2016 EPA Greenhouse Gas Inventory Guidance, Direct Emissions from Stationary Combustion Sources, pp. 11</p>
+<dt class="label" id="epa2015-p11"><span class="brackets">EPA2015_p11</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://www.epa.gov/sites/default/files/2015-07/documents/fugitiveemissions.pdf#page=11">EPA, 2015: 2015 EPA Greenhouse Gas Inventory Guidance, Method for Purchased Gases, pp. 11</a></p>
 </dd>
 </dl>
 </section>
