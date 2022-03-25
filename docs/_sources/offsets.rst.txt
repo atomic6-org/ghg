@@ -49,4 +49,4 @@ where :math:`Purchased\; Offset_{n}` is the amount of offsets that have been pur
 one entry in the offsets table.
 Note that in atomic6 final values for offsets are converted into :math:`metric \; tons`.
 
-.. [EPA2018_offset] EPA & Green power partnership, Offsets and RECs <https://www.epa.gov/sites/default/files/2018-03/documents/gpp_guide_recs_offsets.pdf#page=3>
+.. [EPA2018_offset] `EPA & Green power partnership, Offsets and RECs <https://www.epa.gov/sites/default/files/2018-03/documents/gpp_guide_recs_offsets.pdf#page=3>`_
