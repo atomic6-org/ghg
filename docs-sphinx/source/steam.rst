@@ -13,6 +13,37 @@ Usage
     :undoc-members:
     :inherited-members:
 
+Example Usage
+******************
+Python example code usage:
+
+.. code-block:: python
+
+    from atomic6ghg.formulas import Steam
+    steam_input: dict = {
+      "version": "steam.1.0.0",
+      "emissionFactorDataForSteamPurchased": [
+        {
+          "sourceId": "BLR-012",
+          "sourceDescription": "Steam Generator",
+          "sourceArea": 15000,
+          "fuelType": "coalCoke",
+          "boilerEfficiency": 80,
+          "steamPurchased": 10000,
+          "locationBasedEmissionFactorsCO2Factor": 0,
+          "locationBasedEmissionFactorsCH4Factor": 0,
+          "locationBasedEmissionFactorsN2OFactor": 0,
+          "marketBasedEmissionFactorsCO2Factor": 0,
+          "marketBasedEmissionFactorsCH4Factor": 0,
+          "marketBasedEmissionFactorsN2OFactor": 0
+        }
+      ]
+    }
+    engine = Steam(steam_input)
+    outputs: dict = engine.to_dict()
+    print(outputs.get('CO2EquivalentEmissionsLocationBasedElectricityEmissions'))
+
+
 EPA Equation Analysis
 *********************
 Steam allows for inputs of purchased steam quantities for the following fuel types with units of MMBtu:
