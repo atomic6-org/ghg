@@ -95,6 +95,6 @@ These equations are outlined in Equation 2.2 from [IPCC2006V2CH2]_.
 
 where :math:`Total\; Biomass\; \text{CO}_2\; Equivalent\; Emissions_{fuel}` is the sum of
 :math:`Non\; Fossil\; Fuel\; \text{CO}_2\; Emissions_{fuel, n}`, which only accounts for the GHG :math:`\text{CO}_2`.
-Note that in atomic6, all units for total calculations are converted :math:`metric \; tons`.
+Note that in atomic6 the final value of this calculation is converted into :math:`metric \; tons`.
 
-.. [IPCC2006V2CH2] IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2, Energy, Chapter 2, Stationary Combustion, pp. 11
+.. [IPCC2006V2CH2] `IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2, Energy, Chapter 2, Stationary Combustion, pp. 11 <https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf>`_
