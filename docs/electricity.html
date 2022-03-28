@@ -105,7 +105,9 @@
             
   <section id="electricity">
 <span id="electricity-api"></span><h1>Electricity<a class="headerlink" href="#electricity" title="Permalink to this headline">¶</a></h1>
-<p>Electricity is a <a class="reference external" href="glossary.html">Scope 2 Emission</a></p>
+<p>Electricity is a <a class="reference external" href="glossary.html">Scope 2 Emission</a> that includes the generation, transmission, and distribution of
+electricity. Carbon dioxide and smaller amounts of methane and nitrous oxide are released during the combustion of fossil
+fuels, such as coal, oil, and natural gas, to produce electricity.</p>
 <section id="module-atomic6ghg.formulas.electricity">
 <span id="usage"></span><h2>Usage<a class="headerlink" href="#module-atomic6ghg.formulas.electricity" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
@@ -173,6 +175,23 @@
 
 </dd></dl>
 
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">Electricity</span>
+<span class="n">electricity_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;electricity.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;totalElectricityPurchased&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;eGridSubregion&quot;</span><span class="p">:</span> <span class="s2">&quot;akgd&quot;</span><span class="p">,</span> <span class="s2">&quot;electricityPurchased&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">,</span>
+        <span class="s2">&quot;marketBasedEmissionFactorsCO2Emissions&quot;</span><span class="p">:</span> <span class="mf">8.7</span><span class="p">,</span>
+        <span class="s2">&quot;marketBasedEmissionFactorsCH4Emissions&quot;</span><span class="p">:</span> <span class="mf">8.7</span><span class="p">,</span>
+        <span class="s2">&quot;marketBasedEmissionFactorsN2OEmissions&quot;</span><span class="p">:</span> <span class="mf">8.7</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">Electricity</span><span class="p">(</span><span class="n">electricity_input</span><span class="p">)</span>
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;CO2EquivalentEmissionsLocationBasedElectricityEmissions&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;CO2EquivalentEmissionsMarketBasedElectricityEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
 </section>
 <section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
@@ -248,30 +267,29 @@
 <span class="math notranslate nohighlight">\(Location\; Based\; \text{N}_2\text{O}\)</span> emissions associated with the electricity purchased.
 The formulas are:</p>
 <div class="math notranslate nohighlight">
-\[Market\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Market\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
+\[Market\; Based\; Emissions_{eGrid\, subregion,\, GHG} = Electricity\; Purchased_{eGrid\, subregion} \cdot Market\; Based\; Emission\; Factor_{eGrid\, subregion,\, GHG}\]</div>
 <div class="math notranslate nohighlight">
-\[Location\; Based\; Emissions_{electricity, eGrid\, subregion} = Electricity\; Purchased_{electricity} \cdot Location\; Based\; Emission\; Factor_{eGrid\, subregion}\]</div>
-<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id1"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
-<p>where <span class="math notranslate nohighlight">\(Electricity\; Purchased_{electricity}\)</span> is converted into watts, the default
-<span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is the emission factor for that
-eGrid Subregion and fuel type if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is
-input by the user, and the default <span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is
-the <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> if no
-<span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion}\)</span> value is input by the user.</p>
+\[Location\; Based\; Emissions_{eGrid\, subregion,\, GHG} = Electricity\; Purchased_{eGrid\, subregion} \cdot Location\; Based\; Emission\; Factor_{eGrid\, subregion,\, GHG}\]</div>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020-p3" id="id1"><span>[EPA2020_p3]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Electricity\; Purchased_{eGrid\, subregion}\)</span> is converted into watts, the default
+<span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion,\, GHG}\)</span> value is the emission factor for that
+<span class="math notranslate nohighlight">\(eGrid Subregion\)</span> and <span class="math notranslate nohighlight">\(GHG\)</span> if no <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion,\, GHG}\)</span>
+value is input by the user, and the default <span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion,\, GHG}\)</span> value
+is the <span class="math notranslate nohighlight">\(Location\; Based\; Emission\; Factor_{eGrid\ subregion, GHG}\)</span> if no
+<span class="math notranslate nohighlight">\(Market\; Based\; Emission\; Factor_{eGrid\ subregion, GHG}\)</span> value is input by the user.</p>
 <p>For electricity, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{method}\)</span> in metric tons is calculated based on the
 <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span>. The formula is:</p>
 <div class="math notranslate nohighlight">
 \[\text{CO}_2\; Equivalent\; Emissions_{method, GHG} = \sum_{n=1}^{\infty} Total\; Emissions\; for\; All\; Sources_{method, GHG} \cdot GWP_{GHG}\]</div>
-<p>This equation is derived from Equation 2.2 from <a class="reference internal" href="#epa2020indirectemissionsfrompurchasedelectricity" id="id2"><span>[EPA2020IndirectEmissionsfromPurchasedElectricity]</span></a>.</p>
+<p>This equation is derived from Equation 1 from <a class="reference internal" href="#epa2020-p3" id="id2"><span>[EPA2020_p3]</span></a>.</p>
 <p>where <span class="math notranslate nohighlight">\(Total\; Emissions\; for\; All\; Sources_{method, GHG}\)</span> are the sums of all the emissions for that
 <span class="math notranslate nohighlight">\(GHG\)</span> (<span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, or <span class="math notranslate nohighlight">\(\text{N}_2\text{O}\)</span>) and <span class="math notranslate nohighlight">\(method\)</span> (either
 <span class="math notranslate nohighlight">\(location\; based\)</span> or <span class="math notranslate nohighlight">\(market\; based\)</span>), and <span class="math notranslate nohighlight">\(GWP_{GHG}\)</span> is the global warming potential of that
 <span class="math notranslate nohighlight">\(GHG\)</span>.
-Note that in atomic6 the final value of this calculation is divided by <span class="math notranslate nohighlight">\(1000\)</span> to convert this value into
-<span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
+Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric \; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="epa2020indirectemissionsfrompurchasedelectricity"><span class="brackets">EPA2020IndirectEmissionsfromPurchasedElectricity</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3</p>
+<dt class="label" id="epa2020-p3"><span class="brackets">EPA2020_p3</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://www.epa.gov/sites/default/files/2020-12/documents/electricityemissions.pdf#page=6">EPA, 2020: 2020 EPA Greenhouse Gas Inventory Guidance, Indirect Emissions from Purchased Electricity, pp. 3</a></p>
 </dd>
 </dl>
 </section>
