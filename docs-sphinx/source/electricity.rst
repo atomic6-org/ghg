@@ -70,7 +70,7 @@ value is input by the user, and the default :math:`Market\; Based\; Emission\; F
 is the :math:`Location\; Based\; Emission\; Factor_{eGrid\ subregion, GHG}` if no
 :math:`Market\; Based\; Emission\; Factor_{eGrid\ subregion, GHG}` value is input by the user.
 
-For electricity, the :math:`\text{CO}_2\; Equivalent\; Emissions_{method}` in metric tons is calculated based on the
+For electricity, the :math:`\text{CO}_2\; Equivalent\; Emissions_{method,\, GHG}` in metric tons is calculated based on the
 :math:`Total\; Emissions\; for\; All\; Sources_{method, GHG}`. The formula is:
 
 
