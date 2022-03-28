@@ -164,6 +164,26 @@ from community activities.</p>
 
 </dd></dl>
 
+<p>Python example code usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomic6ghg.formulas</span> <span class="kn">import</span> <span class="n">Waste</span>
+<span class="n">waste_input</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;waste.1.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;wasteDisposal&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;sourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sourceDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;wasteMaterial&quot;</span><span class="p">:</span> <span class="s2">&quot;aluminumCans&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;disposalMethod&quot;</span><span class="p">:</span> <span class="s2">&quot;recycled&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span>
+            <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;pounds&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">Waste</span><span class="p">(</span><span class="n">waste_input</span><span class="p">)</span>
+<span class="n">outputs</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;totalCo2EquivalentEmissions&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
 </section>
 <section id="epa-equation-analysis">
 <h2>EPA Equation Analysis<a class="headerlink" href="#epa-equation-analysis" title="Permalink to this headline">¶</a></h2>
@@ -427,26 +447,27 @@ disposal of waste materials based on the <span class="math notranslate nohighlig
 </table>
 <p>The formula for <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions\)</span> is:</p>
 <div class="math notranslate nohighlight">
-\[\text{CO}_2\; Equivalent\; Emissions_{ma, me} = EF_{ma, me} \cdot Weight\]</div>
-<p>This equation is derived from Equation 3.2 from <a class="reference internal" href="#ipcc2006v5ch3" id="id1"><span>[IPCC2006V5CH3]</span></a>.</p>
-<p>where <span class="math notranslate nohighlight">\(ma\)</span> is the waste material, <span class="math notranslate nohighlight">\(me\)</span> is the disposal method, <span class="math notranslate nohighlight">\(EF_{ma, me}\)</span> is the emission factor
-is the emission factor for that <span class="math notranslate nohighlight">\(ma\)</span> and <span class="math notranslate nohighlight">\(me\)</span>, and <span class="math notranslate nohighlight">\(Weight\)</span> is the weight, mass, or amount of the
-<span class="math notranslate nohighlight">\(ma\)</span> that has been disposed via <span class="math notranslate nohighlight">\(me\)</span> during that reporting period. Note that in atomic6, the calculations
-are done directly to <span class="math notranslate nohighlight">\(\text{CO}_2\)</span> by using the IPCC’s AR4 GWP values as a conversion factor, while in the
-reference material the calculations are done directly to <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>, the input units are converted to a
-standard unit of short tons, and the short tons are converted into kilograms.</p>
-<p>For waste, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{disposal\; method}\)</span> in metric tons is calculated.
+\[\text{CO}_2\; Equivalent\; Emissions_{material, method} = Emission\; Factor_{material, method} \cdot Weight_{material}\]</div>
+<p>This equation is derived from Equation 3.2 from <a class="reference internal" href="#ipcc2006-v5ch3" id="id1"><span>[IPCC2006_V5CH3]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(material\)</span> is the waste material, <span class="math notranslate nohighlight">\(method\)</span> is the disposal method,
+<span class="math notranslate nohighlight">\(Emission\; Factor_{material, method}\)</span> is the emission factor for that <span class="math notranslate nohighlight">\(material\)</span> and <span class="math notranslate nohighlight">\(method\)</span>, and
+<span class="math notranslate nohighlight">\(Weight_{material}\)</span> is the weight, mass, or amount of the <span class="math notranslate nohighlight">\(material\)</span> that has been disposed via <span class="math notranslate nohighlight">\(method\)</span> during
+that reporting period. Note that in atomic6, the calculations are done directly to <span class="math notranslate nohighlight">\(\text{CO}_2\)</span> by using the
+<a class="reference external" href="https://archive.ipcc.ch/publications_and_data/ar4/wg1/en/ch2s2-10-2.html">IPCC’s AR4 GWP values</a> as a conversion
+factor to convert waste emission factors to <span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span>, while in the reference material the calculations are done directly to <span class="math notranslate nohighlight">\(\text{CH}_4\)</span>. The input units are
+converted to a standard unit of short tons, and the short tons are converted into kilograms.</p>
+<p>For waste, the <span class="math notranslate nohighlight">\(\text{CO}_2\; Equivalent\; Emissions_{method}\)</span> in metric tons is calculated.
 The formula is:</p>
 <div class="math notranslate nohighlight">
-\[\text{CO}_2\; Equivalent\; Emissions_{disposal\; method} = \sum_{n=1}^{\infty} Total\; Emissions_{disposal\; method}\]</div>
-<p>This equation is derived from <a class="reference internal" href="#ipcc2006v5ch3" id="id2"><span>[IPCC2006V5CH3]</span></a>.</p>
-<p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{disposal\; method}\)</span> is the sum of all the <span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span> emissions for that
-<span class="math notranslate nohighlight">\(disposal\; method\)</span> (recycled, landfilled, combusted, composted, anaerobically digested (dry digestate with
+\[\text{CO}_2\; Equivalent\; Emissions_{method} = \sum_{n=1}^{\infty} Total\; Emissions_{method}\]</div>
+<p>This equation is derived from <a class="reference internal" href="#ipcc2006-v5ch3" id="id2"><span>[IPCC2006_V5CH3]</span></a>.</p>
+<p>where <span class="math notranslate nohighlight">\(Total\; Emissions_{method}\)</span> is the sum of all the <span class="math notranslate nohighlight">\(\text{CO}_2\;\)</span> emissions for that
+<span class="math notranslate nohighlight">\(method\)</span> (recycled, landfilled, combusted, composted, anaerobically digested (dry digestate with
 curing), or anaerobically digested (wet digestate with curing)).
 Note that in atomic6 the final value of this calculation is converted into <span class="math notranslate nohighlight">\(metric\; tons\)</span>.</p>
 <dl class="citation">
-<dt class="label" id="ipcc2006v5ch3"><span class="brackets">IPCC2006V5CH3</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5, IPPU, Chapter 3, Solid Waste Disposal, pp. 9</p>
+<dt class="label" id="ipcc2006-v5ch3"><span class="brackets">IPCC2006_V5CH3</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/5_Volume5/V5_3_Ch3_SWDS.pdf#page=9">IPCC, 2006: 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5, IPPU, Chapter 3, Solid Waste Disposal, pp. 9</a></p>
 </dd>
 </dl>
 </section>
