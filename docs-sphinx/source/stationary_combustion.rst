@@ -39,7 +39,7 @@ Usage
 
     calculated_data = StationaryCombustion(input_data).to_dict()
 
-    print(calculated_data['totalCo2EquivalentEmissions'])
+    print(calculated_data['totalCO2EquivalentEmissions'])
     print(calculated_data['totalBiomassEquivalentEmissions'])
 
 

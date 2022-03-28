@@ -33,7 +33,7 @@ Usage
     }
     engine = WasteGases(waste_gases_input)
     outputs: dict = engine.to_dict()
-    print(outputs.get('totalCo2EquivalentEmissions'))
+    print(outputs.get('totalCO2EquivalentEmissions'))
 
 **Parameters:**
     * **input_data** - (dict) input data that follows the JSON schema

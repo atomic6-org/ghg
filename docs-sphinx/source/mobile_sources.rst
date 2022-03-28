@@ -42,7 +42,7 @@ Python example code usage:
     engine = MobileSources(mobile_sources_input)
 
     outputs: dict = engine.to_dict()
-    print(outputs.get('totalCo2EquivalentEmissions'))
+    print(outputs.get('totalCO2EquivalentEmissions'))
 
 EPA Equation Analysis
 **********************
