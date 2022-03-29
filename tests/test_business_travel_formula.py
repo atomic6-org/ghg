@@ -155,7 +155,7 @@ def test_make_air_total(canonical_data, calculated_data):
 
 
 def test_make_co2_emissions_by_commuting_type(canonical_data, calculated_data):
-    key = "totalCo2EmissionsByTravelType"
+    key = "totalCO2EmissionsByTravelType"
     calculated_transports = []
     canonical_transports = []
     for i, canonical_row in enumerate(canonical_data[key]):
@@ -186,7 +186,7 @@ def test_make_co2_emissions_by_commuting_type(canonical_data, calculated_data):
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert canonical_data[key] == calculated_data._output[key]
 
 

@@ -28,7 +28,7 @@ def make_purchased_gases(canonical_data, calculated_data):
         gas = canonical_row["gas"]
         gas_gwp = canonical_row["gasGWP"]
         purchased_amount = null_replacer(canonical_row['purchasedAmount'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -36,7 +36,7 @@ def make_purchased_gases(canonical_data, calculated_data):
         calculated_purchased_amount = canonical_row['purchasedAmount']
 
         if gas == calculated_gas and purchased_amount == calculated_purchased_amount:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -49,7 +49,7 @@ def make_purchased_gases(canonical_data, calculated_data):
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert canonical_data[key] == calculated_data._output[key]
 
 

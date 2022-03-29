@@ -135,7 +135,7 @@
         }
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions (metric tons) - Stationary Combustion",
       "description": "Calculated total CO2 equivalent emissions produced by stationary combustion measured in metric tons",
       "format": ":.1f",

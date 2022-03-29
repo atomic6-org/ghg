@@ -106,7 +106,7 @@ def test_make_co2_emissions_by_commuting_type(canonical_data, calculated_data):
         co2 = null_replacer(canonical_row['CO2'])
         ch4 = null_replacer(canonical_row['CH4'])
         n2o = null_replacer(canonical_row['N2O'])
-        # co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        # co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_transports.append(transport_type)
 
         calculated_row = calculated_data._output[key][i]

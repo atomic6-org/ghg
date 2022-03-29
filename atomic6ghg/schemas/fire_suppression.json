@@ -48,7 +48,7 @@
             "formula": "None",
             "type": ["number", "null"]
           },
-          "co2EquivalentEmissions": {
+          "CO2EquivalentEmissions": {
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide fire suppression gas calculated using material balance.",
             "format": ":.1f",
@@ -118,7 +118,7 @@
           "formula": "None",
           "type": ["number", "null"]
         },
-        "co2EquivalentEmissions": {
+        "CO2EquivalentEmissions": {
           "title": "CO2 Equivalent Emissions (lb)",
           "description": "CO2 equivalent emissions (in lbs) produced by organization-wide fire suppression gas calculated using simplified material balance.",
           "format": ":.1f",
@@ -184,7 +184,7 @@
               "null"
             ]
           },
-          "co2EquivalentEmissions": {
+          "CO2EquivalentEmissions": {
             "title": "CO2 Equivalent Emissions (kg)",
             "description": "CO2 equivalent emissions (in kg) produced by source level fire suppression gas calculated using screening method.",
             "format": ":.1f",
@@ -202,7 +202,7 @@
         ]
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Fire Suppression Equipment",
       "formula": "atomic6ghg.formulas.fire_suppression.make_co2_equivalent_emissions",
       "type": ["number", "null"]

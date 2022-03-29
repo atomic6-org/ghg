@@ -17,7 +17,7 @@ def test_minimum_required(fire_suppression_schema):
     fire_suppression_schema.validate(minimum_fire_suppression_document)
 
 
-def utility_get_document(gasGWP, unitsCapacity, co2EquivalentEmissions):
+def utility_get_document(gasGWP, unitsCapacity, CO2EquivalentEmissions):
     return {
             "version": "fire-suppression.1.0.0",
             "screeningMethod": [
@@ -27,7 +27,7 @@ def utility_get_document(gasGWP, unitsCapacity, co2EquivalentEmissions):
                     "gasType": "co2",
                     "gasGWP": gasGWP,
                     "unitsCapacity": unitsCapacity,
-                    "co2EquivalentEmissions": co2EquivalentEmissions
+                    "CO2EquivalentEmissions": CO2EquivalentEmissions
                 }
             ]
         }

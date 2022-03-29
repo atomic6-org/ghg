@@ -314,14 +314,14 @@
                 "vehicleType"
             ]
         },
-        "totalCo2EquivalentEmissions": {
+        "totalCO2EquivalentEmissions": {
             "title": "Total CO2 Equivalent Emissions (metric tons) - Mobile Sources",
             "description": "Calculated total CO2 equivalent emissions produced by mobile sources measured in metric tons",
             "format": ":.1f",
             "formula": "atomic6ghg.formulas.mobile_sources.make_biomass_co2_equivalent_emissions",
             "type": ["number", "null"]
         },
-        "totalBiomassCo2EquivalentEmissions": {
+        "totalBiomassCO2EquivalentEmissions": {
             "title": "Total Biomass CO2 Equivalent Emissions (metric tons) - Mobile Sources",
             "description": "Calculated total biomass CO2 equivalent emissions produced by mobile sources measured in metric tons",
             "format": ":.1f",
