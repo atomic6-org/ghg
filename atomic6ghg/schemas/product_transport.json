@@ -260,7 +260,7 @@
         }
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Product Transport",
       "formula": "atomg6ghg.formulas.product_transport.make_co2_equivalent_emissions",
       "type": ["number", "null"]

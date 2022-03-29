@@ -29,7 +29,7 @@ def test_make_material_balance(canonical_data, calculated_data):
         inventory_change = null_replacer(canonical_row['inventoryChange'])
         transferred_amount = null_replacer(canonical_row['transferredAmount'])
         capacity_change = null_replacer(canonical_row['capacityChange'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -40,7 +40,7 @@ def test_make_material_balance(canonical_data, calculated_data):
 
         if gas == calculated_gas and inventory_change == calculated_inventory_change and \
             transferred_amount == calculated_transferred_amount and capacity_change == calculated_capacity_change:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -64,7 +64,7 @@ def test_make_simplified_material_balance(canonical_data, calculated_data):
         existing_units_recharge = null_replacer(canonical_row['existingUnitsRecharge'])
         disposed_units_capacity = null_replacer(canonical_row['disposedUnitsCapacity'])
         disposed_units_recovered = null_replacer(canonical_row['disposedUnitsRecovered'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -80,7 +80,7 @@ def test_make_simplified_material_balance(canonical_data, calculated_data):
                 existing_units_recharge == calculated_existing_units_recharge and \
                 disposed_units_capacity == calculated_disposed_units_capacity and \
                 disposed_units_recovered == calculated_disposed_units_recovered:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -100,7 +100,7 @@ def test_make_screening_method(canonical_data, calculated_data):
         gas_type = canonical_row["gasType"]
         gas_gwp = canonical_row["gasGWP"]
         unit_capacity = null_replacer(canonical_row['unitsCapacity'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas_type)
 
         calculated_row = calculated_data._output[key][i]
@@ -108,7 +108,7 @@ def test_make_screening_method(canonical_data, calculated_data):
         calculated_unit_capacity = canonical_row['unitsCapacity']
 
         if gas_type == calculated_gas and unit_capacity == calculated_unit_capacity:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -121,7 +121,7 @@ def test_make_screening_method(canonical_data, calculated_data):
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert canonical_data[key] == calculated_data._output[key]
 
 

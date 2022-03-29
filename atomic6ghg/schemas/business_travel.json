@@ -332,7 +332,7 @@
 
     }
     },
-    "totalCo2EmissionsByTravelType": {
+    "totalCO2EmissionsByTravelType": {
       "type": "array",
       "title": "Total CO2 Emissions by Travel Type",
       "items": {
@@ -369,7 +369,7 @@
         }
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Employee Business Travel",
       "type": ["number", "null"]
     }

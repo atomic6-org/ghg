@@ -121,7 +121,7 @@ class StationaryCombustion(Formula):
                                for gas in self._total_emissions['totalNonFossilFuelEmissions'] if gas != 'CO2'])
         total = (total_fossil + total_nonfossil) / 1000.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total
 
     def make_biomass_co2_equivalent_emissions(self):
         """Calculate non-fossil-fuel emissions"""

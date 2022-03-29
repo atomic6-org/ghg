@@ -50,7 +50,7 @@ class FireSuppression(Formula):
 
             calculated_row = {'gas': gas, 'gasGWP': gwp, 'inventoryChange': inventory_change,
                               'transferredAmount': transferred_amount, 'capacityChange': capacity_change,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             material_balance.append(calculated_row)
 
         self._output['materialBalance'] = material_balance
@@ -83,7 +83,7 @@ class FireSuppression(Formula):
                               'newUnitsCapacity': new_units_capacity, 'existingUnitsRecharge': existing_units_recharge,
                               'disposedUnitsCapacity': disposed_units_capacity,
                               'disposedUnitsRecovered': disposed_units_recovered,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             simplified_material_balance.append(calculated_row)
 
         self._output['simplifiedMaterialBalance'] = simplified_material_balance
@@ -110,7 +110,7 @@ class FireSuppression(Formula):
 
             calculated_row = {'sourceId': row['sourceId'], 'typeOfEquipment': type_of_equipment,
                               'gasType': gas_type, 'gasGWP': gwp, 'unitsCapacity': unit_capacity,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             screening_method.append(calculated_row)
 
         self._output['screeningMethod'] = screening_method
@@ -152,4 +152,4 @@ class FireSuppression(Formula):
                  (self._total_emissions['materialBalance'] + self._total_emissions['simplifiedMaterialBalance'])
                  + self._total_emissions['screeningMethod']) / 1000.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total

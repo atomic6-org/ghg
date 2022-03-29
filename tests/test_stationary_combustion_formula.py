@@ -56,7 +56,7 @@ def test_emissions(canonical_data, calculated_data):
 
 
 def test_co2_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert canonical_data[key] == calculated_data._output[key]
 
 

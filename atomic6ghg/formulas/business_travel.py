@@ -229,7 +229,7 @@ class BusinessTravel(Formula):
                               'CH4': self._total_emissions[transport_type]['CH4'],
                               'N2O': self._total_emissions[transport_type]['N2O']}
             total_commuting_type_co2.append(calculated_row)
-        self._output['totalCo2EmissionsByTravelType'] = total_commuting_type_co2
+        self._output['totalCO2EmissionsByTravelType'] = total_commuting_type_co2
 
     @staticmethod
     def calculate_transportation_emissions(travel_factor, vehicle_miles):
@@ -244,4 +244,4 @@ class BusinessTravel(Formula):
         total = (self._total_emissions['total']['CO2'] +
                  (self._total_emissions['total']['CH4'] / 1000 * refrigerants_gwp_factors['ch4']) +
                  (self._total_emissions['total']['N2O'] / 1000 * refrigerants_gwp_factors['n2o'])) / 1000
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total
