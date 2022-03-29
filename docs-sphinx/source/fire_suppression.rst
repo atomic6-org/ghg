@@ -37,7 +37,7 @@ Python example code usage:
     engine = FireSuppression(fire_suppression_input)
 
     outputs: dict = engine.to_dict()
-    print(outputs.get('totalCo2EquivalentEmissions'))
+    print(outputs.get('totalCO2EquivalentEmissions'))
 
 Material Balance
 ****************

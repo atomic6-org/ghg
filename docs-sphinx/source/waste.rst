@@ -36,7 +36,7 @@ Python example code usage:
     }
     engine = Waste(waste_input)
     outputs: dict = engine.to_dict()
-    print(outputs.get('totalCo2EquivalentEmissions'))
+    print(outputs.get('totalCO2EquivalentEmissions'))
 
 EPA Equation Analysis
 **************************************************
