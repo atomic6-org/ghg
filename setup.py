@@ -6,7 +6,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(name="atomic6ghg",
-      version="1.0.1",
+      version="1.0.0",
       description="Library of formulas, conversion factors and schemas for greenhouse gas calculations",
       long_description=README,
       long_description_content_type="text/markdown",
