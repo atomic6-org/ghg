@@ -50,7 +50,7 @@ class RefrigerationAndAc(Formula):
 
             calculated_row = {'gas': gas, 'gasGWP': gwp, 'inventoryChange': inventory_change,
                               'transferredAmount': transferred_amount, 'capacityChange': capacity_change,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             material_balance.append(calculated_row)
 
         self._output['materialBalance'] = material_balance
@@ -83,7 +83,7 @@ class RefrigerationAndAc(Formula):
                               'newUnitsCapacity': new_units_capacity, 'existingUnitsRecharge': existing_units_recharge,
                               'disposedUnitsCapacity': disposed_units_capacity,
                               'disposedUnitsRecovered': disposed_units_recovered,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             simplified_material_balance.append(calculated_row)
 
         self._output['simplifiedMaterialBalance'] = simplified_material_balance
@@ -114,7 +114,7 @@ class RefrigerationAndAc(Formula):
                               'gas': gas, 'gasGWP': gwp, 'newUnitsCharge': new_units_charge,
                               'capacityOperatingUnits': capacity_operating_units,
                               'capacityDisposedUnits': capacity_disposed_units,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             screening_method.append(calculated_row)
 
         self._output['screeningMethod'] = screening_method
@@ -164,4 +164,4 @@ class RefrigerationAndAc(Formula):
         total = (unit_conversions_factors['pounds']['kilogram'] * (self._total_emissions['materialBalance'] +
                   self._total_emissions['simplifiedMaterialBalance']) + self._total_emissions['screeningMethod']) / 1000.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total

@@ -42,7 +42,7 @@ class PurchasedGases(Formula):
 
             self._total_emissions['purchasedGases'] += co2_equivalent_emissions
             calculated_row = {'gas': gas, 'gasGWP': gwp, 'purchasedAmount': purchased_amount,
-                              'co2EquivalentEmissions': co2_equivalent_emissions}
+                              'CO2EquivalentEmissions': co2_equivalent_emissions}
             purchased_gases.append(calculated_row)
 
         self._output['purchasedGases'] = purchased_gases
@@ -61,4 +61,4 @@ class PurchasedGases(Formula):
         """ Calculate co2 equivalent emissions """
         total = (unit_conversions_factors['pounds']['kilogram'] * (self._total_emissions['purchasedGases'])) / 1000.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total

@@ -239,7 +239,7 @@ class MobileSources(Formula):
         total = (self._total_emissions['CO2'] + refrigerants_gwp_factors['ch4'] * self._total_emissions['CH4'] / 1000. +
                  refrigerants_gwp_factors['n2o'] * self._total_emissions['N2O'] / 1000.) / 1000.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total
 
     def make_total_biomass_co2_equivalent_emissions(self):
         """ Calculate total biomass CO2 equivalent emissions """
@@ -248,4 +248,4 @@ class MobileSources(Formula):
                  self.total_fuel_usage_and_co2_emissions['biodiesel']['fuelUsage'] * self.biodiesel_percent / 100. *
                  mobile_combustion_co2_emission_factors['biodiesel']) / 1000.
 
-        self._output['totalBiomassCo2EquivalentEmissions'] = total
+        self._output['totalBiomassCO2EquivalentEmissions'] = total

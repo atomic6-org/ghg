@@ -75,7 +75,7 @@ def test_make_total_emissions_by_disposal_method(canonical_data, calculated_data
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert abs(canonical_data[key] - calculated_data._output[key]) < 0.0001
 
 

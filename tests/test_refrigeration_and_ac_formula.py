@@ -30,7 +30,7 @@ def test_make_material_balance(canonical_data, calculated_data):
         inventory_change = null_replacer(canonical_row['inventoryChange'])
         transferred_amount = null_replacer(canonical_row['transferredAmount'])
         capacity_change = null_replacer(canonical_row['capacityChange'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -41,7 +41,7 @@ def test_make_material_balance(canonical_data, calculated_data):
 
         if gas == calculated_gas and inventory_change == calculated_inventory_change and \
             transferred_amount == calculated_transferred_amount and capacity_change == calculated_capacity_change:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -65,7 +65,7 @@ def test_make_simplified_material_balance(canonical_data, calculated_data):
         existing_units_recharge = null_replacer(canonical_row['existingUnitsRecharge'])
         disposed_units_capacity = null_replacer(canonical_row['disposedUnitsCapacity'])
         disposed_units_recovered = null_replacer(canonical_row['disposedUnitsRecovered'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -81,7 +81,7 @@ def test_make_simplified_material_balance(canonical_data, calculated_data):
                 existing_units_recharge == calculated_existing_units_recharge and \
                 disposed_units_capacity == disposed_units_capacity and \
                 disposed_units_recovered == calculated_disposed_units_recovered:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -103,7 +103,7 @@ def test_make_screening_method(canonical_data, calculated_data):
         new_units_charge = null_replacer(canonical_row['newUnitsCharge'])
         capacity_operating_units = null_replacer(canonical_row['capacityOperatingUnits'])
         capacity_disposed_units = null_replacer(canonical_row['capacityDisposedUnits'])
-        co2_equivalent_emissions = null_replacer(canonical_row['co2EquivalentEmissions'])
+        co2_equivalent_emissions = null_replacer(canonical_row['CO2EquivalentEmissions'])
         canonical_gasses.append(gas)
 
         calculated_row = calculated_data._output[key][i]
@@ -115,7 +115,7 @@ def test_make_screening_method(canonical_data, calculated_data):
         if gas == calculated_gas and new_units_charge == calculated_new_units_charge and \
             capacity_operating_units == calculated_capacity_operating_units and \
                 capacity_disposed_units == calculated_capacity_disposed_units:
-            assert co2_equivalent_emissions == calculated_row["co2EquivalentEmissions"]
+            assert co2_equivalent_emissions == calculated_row["CO2EquivalentEmissions"]
             assert gas_gwp == calculated_row["gasGWP"]
             calculated_gasses.append(calculated_gas)
     assert calculated_gasses == canonical_gasses
@@ -128,7 +128,7 @@ def test_make_screening_method(canonical_data, calculated_data):
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert canonical_data[key] == calculated_data._output[key]
 
 
