@@ -131,7 +131,7 @@
       "type": ["number", "null"],
       "oxidationFactorFootNote": "- If oxidation factor value is not known, use 100% as default value."
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Waste Gas Combustion",
       "formula": "atomic6ghg.formulas.waste_gases.make_co2_equivalent_emissions",
       "type": ["number", "null"]

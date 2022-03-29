@@ -179,7 +179,7 @@
         }
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Waste",
       "formula": "atomic6ghg.formulas.commuting.make_co2_equivalent_emissions",
       "type": ["number", "null"]

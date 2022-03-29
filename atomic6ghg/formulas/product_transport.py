@@ -158,4 +158,4 @@ class ProductTransport(Formula):
                  refrigerants_gwp_factors['ch4'] * ch4_total / 1000 +
                  refrigerants_gwp_factors['n2o'] * n2o_total / 1000) / 1000
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total

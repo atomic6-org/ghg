@@ -223,12 +223,12 @@ def test_make_total_organization_wide_non_road_mobile_source_fuel_usage_and_emis
 
 
 def test_make_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalCo2EquivalentEmissions"
+    key = "totalCO2EquivalentEmissions"
     assert abs(canonical_data[key] - calculated_data._output[key]) < 0.001
 
 
 def test_make_total_biomass_co2_equivalent_emissions(canonical_data, calculated_data):
-    key = "totalBiomassCo2EquivalentEmissions"
+    key = "totalBiomassCO2EquivalentEmissions"
     assert abs(canonical_data[key] - calculated_data._output[key]) < 0.001
 
 

@@ -49,7 +49,7 @@
             "formula": "None",
             "type": ["number", "null"]
           },
-          "co2EquivalentEmissions": {
+          "CO2EquivalentEmissions": {
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using material balance.",
             "format": ":.1f",
@@ -120,7 +120,7 @@
             "formula": "",
             "type": ["number", "null"]
           },
-          "co2EquivalentEmissions": {
+          "CO2EquivalentEmissions": {
             "title": "CO2 Equivalent Emissions (lb)",
             "description": "CO2 equivalent emissions (in lbs) produced by organization-wide refrigeration gas calculated using simplified material balance.",
             "format": ":.1f",
@@ -193,7 +193,7 @@
             "formula": "",
             "type": ["number", "null"]
           },
-          "co2EquivalentEmissions": {
+          "CO2EquivalentEmissions": {
             "title": "CO2 Equivalent Emissions (kg)",
             "description": "CO2 equivalent emissions (in kg) produced by source level refrigeration gas calculated using screening method.",
             "format": ":.1f",
@@ -210,7 +210,7 @@
         ]
       }
     },
-    "totalCo2EquivalentEmissions": {
+    "totalCO2EquivalentEmissions": {
       "title": "Total CO2 Equivalent Emissions  (metric tons) - Refrigeration and AC Equipment",
       "formula": "atomic6ghg.formulas.refrigeration_and_ac.make_co2_equivalent_emissions",
       "type": ["number", "null"]

@@ -71,4 +71,4 @@ class Waste(Formula):
         """ Calculate co2 equivalent emissions """
         total = sum(self._total_emissions.values()) / 1000
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total

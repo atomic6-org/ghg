@@ -1083,7 +1083,7 @@
     "CH4": 214.71,
     "N2O": 427.11
   },
-  "totalCo2EmissionsByTravelType": [
+  "totalCO2EmissionsByTravelType": [
     {
       "transportType": "passengerCars",
       "CO2": 3611.19,
@@ -1157,5 +1157,5 @@
       "N2O": 145.86
     }
   ],
-  "totalCo2EquivalentEmissions": 26.165569248899995
+  "totalCO2EquivalentEmissions": 26.165569248899995
 }

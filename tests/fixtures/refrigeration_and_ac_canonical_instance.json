@@ -7,7 +7,7 @@
       "inventoryChange": 100,
       "transferredAmount": 100,
       "capacityChange": 100,
-      "co2EquivalentEmissions": 300
+      "CO2EquivalentEmissions": 300
     },
     {
       "gas": "hfc23",
@@ -15,7 +15,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 44400
+      "CO2EquivalentEmissions": 44400
     },
     {
       "gas": "r508b",
@@ -23,7 +23,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 40188
+      "CO2EquivalentEmissions": 40188
     },
     {
       "gas": "hfc125",
@@ -31,7 +31,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 10500
+      "CO2EquivalentEmissions": 10500
     },
     {
       "gas": "r507",
@@ -39,7 +39,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 11955
+      "CO2EquivalentEmissions": 11955
     },
     {
       "gas": "r424a",
@@ -47,7 +47,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 7320
+      "CO2EquivalentEmissions": 7320
     },
     {
       "gas": "sf6",
@@ -55,7 +55,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 68400
+      "CO2EquivalentEmissions": 68400
     },
     {
       "gas": "cf4",
@@ -63,7 +63,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 22170
+      "CO2EquivalentEmissions": 22170
     },
     {
       "gas": "c2f6",
@@ -71,7 +71,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 36600
+      "CO2EquivalentEmissions": 36600
     },
     {
       "gas": "hfc236fa",
@@ -79,7 +79,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 29430
+      "CO2EquivalentEmissions": 29430
     },
     {
       "gas": "r508a",
@@ -87,7 +87,7 @@
       "inventoryChange": 1,
       "transferredAmount": 1,
       "capacityChange": 1,
-      "co2EquivalentEmissions": 39642
+      "CO2EquivalentEmissions": 39642
     }
   ],
   "simplifiedMaterialBalance": [
@@ -99,7 +99,7 @@
       "existingUnitsRecharge": 100,
       "disposedUnitsCapacity": 50,
       "disposedUnitsRecovered": 25,
-      "co2EquivalentEmissions": 175
+      "CO2EquivalentEmissions": 175
     },
     {
       "gas": "hfc143a",
@@ -109,7 +109,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 8940
+      "CO2EquivalentEmissions": 8940
     },
     {
       "gas": "hfc152a",
@@ -119,7 +119,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 248
+      "CO2EquivalentEmissions": 248
     },
     {
       "gas": "r401a",
@@ -129,7 +129,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 32
+      "CO2EquivalentEmissions": 32
     },
     {
       "gas": "r423a",
@@ -139,7 +139,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 4560
+      "CO2EquivalentEmissions": 4560
     },
     {
       "gas": "r407a",
@@ -149,7 +149,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 4214
+      "CO2EquivalentEmissions": 4214
     },
     {
       "gas": "r508b",
@@ -159,7 +159,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 26792
+      "CO2EquivalentEmissions": 26792
     },
     {
       "gas": "r401c",
@@ -169,7 +169,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 38
+      "CO2EquivalentEmissions": 38
     },
     {
       "gas": "hfc143a",
@@ -179,7 +179,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 8940
+      "CO2EquivalentEmissions": 8940
     },
     {
       "gas": "r500",
@@ -189,7 +189,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 64
+      "CO2EquivalentEmissions": 64
     },
     {
       "gas": "c2f6",
@@ -199,7 +199,7 @@
       "existingUnitsRecharge": 1,
       "disposedUnitsCapacity": 1,
       "disposedUnitsRecovered": 0.5,
-      "co2EquivalentEmissions": 24400
+      "CO2EquivalentEmissions": 24400
     }
   ],
   "screeningMethod": [
@@ -211,7 +211,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 759.375
+      "CO2EquivalentEmissions": 759.375
     },
     {
       "sourceId": "Bldg-013",
@@ -221,7 +221,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 4676.1
+      "CO2EquivalentEmissions": 4676.1
     },
     {
       "sourceId": "Bldg-014",
@@ -231,7 +231,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 25865
+      "CO2EquivalentEmissions": 25865
     },
     {
       "sourceId": "Bldg-015",
@@ -241,7 +241,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 4416.3
+      "CO2EquivalentEmissions": 4416.3
     },
     {
       "sourceId": "Bldg-016",
@@ -251,7 +251,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 48840
+      "CO2EquivalentEmissions": 48840
     },
     {
       "sourceId": "Bldg-017",
@@ -261,7 +261,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 4112.499999999999
+      "CO2EquivalentEmissions": 4112.499999999999
     },
     {
       "sourceId": "Bldg-018",
@@ -271,7 +271,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 2093.32
+      "CO2EquivalentEmissions": 2093.32
     },
     {
       "sourceId": "Bldg-019",
@@ -281,7 +281,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 0
+      "CO2EquivalentEmissions": 0
     },
     {
       "sourceId": "Bldg-020",
@@ -291,7 +291,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 2251.4249999999997
+      "CO2EquivalentEmissions": 2251.4249999999997
     },
     {
       "sourceId": "Bldg-021",
@@ -301,7 +301,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 4.5
+      "CO2EquivalentEmissions": 4.5
     },
     {
       "sourceId": "Bldg-022",
@@ -311,7 +311,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 6713.31
+      "CO2EquivalentEmissions": 6713.31
     },
     {
       "sourceId": "Bldg-023",
@@ -321,7 +321,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 7980
+      "CO2EquivalentEmissions": 7980
     },
     {
       "sourceId": "Bldg-024",
@@ -331,7 +331,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 6276.375
+      "CO2EquivalentEmissions": 6276.375
     },
     {
       "sourceId": "Bldg-025",
@@ -341,7 +341,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 1072.5
+      "CO2EquivalentEmissions": 1072.5
     },
     {
       "sourceId": "Bldg-026",
@@ -351,7 +351,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 4238.224999999999
+      "CO2EquivalentEmissions": 4238.224999999999
     },
     {
       "sourceId": "Bldg-027",
@@ -361,7 +361,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 11575.800000000001
+      "CO2EquivalentEmissions": 11575.800000000001
     },
     {
       "sourceId": "Bldg-028",
@@ -371,7 +371,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 1935.4499999999998
+      "CO2EquivalentEmissions": 1935.4499999999998
     },
     {
       "sourceId": "Bldg-029",
@@ -381,7 +381,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 1179.75
+      "CO2EquivalentEmissions": 1179.75
     },
     {
       "sourceId": "Bldg-030",
@@ -391,7 +391,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 18
+      "CO2EquivalentEmissions": 18
     },
     {
       "sourceId": "Bldg-031",
@@ -401,7 +401,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 11261.88
+      "CO2EquivalentEmissions": 11261.88
     },
     {
       "sourceId": "Bldg-032",
@@ -411,7 +411,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 13727
+      "CO2EquivalentEmissions": 13727
     },
     {
       "sourceId": "Bldg-033",
@@ -421,7 +421,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 0
+      "CO2EquivalentEmissions": 0
     },
     {
       "sourceId": "Bldg-034",
@@ -431,7 +431,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 6953.099999999999
+      "CO2EquivalentEmissions": 6953.099999999999
     },
     {
       "sourceId": "Bldg-035",
@@ -441,7 +441,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 7593.299999999999
+      "CO2EquivalentEmissions": 7593.299999999999
     },
     {
       "sourceId": "Bldg-036",
@@ -451,7 +451,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 0
+      "CO2EquivalentEmissions": 0
     },
     {
       "sourceId": "Bldg-037",
@@ -461,7 +461,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 2463.84
+      "CO2EquivalentEmissions": 2463.84
     },
     {
       "sourceId": "Bldg-038",
@@ -471,7 +471,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 11.549999999999999
+      "CO2EquivalentEmissions": 11.549999999999999
     },
     {
       "sourceId": "Bldg-039",
@@ -481,7 +481,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 3.3
+      "CO2EquivalentEmissions": 3.3
     },
     {
       "sourceId": "Bldg-040",
@@ -491,7 +491,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 2309.625
+      "CO2EquivalentEmissions": 2309.625
     },
     {
       "sourceId": "Bldg-041",
@@ -501,7 +501,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 0
+      "CO2EquivalentEmissions": 0
     },
     {
       "sourceId": "Bldg-042",
@@ -511,7 +511,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 12250
+      "CO2EquivalentEmissions": 12250
     },
     {
       "sourceId": "Bldg-043",
@@ -521,7 +521,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 35910
+      "CO2EquivalentEmissions": 35910
     },
     {
       "sourceId": "Bldg-044",
@@ -531,7 +531,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 10708.5
+      "CO2EquivalentEmissions": 10708.5
     },
     {
       "sourceId": "Bldg-045",
@@ -541,7 +541,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 5252.249999999999
+      "CO2EquivalentEmissions": 5252.249999999999
     },
     {
       "sourceId": "Bldg-046",
@@ -551,7 +551,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 8720.2
+      "CO2EquivalentEmissions": 8720.2
     },
     {
       "sourceId": "Bldg-047",
@@ -561,7 +561,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 26.4
+      "CO2EquivalentEmissions": 26.4
     },
     {
       "sourceId": "Bldg-048",
@@ -571,7 +571,7 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 2975.7749999999996
+      "CO2EquivalentEmissions": 2975.7749999999996
     },
     {
       "sourceId": "Bldg-049",
@@ -581,8 +581,8 @@
       "newUnitsCharge": 100,
       "capacityOperatingUnits": 1,
       "capacityDisposedUnits": 0.5,
-      "co2EquivalentEmissions": 3650.625
+      "CO2EquivalentEmissions": 3650.625
     }
   ],
-  "totalCo2EquivalentEmissions": 434.4153838
+  "totalCO2EquivalentEmissions": 434.4153838
 }

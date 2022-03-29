@@ -115,4 +115,4 @@ class WasteGases(Formula):
             # TODO: Raise error in logging message
             total = 0.
 
-        self._output['totalCo2EquivalentEmissions'] = total
+        self._output['totalCO2EquivalentEmissions'] = total
